@@ -1,0 +1,26 @@
+var structEntity =
+[
+    [ "flags", "structEntity.html#a93798f7bd03553ab7a7a24fc5d413cc5", null ],
+    [ "unk_04", "structEntity.html#a3bb5431e4559e0c8ee14c809e9c18e79", null ],
+    [ "unk_06", "structEntity.html#a5a7f952633320c182a4469e085f738ac", null ],
+    [ "unk_08", "structEntity.html#aafa4e86dcb9c8874599ded029092c886", null ],
+    [ "alpha", "structEntity.html#a8d47327c14ed785deecff2df7f0ad5c3", null ],
+    [ "aabb", "structEntity.html#a99e0b74cce05ef7b1c001f3659879a47", null ],
+    [ "unk_12", "structEntity.html#affeaf9d2e99b45e5d3d99ecb39cf3776", null ],
+    [ "shadowIndex", "structEntity.html#ae8ef5383484f83bfba801735847f8de0", null ],
+    [ "unk_18", "structEntity.html#ab498d38a0016f9f9ed4dc24e0472e3f6", null ],
+    [ "boundScript", "structEntity.html#ad694e4a2120636b5fd5fdaab12db4605", null ],
+    [ "unk_2C", "structEntity.html#a8e57324a49eeb56a393a2b67393b8008", null ],
+    [ "static_data", "structEntity.html#ac77cf7b24282f539822eae4c5520acb2", null ],
+    [ "unk_3C", "structEntity.html#aa85c55bcef1946b4a836e0771b056086", null ],
+    [ "trigger", "structEntity.html#a8b2f0566d1bdec87ce6a467da18fba2e", null ],
+    [ "vertexData", "structEntity.html#a5112090e99a217f514a7896ddd838935", null ],
+    [ "position", "structEntity.html#a80e723075449cf6d69997dd887dc5969", null ],
+    [ "scale", "structEntity.html#ae21cfa73b10a47ad0c10737e21cc9d84", null ],
+    [ "rotation", "structEntity.html#a2347fdf9ff57dcb4e2bd158ef8ef8994", null ],
+    [ "unk_6C", "structEntity.html#aaef91a214b1950712849502a67457291", null ],
+    [ "inverseTransformMatrix", "structEntity.html#a40bcf7e02ec1f39716fb04a8efa0c33a", null ],
+    [ "unk_74", "structEntity.html#a86092787ca894a0a79ccc7e2807f01e5", null ],
+    [ "radius", "structEntity.html#a0ca7e44c48615561e46d4ba4e1cb372a", null ],
+    [ "unk_B1", "structEntity.html#ac63841b8984b131aba16153587f5926d", null ]
+];

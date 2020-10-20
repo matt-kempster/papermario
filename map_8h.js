@@ -1,0 +1,26 @@
+var map_8h =
+[
+    [ "MapConfig", "structMapConfig.html", "structMapConfig" ],
+    [ "NpcAISettings", "structNpcAISettings.html", "structNpcAISettings" ],
+    [ "NpcSettings", "structNpcSettings.html", "structNpcSettings" ],
+    [ "ItemDrop", "structItemDrop.html", "structItemDrop" ],
+    [ "StatDrop", "structStatDrop.html", "structStatDrop" ],
+    [ "StaticNpc", "structStaticNpc.html", "structStaticNpc" ],
+    [ "Enemy", "structEnemy.html", "structEnemy" ],
+    [ "NpcGroupList", "structNpcGroupList.html", "structNpcGroupList" ],
+    [ "ENTRY_COUNT", "map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c", null ],
+    [ "NO_DROPS", "map_8h.html#a1978fa00ce63925f27b36739ce529276", null ],
+    [ "STANDARD_HEART_DROPS", "map_8h.html#a9df7484e0c6da4a9becdb1ea2cd1b949", null ],
+    [ "GENEROUS_HEART_DROPS", "map_8h.html#a5fe20a6d345e7fcc2dd0aa406ecc59c4", null ],
+    [ "GENEROUS_WHEN_LOW_HEART_DROPS", "map_8h.html#a96cb4b72ebea4dc2e973919fa88685a9", null ],
+    [ "STANDARD_FLOWER_DROPS", "map_8h.html#a4584a5dd806209366023784d1b1358d3", null ],
+    [ "GENEROUS_WHEN_LOW_FLOWER_DROPS", "map_8h.html#a6a8772393985bcc0c722fb25a0bda179", null ],
+    [ "REDUCED_FLOWER_DROPS", "map_8h.html#afe59bbf12bfe00c5c6bedf8ca9387a13", null ],
+    [ "ANIMATION", "map_8h.html#a242e2a4dcc3fc144fcde084a57002c5c", null ],
+    [ "OVERRIDE_MOVEMENT_SPEED", "map_8h.html#a7cfcc617458312fb7daa9a0eca0efcc0", null ],
+    [ "NO_OVERRIDE_MOVEMENT_SPEED", "map_8h.html#a6b25ff3c05678e76e92e678e79b7b826", null ],
+    [ "NPC_GROUP", "map_8h.html#a3e15fafcb21bfb136d358cb21975fb30", null ],
+    [ "NPC_GROUP_LIST_END", "map_8h.html#aff0eb6408ab05f5d10b9f60c0075832f", null ],
+    [ "EntryList", "map_8h.html#a05e2ff58a3f0263af0b888fc13bf2ed9", null ],
+    [ "get_enemy", "map_8h.html#a86b5e73d9ceb83a07c307baf4b4967ae", null ]
+];
