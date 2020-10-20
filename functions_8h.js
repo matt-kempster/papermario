@@ -17,6 +17,7 @@ var functions_8h =
     [ "get_model_from_list_index", "functions_8h.html#a0d7b962d89096e3476f22fc4cfd1267b", null ],
     [ "get_model_list_index_from_tree_index", "functions_8h.html#a191441c8c169c6f62fdfb00b5419cdd1", null ],
     [ "get_model_center_and_size", "functions_8h.html#ae0ca935c0dc4be95fbb47414563abdbd", null ],
+    [ "func_80072950", "functions_8h.html#a1f9321c33fb2dd66a5d99f1778c83ed5", null ],
     [ "update_collider_transform", "functions_8h.html#a67c49257cc7ee0e590abaecb1ee095ef", null ],
     [ "get_collider_center", "functions_8h.html#a9d29539890caee23e7627b863c328da4", null ],
     [ "is_trigger_bound", "functions_8h.html#ae8bd98092581a5e850adc92d5b4f1ed5", null ],

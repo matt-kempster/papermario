@@ -6,7 +6,6 @@ var C61020_8c =
     [ "func_80240624_C61334", "C61020_8c.html#ae1b0b3f7ef5a627fb2077a194ed59500", null ],
     [ "func_802406A4_C613B4", "C61020_8c.html#a7a72a15169d20b72515d38575ebf9f32", null ],
     [ "func_80240AE4_C617F4", "C61020_8c.html#a4f88488367735529c6e72868732a0f7f", null ],
-    [ "func_80240B2C", "C61020_8c.html#a3380cc91612a72ff5525845bfa6c3b3b", null ],
     [ "func_80240B84_C61894", "C61020_8c.html#ac977ba03fe7049f6f784c0b48197d80e", null ],
     [ "func_80240BF8", "C61020_8c.html#aabe938943883777d3cd0877b3d947070", null ],
     [ "func_80240C64_C61974", "C61020_8c.html#a8a39984a182a9f044bb1b8764b919c18", null ],

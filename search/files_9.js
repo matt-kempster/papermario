@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gumtxidentf_2ec_15759',['guMtxIdentF.c',['../guMtxIdentF_8c.html',1,'']]],
-  ['guortho_2ec_15760',['guOrtho.c',['../guOrtho_8c.html',1,'']]]
+  ['gumtxidentf_2ec_15704',['guMtxIdentF.c',['../guMtxIdentF_8c.html',1,'']]],
+  ['guortho_2ec_15705',['guOrtho.c',['../guOrtho_8c.html',1,'']]]
 ];

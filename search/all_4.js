@@ -429,5 +429,7 @@ var searchData=
   ['auxscriptid_771',['auxScriptID',['../structEnemy.html#a7d39f2dbd75d8d23b7f85e8f5ee7f0c8',1,'Enemy']]],
   ['auxw_772',['auxW',['../structTextureHeader.html#a08c75da2dcd0f11186ed5f3ef1e1b313',1,'TextureHeader::auxW()'],['../structTileDescriptor.html#a18efcfa594b31123d252f02a30a4d922',1,'TileDescriptor::auxW()']]],
   ['awaitplayerapproach_773',['AwaitPlayerApproach',['../code__f8f60__len__1560_8c.html#a0b981d8009741ae1094859a61faa704b',1,'AwaitPlayerApproach(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c'],['../script__api_2common_8h.html#a0b981d8009741ae1094859a61faa704b',1,'AwaitPlayerApproach(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c']]],
-  ['awaitplayerleave_774',['AwaitPlayerLeave',['../code__f8f60__len__1560_8c.html#ac9e2f00cf6d215290244b8edcf1d8769',1,'AwaitPlayerLeave(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c'],['../script__api_2common_8h.html#ac9e2f00cf6d215290244b8edcf1d8769',1,'AwaitPlayerLeave(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c']]]
+  ['awaitplayerleave_774',['AwaitPlayerLeave',['../code__f8f60__len__1560_8c.html#ac9e2f00cf6d215290244b8edcf1d8769',1,'AwaitPlayerLeave(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c'],['../script__api_2common_8h.html#ac9e2f00cf6d215290244b8edcf1d8769',1,'AwaitPlayerLeave(ScriptInstance *script, s32 isInitialCall):&#160;code_f8f60_len_1560.c']]],
+  ['awaitplayernearnpc_775',['AwaitPlayerNearNPC',['../AwaitPlayerNearNPC_8inc_8c.html#a42a5b34335829e89455cf8ddbbfde582',1,'AwaitPlayerNearNPC.inc.c']]],
+  ['awaitplayernearnpc_2einc_2ec_776',['AwaitPlayerNearNPC.inc.c',['../AwaitPlayerNearNPC_8inc_8c.html',1,'']]]
 ];
