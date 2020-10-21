@@ -1,5 +1,6 @@
 var NAVTREEINDEX64 =
 {
+"structCamera.html#ad5ea060c3bcfd6a710ab4baba41ad8c9":[4,0,10,53],
 "structCamera.html#ad99e4e6ed861000e313e5f760c9ff06d":[4,0,10,14],
 "structCamera.html#ae0eb43db434f7623b95f95cd3789497c":[4,0,10,49],
 "structCamera.html#ae87950290c5f6d938d8b7f71bfb8481a":[4,0,10,62],
@@ -248,6 +249,5 @@ var NAVTREEINDEX64 =
 "structFontRasterSet.html#ab886cc27d47ff82c3df8739d7ff25f46":[4,0,30,1],
 "structGameStatus.html":[4,0,31],
 "structGameStatus.html#a039f1204b6a231e514996c8a30ece27e":[4,0,31,9],
-"structGameStatus.html#a045cda32817a3a57344582795b0915a5":[4,0,31,37],
-"structGameStatus.html#a06d19da7782c49f8ba15e81e14117506":[4,0,31,29]
+"structGameStatus.html#a045cda32817a3a57344582795b0915a5":[4,0,31,37]
 };

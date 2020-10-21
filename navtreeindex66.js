@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structNpcAISettings.html#afe9cce3693f2ce16784f367e598761de":[4,0,45,2],
 "structNpcBlurData.html":[4,0,46],
 "structNpcBlurData.html#a09a1e1fbee0c9d04a7250c04ec2d02d0":[4,0,46,5],
 "structNpcBlurData.html#a12d9a882c15da88c97bcbbbbbdbbb280":[4,0,46,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structScriptInstance.html#a25b6cd4408857382354334ac0bf16da7":[4,0,61,27],
 "structScriptInstance.html#a2b7c633431438176da6d2efd4fb5c349":[4,0,61,31],
 "structScriptInstance.html#a2f6692fdf73b5182d70d32296bf6d224":[4,0,61,23],
-"structScriptInstance.html#a44a0ee212dd8819acf55331a2590945b":[4,0,61,6],
-"structScriptInstance.html#a468b5d37a07256ca3f1502c1dab817e9":[4,0,61,34]
+"structScriptInstance.html#a44a0ee212dd8819acf55331a2590945b":[4,0,61,6]
 };

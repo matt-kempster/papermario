@@ -5,6 +5,7 @@ var macros_8h =
     [ "ARRAY_COUNTU", "macros_8h.html#a18a894f28186d5f8936a3afc4322a13b", null ],
     [ "ASSERT", "macros_8h.html#ac22830a985e1daed0c9eadba8c6f606e", null ],
     [ "PANIC", "macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7", null ],
+    [ "STATIC_ASSERT", "macros_8h.html#a695e64485eb9535f5ddcfec01167bddc", null ],
     [ "GAME_STATUS", "macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1", null ],
     [ "PLAYER_STATUS", "macros_8h.html#a3643affbbcc36ae76527bbcf11bcce8e", null ],
     [ "MAX_MAPVARS", "macros_8h.html#a762aa4f0e44663837fcb4d873f9590ac", null ],

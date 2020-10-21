@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['npc_14498',['Npc',['../structNpc.html',1,'']]],
-  ['npcaisettings_14499',['NpcAISettings',['../structNpcAISettings.html',1,'']]],
-  ['npcblurdata_14500',['NpcBlurData',['../structNpcBlurData.html',1,'']]],
-  ['npcgrouplist_14501',['NpcGroupList',['../structNpcGroupList.html',1,'']]],
-  ['npcsettings_14502',['NpcSettings',['../structNpcSettings.html',1,'']]],
-  ['nusctask_14503',['NUScTask',['../structNUScTask.html',1,'']]]
+  ['npc_14499',['Npc',['../structNpc.html',1,'']]],
+  ['npcaisettings_14500',['NpcAISettings',['../structNpcAISettings.html',1,'']]],
+  ['npcblurdata_14501',['NpcBlurData',['../structNpcBlurData.html',1,'']]],
+  ['npcgrouplist_14502',['NpcGroupList',['../structNpcGroupList.html',1,'']]],
+  ['npcsettings_14503',['NpcSettings',['../structNpcSettings.html',1,'']]],
+  ['nusctask_14504',['NUScTask',['../structNUScTask.html',1,'']]]
 ];

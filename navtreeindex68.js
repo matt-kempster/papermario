@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"structUiStatus.html#a9a5bdf893d79e1316d8361e043dc29db":[4,0,84,31],
 "structUiStatus.html#a9e134e2ffeacfa451e4b53d24da88f01":[4,0,84,45],
 "structUiStatus.html#ab0a64f8240335f413732f52efcf74567":[4,0,84,26],
 "structUiStatus.html#ab11c515ab0c8232d6d95905fa969c268":[4,0,84,36],

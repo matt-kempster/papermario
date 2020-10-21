@@ -1,6 +1,6 @@
 var script__api_2common_8h =
 [
-    [ "Script", "script__api_2common_8h.html#acd4f6a8c1978a47f9edb682202169031", null ],
+    [ "Script", "script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e", null ],
     [ "FadeBackgroundToBlack", "script__api_2common_8h.html#a857564c72756d469d388eb238d2f21c4", null ],
     [ "UnfadeBackgroundFromBlack", "script__api_2common_8h.html#ab2a2e81249fca2fbf0ef3bba0cdfdb6c", null ],
     [ "GetCamLookAtObjVector", "script__api_2common_8h.html#a0e878ac3e21dfb70b361e90705616716", null ],

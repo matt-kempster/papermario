@@ -127,15 +127,15 @@ var NAVTREEINDEX =
 "enums_8h.html#aa5b80976696b91f09035c608ef8842ab",
 "enums_8h.html#adc5d9cda2c845acd8fecab9c73115bca",
 "functions_8h.html#a7cee75b7889dc0492acc0a7f8d9c62d7",
-"nuContDataGet_8c.html#a2895da8b28d758d4832da65aff564c59",
-"script__api_2common_8h.html#a932de7d2b266f62698eb3f50dbef19a3",
-"si_8h.html#a17413249d6e40dfe196db2f92734ce5b",
-"structActorPart.html#addc4c360d9e439dc6332f6f282ab29e9",
-"structCamera.html#ad99e4e6ed861000e313e5f760c9ff06d",
-"structGameStatus.html#a074cde45ec1c6b90a1d5c3979a848e53",
-"structNpcBlurData.html",
-"structScriptInstance.html#a4da40c73002f4e31419aa91014204fdf",
-"structUiStatus.html#a9e134e2ffeacfa451e4b53d24da88f01"
+"nuContDataGet_8c.html",
+"script__api_2common_8h.html#a924c4a7181a44048cb6a3f0523577ffe",
+"si_8h.html#a16a9444f96a5d741bef385172a041123",
+"structActorPart.html#addb176fc5491eb5659a2382f2526a814",
+"structCamera.html#ad5ea060c3bcfd6a710ab4baba41ad8c9",
+"structGameStatus.html#a06d19da7782c49f8ba15e81e14117506",
+"structNpcAISettings.html#afe9cce3693f2ce16784f367e598761de",
+"structScriptInstance.html#a468b5d37a07256ca3f1502c1dab817e9",
+"structUiStatus.html#a9a5bdf893d79e1316d8361e043dc29db"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
