@@ -1,7 +1,12 @@
 var kmr__12_8h =
 [
+    [ "MAP_NAME", "kmr__12_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15", null ],
     [ "NpcId_GOOMBA", "kmr__12_8h.html#a376024f36ff060c0ef26f5406097c410", null ],
-    [ "kmr_12_get_goomba_ref", "kmr__12_8h.html#acee00568e30d88212dfc8e0209c472d2", null ],
-    [ "kmr_12_main", "kmr__12_8h.html#a66653f1b5027999e4a431dc93d60a9f7", null ],
-    [ "kmr_12_play_music", "kmr__12_8h.html#a02af6334145225235214f95b542134c1", null ]
+    [ "GetGoomba", "kmr__12_8h.html#a1f88d55689d0233d149887819d03d7c8", null ],
+    [ "GetGoomba", "kmr__12_8h.html#acc48db2abe9d96fd43e05ec70bf67735", null ],
+    [ "kmr_12_Main", "kmr__12_8h.html#ad846c2725f5f5b58dac7dbc553c31451", null ],
+    [ "kmr_12_PlayMusic", "kmr__12_8h.html#a531aaaacfd608398e48717438f2ee509", null ],
+    [ "kmr_12_MakeEntities", "kmr__12_8h.html#a16ffe8fd95d378af026a31daae0e99fd", null ],
+    [ "kmr_12_ReadWestSign", "kmr__12_8h.html#a16d4b34a96b941a1b9887ddcac70d9fe", null ],
+    [ "kmr_12_npcGroupList", "kmr__12_8h.html#a345e8f4c567d1564b3e821a43e6430a3", null ]
 ];

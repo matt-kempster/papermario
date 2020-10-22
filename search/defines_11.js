@@ -1,10 +1,15 @@
 var searchData=
 [
-  ['unk_5fargs_28944',['UNK_ARGS',['../types_8h.html#a5e5a9d4486e1358ef595bf9ce9a6d069',1,'types.h']]],
-  ['unk_5ffun_5farg_28945',['UNK_FUN_ARG',['../types_8h.html#accca08002e9305d97563f0049ae93aff',1,'types.h']]],
-  ['unk_5ffun_5fptr_28946',['UNK_FUN_PTR',['../types_8h.html#abb3af713cff819dd9437ccc12db0d9d5',1,'types.h']]],
-  ['unk_5fptr_28947',['UNK_PTR',['../types_8h.html#a01d4e4f815d02583cc4a6558025cfd77',1,'types.h']]],
-  ['unk_5fret_28948',['UNK_RET',['../types_8h.html#aa42f8c01af65b61195da84af502ea69e',1,'types.h']]],
-  ['unk_5ftype_28949',['UNK_TYPE',['../types_8h.html#a4f3273c8d016f04f4465c67939067721',1,'types.h']]],
-  ['unkstruct8013a854_5fsize_28950',['UNKSTRUCT8013A854_SIZE',['../code__d0a70__len__4fe0_8c.html#a6cb52f20b0546598c91af07f6bcd884c',1,'code_d0a70_len_4fe0.c']]]
+  ['triggerflag_5farea_5fflag_5fset_28943',['TriggerFlag_AREA_FLAG_SET',['../enums_8h.html#a5030adc5446fb830ab9a1ca7889a3f9d',1,'enums.h']]],
+  ['triggerflag_5fbomb_28944',['TriggerFlag_BOMB',['../enums_8h.html#ab3d8c0f58c13b08e6641b265076f8231',1,'enums.h']]],
+  ['triggerflag_5fceiling_5ftouch_28945',['TriggerFlag_CEILING_TOUCH',['../enums_8h.html#aa5f5e52416820eac9c3b88ed46afe069',1,'enums.h']]],
+  ['triggerflag_5ffloor_5fabove_28946',['TriggerFlag_FLOOR_ABOVE',['../enums_8h.html#a154c2ebb7b3bb409f8e82aad3cef581c',1,'enums.h']]],
+  ['triggerflag_5ffloor_5finteract_28947',['TriggerFlag_FLOOR_INTERACT',['../enums_8h.html#a69cef89ff66d0d653337807ec388a05f',1,'enums.h']]],
+  ['triggerflag_5ffloor_5fjump_28948',['TriggerFlag_FLOOR_JUMP',['../enums_8h.html#a02445e6c7a24b71f5e6cb87c770573a7',1,'enums.h']]],
+  ['triggerflag_5ffloor_5ftouch_28949',['TriggerFlag_FLOOR_TOUCH',['../enums_8h.html#a5cb28c05faf8a91daa28817dbb82cd60',1,'enums.h']]],
+  ['triggerflag_5fsave_5fflag_5fset_28950',['TriggerFlag_SAVE_FLAG_SET',['../enums_8h.html#ac06baae3b9bc2bb6f264babac3f1178f',1,'enums.h']]],
+  ['triggerflag_5fwall_5fhammer_28951',['TriggerFlag_WALL_HAMMER',['../enums_8h.html#af4f175fee20ee312b3adf37dbebe1389',1,'enums.h']]],
+  ['triggerflag_5fwall_5finteract_28952',['TriggerFlag_WALL_INTERACT',['../enums_8h.html#ab824b38c87a55e904aeb13b7af87f2c9',1,'enums.h']]],
+  ['triggerflag_5fwall_5fpush_28953',['TriggerFlag_WALL_PUSH',['../enums_8h.html#a3928ab86fbbfac15e4514a88d9a49b34',1,'enums.h']]],
+  ['triggerflag_5fwall_5ftouch_28954',['TriggerFlag_WALL_TOUCH',['../enums_8h.html#ac6990a4b5adf518ea4189649dfdafa73',1,'enums.h']]]
 ];

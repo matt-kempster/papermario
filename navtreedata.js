@@ -127,15 +127,15 @@ var NAVTREEINDEX =
 "enums_8h.html#aa48b68f1cc1ed0de685d418d7491de6e",
 "enums_8h.html#adaedea9a94cc45735950f1fb47eb0351",
 "functions_8h.html#a758fb8dabf0716584b06342c4d1a9ef3",
-"map_8h.html#a9df7484e0c6da4a9becdb1ea2cd1b949",
-"script__api_2common_8h.html#a889e21a74ed01df9a7c783032b21d576",
-"si_8c.html#af3c8b9723c5cd0bdfc45faa7e3fe4ab7",
-"structActorPart.html#a915bf2dac020f623a89b307c1672a6d9",
-"structCamera.html#a9a4e9dbfd5c03a43d002482e82818da5",
-"structFGModelData.html",
-"structNpcAISettings.html",
-"structSaveData.html#ac3a9b621af131a5143c37e859b79d800",
-"structUiStatus.html#a4a58f587da0c5914f7fa6036e7c4817a"
+"map_8h.html#a3e15fafcb21bfb136d358cb21975fb30",
+"script__api_2common_8h.html#a7e1dd479d98d585479f0e615073c510f",
+"si_8c.html#ae3060d8eafcf19fb33287a33ac3f6bec",
+"structActorPart.html#a570a64f941c9b5a3f8be3aac35bdce68",
+"structCamera.html#a7bf4e02bd3370ebf9c86946e6e2822c1",
+"structEntity.html#aaef91a214b1950712849502a67457291",
+"structNpc.html#ad545c6d44c87883f6e755d030b0bbc60",
+"structSaveData.html#a76c6db386017c14c0647aa9941f39b04",
+"structUiStatus.html#a1a0321cae9a0d5e5585f103d8935904c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

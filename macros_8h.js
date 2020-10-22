@@ -20,5 +20,7 @@ var macros_8h =
     [ "SCRIPT_ALLOC", "macros_8h.html#ab0d7d85d70bf05c363a14a21247693b8", null ],
     [ "SCRIPT_FREE", "macros_8h.html#a337b4a06d467e2742d43cde93c63bfd8", null ],
     [ "SQ", "macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc", null ],
-    [ "F16", "macros_8h.html#adeb60de97ec9bcdd52d475c912158f89", null ]
+    [ "F16", "macros_8h.html#adeb60de97ec9bcdd52d475c912158f89", null ],
+    [ "_NAMESPACE", "macros_8h.html#affb24eb5fb3ad0c5e24c50157a5cad32", null ],
+    [ "NAMESPACE", "macros_8h.html#a34c9712d541422ef7f3a84069ac05484", null ]
 ];

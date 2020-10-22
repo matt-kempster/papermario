@@ -1,5 +1,14 @@
 var NAVTREEINDEX67 =
 {
+"structSaveData.html#a76c6db386017c14c0647aa9941f39b04":[4,0,60,21],
+"structSaveData.html#a7aeca7019e2d63c1cad4ab8b24cdd81d":[4,0,60,16],
+"structSaveData.html#a810482bf58face96ea5da4e0728c17b1":[4,0,60,0],
+"structSaveData.html#a85a75a2d59ad143e866e86d406d81787":[4,0,60,4],
+"structSaveData.html#a87362cf8ecf06d3de387726c688fcdbf":[4,0,60,5],
+"structSaveData.html#a9b6271d73bad9473c8cdeb25c26cd52b":[4,0,60,8],
+"structSaveData.html#a9b936364cdbed215fc7c718e470da8b0":[4,0,60,14],
+"structSaveData.html#a9d17ae998e0126960301f06274087998":[4,0,60,12],
+"structSaveData.html#abc28336f57a033f74e239585003bacaf":[4,0,60,1],
 "structSaveData.html#ac3a9b621af131a5143c37e859b79d800":[4,0,60,18],
 "structSaveData.html#ad0cb6c422fe7ce02760f418a488f29fa":[4,0,60,19],
 "structSaveData.html#ad81e19e1fcdecc8bd13be6bc917e83ec":[4,0,60,6],
@@ -240,14 +249,5 @@ var NAVTREEINDEX67 =
 "structUiStatus.html":[4,0,84],
 "structUiStatus.html#a14523b2611884396a1595c2b1a0230d5":[4,0,84,6],
 "structUiStatus.html#a1713a75943ec838a56dffa8eee422c09":[4,0,84,8],
-"structUiStatus.html#a18d25f66d74f69d351a4ab59214b6c5b":[4,0,84,24],
-"structUiStatus.html#a1a0321cae9a0d5e5585f103d8935904c":[4,0,84,40],
-"structUiStatus.html#a1bb10c67977ecb4ed68ae31ac6cdb0c2":[4,0,84,21],
-"structUiStatus.html#a1d2f4d168bc7f0d17529cba89c1f3fec":[4,0,84,20],
-"structUiStatus.html#a261703a11eb832c720c20db8d0688c20":[4,0,84,42],
-"structUiStatus.html#a2dc93a42f949c61b74fc3143f72de212":[4,0,84,37],
-"structUiStatus.html#a3d19fc2aafd3ccc1f43343dc967620f3":[4,0,84,13],
-"structUiStatus.html#a451e167e62c9e38a3281c8134c629f40":[4,0,84,35],
-"structUiStatus.html#a45cdb749c55a7d0d46adc13ca8693f2a":[4,0,84,25],
-"structUiStatus.html#a4826027a09b4c1e251583b9c7d9c522f":[4,0,84,18]
+"structUiStatus.html#a18d25f66d74f69d351a4ab59214b6c5b":[4,0,84,24]
 };

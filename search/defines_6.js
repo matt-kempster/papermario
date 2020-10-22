@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['game_5fstatus_27807',['GAME_STATUS',['../macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1',1,'macros.h']]],
-  ['generous_5fheart_5fdrops_27808',['GENEROUS_HEART_DROPS',['../map_8h.html#a5fe20a6d345e7fcc2dd0aa406ecc59c4',1,'map.h']]],
-  ['generous_5fwhen_5flow_5fflower_5fdrops_27809',['GENEROUS_WHEN_LOW_FLOWER_DROPS',['../map_8h.html#a6a8772393985bcc0c722fb25a0bda179',1,'map.h']]],
-  ['generous_5fwhen_5flow_5fheart_5fdrops_27810',['GENEROUS_WHEN_LOW_HEART_DROPS',['../map_8h.html#a96cb4b72ebea4dc2e973919fa88685a9',1,'map.h']]]
+  ['f16_27812',['F16',['../macros_8h.html#adeb60de97ec9bcdd52d475c912158f89',1,'macros.h']]],
+  ['formation_5fid_27813',['FORMATION_ID',['../types_8h.html#a2993b3332565798451de4a2af4518b85',1,'types.h']]]
 ];

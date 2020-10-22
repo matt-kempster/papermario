@@ -118,7 +118,9 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c">ENTRY_COUNT</a>(<a class="el" href="header_8c.html#a28eb5000ae48f1548167d11265d1427a">entryList</a>)&#160;&#160;&#160;(sizeof(<a class="el" href="header_8c.html#a28eb5000ae48f1548167d11265d1427a">entryList</a>) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td></tr>
+<tr class="memitem:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(sym)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="kmr__12_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td></tr>
+<tr class="separator:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c">ENTRY_COUNT</a>(entryList)&#160;&#160;&#160;(sizeof(entryList) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td></tr>
 <tr class="separator:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1978fa00ce63925f27b36739ce529276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a1978fa00ce63925f27b36739ce529276">NO_DROPS</a>&#160;&#160;&#160;{ <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(100), <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(0), 0, <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(0) }</td></tr>
 <tr class="separator:a1978fa00ce63925f27b36739ce529276"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +158,26 @@ Functions</h2></td></tr>
 <tr class="separator:a86b5e73d9ceb83a07c307baf4b4967ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a77640234fd4bdf7d7b7d8288a6aa542c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77640234fd4bdf7d7b7d8288a6aa542c">&#9670;&nbsp;</a></span>M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">sym</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="kmr__12_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00010">10</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
 <a id="ae019bc4b5ef86b62ec61b86a7ad5052c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae019bc4b5ef86b62ec61b86a7ad5052c">&#9670;&nbsp;</a></span>ENTRY_COUNT</h2>
 
@@ -166,13 +188,13 @@ Functions</h2></td></tr>
           <td class="memname">#define ENTRY_COUNT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="header_8c.html#a28eb5000ae48f1548167d11265d1427a">entryList</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(sizeof(<a class="el" href="header_8c.html#a28eb5000ae48f1548167d11265d1427a">entryList</a>) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td>
+          <td class="paramname">entryList</td><td>)</td>
+          <td>&#160;&#160;&#160;(sizeof(entryList) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00010">10</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00012">12</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -188,7 +210,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00085">85</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00087">87</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +230,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00087">87</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00089">89</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -228,7 +250,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00095">95</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00097">97</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -248,7 +270,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00103">103</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00105">105</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -268,7 +290,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00111">111</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00113">113</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -288,7 +310,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00119">119</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00121">121</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -308,7 +330,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00127">127</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00129">129</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -344,7 +366,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00135">135</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00137">137</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -364,7 +386,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00137">137</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00139">139</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -380,7 +402,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00138">138</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00140">140</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -410,7 +432,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00214">214</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00216">216</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +451,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00215">215</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00217">217</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -446,7 +468,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00012">12</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00014">14</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -479,7 +501,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 05:02:21 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 22 2020 17:47:19 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

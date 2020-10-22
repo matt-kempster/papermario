@@ -8,6 +8,7 @@ var map_8h =
     [ "StaticNpc", "structStaticNpc.html", "structStaticNpc" ],
     [ "Enemy", "structEnemy.html", "structEnemy" ],
     [ "NpcGroupList", "structNpcGroupList.html", "structNpcGroupList" ],
+    [ "M", "map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c", null ],
     [ "ENTRY_COUNT", "map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c", null ],
     [ "NO_DROPS", "map_8h.html#a1978fa00ce63925f27b36739ce529276", null ],
     [ "STANDARD_HEART_DROPS", "map_8h.html#a9df7484e0c6da4a9becdb1ea2cd1b949", null ],
