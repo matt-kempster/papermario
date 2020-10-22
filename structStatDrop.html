@@ -90,35 +90,53 @@ $(document).ready(function(){initNavTree('structStatDrop.html',''); initResizabl
 <div class="title">StatDrop Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Describes heart/flower drop chances after defeating an <a class="el" href="structNpc.html">Npc</a> in the overworld.  
+ <a href="structStatDrop.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac973ea7c496f138bfe7ea1fc2a491329"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatDrop.html#ac973ea7c496f138bfe7ea1fc2a491329">hpCutoff</a></td></tr>
-<tr class="separator:ac973ea7c496f138bfe7ea1fc2a491329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4beeac4ce42542f08509b84fcd3281a"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatDrop.html#ac4beeac4ce42542f08509b84fcd3281a">cutoff</a></td></tr>
+<tr class="memdesc:ac4beeac4ce42542f08509b84fcd3281a"><td class="mdescLeft">&#160;</td><td class="mdescRight">% of max HP/FP. If current HP/FP &gt; cutoff, no hearts/flowers can be dropped.  <a href="structStatDrop.html#ac4beeac4ce42542f08509b84fcd3281a">More...</a><br /></td></tr>
+<tr class="separator:ac4beeac4ce42542f08509b84fcd3281a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a971784ac996bc3cc101bbfecdae879ea"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatDrop.html#a971784ac996bc3cc101bbfecdae879ea">generalChance</a></td></tr>
+<tr class="memdesc:a971784ac996bc3cc101bbfecdae879ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">% chance for any hearts/flowers to be dropped at all from this <a class="el" href="structStatDrop.html" title="Describes heart/flower drop chances after defeating an Npc in the overworld.">StatDrop</a>.  <a href="structStatDrop.html#a971784ac996bc3cc101bbfecdae879ea">More...</a><br /></td></tr>
 <tr class="separator:a971784ac996bc3cc101bbfecdae879ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa423e95ead59d81b0dc1d932d140d5ac"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatDrop.html#aa423e95ead59d81b0dc1d932d140d5ac">attempts</a></td></tr>
+<tr class="memdesc:aa423e95ead59d81b0dc1d932d140d5ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of hearts/flowers that can be dropped from this <a class="el" href="structStatDrop.html" title="Describes heart/flower drop chances after defeating an Npc in the overworld.">StatDrop</a>.  <a href="structStatDrop.html#aa423e95ead59d81b0dc1d932d140d5ac">More...</a><br /></td></tr>
 <tr class="separator:aa423e95ead59d81b0dc1d932d140d5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f129656bfd6b0de7278585b987b80e7"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStatDrop.html#a6f129656bfd6b0de7278585b987b80e7">chancePerAttempt</a></td></tr>
+<tr class="memdesc:a6f129656bfd6b0de7278585b987b80e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">% chance for a single heart/flower to be dropped from each attempt.  <a href="structStatDrop.html#a6f129656bfd6b0de7278585b987b80e7">More...</a><br /></td></tr>
 <tr class="separator:a6f129656bfd6b0de7278585b987b80e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00064">64</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<div class="textblock"><p>Describes heart/flower drop chances after defeating an <a class="el" href="structNpc.html">Npc</a> in the overworld. </p>
+<p>The algorithm for calculating the number of hearts/flowers from a <a class="el" href="structStatDrop.html" title="Describes heart/flower drop chances after defeating an Npc in the overworld.">StatDrop</a> is:</p><ul>
+<li>If current HP/FP &gt; cutoff, drop 0.</li>
+<li>Roll generalChance. If it fails, drop 0.</li>
+<li>Roll chancePerAttempt attempts times. For each success, drop a heart/flower.</li>
+</ul>
+<p><a class="el" href="structStaticNpc.html">StaticNpc</a> holds a table of StatDrops for each stat (hearts, flowers). All are checked together and the number of hearts/flowers to drop is the total number of successful attempts for each stat.</p>
+<p>Each heart/flower is worth 1 HP and 1 FP respectively, if picked up.</p>
+<p>cutoff, generalChance, and chancePerAttempt are short fixed-point percentage values. That is, <code><a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16(0)</a></code> is a 0% chance and <code><a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16(100)</a></code> is a 100% chance. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00078">78</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="ac973ea7c496f138bfe7ea1fc2a491329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac973ea7c496f138bfe7ea1fc2a491329">&#9670;&nbsp;</a></span>hpCutoff</h2>
+<a id="ac4beeac4ce42542f08509b84fcd3281a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4beeac4ce42542f08509b84fcd3281a">&#9670;&nbsp;</a></span>cutoff</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s16 StatDrop::hpCutoff</td>
+          <td class="memname">s16 StatDrop::cutoff</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00066">66</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p>% of max HP/FP. If current HP/FP &gt; cutoff, no hearts/flowers can be dropped. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00079">79</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -134,7 +152,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00067">67</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p>% chance for any hearts/flowers to be dropped at all from this <a class="el" href="structStatDrop.html" title="Describes heart/flower drop chances after defeating an Npc in the overworld.">StatDrop</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00080">80</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -150,7 +170,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00068">68</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p>Maximum number of hearts/flowers that can be dropped from this <a class="el" href="structStatDrop.html" title="Describes heart/flower drop chances after defeating an Npc in the overworld.">StatDrop</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00081">81</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -166,7 +188,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00069">69</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p>% chance for a single heart/flower to be dropped from each attempt. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00082">82</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -179,7 +203,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structStatDrop.html">StatDrop</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 00:13:17 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Thu Oct 22 2020 05:02:23 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

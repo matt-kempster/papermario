@@ -676,5 +676,6 @@ var searchData=
   ['currentwall_1701',['currentWall',['../structCollisionStatus.html#a4c0b3322c7f5fdcb5e2062f67d981474',1,'CollisionStatus']]],
   ['currentyaw_1702',['currentYaw',['../structCamera.html#ad3385a4ffb0ff5a658b44cefd3f44796',1,'Camera::currentYaw()'],['../structPlayerStatus.html#a92d26912b188c4e6f11bedde70c2bb73',1,'PlayerStatus::currentYaw()']]],
   ['currentyoffset_1703',['currentYOffset',['../structCamera.html#aa1bfe02a06a67f14f9a3094a1f9c78c4',1,'Camera']]],
-  ['currentzone_1704',['currentZone',['../structCamera.html#ae0eb43db434f7623b95f95cd3789497c',1,'Camera']]]
+  ['currentzone_1704',['currentZone',['../structCamera.html#ae0eb43db434f7623b95f95cd3789497c',1,'Camera']]],
+  ['cutoff_1705',['cutoff',['../structStatDrop.html#ac4beeac4ce42542f08509b84fcd3281a',1,'StatDrop']]]
 ];

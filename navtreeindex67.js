@@ -77,7 +77,7 @@ var NAVTREEINDEX67 =
 "structStatDrop.html#a6f129656bfd6b0de7278585b987b80e7":[4,0,66,3],
 "structStatDrop.html#a971784ac996bc3cc101bbfecdae879ea":[4,0,66,1],
 "structStatDrop.html#aa423e95ead59d81b0dc1d932d140d5ac":[4,0,66,2],
-"structStatDrop.html#ac973ea7c496f138bfe7ea1fc2a491329":[4,0,66,0],
+"structStatDrop.html#ac4beeac4ce42542f08509b84fcd3281a":[4,0,66,0],
 "structStaticActorData.html":[4,0,67],
 "structStaticActorData.html#a1da031cdd7dc1d9ccf40dcf5de351b6f":[4,0,67,19],
 "structStaticActorData.html#a398144acfeb08b97674845d19b3505b6":[4,0,67,20],
