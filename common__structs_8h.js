@@ -76,6 +76,12 @@ var common__structs_8h =
     [ "EncounterStatus", "structEncounterStatus.html", "structEncounterStatus" ],
     [ "SaveData", "structSaveData.html", "structSaveData" ],
     [ "ApiFunc", "common__structs_8h.html#acfce2016cb766b2b881cfc19671550f0", null ],
+    [ "NpcList", "common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781", null ],
+    [ "TriggerList", "common__structs_8h.html#a1f75be71fcc2537eee7d7362e7ac6346", null ],
     [ "ScriptList", "common__structs_8h.html#a661fee3ed11848f32d256db498b74ec4", null ],
+    [ "EntityList", "common__structs_8h.html#a4305c50251c29f95597097fb40e4acb5", null ],
+    [ "DynamicEntityList", "common__structs_8h.html#ad0572db22425938f1d65d9d7c4b24abe", null ],
+    [ "ModelList", "common__structs_8h.html#ada75a3b8335171313040e0bccf544399", null ],
+    [ "ShadowList", "common__structs_8h.html#a8812050dc47137f640e1297a5fd48691", null ],
     [ "TriggerHandlerFunc", "common__structs_8h.html#a0b2a4152ae0a43f0cc26de00e802710d", null ]
 ];

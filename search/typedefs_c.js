@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['script_27506',['Script',['../script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e',1,'common.h']]],
-  ['scriptid_27507',['ScriptID',['../si_8h.html#ab22f0b49ed279531e43557af32a1855d',1,'si.h']]],
-  ['scriptlist_27508',['ScriptList',['../common__structs_8h.html#a661fee3ed11848f32d256db498b74ec4',1,'common_structs.h']]],
-  ['song_27509',['Song',['../enums_8h.html#a77dbec45bb9050b032e74a0745ee2284',1,'enums.h']]],
-  ['soundid_27510',['SoundId',['../enums_8h.html#adc43dcdaa17fbdebf3b3cb2ef4f75386',1,'enums.h']]],
-  ['spriteid_27511',['SpriteId',['../enums_8h.html#a490142ed25ad3dc49d633c988fe08b2d',1,'enums.h']]],
-  ['status_27512',['Status',['../enums_8h.html#a18d0eb4833326ebbaead4bb825f046ba',1,'enums.h']]],
-  ['statusflags_27513',['StatusFlags',['../enums_8h.html#af124303d83d18e264e867e2fffb89aaf',1,'enums.h']]]
+  ['script_27522',['Script',['../script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e',1,'common.h']]],
+  ['scriptid_27523',['ScriptID',['../si_8h.html#ab22f0b49ed279531e43557af32a1855d',1,'si.h']]],
+  ['scriptlist_27524',['ScriptList',['../common__structs_8h.html#a661fee3ed11848f32d256db498b74ec4',1,'common_structs.h']]],
+  ['shadowlist_27525',['ShadowList',['../common__structs_8h.html#a8812050dc47137f640e1297a5fd48691',1,'common_structs.h']]],
+  ['song_27526',['Song',['../enums_8h.html#a77dbec45bb9050b032e74a0745ee2284',1,'enums.h']]],
+  ['soundid_27527',['SoundId',['../enums_8h.html#adc43dcdaa17fbdebf3b3cb2ef4f75386',1,'enums.h']]],
+  ['spriteid_27528',['SpriteId',['../enums_8h.html#a490142ed25ad3dc49d633c988fe08b2d',1,'enums.h']]],
+  ['status_27529',['Status',['../enums_8h.html#a18d0eb4833326ebbaead4bb825f046ba',1,'enums.h']]],
+  ['statusflags_27530',['StatusFlags',['../enums_8h.html#af124303d83d18e264e867e2fffb89aaf',1,'enums.h']]]
 ];

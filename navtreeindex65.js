@@ -1,5 +1,17 @@
 var NAVTREEINDEX65 =
 {
+"structFGModelData.html":[4,0,28],
+"structFGModelData.html#a23dacbc53c98f59157f7b39e7babaf60":[4,0,28,0],
+"structFGModelData.html#a2777618dd2eac19da67ee9db635b5447":[4,0,28,1],
+"structFontData.html":[4,0,29],
+"structFontData.html#a6230c4946281d6dfc3cb9f3dce10462c":[4,0,29,0],
+"structFontRasterSet.html":[4,0,30],
+"structFontRasterSet.html#a40ae016ae8f35f6ccc5e9d68cc59c7ed":[4,0,30,2],
+"structFontRasterSet.html#a7c272c2edc014c994823de9d8a77ffdc":[4,0,30,0],
+"structFontRasterSet.html#ab886cc27d47ff82c3df8739d7ff25f46":[4,0,30,1],
+"structGameStatus.html":[4,0,31],
+"structGameStatus.html#a039f1204b6a231e514996c8a30ece27e":[4,0,31,9],
+"structGameStatus.html#a045cda32817a3a57344582795b0915a5":[4,0,31,37],
 "structGameStatus.html#a06d19da7782c49f8ba15e81e14117506":[4,0,31,29],
 "structGameStatus.html#a074cde45ec1c6b90a1d5c3979a848e53":[4,0,31,81],
 "structGameStatus.html#a087e0eb5ef0c2bb1492885ed03e0087b":[4,0,31,78],
@@ -237,17 +249,5 @@ var NAVTREEINDEX65 =
 "structNpc.html#aeb96d433ba92e56e5248f5285b0f6be5":[4,0,44,26],
 "structNpc.html#af345be8572e307db3b52b1221b141792":[4,0,44,20],
 "structNpc.html#afb7d8ec70fb0b6a0f1ecd9963e6bef81":[4,0,44,35],
-"structNpc.html#afebed843f138515797a65c6c621a4291":[4,0,44,27],
-"structNpcAISettings.html":[4,0,45],
-"structNpcAISettings.html#a072c9b9c1f82787aab57ff9104a51f2f":[4,0,45,11],
-"structNpcAISettings.html#a18722c4433edbcff75c276d6ac725eb3":[4,0,45,4],
-"structNpcAISettings.html#a20911199c92ff40a2fe15284fb888491":[4,0,45,10],
-"structNpcAISettings.html#a3188baca4bbb9c5d9a1efe076f9df6c5":[4,0,45,7],
-"structNpcAISettings.html#a35042da3bb38994dbd910fb72f9e47cc":[4,0,45,9],
-"structNpcAISettings.html#a4a848d8ef6c8d05093f11d87e613c2a5":[4,0,45,6],
-"structNpcAISettings.html#a6a7eae3df4be8551d92c26fe8f7a3744":[4,0,45,3],
-"structNpcAISettings.html#aaa6f6e9037b00cbd8e8fbc526ec30d90":[4,0,45,5],
-"structNpcAISettings.html#ab59b92a9ae60c689fe1722c0c55ca480":[4,0,45,1],
-"structNpcAISettings.html#ae04d423a2359a50352a4464d6565a0bf":[4,0,45,0],
-"structNpcAISettings.html#af87a04460d51dcb689c592e0660e0bc7":[4,0,45,8]
+"structNpc.html#afebed843f138515797a65c6c621a4291":[4,0,44,27]
 };

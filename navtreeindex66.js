@@ -1,5 +1,17 @@
 var NAVTREEINDEX66 =
 {
+"structNpcAISettings.html":[4,0,45],
+"structNpcAISettings.html#a072c9b9c1f82787aab57ff9104a51f2f":[4,0,45,11],
+"structNpcAISettings.html#a18722c4433edbcff75c276d6ac725eb3":[4,0,45,4],
+"structNpcAISettings.html#a20911199c92ff40a2fe15284fb888491":[4,0,45,10],
+"structNpcAISettings.html#a3188baca4bbb9c5d9a1efe076f9df6c5":[4,0,45,7],
+"structNpcAISettings.html#a35042da3bb38994dbd910fb72f9e47cc":[4,0,45,9],
+"structNpcAISettings.html#a4a848d8ef6c8d05093f11d87e613c2a5":[4,0,45,6],
+"structNpcAISettings.html#a6a7eae3df4be8551d92c26fe8f7a3744":[4,0,45,3],
+"structNpcAISettings.html#aaa6f6e9037b00cbd8e8fbc526ec30d90":[4,0,45,5],
+"structNpcAISettings.html#ab59b92a9ae60c689fe1722c0c55ca480":[4,0,45,1],
+"structNpcAISettings.html#ae04d423a2359a50352a4464d6565a0bf":[4,0,45,0],
+"structNpcAISettings.html#af87a04460d51dcb689c592e0660e0bc7":[4,0,45,8],
 "structNpcAISettings.html#afe9cce3693f2ce16784f367e598761de":[4,0,45,2],
 "structNpcBlurData.html":[4,0,46],
 "structNpcBlurData.html#a09a1e1fbee0c9d04a7250c04ec2d02d0":[4,0,46,5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX66 =
 "structSaveData.html#a9b6271d73bad9473c8cdeb25c26cd52b":[4,0,60,8],
 "structSaveData.html#a9b936364cdbed215fc7c718e470da8b0":[4,0,60,14],
 "structSaveData.html#a9d17ae998e0126960301f06274087998":[4,0,60,12],
-"structSaveData.html#abc28336f57a033f74e239585003bacaf":[4,0,60,1],
-"structSaveData.html#ac3a9b621af131a5143c37e859b79d800":[4,0,60,18],
-"structSaveData.html#ad0cb6c422fe7ce02760f418a488f29fa":[4,0,60,19],
-"structSaveData.html#ad81e19e1fcdecc8bd13be6bc917e83ec":[4,0,60,6],
-"structSaveData.html#aefb1fa6c008191db6cab5eab807ab728":[4,0,60,25],
-"structScriptInstance.html":[4,0,61],
-"structScriptInstance.html#a066a835a86958496a90cace694756b20":[4,0,61,26],
-"structScriptInstance.html#a177e7b86cc748bd01c7071cc90fb1a4f":[4,0,61,19],
-"structScriptInstance.html#a1e4a670e0c76463fc5eb128098b20f7a":[4,0,61,10],
-"structScriptInstance.html#a25b6cd4408857382354334ac0bf16da7":[4,0,61,27],
-"structScriptInstance.html#a2b7c633431438176da6d2efd4fb5c349":[4,0,61,31],
-"structScriptInstance.html#a2f6692fdf73b5182d70d32296bf6d224":[4,0,61,23],
-"structScriptInstance.html#a44a0ee212dd8819acf55331a2590945b":[4,0,61,6]
+"structSaveData.html#abc28336f57a033f74e239585003bacaf":[4,0,60,1]
 };

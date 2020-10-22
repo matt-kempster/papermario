@@ -401,5 +401,6 @@ var searchData=
   ['dropstarpoints_2103',['DropStarPoints',['../code__1A5830_8c.html#a351a2f0fd9db913f52e7356929cc1949',1,'DropStarPoints():&#160;code_1A5830.c'],['../battle_8h.html#a20b093e41cb322da756cfd2d2a328c7c',1,'DropStarPoints(ScriptInstance *script, s32 isInitialCall):&#160;battle.h']]],
   ['droptables_2104',['dropTables',['../structEnemy.html#ab3a6cfb322f420da87b9426127706b68',1,'Enemy']]],
   ['dropwhackabump_2105',['dropWhackaBump',['../structEncounterStatus.html#a6f14bb35628cb97da08bac1c9377ff77',1,'EncounterStatus']]],
-  ['duration_2106',['duration',['../structNpc.html#afebed843f138515797a65c6c621a4291',1,'Npc']]]
+  ['duration_2106',['duration',['../structNpc.html#afebed843f138515797a65c6c621a4291',1,'Npc']]],
+  ['dynamicentitylist_2107',['DynamicEntityList',['../common__structs_8h.html#ad0572db22425938f1d65d9d7c4b24abe',1,'common_structs.h']]]
 ];

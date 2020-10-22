@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['backgroundheader_14461',['BackgroundHeader',['../structBackgroundHeader.html',1,'']]],
-  ['battlestatus_14462',['BattleStatus',['../structBattleStatus.html',1,'']]],
-  ['battlestatusunk_14463',['BattleStatusUnk',['../structBattleStatusUnk.html',1,'']]],
-  ['battlestatusunkinner_14464',['BattleStatusUnkInner',['../structBattleStatusUnkInner.html',1,'']]]
+  ['backgroundheader_14473',['BackgroundHeader',['../structBackgroundHeader.html',1,'']]],
+  ['battlestatus_14474',['BattleStatus',['../structBattleStatus.html',1,'']]],
+  ['battlestatusunk_14475',['BattleStatusUnk',['../structBattleStatusUnk.html',1,'']]],
+  ['battlestatusunkinner_14476',['BattleStatusUnkInner',['../structBattleStatusUnkInner.html',1,'']]]
 ];

@@ -1,5 +1,17 @@
 var NAVTREEINDEX64 =
 {
+"structCamera.html#a9a4e9dbfd5c03a43d002482e82818da5":[4,0,10,23],
+"structCamera.html#a9bbd5ab8d48a44a2bb75c102ef817db1":[4,0,10,36],
+"structCamera.html#a9eb3619188440da70c7feb771bba7a09":[4,0,10,43],
+"structCamera.html#aa07fa078024ffa15a47995db2a860806":[4,0,10,44],
+"structCamera.html#aa1bfe02a06a67f14f9a3094a1f9c78c4":[4,0,10,35],
+"structCamera.html#aa6e32bb40575ef04db87561e8974d202":[4,0,10,40],
+"structCamera.html#ab16f81cf21341e748a4240cedb6aa47e":[4,0,10,20],
+"structCamera.html#ac553de65dbba31149e53a18bff0cb2aa":[4,0,10,16],
+"structCamera.html#ac819e7e1b9b18c66fb5038cec45455ab":[4,0,10,8],
+"structCamera.html#ad1712931e02424517dee87e1710d658c":[4,0,10,47],
+"structCamera.html#ad3385a4ffb0ff5a658b44cefd3f44796":[4,0,10,31],
+"structCamera.html#ad3ebe2b34e828603ffb85d5ccfc11284":[4,0,10,38],
 "structCamera.html#ad5ea060c3bcfd6a710ab4baba41ad8c9":[4,0,10,53],
 "structCamera.html#ad99e4e6ed861000e313e5f760c9ff06d":[4,0,10,14],
 "structCamera.html#ae0eb43db434f7623b95f95cd3789497c":[4,0,10,49],
@@ -237,17 +249,5 @@ var NAVTREEINDEX64 =
 "structEntity.html#ad694e4a2120636b5fd5fdaab12db4605":[4,0,27,9],
 "structEntity.html#ae21cfa73b10a47ad0c10737e21cc9d84":[4,0,27,16],
 "structEntity.html#ae8ef5383484f83bfba801735847f8de0":[4,0,27,7],
-"structEntity.html#affeaf9d2e99b45e5d3d99ecb39cf3776":[4,0,27,6],
-"structFGModelData.html":[4,0,28],
-"structFGModelData.html#a23dacbc53c98f59157f7b39e7babaf60":[4,0,28,0],
-"structFGModelData.html#a2777618dd2eac19da67ee9db635b5447":[4,0,28,1],
-"structFontData.html":[4,0,29],
-"structFontData.html#a6230c4946281d6dfc3cb9f3dce10462c":[4,0,29,0],
-"structFontRasterSet.html":[4,0,30],
-"structFontRasterSet.html#a40ae016ae8f35f6ccc5e9d68cc59c7ed":[4,0,30,2],
-"structFontRasterSet.html#a7c272c2edc014c994823de9d8a77ffdc":[4,0,30,0],
-"structFontRasterSet.html#ab886cc27d47ff82c3df8739d7ff25f46":[4,0,30,1],
-"structGameStatus.html":[4,0,31],
-"structGameStatus.html#a039f1204b6a231e514996c8a30ece27e":[4,0,31,9],
-"structGameStatus.html#a045cda32817a3a57344582795b0915a5":[4,0,31,37]
+"structEntity.html#affeaf9d2e99b45e5d3d99ecb39cf3776":[4,0,27,6]
 };
