@@ -1,12 +1,12 @@
 var 8FF8B0_8c =
 [
-    [ "func_80240240", "8FF8B0_8c.html#a0a42304de53b7713fbc4d6f83f53892a", null ],
-    [ "func_80240314", "8FF8B0_8c.html#af568d8bb3184913fecff3145e8c1debf", null ],
-    [ "func_80240418", "8FF8B0_8c.html#ac3aca26bfb7968af8ceab5c4f6c4c1e7", null ],
-    [ "func_802404E4", "8FF8B0_8c.html#a0e7597a685d086e4a87bd0eb7d502e3e", null ],
-    [ "func_8024056C", "8FF8B0_8c.html#abf5c9ef0470e74ad016a0e4aefed419e", null ],
+    [ "func_80240240_8FF8B0", "8FF8B0_8c.html#ab9fd2d8ceb16e414cd235bb4bcb73b55", null ],
+    [ "func_80240314_8FF984", "8FF8B0_8c.html#a8b486ce1ff7ed503a6deb42486d0bb31", null ],
+    [ "func_80240418_8FFA88", "8FF8B0_8c.html#a63b646e63c2bc297726abb483d865a5b", null ],
+    [ "func_802404E4_8FFB54", "8FF8B0_8c.html#a88f4e38a3d1e0b70d76d2a78c4566a3f", null ],
+    [ "func_8024056C_8FFBDC", "8FF8B0_8c.html#a0d541aff59e0694a98052a216b94a869", null ],
     [ "func_80240B00_900170", "8FF8B0_8c.html#a9ed81bc0aa6382827c5f31f3a155e66a", null ],
-    [ "func_80240B3C", "8FF8B0_8c.html#a34cc3da99d055353a86a38fbe1c0a801", null ],
+    [ "func_80240B3C_9001AC", "8FF8B0_8c.html#a45bb15d8e73954eed6e1f42b111b35f0", null ],
     [ "func_80240B4C_9001BC", "8FF8B0_8c.html#a825766c73cb99cab68316820ecb87132", null ],
     [ "func_80240BA8_900218", "8FF8B0_8c.html#a52b9862a9826daf715b45e630eae1383", null ]
 ];

@@ -1,7 +1,5 @@
 var CEE2A0_8c =
 [
-    [ "func_80240040_CEE2A0", "CEE2A0_8c.html#adfca05db99f86c6946f3b6350aaca6d0", null ],
-    [ "func_8024009C_CEE2FC", "CEE2A0_8c.html#ae052200969089442770b5614294ddb35", null ],
     [ "func_8024026C_CEE4CC", "CEE2A0_8c.html#a081f0fbf488e90b176b56764c7978804", null ],
     [ "func_802402C0_CEE520", "CEE2A0_8c.html#af0fd44412eb7b0766c45202411c0bbc9", null ],
     [ "func_802402F8_CEE558", "CEE2A0_8c.html#aa439b6ecdeb1d2c82086e8475da499c4", null ],

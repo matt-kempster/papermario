@@ -1,5 +1,5 @@
 var 842C20_8c =
 [
-    [ "func_80240050", "842C20_8c.html#a414b79bf574505377384cf18f4907909", null ],
-    [ "func_80240194", "842C20_8c.html#afcf6654b9ce11af38846268b7eeea3fa", null ]
+    [ "func_80240050_842C20", "842C20_8c.html#afe8970bfac86780fa3e23edbba1c6ab2", null ],
+    [ "func_80240194_842D64", "842C20_8c.html#a4661413d6cb0ca0df7310dea7dee6b26", null ]
 ];

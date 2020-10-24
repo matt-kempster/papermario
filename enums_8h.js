@@ -532,6 +532,7 @@ var enums_8h =
     [ "Cam_BATTLE", "enums_8h.html#a9ac85a745d2422d80d92bba890fa1a21", null ],
     [ "Cam_TATTLE", "enums_8h.html#a7fc927cad06937388a8328dfb2ed15c2", null ],
     [ "Cam_CAM3", "enums_8h.html#af09579f959ef0488f1dac4ebbfbfc69d", null ],
+    [ "LOOKUP_ITEM", "enums_8h.html#ac924fd3aa6d91456bf8e641b98f38a79", null ],
     [ "ItemId_JUMP", "enums_8h.html#a68e0718bf55de14f90be6f349b8908c2", null ],
     [ "ItemId_SPIN_JUMP", "enums_8h.html#a25b76110b5127c02971459b36946901d", null ],
     [ "ItemId_TORNADO_JUMP", "enums_8h.html#aabb30e4a17482144ded4a459a8d59ec3", null ],

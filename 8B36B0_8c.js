@@ -1,6 +1,6 @@
 var 8B36B0_8c =
 [
-    [ "func_80243640", "8B36B0_8c.html#a61faa24ba6c33246b89d48b0c4880f28", null ],
-    [ "func_8024366C", "8B36B0_8c.html#a2d1dc47363e0249eebcbd15a62a08fab", null ],
-    [ "func_802436FC", "8B36B0_8c.html#a473dbd04342d45ef0e05c11faa7552be", null ]
+    [ "func_80243640_8B36B0", "8B36B0_8c.html#a14750f321c4688b33ba7e79175c8f3a6", null ],
+    [ "func_8024366C_8B36DC", "8B36B0_8c.html#a21107c373ddf608d6bf142cdd22ef506", null ],
+    [ "func_802436FC_8B376C", "8B36B0_8c.html#ae9f922f17ecb619599f01a717a24485c", null ]
 ];

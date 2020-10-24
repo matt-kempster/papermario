@@ -11,6 +11,6 @@ var AFDE00_8c =
     [ "func_802404D4_AFE014", "AFDE00_8c.html#a2f627b998525af15806a9f8e21522a59", null ],
     [ "func_80240550_AFE090", "AFDE00_8c.html#a0a966d0a4c31a66f043328a7eccd8f9a", null ],
     [ "func_80240584_AFE0C4", "AFDE00_8c.html#aba25401c31c2d42c24de45825b254159", null ],
-    [ "func_802405B4", "AFDE00_8c.html#a6cb497650f7c42d878c1c9c55f69fe08", null ],
+    [ "func_802405B4_AFE0F4", "AFDE00_8c.html#ac6cc543035e22f208493822b9a9d4b3d", null ],
     [ "func_802405BC_AFE0FC", "AFDE00_8c.html#a4208307c839348a85ccdf6ac852b7a79", null ]
 ];

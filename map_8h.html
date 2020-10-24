@@ -118,7 +118,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(sym)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="kmr__12_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td></tr>
+<tr class="memitem:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(sym)&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="tst__13_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td></tr>
 <tr class="separator:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c">ENTRY_COUNT</a>(entryList)&#160;&#160;&#160;(sizeof(entryList) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td></tr>
 <tr class="separator:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,7 +136,7 @@ Macros</h2></td></tr>
 <tr class="separator:a6a8772393985bcc0c722fb25a0bda179"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe59bbf12bfe00c5c6bedf8ca9387a13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#afe59bbf12bfe00c5c6bedf8ca9387a13">REDUCED_FLOWER_DROPS</a>(attempts)</td></tr>
 <tr class="separator:afe59bbf12bfe00c5c6bedf8ca9387a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a242e2a4dcc3fc144fcde084a57002c5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a242e2a4dcc3fc144fcde084a57002c5c">ANIMATION</a>(sprite,  palette,  anim)&#160;&#160;&#160;(sprite &lt;&lt; 16) + (palette &lt;&lt; 8) + anim</td></tr>
+<tr class="memitem:a242e2a4dcc3fc144fcde084a57002c5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a242e2a4dcc3fc144fcde084a57002c5c">ANIMATION</a>(sprite,  palette,  anim)&#160;&#160;&#160;((sprite &lt;&lt; 16) + (palette &lt;&lt; 8) + anim)</td></tr>
 <tr class="separator:a242e2a4dcc3fc144fcde084a57002c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cfcc617458312fb7daa9a0eca0efcc0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a7cfcc617458312fb7daa9a0eca0efcc0">OVERRIDE_MOVEMENT_SPEED</a>(speed)&#160;&#160;&#160;(speed * 32767)</td></tr>
 <tr class="separator:a7cfcc617458312fb7daa9a0eca0efcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">sym</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="kmr__12_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="macros_8h.html#a34c9712d541422ef7f3a84069ac05484">NAMESPACE</a>(<a class="el" href="tst__13_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15">MAP_NAME</a>, sym)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -361,7 +361,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(sprite &lt;&lt; 16) + (palette &lt;&lt; 8) + anim</td>
+          <td></td><td>&#160;&#160;&#160;((sprite &lt;&lt; 16) + (palette &lt;&lt; 8) + anim)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -501,7 +501,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 17:47:19 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Oct 24 2020 04:23:19 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

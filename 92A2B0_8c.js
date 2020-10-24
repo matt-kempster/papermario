@@ -2,7 +2,7 @@ var 92A2B0_8c =
 [
     [ "func_80240000_92A2B0", "92A2B0_8c.html#a9d0f433abf01ee9d8ecdade103993de4", null ],
     [ "func_80240040_92A2F0", "92A2B0_8c.html#a7b80ff1d25f9efab10743de1e12a49c4", null ],
-    [ "func_80240164", "92A2B0_8c.html#a10b4fe53a540352bc4daaa7577372b69", null ],
-    [ "func_80240338", "92A2B0_8c.html#a2fe7e80fd2eaaded71d9efe69d86c0d9", null ],
-    [ "func_80240364", "92A2B0_8c.html#a0ca05aa52419b88ba5adfa34a210beab", null ]
+    [ "func_80240164_92A414", "92A2B0_8c.html#a1121297be7b9443c433556d1a7d90490", null ],
+    [ "func_80240338_92A5E8", "92A2B0_8c.html#ac119563e1aaf0e08228c9aaa7d95611f", null ],
+    [ "func_80240364_92A614", "92A2B0_8c.html#a18b39a04483062e6e9fb3ad32e55b40a", null ]
 ];

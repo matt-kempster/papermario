@@ -1,6 +1,5 @@
 var D2FC80_8c =
 [
-    [ "func_80240000_D2FC80", "D2FC80_8c.html#a212b3f82b615405d93d44a8681340b7b", null ],
     [ "func_8024001C_D2FC9C", "D2FC80_8c.html#adaa7b88e3bbe9f874fa814a8a5517d2a", null ],
     [ "func_8024003C_D2FCBC", "D2FC80_8c.html#afbd5af9745f96ea56105695b6ffc6ed4", null ],
     [ "func_80240068_D2FCE8", "D2FC80_8c.html#a1bdccbf27b24588108b1b4b7779cde7c", null ],

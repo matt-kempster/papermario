@@ -13,8 +13,6 @@ var D64600_8c =
     [ "func_80240E84_D65464", "D64600_8c.html#ae98d5214f1f4ccde39be892d47d1971d", null ],
     [ "func_80240EB8_D65498", "D64600_8c.html#a95b5bc540b7a263b95ea81f8bbb5058b", null ],
     [ "func_80240EEC_D654CC", "D64600_8c.html#a1ef896f1c01fcf767f84d1a193130e19", null ],
-    [ "func_80240F20_D65500", "D64600_8c.html#a1a0eedc42475326fff00403f7d0768c8", null ],
-    [ "func_80240F7C_D6555C", "D64600_8c.html#abaff6dc86e99f64e7daf6b85fe3631dc", null ],
     [ "func_8024114C_D6572C", "D64600_8c.html#a59fee1f531023bdab2cb0e923831d77a", null ],
     [ "func_802411A0_D65780", "D64600_8c.html#a57cbd0a49a6ee570dbe0d7bf8af48989", null ],
     [ "func_802411D8_D657B8", "D64600_8c.html#aaacd0e34f0b59d1f2f18af9907a8360a", null ],

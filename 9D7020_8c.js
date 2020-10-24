@@ -7,10 +7,7 @@ var 9D7020_8c =
     [ "func_802401D0_9D71F0", "9D7020_8c.html#a138f85913c5e64bd3f1fa4b5de82a72d", null ],
     [ "func_8024023C_9D725C", "9D7020_8c.html#adf2c1db4af0d51ce57452e7e8bea41cd", null ],
     [ "func_802402E0_9D7300", "9D7020_8c.html#a417bbe64f239c640f8fefc74c0508794", null ],
-    [ "func_80240394_9D73B4", "9D7020_8c.html#ae361adb860f524ea4ae16a6577671b82", null ],
-    [ "func_802403F8", "9D7020_8c.html#ad5aec267f85cb305d73fdd6931541bac", null ],
-    [ "func_80240454", "9D7020_8c.html#aad0c102cc37f9f7d2de862795e239e68", null ],
     [ "func_80240624_9D7644", "9D7020_8c.html#a5264be949ac631815d2e27e551890ab8", null ],
-    [ "func_80240678", "9D7020_8c.html#a14730d4c630453c6d70b21db356bd762", null ],
+    [ "func_80240678_9D7698", "9D7020_8c.html#a5968f6872fcb607c1afb9b85b314b7a8", null ],
     [ "func_802406B0_9D76D0", "9D7020_8c.html#a6ce9f5dd870d2555f27a96ca4862ca24", null ]
 ];

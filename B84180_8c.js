@@ -13,8 +13,7 @@ var B84180_8c =
     [ "func_80240AD4_B84C54", "B84180_8c.html#a2a2a6968f5b0f07b75b7011278b68513", null ],
     [ "func_80240B94_B84D14", "B84180_8c.html#ab30e2331bf08f4af2d82dae70c280440", null ],
     [ "func_80240E90_B85010", "B84180_8c.html#a3fc13a49d9eea85699be71d2b526d58a", null ],
-    [ "func_80240F44_B850C4", "B84180_8c.html#a5d98555f1afb5273dcb97df7d784d9cd", null ],
-    [ "func_80240FA8", "B84180_8c.html#a3f7e9c88a21ce7cc9fb753e97030c41e", null ],
+    [ "func_80240FA8_B85128", "B84180_8c.html#a723182483a216c953ef61302ae26b764", null ],
     [ "func_80240FC4_B85144", "B84180_8c.html#ab79fafbaec94d8541bd886115da04978", null ],
-    [ "func_80240FE0_B85160", "B84180_8c.html#a18af468d730267fd90dc11bd9d5c99a8", null ]
+    [ "PostChapter5StatUpdate", "B84180_8c.html#af81265ec026f31c904bb0172ed427934", null ]
 ];

@@ -53,7 +53,7 @@ var structPlayerData =
     [ "quizzesCorrect", "structPlayerData.html#a60222ac4336d1757aee4d6e4946eb045", null ],
     [ "unk_2C4", "structPlayerData.html#aa25be816b585886c21ee734e862a98d0", null ],
     [ "unk_2F4", "structPlayerData.html#a7222b25bca185e1577a4d82ad78c670e", null ],
-    [ "unk_324", "structPlayerData.html#a0301122fee36552ad324aed6aaa5d315", null ],
+    [ "tradeEventStartTime", "structPlayerData.html#a411ef6d35bd8bb1a43c2b674751c3e1f", null ],
     [ "unk_328", "structPlayerData.html#a58fe350a9b13dea9bdeec3fa4ab82df8", null ],
     [ "starPiecesCollected", "structPlayerData.html#a5466e11f695273e0f55fffa9de3babdd", null ],
     [ "jumpGamePlays", "structPlayerData.html#ac6eb55f0aa3186783f4cbc5691703b44", null ],

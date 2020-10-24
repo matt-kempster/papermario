@@ -5,5 +5,6 @@ var dir_658e77cc70b830e6690806d002ac26a3 =
     [ "DCD3B0.c", "DCD3B0_8c.html", "DCD3B0_8c" ],
     [ "DCD3F0.c", "DCD3F0_8c.html", "DCD3F0_8c" ],
     [ "DCD6B0.c", "DCD6B0_8c.html", "DCD6B0_8c" ],
-    [ "DD02E0.c", "DD02E0_8c.html", "DD02E0_8c" ]
+    [ "DD02E0.c", "DD02E0_8c.html", "DD02E0_8c" ],
+    [ "omo_09.h", "omo__09_8h.html", "omo__09_8h" ]
 ];

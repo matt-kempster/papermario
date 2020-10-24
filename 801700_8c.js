@@ -1,5 +1,5 @@
 var 801700_8c =
 [
-    [ "func_80240E80", "801700_8c.html#ad9caea34dcaabf38e115ecc9bfa2bb83", null ],
-    [ "func_80240ED8", "801700_8c.html#ad71e7338bacd1cd62dc9292dd31940a5", null ]
+    [ "func_80240E80_801700", "801700_8c.html#a05930bffed483b9cc13eee6301a456dd", null ],
+    [ "func_80240ED8_801758", "801700_8c.html#a2d2b7214211933df22f34bf86414da8b", null ]
 ];

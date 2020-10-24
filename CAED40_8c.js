@@ -1,6 +1,5 @@
 var CAED40_8c =
 [
-    [ "func_80240000_CAED40", "CAED40_8c.html#a0c9ccef419f28f8fa05215aa5ab5d826", null ],
     [ "func_8024001C_CAED5C", "CAED40_8c.html#a27b8c7c89dfa55b97e17521d4392956e", null ],
     [ "func_8024003C_CAED7C", "CAED40_8c.html#afe4942edfcaf36009503447b7b49ff7d", null ],
     [ "func_80240068_CAEDA8", "CAED40_8c.html#a403c0d95dea605d0d8c8098affa50b43", null ],

@@ -8,6 +8,5 @@ var B9DB60_8c =
     [ "func_80240AAC_B9E40C", "B9DB60_8c.html#a101a8a020050bdb77aa9df22250693e8", null ],
     [ "func_80240DAC_B9E70C", "B9DB60_8c.html#a7a39f530db7921071cb6df0988942acb", null ],
     [ "func_80240DF0_B9E750", "B9DB60_8c.html#ae01350730f9a42d8010ea6db7d697bb5", null ],
-    [ "func_80241014", "B9DB60_8c.html#adc47cccd113c2f5251ba7c910f211574", null ],
-    [ "func_802410C8_B9EA28", "B9DB60_8c.html#a0a2ead0b386906e19fb3980b42f473bb", null ]
+    [ "func_80241014_B9E974", "B9DB60_8c.html#ae31dcac65ff1464b4ff2c1acaa06d9a4", null ]
 ];

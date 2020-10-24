@@ -90,46 +90,58 @@ $(document).ready(function(){initNavTree('guOrtho_8c_source.html',''); initResiz
 <div class="contents">
 <a href="guOrtho_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="guOrtho_8c.html#a2c595894c4e3e37b69900e602e4071cd">    3</a></span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#a2c595894c4e3e37b69900e602e4071cd">guOrthoF</a>);</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">/*void guOrthoF(f32 mf[4][4], f32 left, f32 right, f32 bottom, f32 top, f32 near, f32 far, f32 scale) {</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">    s32 i, j;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">    guMtxIdentF(mf);</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">    mf[0][0] = 2 / (right - left);</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">    mf[1][1] = 2 / (top - bottom);</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    mf[2][2] = -2 / (far - near);</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">    mf[3][0] = -(right + left) / (right - left);</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">    mf[3][1] = -(top + bottom) / (top - bottom);</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">    mf[3][2] = -(far + near) / (far - near);</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">    mf[3][3] = 1;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">    for (i = 0; i &lt; 4; i++) {</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">        for (j = 0; j &lt; 4; j++) {</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">            mf[i][j] *= scale;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">        }</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">}*/</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="guOrtho_8c.html#a31591fcedca53be3c5d84a03b914a101">   24</a></span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#a31591fcedca53be3c5d84a03b914a101">guOrtho</a>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*void guOrtho(Mtx* mtx, f32 left, f32 right, f32 bottom, f32 top, f32 near, f32 far, f32 scale) {</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">    float mf[4][4];</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">    guOrthoF(mf, left, right, bottom, top, near, far, scale);</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    guMtxF2L(mf, mtx);</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">}*/</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">    4</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a>(<span class="keywordtype">float</span> mf[4][4], <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t,</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;              <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f, <span class="keywordtype">float</span> scale) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    s32 i, j;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="guMtxIdentF_8c.html#a257a86497fc08677370948eda3163595">guMtxIdentF</a>(mf);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    mf[0][0] = 2 / (r - l);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    mf[1][1] = 2 / (t - b);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    mf[2][2] = -2 / (f - n);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    mf[3][0] = -(r + l) / (r - l);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    mf[3][1] = -(t + b) / (t - b);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    mf[3][2] = -(f + n) / (f - n);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    mf[3][3] = 1;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; 4; i++) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; 4; j++) {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            mf[i][j] *= scale;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a>, <span class="keywordtype">float</span> mf[4][4], <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t, <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">float</span> scale);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a>(Mtx* m, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;             <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f, <span class="keywordtype">float</span> scale) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> mf[4][4];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a>(mf, l, r, b, t, n, f, scale);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="code__42900__len__80_8c.html#a40ab2d64c609839ff1e0ef0de2d0dcc4">guMtxF2L</a>(mf, m);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a>, Mtx* m, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f, <span class="keywordtype">float</span> scale);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amacros_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00007">macros.h:7</a></div></div>
-<div class="ttc" id="aguOrtho_8c_html_a31591fcedca53be3c5d84a03b914a101"><div class="ttname"><a href="guOrtho_8c.html#a31591fcedca53be3c5d84a03b914a101">guOrtho</a></div><div class="ttdeci">s32 guOrtho()</div><div class="ttdef"><b>Definition:</b> <a href="guOrtho_8c_source.html#l00024">guOrtho.c:24</a></div></div>
-<div class="ttc" id="aguOrtho_8c_html_a2c595894c4e3e37b69900e602e4071cd"><div class="ttname"><a href="guOrtho_8c.html#a2c595894c4e3e37b69900e602e4071cd">guOrthoF</a></div><div class="ttdeci">s32 guOrthoF()</div><div class="ttdef"><b>Definition:</b> <a href="guOrtho_8c_source.html#l00003">guOrtho.c:3</a></div></div>
+<div class="ttc" id="aguOrtho_8c_html_a7e6644e909e37ff61d49723b906264b3"><div class="ttname"><a href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a></div><div class="ttdeci">void guOrtho(Mtx *m, float l, float r, float b, float t, float n, float f, float scale)</div><div class="ttdef"><b>Definition:</b> <a href="guOrtho_8c_source.html#l00030">guOrtho.c:30</a></div></div>
+<div class="ttc" id="aguMtxIdentF_8c_html_a257a86497fc08677370948eda3163595"><div class="ttname"><a href="guMtxIdentF_8c.html#a257a86497fc08677370948eda3163595">guMtxIdentF</a></div><div class="ttdeci">void guMtxIdentF(float mf[4][4])</div><div class="ttdef"><b>Definition:</b> <a href="guMtxIdentF_8c_source.html#l00003">guMtxIdentF.c:3</a></div></div>
+<div class="ttc" id="acode__42900__len__80_8c_html_a40ab2d64c609839ff1e0ef0de2d0dcc4"><div class="ttname"><a href="code__42900__len__80_8c.html#a40ab2d64c609839ff1e0ef0de2d0dcc4">guMtxF2L</a></div><div class="ttdeci">void guMtxF2L(float mf[4][4], Mtx *m)</div><div class="ttdef"><b>Definition:</b> <a href="code__42900__len__80_8c_source.html#l00003">code_42900_len_80.c:3</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
+<div class="ttc" id="aguOrtho_8c_html_acfef69975824633b7dd94338ce823e93"><div class="ttname"><a href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a></div><div class="ttdeci">void guOrthoF(float mf[4][4], float l, float r, float b, float t, float n, float f, float scale)</div><div class="ttdef"><b>Definition:</b> <a href="guOrtho_8c_source.html#l00004">guOrtho.c:4</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="guOrtho_8c.html">guOrtho.c</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 17:47:18 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Oct 24 2020 04:23:17 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

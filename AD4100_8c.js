@@ -7,5 +7,5 @@ var AD4100_8c =
     [ "func_802406E8_AD4778", "AD4100_8c.html#a207cbde362942c3d15658ad7ac37c14e", null ],
     [ "func_80240714_AD47A4", "AD4100_8c.html#a9d381fb4240f7cd72858441f9221abb6", null ],
     [ "func_80240730_AD47C0", "AD4100_8c.html#a085bce556cde31a64606c41d03171d60", null ],
-    [ "func_8024089C", "AD4100_8c.html#ad0d2d0e2b80f6424cedf1ecbae94abc0", null ]
+    [ "func_8024089C_AD492C", "AD4100_8c.html#a22f78cd83cde42a337b2108b368d74cf", null ]
 ];

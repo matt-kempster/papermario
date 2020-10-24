@@ -118,7 +118,7 @@ var code__b72b0__len__15ed0_8c =
     [ "clear_item_entity_flags", "code__b72b0__len__15ed0_8c.html#a30c3d2cb75a6affb00e2394e700f138e", null ],
     [ "func_801341B0", "code__b72b0__len__15ed0_8c.html#a4450f0736a61e2a24fc58c1aefd65f40", null ],
     [ "func_801341E8", "code__b72b0__len__15ed0_8c.html#a79f5c166f5b07ab1b53f1a88f480881d", null ],
-    [ "set_item_entity_position", "code__b72b0__len__15ed0_8c.html#a01f1f9a9d9b3b8fbfbaace49913e7242", null ],
+    [ "set_item_entity_position", "code__b72b0__len__15ed0_8c.html#afde0106b1fdb653cc60b548bb7e4f253", null ],
     [ "func_80134230", "code__b72b0__len__15ed0_8c.html#af9c3bdb1b912ce01d36a0acd3d8fd86c", null ],
     [ "func_80134240", "code__b72b0__len__15ed0_8c.html#a517d5c82468f1de61281bad2030ff9bb", null ],
     [ "update_item_entity_collectable", "code__b72b0__len__15ed0_8c.html#a8e8137845b0cc06511d2e33bb7fb69c1", null ],

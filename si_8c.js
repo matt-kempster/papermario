@@ -95,7 +95,7 @@ var si_8c =
     [ "si_handle_resume", "si_8c.html#a93fbc0c6431e7ae7eb84678e2d4b3a9b", null ],
     [ "si_handle_does_script_exist", "si_8c.html#a48366cb9cef316c798b23d5f7762e736", null ],
     [ "si_standard_trigger_executor", "si_8c.html#a3bdbbd79b6b9fe67cb1a1537b806896c", null ],
-    [ "si_handle_bind_lock", "si_8c.html#a17031d8e428e448ba463d08145721559", null ],
+    [ "si_handle_bind_lock", "si_8c.html#a8f21dea4abab1dfc6c6e9daa190b5c57", null ],
     [ "si_handle_thread", "si_8c.html#adf6158639986322255b7d037bf79dd1b", null ],
     [ "si_handle_end_thread", "si_8c.html#a1f2b6abe81e472e1cc815eda82b49ac7", null ],
     [ "si_handle_child_thread", "si_8c.html#a520666f4589de0cda99375eafc3f8d60", null ],

@@ -1,6 +1,5 @@
 var C76CE0_8c =
 [
-    [ "func_80240000_C76CE0", "C76CE0_8c.html#a1b6a9937a78d82ad8df2a2fd12fcfa0c", null ],
     [ "func_8024001C_C76CFC", "C76CE0_8c.html#a080551151c51fd60a683863f3b9cdc58", null ],
     [ "func_8024003C_C76D1C", "C76CE0_8c.html#a22ed6b8033e0fa2a7e61fc1ee53cf1c0", null ],
     [ "func_80240068_C76D48", "C76CE0_8c.html#aad570ef0b47d4ce7cc74da9938cc1a18", null ],

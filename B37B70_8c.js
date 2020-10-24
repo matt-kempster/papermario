@@ -1,4 +1,4 @@
 var B37B70_8c =
 [
-    [ "func_80242FA0", "B37B70_8c.html#a9a0c02f25716066f275f3a949c152941", null ]
+    [ "func_80242FA0_B37B70", "B37B70_8c.html#a87a5ef73bdb102082af1841ce170a70d", null ]
 ];

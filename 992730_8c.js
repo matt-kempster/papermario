@@ -15,8 +15,8 @@ var 992730_8c =
     [ "func_802411F8_993928", "992730_8c.html#ac202cb7bdc931d1ecf2072f50cb4e4f4", null ],
     [ "func_802415C0_993CF0", "992730_8c.html#a9d672e0980b96390d21e4136d38aa4c9", null ],
     [ "func_80241610_993D40", "992730_8c.html#ac41be8c44819ec8c4aeda8257a9cdf3e", null ],
-    [ "func_80241AF0", "992730_8c.html#a142f40601c766f3a0cb900a91be8190d", null ],
-    [ "func_80241BC4", "992730_8c.html#ae1d0a829a31c3e06c7670ec53708989b", null ],
+    [ "func_80241AF0_994220", "992730_8c.html#a71b58c56e5e8b29e17abeca289f09bbd", null ],
+    [ "func_80241BC4_9942F4", "992730_8c.html#adcc96fe23943074ef97ba92d7a545267", null ],
     [ "func_80241BEC_99431C", "992730_8c.html#abf22f9ec4f54f75bf30ab37d6a62c8c5", null ],
-    [ "func_80241CA0", "992730_8c.html#abbe06965d32688fd754699889ecc676f", null ]
+    [ "func_80241CA0_9943D0", "992730_8c.html#af52bcb5772bf41193f92ebe3ab85d75a", null ]
 ];

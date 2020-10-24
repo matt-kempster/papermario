@@ -7,6 +7,6 @@ var CE6700_8c =
     [ "func_802405FC_CE6CFC", "CE6700_8c.html#a649edc59d053b3886318ed7e7d5f430e", null ],
     [ "func_80240708_CE6E08", "CE6700_8c.html#a42114322d2448b123f74a3f22d5ee15a", null ],
     [ "func_802407F4_CE6EF4", "CE6700_8c.html#a1beb1795ff2ab0d9464d6cf58d954666", null ],
-    [ "func_80240918", "CE6700_8c.html#a6b58a50117ea0d19bf30324f2a62b764", null ],
+    [ "func_80240918_CE7018", "CE6700_8c.html#a92ff62c1441ffddf06defc41780016d7", null ],
     [ "func_80240B00_CE7200", "CE6700_8c.html#ac73ba7c699f924668f4644928b4fb0f3", null ]
 ];

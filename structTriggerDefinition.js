@@ -8,5 +8,5 @@ var structTriggerDefinition =
     [ "unk_10", "structTriggerDefinition.html#ad60983b61f5c56d4f0b8ec95116ec0ee", null ],
     [ "unk_14", "structTriggerDefinition.html#ad0f92948b859dfefa1fd97f187a91dd4", null ],
     [ "inputArg3", "structTriggerDefinition.html#af26fb4f407eeb6ac659bbecbda262bbb", null ],
-    [ "unk_1C", "structTriggerDefinition.html#a7c784a9e557c86cac7868788874788a5", null ]
+    [ "unk_1C", "structTriggerDefinition.html#aaf5176a5337ebcfbe4e765f1eedc1fcd", null ]
 ];

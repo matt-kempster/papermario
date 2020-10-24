@@ -95,47 +95,143 @@ $(document).ready(function(){initNavTree('guOrtho_8c.html',''); initResizable();
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2c595894c4e3e37b69900e602e4071cd"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guOrtho_8c.html#a2c595894c4e3e37b69900e602e4071cd">guOrthoF</a> ()</td></tr>
-<tr class="separator:a2c595894c4e3e37b69900e602e4071cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31591fcedca53be3c5d84a03b914a101"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guOrtho_8c.html#a31591fcedca53be3c5d84a03b914a101">guOrtho</a> ()</td></tr>
-<tr class="separator:a31591fcedca53be3c5d84a03b914a101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfef69975824633b7dd94338ce823e93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a> (float mf[4][4], float l, float r, float b, float t, float n, float f, float scale)</td></tr>
+<tr class="separator:acfef69975824633b7dd94338ce823e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6644e909e37ff61d49723b906264b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a> (Mtx *m, float l, float r, float b, float t, float n, float f, float scale)</td></tr>
+<tr class="separator:a7e6644e909e37ff61d49723b906264b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a2c595894c4e3e37b69900e602e4071cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c595894c4e3e37b69900e602e4071cd">&#9670;&nbsp;</a></span>guOrthoF()</h2>
+<a id="acfef69975824633b7dd94338ce823e93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfef69975824633b7dd94338ce823e93">&#9670;&nbsp;</a></span>guOrthoF()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 guOrthoF </td>
+          <td class="memname">void guOrthoF </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>mf</em>[4][4], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guOrtho_8c_source.html#l00003">3</a> of file <a class="el" href="guOrtho_8c_source.html">guOrtho.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guOrtho_8c_source.html#l00004">4</a> of file <a class="el" href="guOrtho_8c_source.html">guOrtho.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho()</a>.</p>
 
 </div>
 </div>
-<a id="a31591fcedca53be3c5d84a03b914a101"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31591fcedca53be3c5d84a03b914a101">&#9670;&nbsp;</a></span>guOrtho()</h2>
+<a id="a7e6644e909e37ff61d49723b906264b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6644e909e37ff61d49723b906264b3">&#9670;&nbsp;</a></span>guOrtho()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 guOrtho </td>
+          <td class="memname">void guOrtho </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">Mtx *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="guOrtho_8c_source.html#l00024">24</a> of file <a class="el" href="guOrtho_8c_source.html">guOrtho.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="guOrtho_8c_source.html#l00030">30</a> of file <a class="el" href="guOrtho_8c_source.html">guOrtho.c</a>.</p>
 
 </div>
 </div>
@@ -145,7 +241,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="guOrtho_8c.html">guOrtho.c</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 17:47:20 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Oct 24 2020 04:23:19 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

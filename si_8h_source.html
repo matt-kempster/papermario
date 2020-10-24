@@ -232,17 +232,15 @@ $(document).ready(function(){initNavTree('si_8h_source.html',''); initResizable(
 <div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="si_8h.html#a4a9eeba542a979a176668677c2de18a4">  142</a></span>&#160;<span class="preprocessor">#define SI_END_CHILD_THREAD() SI_CMD(0x59)</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="si_8h.html#ab6432b17b39b1d109bff488b3dbc647f">  144</a></span>&#160;<span class="preprocessor">#define EXIT_WALK_SCRIPT(walkDistance, exitIdx, map, entryIdx) \</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">    { \</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">        SI_GROUP(0x1B), \</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">        SI_CALL(UseExitHeading, walkDistance, exitIdx), \</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        SI_EXEC(ExitWalk), \</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">        SI_CALL(GotoMap, map, entryIdx), \</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        SI_WAIT_FRAMES(100), \</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">        SI_RETURN(), \</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">        SI_END(), \</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">    }</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor">    SCRIPT({ \</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">        group 0x1B; \</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">        UseExitHeading(walkDistance, exitIdx); \</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        spawn ExitWalk; \</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">        GotoMap(map, entryIdx); \</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        sleep 100; \</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">    })</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asi_8h_html_a58f9cc8b286b8347cb9cb73aed405500"><div class="ttname"><a href="si_8h.html#a58f9cc8b286b8347cb9cb73aed405500">Bytecode</a></div><div class="ttdeci">s32 Bytecode</div><div class="ttdef"><b>Definition:</b> <a href="si_8h_source.html#l00006">si.h:6</a></div></div>
@@ -252,7 +250,7 @@ $(document).ready(function(){initNavTree('si_8h_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="si_8h.html">si.h</a></li>
-    <li class="footer">Generated on Thu Oct 22 2020 17:47:18 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Oct 24 2020 04:23:17 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

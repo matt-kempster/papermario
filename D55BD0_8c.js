@@ -14,7 +14,6 @@ var D55BD0_8c =
     [ "func_80240EB8_D56A68", "D55BD0_8c.html#a177d0606509d38260f213a02f7d52575", null ],
     [ "func_80240EEC_D56A9C", "D55BD0_8c.html#ac180fe2f3c93acca0d46c7b6d9f02e68", null ],
     [ "func_80240F20_D56AD0", "D55BD0_8c.html#adc4d705061c7c471d47c9a3fec7a8418", null ],
-    [ "func_80240FD4_D56B84", "D55BD0_8c.html#a6eb33e0088d4c760d1789dae86954ff9", null ],
     [ "func_80241038_D56BE8", "D55BD0_8c.html#a706b82f94d20818735c891403958440d", null ],
-    [ "func_80241188", "D55BD0_8c.html#aa466a9b4b6f5b68b0fd8d2eb75ebeaaa", null ]
+    [ "func_80241188_D56D38", "D55BD0_8c.html#ae17c12614fdc9b9f471728a6c3480282", null ]
 ];
