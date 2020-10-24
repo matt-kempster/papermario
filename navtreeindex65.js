@@ -1,5 +1,6 @@
 var NAVTREEINDEX65 =
 {
+"si_8h.html#a7853fc446ead9b99c48c6ec5c1a6f0b1":[5,0,0,8,6],
 "si_8h.html#a790300c057eace33142bc223a61337c1":[5,0,0,8,22],
 "si_8h.html#a792318bfc71ad1dd93425d31f08da9b0":[5,0,0,8,28],
 "si_8h.html#a7ca9b92c5eb09fdc024a9002a3b7c8f0":[5,0,0,8,86],
@@ -248,6 +249,5 @@ var NAVTREEINDEX65 =
 "structBackgroundHeader.html#ac07d298674814566ea063b0d5d050602":[4,0,6,0],
 "structBattleStatus.html":[4,0,7],
 "structBattleStatus.html#a010938e522b383bae968fcd0d2f2b98d":[4,0,7,25],
-"structBattleStatus.html#a074ade29fd04e9c9c444d988fbc2b0f4":[4,0,7,60],
-"structBattleStatus.html#a13daa79f9648bda893d70e1f5b68b3c4":[4,0,7,52]
+"structBattleStatus.html#a074ade29fd04e9c9c444d988fbc2b0f4":[4,0,7,60]
 };

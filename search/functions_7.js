@@ -67,7 +67,7 @@ var searchData=
   ['get_5fstring_5fproperties_24956',['get_string_properties',['../code__b72b0__len__15ed0_8c.html#af39da59cc4a0887cb0b2791c5617ee60',1,'code_b72b0_len_15ed0.c']]],
   ['get_5fstring_5fwidth_24957',['get_string_width',['../code__b72b0__len__15ed0_8c.html#adb5fa843ab666d68bdf05a189962cb2d',1,'code_b72b0_len_15ed0.c']]],
   ['get_5ftrigger_5fby_5fid_24958',['get_trigger_by_id',['../code__dbd70__len__700_8c.html#aadbf224b3febdf788315958febbe4b64',1,'code_dbd70_len_700.c']]],
-  ['get_5fvariable_24959',['get_variable',['../functions_8h.html#aa85c340a9f29cd59dba42e2f6afb6623',1,'functions.h']]],
+  ['get_5fvariable_24959',['get_variable',['../si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623',1,'get_variable(ScriptInstance *script, Bytecode var):&#160;si.c'],['../functions_8h.html#aa85c340a9f29cd59dba42e2f6afb6623',1,'get_variable(ScriptInstance *script, Bytecode var):&#160;si.c']]],
   ['get_5fvariable_5findex_24960',['get_variable_index',['../si_8c.html#ae62b51d7002076ddeb3894366ecad73f',1,'si.c']]],
   ['get_5fvariable_5findex_5falt_24961',['get_variable_index_alt',['../si_8c.html#af669c98bd6ac9c796c7aad1a3c737934',1,'si.c']]],
   ['get_5fworld_5ffog_5fcolor_24962',['get_world_fog_color',['../code__a5dd0__len__114e0_8c.html#afc4f63beda09beb9eab0489f14686fa9',1,'code_a5dd0_len_114e0.c']]],

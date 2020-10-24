@@ -1,5 +1,6 @@
 var NAVTREEINDEX68 =
 {
+"structGameStatus.html#aa078e59a4311a4eaca37cd6a6a935e08":[4,0,31,47],
 "structGameStatus.html#aa0e32265c114ba38a33d4a5babbcf883":[4,0,31,76],
 "structGameStatus.html#aa20516fdeca5f27bbda6578eae949c5c":[4,0,31,53],
 "structGameStatus.html#aa48cf1e0089f35d7c97c2e64de72f4e3":[4,0,31,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX68 =
 "structPlayerData.html#a06ef0069f72efccfd79b5998a3bd239d":[4,0,53,62],
 "structPlayerData.html#a094db221c3fc557644f9864681cfdf5c":[4,0,53,35],
 "structPlayerData.html#a0a02db7000c67107759e7639409ba8fa":[4,0,53,42],
-"structPlayerData.html#a0bd8f5a43ddab146e471f94ddd09770a":[4,0,53,7],
-"structPlayerData.html#a16d2b69bcdc7eca7752ce44d7d5f2dd6":[4,0,53,28]
+"structPlayerData.html#a0bd8f5a43ddab146e471f94ddd09770a":[4,0,53,7]
 };

@@ -132,14 +132,14 @@ var NAVTREEINDEX =
 "osr__01_8h.html",
 "sbk__50_8h.html",
 "script__api_2common_8h.html#ac285ac14c5aae6c003abdaec14945e13",
-"si_8h.html#a790300c057eace33142bc223a61337c1",
-"structBattleStatus.html#a144b9e71cd004d3d56c1adb212614719",
-"structCollisionStatus.html#a338fe109320a6a6d606ef92223743157",
-"structGameStatus.html#aa0e32265c114ba38a33d4a5babbcf883",
-"structPlayerData.html#a1fcf9708f31ea9c3dbc39c7c091c207b",
-"structShop.html#a46ab07e3110cb161732cac81cd3e445e",
-"structZone.html#a12afe2048ec850311577e05216b27dcd",
-"variables_8h.html#acf3857c58c3e4560cb1bb7353150d3ed"
+"si_8h.html#a7853fc446ead9b99c48c6ec5c1a6f0b1",
+"structBattleStatus.html#a13daa79f9648bda893d70e1f5b68b3c4",
+"structCollisionStatus.html#a2ae329001c581ccaaaa930f7dabf4cb9",
+"structGameStatus.html#aa078e59a4311a4eaca37cd6a6a935e08",
+"structPlayerData.html#a16d2b69bcdc7eca7752ce44d7d5f2dd6",
+"structShop.html",
+"structZone.html",
+"variables_8h.html#ac823d6f511c38f067f7932a9eb12eb5f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

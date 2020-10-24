@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structBattleStatus.html#a13daa79f9648bda893d70e1f5b68b3c4":[4,0,7,52],
 "structBattleStatus.html#a144b9e71cd004d3d56c1adb212614719":[4,0,7,104],
 "structBattleStatus.html#a15c826efd108afdd4e0576369f16b80b":[4,0,7,40],
 "structBattleStatus.html#a15da0acc28ffe7db0aec5bc7e052f7f1":[4,0,7,64],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structCollisionHeader.html#af06d894375d4ae0426856eae4173764e":[4,0,16,0],
 "structCollisionStatus.html":[4,0,17],
 "structCollisionStatus.html#a217b118bec1ef427a17c5303b5647684":[4,0,17,4],
-"structCollisionStatus.html#a2544528f3f32422cb73275ff8a437357":[4,0,17,5],
-"structCollisionStatus.html#a2ae329001c581ccaaaa930f7dabf4cb9":[4,0,17,0]
+"structCollisionStatus.html#a2544528f3f32422cb73275ff8a437357":[4,0,17,5]
 };
