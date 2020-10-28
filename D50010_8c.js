@@ -18,9 +18,7 @@ var D50010_8c =
     [ "func_802411D8_D511C8", "D50010_8c.html#a0a1a9c61e506f60448d0282ac217d3e2", null ],
     [ "func_80241274_D51264", "D50010_8c.html#a5f2820031b1d3001cbec0a8054fb4db8", null ],
     [ "func_80241310_D51300", "D50010_8c.html#ac9086f8d1e77f88833a09101baf44fe4", null ],
-    [ "func_802413D8_D513C8", "D50010_8c.html#aa171fb151b9009e63e7ee503ea621ad6", null ],
     [ "func_80241478_D51468", "D50010_8c.html#a360e36b9e5a25c85a5026fc32ab1fe05", null ],
     [ "func_802414A8_D51498", "D50010_8c.html#a6363ed1f3762f3721686cba2c68b3d2f", null ],
-    [ "func_80241588_D51578", "D50010_8c.html#adb6e7d71070efa19009314e45b937ca5", null ],
     [ "func_802415BC_D515AC", "D50010_8c.html#acd3c0764502922cdaa2c526621a383b4", null ]
 ];

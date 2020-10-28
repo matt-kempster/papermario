@@ -17,7 +17,7 @@ var structItemEntity =
     [ "savedReadPos", "structItemEntity.html#aa265ad1eaba62aebcbefa6863dc14573", null ],
     [ "unk_2C", "structItemEntity.html#a4c974f51a9674ebc98c46593628abf2e", null ],
     [ "unkCounter", "structItemEntity.html#a03d2db96f8c49691d18f5befaa14ca25", null ],
-    [ "unk_2F", "structItemEntity.html#a4d9a08654bcd05888ef649d4ef8a81c3", null ],
+    [ "unk_2F", "structItemEntity.html#a753dc97c6aebfd97f179c2187df63e10", null ],
     [ "scale", "structItemEntity.html#ad045f179fc8939b919fec6f24c33f761", null ],
     [ "unk_34", "structItemEntity.html#af8b4b40cdb8d8fccb7594ad4e8324f39", null ]
 ];

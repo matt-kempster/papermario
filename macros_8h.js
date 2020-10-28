@@ -18,6 +18,7 @@ var macros_8h =
     [ "MAX_SHADOWS", "macros_8h.html#abbd34f2d84dbdc34a8989ffa57bf2234", null ],
     [ "MAX_ENTITIES", "macros_8h.html#a0b7e155f796ed5e7b49b0f44867135ee", null ],
     [ "MAX_DYNAMIC_ENTITIES", "macros_8h.html#a95fd2f03b9c5f1626d55ae9899bd8fdc", null ],
+    [ "PI", "macros_8h.html#a598a3330b3c21701223ee0ca14316eca", null ],
     [ "SCRIPT_ALLOC", "macros_8h.html#ab0d7d85d70bf05c363a14a21247693b8", null ],
     [ "SCRIPT_FREE", "macros_8h.html#a337b4a06d467e2742d43cde93c63bfd8", null ],
     [ "SQ", "macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc", null ],

@@ -1,7 +1,6 @@
 var DAD400_8c =
 [
     [ "func_80240000_DAD400", "DAD400_8c.html#ac948d3a8266666f4bcd3adef41220ef0", null ],
-    [ "func_80240118_DAD518", "DAD400_8c.html#a3d91f82d6c87d7f2058f58c0e45ab88b", null ],
     [ "func_80240268_DAD668", "DAD400_8c.html#a858693bd5168b1e8447b1ff66330afed", null ],
     [ "func_802402BC_DAD6BC", "DAD400_8c.html#ae1d3adcfc5236e9d195b4dcf2fac33c3", null ],
     [ "func_802402D8_DAD6D8", "DAD400_8c.html#a433697394edb0a340ecdd16b3781c016", null ],

@@ -1,7 +1,5 @@
 var A16220_8c =
 [
-    [ "func_80240000_A16220", "A16220_8c.html#a1a04afda131d435346b20cbdbf2e8ec3", null ],
-    [ "func_80240124_A16344", "A16220_8c.html#adb6c1b0ff7fc131d1de779de83e539db", null ],
     [ "func_8024030C_A1652C", "A16220_8c.html#a671c038494f34a2d39f09fcf0d7e6000", null ],
     [ "func_80240434_A16654", "A16220_8c.html#a46ffd57bd1b556741a0f063c9eb285d3", null ],
     [ "func_80240610_A16830", "A16220_8c.html#a971b0d19a8356a9c1c3ff386ebb2770f", null ],

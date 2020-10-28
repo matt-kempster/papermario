@@ -28,7 +28,7 @@ var structNpc =
     [ "yawCamOffset", "structNpc.html#aa95dfbdeb21ea523217732f43c7242c7", null ],
     [ "unk_8C", "structNpc.html#aeb96d433ba92e56e5248f5285b0f6be5", null ],
     [ "duration", "structNpc.html#afebed843f138515797a65c6c621a4291", null ],
-    [ "homePos", "structNpc.html#a2cb75feb4df8e7f850468aea6cd10eab", null ],
+    [ "homePos", "structNpc.html#ad9c1a49eefddb510d179ddf5e21ce9f2", null ],
     [ "unk_96", "structNpc.html#aab43dfca94c3e0bda34292b3cd2a538d", null ],
     [ "unk_A2", "structNpc.html#aa9890264f18663e8b27b9da2469c6de8", null ],
     [ "npcID", "structNpc.html#a2853786df1d3a1566a55214fa6e874ed", null ],
@@ -36,5 +36,7 @@ var structNpc =
     [ "collisionRadius", "structNpc.html#abee620a51b6453bad1c0b68ba0df39d5", null ],
     [ "collisionHeight", "structNpc.html#a92d1547deb33a133acc94b4bd970107b", null ],
     [ "renderMode", "structNpc.html#afb7d8ec70fb0b6a0f1ecd9963e6bef81", null ],
-    [ "unk_AB", "structNpc.html#a90a5c6cefa6830365be72bc4a8676303", null ]
+    [ "unk_AB", "structNpc.html#ac4e144651455894f752abcf0ec8cf61c", null ],
+    [ "unk_AC", "structNpc.html#abd6d28be68b9dd33c0251cc57ad2eafd", null ],
+    [ "unk_AD", "structNpc.html#aa4813abec5b15ed36bfdfad6dd755e65", null ]
 ];

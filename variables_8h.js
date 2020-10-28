@@ -114,5 +114,7 @@ var variables_8h =
     [ "mapScriptLibStart", "variables_8h.html#a646be76e0c1afe3ba13fe637509f8048", null ],
     [ "mapScriptLibEnd", "variables_8h.html#a781b8db771738c5637d1d1c44b02197f", null ],
     [ "mapScriptLibVram", "variables_8h.html#a9d7f16a1532c26c47e86059f19ec4625", null ],
-    [ "SCRIPT_NpcDefeat", "variables_8h.html#ac34380fdc74a9ac56d418452809ab11d", null ]
+    [ "SCRIPT_NpcDefeat", "variables_8h.html#ac34380fdc74a9ac56d418452809ab11d", null ],
+    [ "ShakeCam1", "variables_8h.html#a83ebe47e73160675323482359493ed3d", null ],
+    [ "ShakeCamX", "variables_8h.html#a7c89b9912789caad2f2aa53cd9d17a44", null ]
 ];

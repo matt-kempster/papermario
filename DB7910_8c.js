@@ -7,7 +7,5 @@ var DB7910_8c =
     [ "func_802401EC_DB7AFC", "DB7910_8c.html#adc849cdb55567c8ab47c4409aff6aec5", null ],
     [ "func_80240290_DB7BA0", "DB7910_8c.html#ab8cae45a508601ea2a4fa5b50e730c4a", null ],
     [ "func_80240388_DB7C98", "DB7910_8c.html#a59a3d7d09451689f7952dca80a417333", null ],
-    [ "func_80240518_DB7E28", "DB7910_8c.html#ad578603aa0a173b31f64548887313126", null ],
-    [ "func_8024055C_DB7E6C", "DB7910_8c.html#a0c11f1da7130cae3396865b4576d0e21", null ],
-    [ "func_80240680_DB7F90", "DB7910_8c.html#aff73ce00bb24f4802776600749a08444", null ]
+    [ "func_80240518_DB7E28", "DB7910_8c.html#ad578603aa0a173b31f64548887313126", null ]
 ];

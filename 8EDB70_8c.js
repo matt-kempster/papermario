@@ -1,10 +1,7 @@
 var 8EDB70_8c =
 [
-    [ "func_80241D50_8EDB70", "8EDB70_8c.html#a8d22d9bcba5b1aea389eaa05758494d7", null ],
-    [ "func_80241D70_8EDB90", "8EDB70_8c.html#a1d6f0b39f487e05e86d8d6dc8197d266", null ],
     [ "func_80241D84_8EDBA4", "8EDB70_8c.html#a9a5a5a9a13d6d9eca2fd2fab270a0377", null ],
     [ "func_80241E40_8EDC60", "8EDB70_8c.html#a500224b1619a8567aeea01858eafb4c7", null ],
-    [ "func_80241F20_8EDD40", "8EDB70_8c.html#a75b9514231191cea5acf46e6d5e54fb4", null ],
     [ "func_80241F8C_8EDDAC", "8EDB70_8c.html#a07f689b546ec2b6bbe1bc991d8040e46", null ],
     [ "func_80242030_8EDE50", "8EDB70_8c.html#a6d8c208d9df7e7b198f43354d78ef64d", null ],
     [ "func_80242084_8EDEA4", "8EDB70_8c.html#a4a460e5a06e453518c05c86abe65bd17", null ],

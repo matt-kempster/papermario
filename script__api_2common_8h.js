@@ -260,8 +260,6 @@ var script__api_2common_8h =
     [ "func_802CFD30", "script__api_2common_8h.html#a644b01de713844b60a07b666c1e10d21", null ],
     [ "func_800441F0", "script__api_2common_8h.html#aac9152c64eaee634d911b96e518eebd2", null ],
     [ "func_802D5830", "script__api_2common_8h.html#a5d16402ac7b6fa45ceb34fe54ca0c597", null ],
-    [ "ShakeCam1", "script__api_2common_8h.html#a2f47d02784925a9a33a57bb24d42b80b", null ],
-    [ "ShakeCamX", "script__api_2common_8h.html#a63f2287a0e296e5c0aeed930d0cd48de", null ],
     [ "EnemyNpcHit", "script__api_2common_8h.html#a8d0c25865b362ae1f79dbdfaeafbbe63", null ],
     [ "EnemyNpcDefeat", "script__api_2common_8h.html#a757613d18aa063edadd8ce834359852a", null ]
 ];

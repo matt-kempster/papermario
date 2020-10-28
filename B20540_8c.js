@@ -1,7 +1,5 @@
 var B20540_8c =
 [
-    [ "func_80240000_B20540", "B20540_8c.html#ac0e8680bfe6f6595fb2ce61c6ecb3383", null ],
-    [ "func_80240124_B20664", "B20540_8c.html#a513853b8256b40c05fc5d39e9eb30798", null ],
     [ "func_8024030C_B2084C", "B20540_8c.html#ad366ba8afec6d7dce0470719599383c5", null ],
     [ "func_80240340_B20880", "B20540_8c.html#a584841dda84f04deef63c26b7f25c99f", null ],
     [ "func_802403F4_B20934", "B20540_8c.html#a8302364af238802a2ac4bbba928b3024", null ],

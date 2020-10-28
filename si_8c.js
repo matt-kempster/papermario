@@ -1,11 +1,11 @@
 var si_8c =
 [
-    [ "si_find_label", "si_8c.html#a6e674f2227f54ee80ce92b3d76cc19fb", null ],
-    [ "si_skip_if", "si_8c.html#a0fb10f3c5150adaa566845183858dcf4", null ],
-    [ "si_skip_else", "si_8c.html#aade2c8e288838f1ba528fe85b200dc34", null ],
-    [ "si_goto_end_loop", "si_8c.html#a9e23cec963f607dcd5401f1f7108caed", null ],
-    [ "si_goto_end_case", "si_8c.html#aa859ca618da0d7f3fcfa9f51d2b35f53", null ],
-    [ "si_goto_next_case", "si_8c.html#ab486c1a00b007a5dce25cff68ad043d0", null ],
+    [ "si_find_label", "si_8c.html#af443f505a984ba865cb68ab2ada3168b", null ],
+    [ "si_skip_if", "si_8c.html#a016b292cd52dafa50392c3defee361a7", null ],
+    [ "si_skip_else", "si_8c.html#a33e81f1999443c9814f630830c643f6f", null ],
+    [ "si_goto_end_case", "si_8c.html#a2b49d84e2c219f76d48a71abba9176a8", null ],
+    [ "si_goto_next_case", "si_8c.html#a20a4bff5c6ee39222ca0f78ab8dfc22c", null ],
+    [ "si_goto_end_loop", "si_8c.html#a18078fcbec67b0ee263fbee9ddba1a18", null ],
     [ "get_variable_index", "si_8c.html#ae62b51d7002076ddeb3894366ecad73f", null ],
     [ "fixed_var_to_float", "si_8c.html#afb83cdae77a05f2b5ea51bb1c7462f30", null ],
     [ "float_to_fixed_var", "si_8c.html#a7ad8e145016dbc264c70bd7e2a0bc1d4", null ],

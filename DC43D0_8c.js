@@ -7,7 +7,5 @@ var DC43D0_8c =
     [ "func_802401EC_DC45BC", "DC43D0_8c.html#aa5e0612ad356b007e54aca7ab4df7b97", null ],
     [ "func_80240290_DC4660", "DC43D0_8c.html#acfb555372af62b018bfc261bbcfa892e", null ],
     [ "func_80240388_DC4758", "DC43D0_8c.html#a21fd1f8ae055eebc00438f8e075339c4", null ],
-    [ "func_80240518_DC48E8", "DC43D0_8c.html#a3d63d852a6f0e14b609769cfc55856df", null ],
-    [ "func_8024055C_DC492C", "DC43D0_8c.html#af8447205c9878781aa241c77b5298c22", null ],
-    [ "func_80240680_DC4A50", "DC43D0_8c.html#adc44b3c00c720525d4626f8128c2dac2", null ]
+    [ "func_80240518_DC48E8", "DC43D0_8c.html#a3d63d852a6f0e14b609769cfc55856df", null ]
 ];

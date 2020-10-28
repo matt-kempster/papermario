@@ -29,8 +29,6 @@ var D3ADA0_8c =
     [ "func_80241864_D3BE34", "D3ADA0_8c.html#a7f3b95d750014f1e2db15b84f3043e2a", null ],
     [ "func_802418B4_D3BE84", "D3ADA0_8c.html#a45d72676c4d1aef3b4f52be1e3e8015a", null ],
     [ "func_80241A6C_D3C03C", "D3ADA0_8c.html#a290996e493d04d31563a744dcac8decc", null ],
-    [ "func_80241AA0_D3C070", "D3ADA0_8c.html#acbef466dacc48d0425a911738c64551f", null ],
-    [ "func_80241BC4_D3C194", "D3ADA0_8c.html#abe624e962c5500f4213ae284d8a7acf1", null ],
     [ "func_80241DAC_D3C37C", "D3ADA0_8c.html#ac06f3e9b653b7f7dca97c10a32685df0", null ],
     [ "func_80241FB0_D3C580", "D3ADA0_8c.html#ae7afece3d2dd1bf32aff0030461b7e83", null ],
     [ "func_80241FE8_D3C5B8", "D3ADA0_8c.html#a558b16645dbb7c4e64d0ddd0eaccd9ef", null ],

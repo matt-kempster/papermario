@@ -11,7 +11,7 @@ var structGameStatus =
     [ "unk_28", "structGameStatus.html#afb850171150e4d21488141689e9b5bab", null ],
     [ "prevButtons", "structGameStatus.html#a039f1204b6a231e514996c8a30ece27e", null ],
     [ "unk_34", "structGameStatus.html#afe5d0430d0ebfb5e93e7fad0ca039788", null ],
-    [ "stickX", "structGameStatus.html#a9ab2b0b5084e5dbe5e6a30209acfd0be", null ],
+    [ "stickX", "structGameStatus.html#a3081c0e37538432fd8806893e0564800", null ],
     [ "altStickX", "structGameStatus.html#ac4df1708ca7b552974a8381061b4d05a", null ],
     [ "unk_42", "structGameStatus.html#a17414dcf56664c2c517fc212d932543a", null ],
     [ "stickY", "structGameStatus.html#a45c08ed0dfd85208495c5aae442bb0d8", null ],

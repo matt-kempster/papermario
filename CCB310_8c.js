@@ -1,7 +1,5 @@
 var CCB310_8c =
 [
-    [ "func_80240000_CCB310", "CCB310_8c.html#a62f6ec396e6fbfde2dc3d2f422145117", null ],
-    [ "func_80240124_CCB434", "CCB310_8c.html#a3f7389e4598bd05b003a3f67ff0d5ab5", null ],
     [ "func_8024030C_CCB61C", "CCB310_8c.html#aa7f03934607ca8213bc03775423f3fed", null ],
     [ "func_80240340_CCB650", "CCB310_8c.html#a51687b03046576b54e73284217bbb976", null ],
     [ "func_802403D4_CCB6E4", "CCB310_8c.html#a8d59e07b251eecc88a3316994e84f6c4", null ],

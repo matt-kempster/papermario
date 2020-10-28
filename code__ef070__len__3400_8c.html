@@ -121,10 +121,10 @@ Functions</h2></td></tr>
 <tr class="separator:a8a1a8273a35e5af5d40410b923c78921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf777e1eb29ca373df931118fbc1727e"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#abf777e1eb29ca373df931118fbc1727e">ShakeCam</a> (<a class="el" href="structScriptInstance.html">ScriptInstance</a> *script, s32 isInitialCall)</td></tr>
 <tr class="separator:abf777e1eb29ca373df931118fbc1727e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dee496a53f44ac22d1b95432d45f0ae"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#a3dee496a53f44ac22d1b95432d45f0ae">exec_ShakeCam1</a> ()</td></tr>
-<tr class="separator:a3dee496a53f44ac22d1b95432d45f0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76f0667b4049867c6be3232ae827f059"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#a76f0667b4049867c6be3232ae827f059">exec_ShakeCamX</a> ()</td></tr>
-<tr class="separator:a76f0667b4049867c6be3232ae827f059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918d6d9b6a52e55f0449094d03903662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#a918d6d9b6a52e55f0449094d03903662">exec_ShakeCam1</a> (s32 arg0, s32 arg1, s32 arg2)</td></tr>
+<tr class="separator:a918d6d9b6a52e55f0449094d03903662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e7f2f7998fa1d5c863b61da49995b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#ab3e7f2f7998fa1d5c863b61da49995b1">exec_ShakeCamX</a> (s32 arg0, s32 arg1, s32 arg2, f32 arg3)</td></tr>
+<tr class="separator:ab3e7f2f7998fa1d5c863b61da49995b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a594dde43959c5ade17eb8c9b38373b70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#a594dde43959c5ade17eb8c9b38373b70">SetCamLeadPlayer</a> (<a class="el" href="structScriptInstance.html">ScriptInstance</a> *script, s32 isInitialCall)</td></tr>
 <tr class="separator:a594dde43959c5ade17eb8c9b38373b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a819ecc7762495598ab9c9de4700a0c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__ef070__len__3400_8c.html#a819ecc7762495598ab9c9de4700a0c90">func_802CB710</a> (<a class="el" href="structScriptInstance.html">ScriptInstance</a> *script, s32 isInitialCall)</td></tr>
@@ -611,17 +611,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3dee496a53f44ac22d1b95432d45f0ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dee496a53f44ac22d1b95432d45f0ae">&#9670;&nbsp;</a></span>exec_ShakeCam1()</h2>
+<a id="a918d6d9b6a52e55f0449094d03903662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918d6d9b6a52e55f0449094d03903662">&#9670;&nbsp;</a></span>exec_ShakeCam1()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 exec_ShakeCam1 </td>
+          <td class="memname">void exec_ShakeCam1 </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -632,22 +649,45 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a76f0667b4049867c6be3232ae827f059"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76f0667b4049867c6be3232ae827f059">&#9670;&nbsp;</a></span>exec_ShakeCamX()</h2>
+<a id="ab3e7f2f7998fa1d5c863b61da49995b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3e7f2f7998fa1d5c863b61da49995b1">&#9670;&nbsp;</a></span>exec_ShakeCamX()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 exec_ShakeCamX </td>
+          <td class="memname">void exec_ShakeCamX </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>arg2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">f32&#160;</td>
+          <td class="paramname"><em>arg3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00191">191</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00198">198</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -677,7 +717,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00193">193</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00208">208</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -707,7 +747,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00208">208</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00223">223</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -737,7 +777,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00219">219</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00234">234</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -767,7 +807,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00239">239</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00254">254</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -797,7 +837,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00241">241</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00256">256</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -827,7 +867,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00243">243</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00258">258</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -857,7 +897,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00256">256</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00271">271</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -887,7 +927,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00269">269</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00284">284</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -917,7 +957,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00280">280</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00295">295</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -947,7 +987,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00293">293</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00308">308</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1017,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00306">306</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00321">321</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1047,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00319">319</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00334">334</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1037,7 +1077,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00335">335</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00350">350</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1067,7 +1107,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00346">346</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00361">361</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1137,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00359">359</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00374">374</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1127,7 +1167,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00372">372</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00387">387</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1157,7 +1197,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00383">383</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00398">398</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1187,7 +1227,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00396">396</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00411">411</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1257,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00409">409</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00424">424</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1247,7 +1287,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00422">422</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00437">437</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1317,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00437">437</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00452">452</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1307,7 +1347,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00450">450</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00465">465</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1337,7 +1377,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00452">452</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00467">467</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1367,7 +1407,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00454">454</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00469">469</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1386,7 +1426,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00456">456</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00471">471</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1405,7 +1445,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00458">458</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00473">473</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1424,7 +1464,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00460">460</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00475">475</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1443,7 +1483,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00462">462</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00477">477</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1502,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00464">464</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00479">479</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1481,7 +1521,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00466">466</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00481">481</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1500,7 +1540,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00468">468</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00483">483</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1519,7 +1559,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00470">470</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00485">485</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1538,7 +1578,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00472">472</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00487">487</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1557,7 +1597,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00474">474</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00489">489</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1576,7 +1616,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00476">476</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00491">491</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1595,7 +1635,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00478">478</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00493">493</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1614,7 +1654,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00480">480</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00495">495</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1633,7 +1673,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00482">482</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00497">497</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1652,7 +1692,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00484">484</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00499">499</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1671,7 +1711,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00486">486</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00501">501</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1690,7 +1730,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00488">488</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00503">503</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__e79b0__len__1920_8c.html#a01d2be11a51b61891de93fe0d03ad164">clear_script_list()</a>.</p>
 
@@ -1711,7 +1751,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00490">490</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00505">505</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__e79b0__len__1920_8c.html#a981a253eb246983e98477b68427ff4f1">init_script_list()</a>.</p>
 
@@ -1732,7 +1772,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00492">492</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00507">507</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1751,7 +1791,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00494">494</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00509">509</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1770,7 +1810,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00496">496</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00511">511</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1789,7 +1829,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00498">498</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00513">513</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1808,7 +1848,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00500">500</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__ef070__len__3400_8c_source.html#l00515">515</a> of file <a class="el" href="code__ef070__len__3400_8c_source.html">code_ef070_len_3400.c</a>.</p>
 
 </div>
 </div>
@@ -1818,7 +1858,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__ef070__len__3400_8c.html">code_ef070_len_3400.c</a></li>
-    <li class="footer">Generated on Sat Oct 24 2020 04:33:43 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Wed Oct 28 2020 19:05:30 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

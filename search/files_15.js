@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['variables_2eh_16171',['variables.h',['../variables_8h.html',1,'']]]
+  ['unktexturepanfunc_2einc_2ec_15815',['UnkTexturePanFunc.inc.c',['../UnkTexturePanFunc_8inc_8c.html',1,'']]],
+  ['unktexturepanfunc2_2einc_2ec_15816',['UnkTexturePanFunc2.inc.c',['../UnkTexturePanFunc2_8inc_8c.html',1,'']]]
 ];

@@ -1,7 +1,5 @@
 var ADAEF0_8c =
 [
-    [ "func_80240050_ADAEF0", "ADAEF0_8c.html#a2c40ea2d6cff935b994de292ee6df0f2", null ],
-    [ "func_80240174_ADB014", "ADAEF0_8c.html#a3b455de9f5e1a1b06d4a1c80f21f9619", null ],
     [ "func_8024035C_ADB1FC", "ADAEF0_8c.html#a833e3f33f5038b687f8d2a66f8b723ed", null ],
     [ "func_80240384_ADB224", "ADAEF0_8c.html#aeeefcfc6ba74079c1862afe5f6689aff", null ],
     [ "func_802403A0_ADB240", "ADAEF0_8c.html#a4718fbe14a756c5941212d47ab89e49f", null ],

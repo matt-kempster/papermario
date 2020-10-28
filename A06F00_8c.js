@@ -1,10 +1,7 @@
 var A06F00_8c =
 [
-    [ "func_80240000_A06F00", "A06F00_8c.html#a90c472e1f2773c79b8c57a8a7be3cc22", null ],
-    [ "func_80240020_A06F20", "A06F00_8c.html#ab65289b285511b60acf56c1c2c4d5662", null ],
     [ "func_80240034_A06F34", "A06F00_8c.html#ae15b082e47bd898342d39786de28ed4d", null ],
     [ "func_802400F0_A06FF0", "A06F00_8c.html#a6c09408a07471b8a5a621f24e3938e4f", null ],
-    [ "func_802401D0_A070D0", "A06F00_8c.html#aeef4717f152a6b6475483ff0313aef2e", null ],
     [ "func_8024023C_A0713C", "A06F00_8c.html#a525050c03437e1b61002082948a1bf71", null ],
     [ "func_802402E0_A071E0", "A06F00_8c.html#a30e2d00613c276d90d0f8e1c718ddb48", null ],
     [ "func_8024035C_A0725C", "A06F00_8c.html#a022cde11dfe24715d36c5f7d4cb92126", null ],

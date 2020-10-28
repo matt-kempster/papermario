@@ -1,7 +1,5 @@
 var 852170_8c =
 [
-    [ "func_80240000_852170", "852170_8c.html#ad10f25bac4a0522c4fbdfce49b58d8a3", null ],
-    [ "func_80240124_852294", "852170_8c.html#a547bcaacc50a991c258ef32fd0b8765a", null ],
     [ "func_8024030C_85247C", "852170_8c.html#a4a040243c54d9ae2f0f5ca8511329a05", null ],
     [ "func_8024047C_8525EC", "852170_8c.html#a2b13a5fc4eda36fed175634ceb1fd1f0", null ],
     [ "func_80240490_852600", "852170_8c.html#af47cd4b723de667f7a4db1477251d2bb", null ],
