@@ -30,7 +30,7 @@ var structNpc =
     [ "duration", "structNpc.html#afebed843f138515797a65c6c621a4291", null ],
     [ "homePos", "structNpc.html#ad9c1a49eefddb510d179ddf5e21ce9f2", null ],
     [ "unk_96", "structNpc.html#aab43dfca94c3e0bda34292b3cd2a538d", null ],
-    [ "unk_A2", "structNpc.html#aa9890264f18663e8b27b9da2469c6de8", null ],
+    [ "unk_A2", "structNpc.html#a3b3b67fb95a97e8e7ab90d7af5c516ee", null ],
     [ "npcID", "structNpc.html#a2853786df1d3a1566a55214fa6e874ed", null ],
     [ "unk_A5", "structNpc.html#a1e301f5a568d96d0be55a694003d33af", null ],
     [ "collisionRadius", "structNpc.html#abee620a51b6453bad1c0b68ba0df39d5", null ],

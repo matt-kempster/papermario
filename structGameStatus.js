@@ -14,7 +14,7 @@ var structGameStatus =
     [ "stickX", "structGameStatus.html#a3081c0e37538432fd8806893e0564800", null ],
     [ "altStickX", "structGameStatus.html#ac4df1708ca7b552974a8381061b4d05a", null ],
     [ "unk_42", "structGameStatus.html#a17414dcf56664c2c517fc212d932543a", null ],
-    [ "stickY", "structGameStatus.html#a45c08ed0dfd85208495c5aae442bb0d8", null ],
+    [ "stickY", "structGameStatus.html#aaf3cf5d85292c8fc50a6cd7b3d9c35ca", null ],
     [ "altStickY", "structGameStatus.html#a6560574a5ad044f1540de8e94048d619", null ],
     [ "unk_46", "structGameStatus.html#a4cac0dbdb3bdd1bfcf2e6d826e3a92fb", null ],
     [ "unk_48", "structGameStatus.html#ae0d9c11cddd5a0132c618c17f5b1f703", null ],

@@ -1,5 +1,6 @@
 var NAVTREEINDEX69 =
 {
+"structStaticNpc.html#a6ff8ca49f8b5a66f21e9c9971d278bd1":[4,0,72,3],
 "structStaticNpc.html#a72df0bf053309621c55e64cf44df3fdd":[4,0,72,13],
 "structStaticNpc.html#a9baa7907c61193e98e340b6fea7a5176":[4,0,72,11],
 "structStaticNpc.html#aabb2489bc86cfdb6f1ff497a06e39163":[4,0,72,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX69 =
 "trd__00_8h.html":[5,0,1,1,26,0,3],
 "trd__00_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15":[5,0,1,1,26,0,3,0],
 "trd__00_8h_source.html":[5,0,1,1,26,0,3],
-"trd__01_8h.html":[5,0,1,1,26,1,3],
-"trd__01_8h.html#a436e8dd2a5793dc73a2bc35c68c50a15":[5,0,1,1,26,1,3,0]
+"trd__01_8h.html":[5,0,1,1,26,1,3]
 };

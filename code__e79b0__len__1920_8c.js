@@ -6,7 +6,7 @@ var code__e79b0__len__1920_8c =
     [ "init_script_list", "code__e79b0__len__1920_8c.html#a981a253eb246983e98477b68427ff4f1", null ],
     [ "func_802C3390", "code__e79b0__len__1920_8c.html#a4de750ba7be42c93c1c6ba01c0cb5b7c", null ],
     [ "start_script", "code__e79b0__len__1920_8c.html#a993f6b548f6aa06833fe4a71cbc287cc", null ],
-    [ "start_script_in_group", "code__e79b0__len__1920_8c.html#aa756d43b2ea2fdded271240faff22042", null ],
+    [ "start_script_in_group", "code__e79b0__len__1920_8c.html#ada003a1da902e990930bc0d105509bf2", null ],
     [ "start_child_script", "code__e79b0__len__1920_8c.html#a0f1aece11ec8cd360d5916f1e12a1d02", null ],
     [ "func_802C39F8", "code__e79b0__len__1920_8c.html#a01975b5ef07e646eaff2d28914953725", null ],
     [ "func_802C3C10", "code__e79b0__len__1920_8c.html#a8644f46fcb9c1c5c09e311bf93835acb", null ],
@@ -41,6 +41,5 @@ var code__e79b0__len__1920_8c =
     [ "clear_script_flags", "code__e79b0__len__1920_8c.html#a1ef87b6028fa542eef8537d3a74d8f7d", null ],
     [ "gStaticScriptCounter", "code__e79b0__len__1920_8c.html#ad6858f2db7ad006853a98935bc5006d3", null ],
     [ "D_802D9CA4", "code__e79b0__len__1920_8c.html#ac823d6f511c38f067f7932a9eb12eb5f", null ],
-    [ "gGlobalTimeSpace", "code__e79b0__len__1920_8c.html#a18dbb31f129dc05dff783230325475c5", null ],
-    [ "newScript", "code__e79b0__len__1920_8c.html#a4f624347a2ae2f77e80eddc89a0981c9", null ]
+    [ "gGlobalTimeSpace", "code__e79b0__len__1920_8c.html#a18dbb31f129dc05dff783230325475c5", null ]
 ];
