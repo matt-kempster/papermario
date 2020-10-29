@@ -43,7 +43,7 @@ var NAVTREE =
         [ "After matching", "index.html#autotoc_md15", null ]
       ] ]
     ] ],
-    [ "FAQ", "index.html#autotoc_md16", null ],
+    [ "Troubleshooting", "index.html#autotoc_md16", null ],
     [ "Bug List", "bug.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -112,7 +112,7 @@ var NAVTREEINDEX =
 "code__48c00__len__5c0_8c.html#ace80f91ddd683f2a5edb1c264c75f57f",
 "code__7340__len__b00_8c.html#a96a9f22df49e2fb2303031e9282e5f68",
 "code__80850__len__3060_8c.html#a5381b28ddc356ddf46964fa370e81f6d",
-"code__F5750_8c.html#a477a138dcfd6503d2790b6356c164131",
+"code__F5750_8c.html#a48fb2701ef4eee3b3b98ecb1f9d838b7",
 "code__a5dd0__len__114e0_8c.html#aef9a8987930ed693ca0e8dc2fab73d08",
 "code__d5a50__len__5fd0_8c.html#a8072b78b3aa7966118292ad3c344f0e0",
 "code__ef070__len__3400_8c.html#a61ab00ca74da910623805e0289c32c43",

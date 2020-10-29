@@ -17,7 +17,7 @@ var code__F5750_8c =
     [ "PlayerJump", "code__F5750_8c.html#ab14bad191eb841eecbbed9a73d1c0fb6", null ],
     [ "PlayerJump1", "code__F5750_8c.html#ac5253d3be6206d37a1f9973e6c462312", null ],
     [ "PlayerJump2", "code__F5750_8c.html#ac7d30841a65af98120fff73e6e16944f", null ],
-    [ "InterpPlayerYaw", "code__F5750_8c.html#a0a958d53ecfc2c06715794c711e84456", null ],
+    [ "InterpPlayerYaw", "code__F5750_8c.html#ad63a79d96a2e8a251f6fdc4edf3e74b4", null ],
     [ "PlayerFaceNpc", "code__F5750_8c.html#a41eadc25f2a99f5d852c6877f84d426a", null ],
     [ "GetPlayerTargetYaw", "code__F5750_8c.html#ab682aa924f98aa06bc3609543c80a2a7", null ],
     [ "SetPlayerFlagBits", "code__F5750_8c.html#a4f13ac3b06f981203c3e9028b5549e4b", null ],
