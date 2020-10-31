@@ -6,9 +6,9 @@ var structSpriteComponent =
     [ "loopCounter", "structSpriteComponent.html#af16acf1983ddc8a3aafda61b0ab98c8a", null ],
     [ "currentRaster", "structSpriteComponent.html#a184e91210486c5e4a7b020c42a3f0541", null ],
     [ "currentPalette", "structSpriteComponent.html#a4f74901c534a9a7c8f6c001144b73fbd", null ],
-    [ "posOffset", "structSpriteComponent.html#a18fab74a9a80c60e76cdb14b83efb4fd", null ],
-    [ "compPos", "structSpriteComponent.html#af816b26d9d9c1da5aad692743dfcf0ea", null ],
-    [ "rotation", "structSpriteComponent.html#a11f6fa7e9603d56ea3b1a3ee4e87fc73", null ],
-    [ "scale", "structSpriteComponent.html#a627babc330b92f9cf4242ca48b881d7c", null ],
+    [ "posOffset", "structSpriteComponent.html#a1bec148ee6f02785c05509e023ae3a15", null ],
+    [ "compPos", "structSpriteComponent.html#a3178ef28fece827b23ab9f2e3ff9e54e", null ],
+    [ "rotation", "structSpriteComponent.html#a25f6aae83eacdfe6137695f0446ae523", null ],
+    [ "scale", "structSpriteComponent.html#afa7f6a27c1b5edcacaa5e980947da4e1", null ],
     [ "unk_4C", "structSpriteComponent.html#a759fa2e5df2b8a203bd5c866bb34b066", null ]
 ];

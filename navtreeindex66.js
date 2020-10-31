@@ -1,5 +1,6 @@
 var NAVTREEINDEX66 =
 {
+"structEncounterStatus.html#a5d7918f1ba1114d293180a0733f940d2":[4,0,25,8],
 "structEncounterStatus.html#a61ffd07ef9e379bb597b00c85cf37fe8":[4,0,25,25],
 "structEncounterStatus.html#a69f8d717b75cb22052dd17794c0ff190":[4,0,25,2],
 "structEncounterStatus.html#a6f14bb35628cb97da08bac1c9377ff77":[4,0,25,14],
@@ -98,6 +99,7 @@ var NAVTREEINDEX66 =
 "structGameStatus.html#a074cde45ec1c6b90a1d5c3979a848e53":[4,0,31,81],
 "structGameStatus.html#a087e0eb5ef0c2bb1492885ed03e0087b":[4,0,31,78],
 "structGameStatus.html#a0bfa7c666c6b5c7a286df35a6b4ce94c":[4,0,31,39],
+"structGameStatus.html#a0cd23563f4ba3759a4b7a4859d30b49e":[4,0,31,49],
 "structGameStatus.html#a0d31818057665f47bd2d5b689043cefd":[4,0,31,50],
 "structGameStatus.html#a0e0c279523a1640e23c0611d31445a14":[4,0,31,75],
 "structGameStatus.html#a0f33f43d6b1af2c4d09cbad056713d5e":[4,0,31,82],
@@ -153,7 +155,6 @@ var NAVTREEINDEX66 =
 "structGameStatus.html#aaf3cf5d85292c8fc50a6cd7b3d9c35ca":[4,0,31,14],
 "structGameStatus.html#ab0cb17970f28b631490e9c7b49a34ac6":[4,0,31,28],
 "structGameStatus.html#ab5fccd9d723c674af7a77c74518818c7":[4,0,31,67],
-"structGameStatus.html#ab9700b72e462eea69ce4ae2e3f9a314b":[4,0,31,49],
 "structGameStatus.html#aba11e7541d366bfcfda08d1d166bd8fa":[4,0,31,2],
 "structGameStatus.html#abb414727f212283a6649038953f9b38b":[4,0,31,62],
 "structGameStatus.html#abd4b43b07d3e935db6b7c09a3eae6d98":[4,0,31,41],
@@ -199,10 +200,10 @@ var NAVTREEINDEX66 =
 "structItemEntity.html#a753dc97c6aebfd97f179c2187df63e10":[4,0,34,17],
 "structItemEntity.html#a8021c5adb4398fb95902748af184c19e":[4,0,34,12],
 "structItemEntity.html#a93e0280df7a5d9fe3378e7f0ba8d065a":[4,0,34,4],
+"structItemEntity.html#a9d24d31fa022d1a54f2767f9e45034a5":[4,0,34,3],
 "structItemEntity.html#aa265ad1eaba62aebcbefa6863dc14573":[4,0,34,14],
 "structItemEntity.html#aa8c32bae25ff44636aef353219439f50":[4,0,34,5],
 "structItemEntity.html#aaa75670a47cb9bf2d4b5bcc90cf21bbe":[4,0,34,7],
-"structItemEntity.html#ab2d6391d3dbcbc36274c9f0edaffe311":[4,0,34,3],
 "structItemEntity.html#ab5a9f5f0d316d1e3a54f12a432501b8b":[4,0,34,9],
 "structItemEntity.html#abbd901ab38bcacbae8ebcb4a6c51474c":[4,0,34,0],
 "structItemEntity.html#ad045f179fc8939b919fec6f24c33f761":[4,0,34,18],
@@ -248,6 +249,5 @@ var NAVTREEINDEX66 =
 "structMenuIcon.html#a8cd05418113b6d9d31ffcf6f4dbd8414":[4,0,39,2],
 "structMenuIcon.html#a9a3aff13451ab0182534189055db14e7":[4,0,39,0],
 "structMenuIcon.html#aaaeaec332427745d8e3f2b273f368aa9":[4,0,39,5],
-"structMenuIcon.html#aab364ff9bb79c5351c5b088b65b20241":[4,0,39,4],
-"structMenuIcon.html#ab60886f2bd5ba9ae6f1b027a85dd2d38":[4,0,39,14]
+"structMenuIcon.html#aab364ff9bb79c5351c5b088b65b20241":[4,0,39,4]
 };

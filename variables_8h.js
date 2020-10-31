@@ -116,5 +116,6 @@ var variables_8h =
     [ "mapScriptLibVram", "variables_8h.html#a9d7f16a1532c26c47e86059f19ec4625", null ],
     [ "SCRIPT_NpcDefeat", "variables_8h.html#ac34380fdc74a9ac56d418452809ab11d", null ],
     [ "ShakeCam1", "variables_8h.html#a83ebe47e73160675323482359493ed3d", null ],
-    [ "ShakeCamX", "variables_8h.html#a7c89b9912789caad2f2aa53cd9d17a44", null ]
+    [ "ShakeCamX", "variables_8h.html#a7c89b9912789caad2f2aa53cd9d17a44", null ],
+    [ "D_802D9D50", "variables_8h.html#ab478a7b91d82f3e5e280c70fe89d9934", null ]
 ];

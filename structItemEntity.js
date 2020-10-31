@@ -3,7 +3,7 @@ var structItemEntity =
     [ "flags", "structItemEntity.html#abbd901ab38bcacbae8ebcb4a6c51474c", null ],
     [ "boundVar", "structItemEntity.html#a6da93231cf909a13b79cf8fd76dc1b54", null ],
     [ "unk_06", "structItemEntity.html#a485e1f2c210eb8d4d4345e914ff78ba0", null ],
-    [ "position", "structItemEntity.html#ab2d6391d3dbcbc36274c9f0edaffe311", null ],
+    [ "position", "structItemEntity.html#a9d24d31fa022d1a54f2767f9e45034a5", null ],
     [ "physicsData", "structItemEntity.html#a93e0280df7a5d9fe3378e7f0ba8d065a", null ],
     [ "itemID", "structItemEntity.html#aa8c32bae25ff44636aef353219439f50", null ],
     [ "state", "structItemEntity.html#a588f22ef297ac89ce1dd3c2a016ad556", null ],

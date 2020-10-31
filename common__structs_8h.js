@@ -75,6 +75,7 @@ var common__structs_8h =
     [ "AnimatedModelNode", "structAnimatedModelNode.html", "structAnimatedModelNode" ],
     [ "EncounterStatus", "structEncounterStatus.html", "structEncounterStatus" ],
     [ "SaveData", "structSaveData.html", "structSaveData" ],
+    [ "Path", "structPath.html", "structPath" ],
     [ "ApiFunc", "common__structs_8h.html#acfce2016cb766b2b881cfc19671550f0", null ],
     [ "NpcList", "common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781", null ],
     [ "TriggerList", "common__structs_8h.html#a1f75be71fcc2537eee7d7362e7ac6346", null ],

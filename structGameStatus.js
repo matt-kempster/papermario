@@ -49,7 +49,7 @@ var structGameStatus =
     [ "entryID", "structGameStatus.html#aac63f34c996aedd03b3168991cc277c4", null ],
     [ "unk_90", "structGameStatus.html#aa078e59a4311a4eaca37cd6a6a935e08", null ],
     [ "exitAngle", "structGameStatus.html#afa8308b9519e8c7783f0056dae45c498", null ],
-    [ "playerPos", "structGameStatus.html#ab9700b72e462eea69ce4ae2e3f9a314b", null ],
+    [ "playerPos", "structGameStatus.html#a0cd23563f4ba3759a4b7a4859d30b49e", null ],
     [ "playerYaw", "structGameStatus.html#a0d31818057665f47bd2d5b689043cefd", null ],
     [ "unk_A8", "structGameStatus.html#af6b738c05ec066a95efc74da4cfe2162", null ],
     [ "unk_A9", "structGameStatus.html#a4f7d389e2370ec2c3f22790e0d98233c", null ],

@@ -11,7 +11,7 @@ var code__FBE10_8c =
     [ "func_802D7B44", "code__FBE10_8c.html#a91c886a30db16f1d0f19450c51f92290", null ],
     [ "func_802D7B74", "code__FBE10_8c.html#ae1bed54e95ff748c66ea31ca00daea6c", null ],
     [ "func_802D7BA4", "code__FBE10_8c.html#ae72f98b15840739e0ad4a66559f8efdc", null ],
-    [ "func_802D7CF8", "code__FBE10_8c.html#a85f831bee5e6d7750a05cf6604d8287b", null ],
+    [ "Spawn802D9D50", "code__FBE10_8c.html#a0512fc94393bb249f0b9516ed1de75a4", null ],
     [ "func_802D7E08", "code__FBE10_8c.html#a84629aa68fc3bbef5a6063e0c7cd6917", null ],
     [ "ShowSleepBubble", "code__FBE10_8c.html#af0cd2dcde05bec52a8b64335298afa16", null ],
     [ "func_802D8248", "code__FBE10_8c.html#a2cd7c33a3c6caa05ee2976f83d1ca073", null ],

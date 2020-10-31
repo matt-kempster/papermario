@@ -72,6 +72,7 @@ var functions_8h =
     [ "make_item_entity_nodelay", "functions_8h.html#a9f8c1411bf53b96863fa8c617c5f0cdb", null ],
     [ "set_cam_viewport", "functions_8h.html#af9ca5fd81dd4d67e80165141c930cc15", null ],
     [ "disable_player_shadow", "functions_8h.html#aeca4ac8bcc6804007fe3c24fb4075737", null ],
+    [ "move_player", "functions_8h.html#a63be57b62a98027c6fa15dd4a1adaddf", null ],
     [ "get_npc_safe", "functions_8h.html#ac399bbcc06cc4635da68410e3d71ec87", null ],
     [ "get_npc_unsafe", "functions_8h.html#a7cee75b7889dc0492acc0a7f8d9c62d7", null ],
     [ "resolve_npc", "functions_8h.html#a3521a808a1fda982f8548ded077f4619", null ],

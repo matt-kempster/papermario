@@ -53,6 +53,7 @@ var annotated_dup =
     [ "OtherPrint", "structOtherPrint.html", "structOtherPrint" ],
     [ "PartnerAnimations", "structPartnerAnimations.html", "structPartnerAnimations" ],
     [ "PartnerData", "structPartnerData.html", "structPartnerData" ],
+    [ "Path", "structPath.html", "structPath" ],
     [ "PlayerData", "structPlayerData.html", "structPlayerData" ],
     [ "PlayerPathElement", "structPlayerPathElement.html", "structPlayerPathElement" ],
     [ "PlayerStatus", "structPlayerStatus.html", "structPlayerStatus" ],
