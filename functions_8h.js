@@ -81,7 +81,7 @@ var functions_8h =
     [ "dist3D", "functions_8h.html#a5000a1bf8a75a2858e3ed00e76a0ca3f", null ],
     [ "add_vec2D_polar", "functions_8h.html#ae2eb3d617981fd72545d17ed52a44e69", null ],
     [ "play_sound_at_position", "functions_8h.html#a3011a1445164d4b0e4076b5d33cba0c1", null ],
-    [ "set_music_track", "functions_8h.html#a31a0ff3f3970eba19e5e214738440f35", null ],
+    [ "set_music_track", "functions_8h.html#a09602bb351e82aa0fdde7949f69c6593", null ],
     [ "get_script_by_index", "functions_8h.html#af7518abae995ca7c004732ead65f081f", null ],
     [ "suspend_all_group", "functions_8h.html#af052cf7114012b7936648eb38a9762c5", null ],
     [ "kill_script", "functions_8h.html#ae4aa18fd6b18614de6f8240488fd84e8", null ]

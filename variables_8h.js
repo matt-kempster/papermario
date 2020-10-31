@@ -57,8 +57,6 @@ var variables_8h =
     [ "D_8010EF08", "variables_8h.html#a587051b96443329294c406e213203bd8", null ],
     [ "D_8010F094", "variables_8h.html#a0d3c24dbe60e27ea72452cb82afe08c8", null ],
     [ "D_801595A0", "variables_8h.html#aa004762d62c0393a708dd98314fec03f", null ],
-    [ "D_80159AE2", "variables_8h.html#a9e487a6618a6a75465f2a0f86619b1d1", null ],
-    [ "D_80159AE4", "variables_8h.html#a0f9660ae6576c15d39c0026f9a266370", null ],
     [ "gBackgroundImage", "variables_8h.html#a103dc6be48d2be7b751e41eaaf207f9b", null ],
     [ "gCurrentPrintContext", "variables_8h.html#a0c497818b05ad6dfd5a656295a0a1973", null ],
     [ "D_802DB264", "variables_8h.html#ab329be278838552c955d092e05448c73", null ],
@@ -117,5 +115,11 @@ var variables_8h =
     [ "SCRIPT_NpcDefeat", "variables_8h.html#ac34380fdc74a9ac56d418452809ab11d", null ],
     [ "ShakeCam1", "variables_8h.html#a83ebe47e73160675323482359493ed3d", null ],
     [ "ShakeCamX", "variables_8h.html#a7c89b9912789caad2f2aa53cd9d17a44", null ],
-    [ "D_802D9D50", "variables_8h.html#ab478a7b91d82f3e5e280c70fe89d9934", null ]
+    [ "D_802D9D50", "variables_8h.html#ab478a7b91d82f3e5e280c70fe89d9934", null ],
+    [ "gMusicUnkVolume", "variables_8h.html#aaa484403f7c9113937b060d25137f42a", null ],
+    [ "gMusicUnkVolume2", "variables_8h.html#a95a6b1a59c716bbd58bdac21ab406a86", null ],
+    [ "gMusicCurrentVolume", "variables_8h.html#a293068f3d5b95213452dfbdf0427c67c", null ],
+    [ "gMusicTargetVolume", "variables_8h.html#a7c9866c47fa028c2cf454ad1de4e0388", null ],
+    [ "gMusicPlayers", "variables_8h.html#afa6b252ae47430f6ba98e11aa70ba18d", null ],
+    [ "D_8014F6F0", "variables_8h.html#a79dc1b89593e8cee5c082b3aa4d06346", null ]
 ];

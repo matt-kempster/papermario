@@ -1,8 +1,8 @@
 var code__303c0__len__3e10_8c =
 [
     [ "al_LoadBKHeaders", "code__303c0__len__3e10_8c.html#a617f21cf234992e5c087ab7011d77ab2", null ],
-    [ "func_80055050", "code__303c0__len__3e10_8c.html#aff6cf635ce61bc39dfa646243b58587a", null ],
-    [ "func_80055068", "code__303c0__len__3e10_8c.html#aaa5b50d7168bbf382cfefbd886424cb7", null ],
+    [ "func_80055050", "code__303c0__len__3e10_8c.html#a965a424c8fdbfb30bf325f72a957c3fb", null ],
+    [ "func_80055068", "code__303c0__len__3e10_8c.html#aea80efa226be719820a8b232c39755a7", null ],
     [ "func_80055110", "code__303c0__len__3e10_8c.html#a387d410e27b2589005ab14f9812d9362", null ],
     [ "func_8005513C", "code__303c0__len__3e10_8c.html#af537f9be6a1d896864fdabb0da12543b", null ],
     [ "func_800551E0", "code__303c0__len__3e10_8c.html#aeb701a42513f92f0eae5e58a96d240b2", null ],
@@ -29,7 +29,7 @@ var code__303c0__len__3e10_8c =
     [ "func_800558D4", "code__303c0__len__3e10_8c.html#ab4bf8c6f48f4a892f49eefa4830e80a5", null ],
     [ "func_8005591C", "code__303c0__len__3e10_8c.html#a5c80f9261593288d736a7ed9f78bc068", null ],
     [ "func_80055970", "code__303c0__len__3e10_8c.html#ae36a7a2e654c32a3bef60a3ea9d18297", null ],
-    [ "func_800559C4", "code__303c0__len__3e10_8c.html#a5296052dfcdbe518de08820d58a2948d", null ],
+    [ "func_800559C4", "code__303c0__len__3e10_8c.html#a74d4622dd65488c9451ac6af9b91a586", null ],
     [ "func_800559E0", "code__303c0__len__3e10_8c.html#a1bacd754d99dd76b4da8ecbc5a6fdc74", null ],
     [ "func_800559FC", "code__303c0__len__3e10_8c.html#a818386713c1c40f3f2cc3b37c5ace74a", null ],
     [ "func_80055A18", "code__303c0__len__3e10_8c.html#aa6102946e7f2e7b65fb3c33aff385e97", null ],
@@ -110,5 +110,7 @@ var code__303c0__len__3e10_8c =
     [ "func_80058004", "code__303c0__len__3e10_8c.html#a501ad349ddb7662103c13cb8e021a2c9", null ],
     [ "func_80058050", "code__303c0__len__3e10_8c.html#af01140c37bf62b63d1737e0d1ecb5733", null ],
     [ "func_80058B20", "code__303c0__len__3e10_8c.html#a0f512802bb5f39903d6b7ae2fc9a3fc3", null ],
-    [ "func_80058C6C", "code__303c0__len__3e10_8c.html#af042bcd7fe38415bbb5d5e40b3e0d3c9", null ]
+    [ "func_80058C6C", "code__303c0__len__3e10_8c.html#af042bcd7fe38415bbb5d5e40b3e0d3c9", null ],
+    [ "D_80078DB0", "code__303c0__len__3e10_8c.html#af4a3341c89c133cecab11008656b82c3", null ],
+    [ "D_80078DB4", "code__303c0__len__3e10_8c.html#adbab33f8f2321946cfd9866c18dcd4f2", null ]
 ];

@@ -88,7 +88,8 @@ $(document).ready(function(){initNavTree('map_8h.html',''); initResizable(); });
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">map.h File Reference</div>  </div>
 </div><!--header-->
@@ -99,6 +100,11 @@ $(document).ready(function(){initNavTree('map_8h.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMapConfig.html">MapConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fields other than main, entryList, entryCount, background, and tattle are initialised when the map loads.  <a href="structMapConfig.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html">Map</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structArea.html">Area</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcAISettings.html">NpcAISettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,6 +128,9 @@ Macros</h2></td></tr>
 <tr class="separator:a77640234fd4bdf7d7b7d8288a6aa542c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ae019bc4b5ef86b62ec61b86a7ad5052c">ENTRY_COUNT</a>(entryList)&#160;&#160;&#160;(sizeof(entryList) / sizeof(<a class="el" href="structVec4f.html">Vec4f</a>))</td></tr>
 <tr class="separator:ae019bc4b5ef86b62ec61b86a7ad5052c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba152ab29dc78e72f0c24d00768cf29c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aba152ab29dc78e72f0c24d00768cf29c">MAP_ID_MAX_LEN</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:aba152ab29dc78e72f0c24d00768cf29c"><td class="mdescLeft">&#160;</td><td class="mdescRight">"xxx_yyy" excluding null terminator.  <a href="map_8h.html#aba152ab29dc78e72f0c24d00768cf29c">More...</a><br /></td></tr>
+<tr class="separator:aba152ab29dc78e72f0c24d00768cf29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1978fa00ce63925f27b36739ce529276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a1978fa00ce63925f27b36739ce529276">NO_DROPS</a>&#160;&#160;&#160;{ <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(100), <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(0), 0, <a class="el" href="macros_8h.html#adeb60de97ec9bcdd52d475c912158f89">F16</a>(0) }</td></tr>
 <tr class="separator:a1978fa00ce63925f27b36739ce529276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9df7484e0c6da4a9becdb1ea2cd1b949"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a9df7484e0c6da4a9becdb1ea2cd1b949">STANDARD_HEART_DROPS</a>(attempts)</td></tr>
@@ -156,6 +165,14 @@ Typedefs</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a86b5e73d9ceb83a07c307baf4b4967ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structEnemy.html">Enemy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a86b5e73d9ceb83a07c307baf4b4967ae">get_enemy</a> (<a class="el" href="enums_8h.html#a2132d3d939cc2119f7a13b696d55d909">NpcId</a> npcId)</td></tr>
 <tr class="separator:a86b5e73d9ceb83a07c307baf4b4967ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a0cf82bda2f22b61e39010278521f285c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structArea.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a0cf82bda2f22b61e39010278521f285c">gAreas</a> []</td></tr>
+<tr class="memdesc:a0cf82bda2f22b61e39010278521f285c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="map_8h.html#a0cf82bda2f22b61e39010278521f285c">More...</a><br /></td></tr>
+<tr class="separator:a0cf82bda2f22b61e39010278521f285c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da532faf3b640dde4ba37531a173a84"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#a2142bd643e63c3bc1f3aaceaca59ad06">SongID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a8da532faf3b640dde4ba37531a173a84">gSongsUsingVariationFlag</a> [6]</td></tr>
+<tr class="separator:a8da532faf3b640dde4ba37531a173a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a77640234fd4bdf7d7b7d8288a6aa542c"></a>
@@ -198,6 +215,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aba152ab29dc78e72f0c24d00768cf29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba152ab29dc78e72f0c24d00768cf29c">&#9670;&nbsp;</a></span>MAP_ID_MAX_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAP_ID_MAX_LEN&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"xxx_yyy" excluding null terminator. </p>
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00036">36</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
 <a id="a1978fa00ce63925f27b36739ce529276"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1978fa00ce63925f27b36739ce529276">&#9670;&nbsp;</a></span>NO_DROPS</h2>
 
@@ -210,7 +245,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00087">87</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00114">114</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +265,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00089">89</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00116">116</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -250,7 +285,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00097">97</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00124">124</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -270,7 +305,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00105">105</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00132">132</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -290,7 +325,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00113">113</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00140">140</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -310,7 +345,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00121">121</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00148">148</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -330,7 +365,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00129">129</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00156">156</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -366,7 +401,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00137">137</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00164">164</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -386,7 +421,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00139">139</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00166">166</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -402,7 +437,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00140">140</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00167">167</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +467,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00216">216</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00243">243</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -451,7 +486,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00217">217</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00244">244</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -495,13 +530,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0cf82bda2f22b61e39010278521f285c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cf82bda2f22b61e39010278521f285c">&#9670;&nbsp;</a></span>gAreas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structArea.html">Area</a> gAreas[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Zero-terminated. </p>
+
+<p class="reference">Referenced by <a class="el" href="code__e0b30__len__b80_8c.html#a2047b9964313134fb37cc0bfb004180b">get_song_variation_override_for_cur_map()</a>.</p>
+
+</div>
+</div>
+<a id="a8da532faf3b640dde4ba37531a173a84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da532faf3b640dde4ba37531a173a84">&#9670;&nbsp;</a></span>gSongsUsingVariationFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enums_8h.html#a2142bd643e63c3bc1f3aaceaca59ad06">SongID</a> gSongsUsingVariationFlag[6]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Lists the songs that are forced to use the variation determined by <code>map.flags2 &amp; 1</code>. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="code__e0b30__len__b80_8c.html#a2047b9964313134fb37cc0bfb004180b">get_song_variation_override_for_cur_map</a> </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="code__e0b30__len__b80_8c.html#a2047b9964313134fb37cc0bfb004180b">get_song_variation_override_for_cur_map()</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
-    <li class="footer">Generated on Sat Oct 31 2020 05:58:00 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Oct 31 2020 06:07:55 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

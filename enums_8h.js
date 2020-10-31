@@ -1270,7 +1270,7 @@ var enums_8h =
     [ "EncounterTriggerFlags", "enums_8h.html#ae475e71f2ac29a5a6e7fbc0adb6997ea", null ],
     [ "PartnerId", "enums_8h.html#a02e285a19d7f995533bcb53eb8afa23a", null ],
     [ "SpriteId", "enums_8h.html#a490142ed25ad3dc49d633c988fe08b2d", null ],
-    [ "Song", "enums_8h.html#a77dbec45bb9050b032e74a0745ee2284", null ],
+    [ "SongID", "enums_8h.html#a2142bd643e63c3bc1f3aaceaca59ad06", null ],
     [ "Ability", "enums_8h.html#ade3e97f3a2597c42a0a239c4406b9d02", null ],
     [ "Emote", "enums_8h.html#a03848cff3f2b9adf079b09076f96e5be", null ],
     [ "Easing", "enums_8h.html#ac291e6abcbe7c764a678bf9fbdf92ef4", null ],
