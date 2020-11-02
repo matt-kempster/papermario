@@ -5,6 +5,7 @@ var dir_7435fceb9dbcf38c7cda431c492ba8a6 =
     [ "Bandit_DropCoin.inc.c", "Bandit__DropCoin_8inc_8c.html", "Bandit__DropCoin_8inc_8c" ],
     [ "Call800E9894.inc.c", "Call800E9894_8inc_8c.html", "Call800E9894_8inc_8c" ],
     [ "Call800E98C4SyncStatusMenu.inc.c", "Call800E98C4SyncStatusMenu_8inc_8c.html", "Call800E98C4SyncStatusMenu_8inc_8c" ],
+    [ "CheckItemFlags40.inc.c", "CheckItemFlags40_8inc_8c.html", "CheckItemFlags40_8inc_8c" ],
     [ "CheckPartnerFlags1000.inc.c", "CheckPartnerFlags1000_8inc_8c.html", "CheckPartnerFlags1000_8inc_8c" ],
     [ "GetCamVfov.inc.c", "GetCamVfov_8inc_8c.html", "GetCamVfov_8inc_8c" ],
     [ "GetCurrentCameraYawClamped180.inc.c", "GetCurrentCameraYawClamped180_8inc_8c.html", "GetCurrentCameraYawClamped180_8inc_8c" ],

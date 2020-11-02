@@ -26,6 +26,5 @@ var CF7E80_8c =
     [ "func_80241A80_CF95F0", "CF7E80_8c.html#a139283a8c1096d0d169f0a0d6ffce64b", null ],
     [ "func_80241B20_CF9690", "CF7E80_8c.html#ab56a04ddd8983ef794a917e68154efdc", null ],
     [ "func_80241C90_CF9800", "CF7E80_8c.html#a32387aab531da71febe1fd28cba1db9c", null ],
-    [ "func_80241D44_CF98B4", "CF7E80_8c.html#a90acc2870416090a5c2cdb35e68991b9", null ],
-    [ "func_80241EF8_CF9A68", "CF7E80_8c.html#aab5aa035c4929ebbefdea1dd740bc1cb", null ]
+    [ "func_80241D44_CF98B4", "CF7E80_8c.html#a90acc2870416090a5c2cdb35e68991b9", null ]
 ];
