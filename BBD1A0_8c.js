@@ -1,7 +1,5 @@
 var BBD1A0_8c =
 [
-    [ "func_80240000_BBD1A0", "BBD1A0_8c.html#af04951ab313fad332293404487f3c2af", null ],
-    [ "func_8024001C_BBD1BC", "BBD1A0_8c.html#a9c910a966847d8642f61013922cb0b66", null ],
     [ "func_80240038_BBD1D8", "BBD1A0_8c.html#ad908f5dbb43b90299488a62c2d5b7c7d", null ],
     [ "func_8024007C_BBD21C", "BBD1A0_8c.html#a67d10f9bb398cbcd69dd9d8e0dd2fd0a", null ],
     [ "func_80240098_BBD238", "BBD1A0_8c.html#a91822bc40a6383db88dfc47227f6dd5b", null ],

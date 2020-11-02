@@ -28,5 +28,7 @@ var dir_6826d79532171ff2338799cfd298b875 =
     [ "area_tik", "dir_c5eeae3f09235064ad401b1934b23ce4.html", "dir_c5eeae3f09235064ad401b1934b23ce4" ],
     [ "area_trd", "dir_2ec49fc10de613959ca11a872d54321a.html", "dir_2ec49fc10de613959ca11a872d54321a" ],
     [ "area_tst", "dir_f3dfe3c78ccba0f22c69216740520ee5.html", "dir_f3dfe3c78ccba0f22c69216740520ee5" ],
-    [ "common", "dir_7435fceb9dbcf38c7cda431c492ba8a6.html", "dir_7435fceb9dbcf38c7cda431c492ba8a6" ]
+    [ "common", "dir_7435fceb9dbcf38c7cda431c492ba8a6.html", "dir_7435fceb9dbcf38c7cda431c492ba8a6" ],
+    [ "script_api", "dir_c38be7d6dca959f1647c15fd50d87705.html", "dir_c38be7d6dca959f1647c15fd50d87705" ],
+    [ "world.c", "world_8c.html", "world_8c" ]
 ];

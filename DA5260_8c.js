@@ -1,6 +1,5 @@
 var DA5260_8c =
 [
-    [ "func_80240020_DA5260", "DA5260_8c.html#a9a8b234e45acd95d82d7e0f43978904a", null ],
     [ "func_8024003C_DA527C", "DA5260_8c.html#ab06b2b09564b77fe115dadfc5d9b13a7", null ],
     [ "func_80240104_DA5344", "DA5260_8c.html#aefb809e2e01b4d664497645e831d4305", null ],
     [ "func_80240188_DA53C8", "DA5260_8c.html#a6391f18f940d15982e68faabfb004f84", null ],

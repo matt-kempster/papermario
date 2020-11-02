@@ -127,8 +127,8 @@ Functions</h2></td></tr>
 <tr class="separator:a76692ae11abb3cc3f326a41fe43b6339"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d0fb94b093212aa4b5c5b525ff9c1bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__42e0__len__1f60_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">copy_matrix</a> (<a class="el" href="structMatrix4f.html">Matrix4f</a> *src, <a class="el" href="structMatrix4f.html">Matrix4f</a> *dest)</td></tr>
 <tr class="separator:a7d0fb94b093212aa4b5c5b525ff9c1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee52325b803e2464d6729f506dcdba6"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__42e0__len__1f60_8c.html#a8ee52325b803e2464d6729f506dcdba6">dma_copy</a> ()</td></tr>
-<tr class="separator:a8ee52325b803e2464d6729f506dcdba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3eb801e0b7dd0b3da5d299f6c2dd57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__42e0__len__1f60_8c.html#a2f3eb801e0b7dd0b3da5d299f6c2dd57">dma_copy</a> (void *romStart, void *romEnd, void *vramDest)</td></tr>
+<tr class="separator:a2f3eb801e0b7dd0b3da5d299f6c2dd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc3206f2910b64b0d448f32d934fa3bf"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__42e0__len__1f60_8c.html#acc3206f2910b64b0d448f32d934fa3bf">func_800297D4</a> ()</td></tr>
 <tr class="separator:acc3206f2910b64b0d448f32d934fa3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc2fc977bf7969b6c557c64f38e2aaf1"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__42e0__len__1f60_8c.html#afc2fc977bf7969b6c557c64f38e2aaf1">func_80029860</a> ()</td></tr>
@@ -549,22 +549,41 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8ee52325b803e2464d6729f506dcdba6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ee52325b803e2464d6729f506dcdba6">&#9670;&nbsp;</a></span>dma_copy()</h2>
+<a id="a2f3eb801e0b7dd0b3da5d299f6c2dd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3eb801e0b7dd0b3da5d299f6c2dd57">&#9670;&nbsp;</a></span>dma_copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 dma_copy </td>
+          <td class="memname">void dma_copy </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>romStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>romEnd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vramDest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="code__42e0__len__1f60_8c_source.html#l00056">56</a> of file <a class="el" href="code__42e0__len__1f60_8c_source.html">code_42e0_len_1f60.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__316f30_8c.html#a1357023d4df011d4c1609f4c65d89dc5">func_802B2000()</a>, <a class="el" href="code__316f30_8c.html#a3d637d8854654cc3b7b5a2c3ea674c6d">func_802B203C()</a>, <a class="el" href="code__316f30_8c.html#a71d4832ac9d6ea9625d1ddb4360b4505">func_802B2078()</a>, <a class="el" href="code__316f30_8c.html#a8edd74d07e3bbeb5765506913100a1b1">func_802B20B4()</a>, <a class="el" href="world_8c.html#a535459cc5b685072ef91e6010b457c53">load_world_script_api()</a>, and <a class="el" href="battle_8h.html#ac24287a3f0cd0fb183ddf2e30ae12943">LoadMoveScript()</a>.</p>
 
 </div>
 </div>
@@ -1120,7 +1139,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__42e0__len__1f60_8c_source.html#l00141">141</a> of file <a class="el" href="code__42e0__len__1f60_8c_source.html">code_42e0_len_1f60.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a5901aaf792f57f5955711cd1580c7ee0">DemoJoystickRadial()</a>, and <a class="el" href="SomeXYZFuncTodoRename_8inc_8c.html#a2e4ee574306a98a49bdaca8cdbac9118">SomeXYZFuncTodoRename()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a5901aaf792f57f5955711cd1580c7ee0">DemoJoystickRadial()</a>, <a class="el" href="8C82B0_8c.html#ae5c0382265db9752185391f95b5949e1">func_80240358_8C82E8()</a>, <a class="el" href="SomeXYZFuncTodoRename_8inc_8c.html#a2e4ee574306a98a49bdaca8cdbac9118">SomeXYZFuncTodoRename()</a>, and <a class="el" href="UnkCameraFunc_8inc_8c.html#a143774017114cdfed7a730c4a853f782">UnkCameraFunc()</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1161,7 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__42e0__len__1f60_8c_source.html#l00143">143</a> of file <a class="el" href="code__42e0__len__1f60_8c_source.html">code_42e0_len_1f60.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a5901aaf792f57f5955711cd1580c7ee0">DemoJoystickRadial()</a>, <a class="el" href="SomeItemEntityFunc_8inc_8c.html#a1fb9f6f95659fb11e08eb900f34aa175">SomeItemEntityFunc()</a>, and <a class="el" href="SomeXYZFuncTodoRename_8inc_8c.html#a2e4ee574306a98a49bdaca8cdbac9118">SomeXYZFuncTodoRename()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a5901aaf792f57f5955711cd1580c7ee0">DemoJoystickRadial()</a>, <a class="el" href="8C82B0_8c.html#ae5c0382265db9752185391f95b5949e1">func_80240358_8C82E8()</a>, <a class="el" href="SomeItemEntityFunc_8inc_8c.html#a1fb9f6f95659fb11e08eb900f34aa175">SomeItemEntityFunc()</a>, <a class="el" href="SomeXYZFuncTodoRename_8inc_8c.html#a2e4ee574306a98a49bdaca8cdbac9118">SomeXYZFuncTodoRename()</a>, and <a class="el" href="UnkCameraFunc_8inc_8c.html#a143774017114cdfed7a730c4a853f782">UnkCameraFunc()</a>.</p>
 
 </div>
 </div>
@@ -1261,7 +1280,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__42e0__len__1f60_8c.html">code_42e0_len_1f60.c</a></li>
-    <li class="footer">Generated on Sat Oct 31 2020 06:07:56 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 2 2020 17:29:00 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

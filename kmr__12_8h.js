@@ -4,6 +4,7 @@ var kmr__12_8h =
     [ "NpcId_GOOMBA", "kmr__12_8h.html#a376024f36ff060c0ef26f5406097c410", null ],
     [ "GetGoomba", "kmr__12_8h.html#a1f88d55689d0233d149887819d03d7c8", null ],
     [ "GetGoomba", "kmr__12_8h.html#acc48db2abe9d96fd43e05ec70bf67735", null ],
+    [ "kmr_12_config", "kmr__12_8h.html#a6c1085fe97d7a979038a183b41c69aa7", null ],
     [ "kmr_12_Main", "kmr__12_8h.html#ad846c2725f5f5b58dac7dbc553c31451", null ],
     [ "kmr_12_PlayMusic", "kmr__12_8h.html#a531aaaacfd608398e48717438f2ee509", null ],
     [ "kmr_12_MakeEntities", "kmr__12_8h.html#a16ffe8fd95d378af026a31daae0e99fd", null ],

@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('si_8h_source.html',''); initResizable(
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="si_8h.html#a9eed23887ec61cd5e338a30d56ea4469">   16</a></span>&#160;<span class="preprocessor">#define SI_SAVE_VAR(v) (v - 170000000)</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="si_8h.html#adc72510a85d62a778fbf33bcfec54fee">   17</a></span>&#160;<span class="preprocessor">#define SI_ARRAY(v) (v - 190000000)</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="si_8h.html#af1ccf8eda7d12daebe71b43121e05463">   18</a></span>&#160;<span class="preprocessor">#define SI_ARRAY_FLAG(v) (v - 210000000)</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="si_8h.html#ac06ecb430ff3444d96940fff7049f15c">   19</a></span>&#160;<span class="preprocessor">#define SI_FIXED(v) ((s32)(v * 1024.0f) - 230000000) // See float_to_fixed_var</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="si_8h.html#ac06ecb430ff3444d96940fff7049f15c">   19</a></span>&#160;<span class="preprocessor">#define SI_FIXED(v) ((v * 1024.0f) + -230000000) // See float_to_fixed_var</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/* Return type of si_execute_next_command */</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="si_8h.html#a16a9444f96a5d741bef385172a041123">   22</a></span>&#160;<span class="preprocessor">#define SI_CONTINUE 0   </span><span class="comment">/* Continue to next command */</span><span class="preprocessor"></span></div>
@@ -250,7 +250,7 @@ $(document).ready(function(){initNavTree('si_8h_source.html',''); initResizable(
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="si_8h.html">si.h</a></li>
-    <li class="footer">Generated on Sat Oct 31 2020 06:07:53 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 2 2020 17:28:57 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

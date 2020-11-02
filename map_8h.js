@@ -26,7 +26,8 @@ var map_8h =
     [ "NPC_GROUP", "map_8h.html#a3e15fafcb21bfb136d358cb21975fb30", null ],
     [ "NPC_GROUP_LIST_END", "map_8h.html#aff0eb6408ab05f5d10b9f60c0075832f", null ],
     [ "EntryList", "map_8h.html#a05e2ff58a3f0263af0b888fc13bf2ed9", null ],
+    [ "MapInit", "map_8h.html#a4aab1abc2163da64d8bf3823f8759553", null ],
     [ "get_enemy", "map_8h.html#a86b5e73d9ceb83a07c307baf4b4967ae", null ],
-    [ "gAreas", "map_8h.html#a0cf82bda2f22b61e39010278521f285c", null ],
+    [ "gAreas", "map_8h.html#af111d5b4c8ccff2181c2df0c760ce49f", null ],
     [ "gSongsUsingVariationFlag", "map_8h.html#a8da532faf3b640dde4ba37531a173a84", null ]
 ];

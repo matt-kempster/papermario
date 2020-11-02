@@ -36,7 +36,7 @@ var code__759b0__len__61b0_8c =
     [ "func_800DFF50", "code__759b0__len__61b0_8c.html#ab9f1e997358acc0f9b244ad2f7ab9412", null ],
     [ "func_800DFF78", "code__759b0__len__61b0_8c.html#abc793b46cc1f56c7c840f0b48e8eef72", null ],
     [ "func_800DFFCC", "code__759b0__len__61b0_8c.html#a60bc229f3eea02d75d6e7c1d0b063807", null ],
-    [ "func_800E0088", "code__759b0__len__61b0_8c.html#a31be80af8692086f27cd89f979aac032", null ],
+    [ "func_800E0088", "code__759b0__len__61b0_8c.html#a04027616b9593382af93b97ae2296e7e", null ],
     [ "enable_player_shadow", "code__759b0__len__61b0_8c.html#a74e96994fa0bc6d9717b20387b30ce45", null ],
     [ "disable_player_shadow", "code__759b0__len__61b0_8c.html#aeca4ac8bcc6804007fe3c24fb4075737", null ],
     [ "disable_player_static_collisions", "code__759b0__len__61b0_8c.html#a5aee8af174b5b8d0ab68598f5a1b6e48", null ],

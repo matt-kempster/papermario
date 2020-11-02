@@ -116,7 +116,7 @@ Macros</h2></td></tr>
 <tr class="separator:adc72510a85d62a778fbf33bcfec54fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ccf8eda7d12daebe71b43121e05463"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#af1ccf8eda7d12daebe71b43121e05463">SI_ARRAY_FLAG</a>(v)&#160;&#160;&#160;(v - 210000000)</td></tr>
 <tr class="separator:af1ccf8eda7d12daebe71b43121e05463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac06ecb430ff3444d96940fff7049f15c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ac06ecb430ff3444d96940fff7049f15c">SI_FIXED</a>(v)&#160;&#160;&#160;((s32)(v * 1024.0f) - 230000000)</td></tr>
+<tr class="memitem:ac06ecb430ff3444d96940fff7049f15c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ac06ecb430ff3444d96940fff7049f15c">SI_FIXED</a>(v)&#160;&#160;&#160;((v * 1024.0f) + -230000000)</td></tr>
 <tr class="separator:ac06ecb430ff3444d96940fff7049f15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16a9444f96a5d741bef385172a041123"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a16a9444f96a5d741bef385172a041123">SI_CONTINUE</a>&#160;&#160;&#160;0   /* Continue to next command */</td></tr>
 <tr class="separator:a16a9444f96a5d741bef385172a041123"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -524,7 +524,7 @@ Typedefs</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">v</td><td>)</td>
-          <td>&#160;&#160;&#160;((s32)(v * 1024.0f) - 230000000)</td>
+          <td>&#160;&#160;&#160;((v * 1024.0f) + -230000000)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2757,7 +2757,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="si_8h.html">si.h</a></li>
-    <li class="footer">Generated on Sat Oct 31 2020 06:07:55 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 2 2020 17:28:59 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

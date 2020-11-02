@@ -1,6 +1,5 @@
 var DB7910_8c =
 [
-    [ "func_80240000_DB7910", "DB7910_8c.html#ad316044b79667d5395a0762ae0f59a02", null ],
     [ "func_8024001C_DB792C", "DB7910_8c.html#a6e8569fee2b695ed33ca69d627f817b0", null ],
     [ "func_802400E4_DB79F4", "DB7910_8c.html#aa35b14db4efa5b660e983af6b4fbacd6", null ],
     [ "func_80240168_DB7A78", "DB7910_8c.html#a9e34b56b4140e083d69289460e682cd0", null ],

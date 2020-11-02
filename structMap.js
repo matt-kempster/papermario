@@ -6,8 +6,8 @@ var structMap =
     [ "dmaEnd", "structMap.html#a04ecaa27091445914ff901a1c46610b8", null ],
     [ "dmaDest", "structMap.html#a1cd090d045b1a0169dc0ef2b31d8c0da", null ],
     [ "bgName", "structMap.html#aba239533d85be68e1e6dce38f3fcea27", null ],
-    [ "init", "structMap.html#a5bd643490bd08350272fba263493ebe5", null ],
-    [ "flags1", "structMap.html#a19c62d4ade2efe608458ca698dacb155", null ],
-    [ "flags2", "structMap.html#a018480f64ddd99ee1f6a019ee8a08499", null ],
-    [ "flags3", "structMap.html#a448d7f1bcccf1336a7dc104a98d92cf6", null ]
+    [ "init", "structMap.html#a67c8e4a7f858ffec790e228a31c0c730", null ],
+    [ "unk_1C", "structMap.html#a678f2924ae2152b351805355eff6c507", null ],
+    [ "songVariation", "structMap.html#ad18f4835730df2db0e3b67f23eeba5a2", null ],
+    [ "flags", "structMap.html#a81120b9643fb0dc0fb06295b7678454a", null ]
 ];

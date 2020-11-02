@@ -114,7 +114,7 @@ var code__b72b0__len__15ed0_8c =
     [ "func_80133A94", "code__b72b0__len__15ed0_8c.html#a81a5d8f3d7f7fbdca01b6237249eec64", null ],
     [ "test_item_player_collision", "code__b72b0__len__15ed0_8c.html#abf862be2cb36b4825348c3501d8a61b6", null ],
     [ "func_80133FC8", "code__b72b0__len__15ed0_8c.html#a49cb6a5aa0f2099189b60546d2641378", null ],
-    [ "set_item_entity_flags", "code__b72b0__len__15ed0_8c.html#a344522ecd2e750dcd4df7e9a1e53bfb2", null ],
+    [ "set_item_entity_flags", "code__b72b0__len__15ed0_8c.html#ad4550cbff75dd1e28e4d35d2a5dbbda1", null ],
     [ "clear_item_entity_flags", "code__b72b0__len__15ed0_8c.html#a30c3d2cb75a6affb00e2394e700f138e", null ],
     [ "func_801341B0", "code__b72b0__len__15ed0_8c.html#a4450f0736a61e2a24fc58c1aefd65f40", null ],
     [ "func_801341E8", "code__b72b0__len__15ed0_8c.html#a79f5c166f5b07ab1b53f1a88f480881d", null ],

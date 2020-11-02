@@ -1,6 +1,5 @@
 var DEEEA0_8c =
 [
-    [ "func_80240000_DEEEA0", "DEEEA0_8c.html#a6a2a3158a95cabe99463ebbb21517e78", null ],
     [ "func_8024001C_DEEEBC", "DEEEA0_8c.html#a8140d813976e3fd9ac542bafc004ae0c", null ],
     [ "func_802400E4_DEEF84", "DEEEA0_8c.html#a0df35f4701f3c621b62382f719cfba62", null ],
     [ "func_80240168_DEF008", "DEEEA0_8c.html#a6b836424dcfbddad66e8cb9995ca9c83", null ],

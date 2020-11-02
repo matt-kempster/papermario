@@ -1,6 +1,5 @@
 var DC43D0_8c =
 [
-    [ "func_80240000_DC43D0", "DC43D0_8c.html#a1b5cf9fd4ebe6e15250c1d1970f0f3eb", null ],
     [ "func_8024001C_DC43EC", "DC43D0_8c.html#abc91fb727b057d897038b6836b8b2685", null ],
     [ "func_802400E4_DC44B4", "DC43D0_8c.html#aad1b3d7926ea7b762caaf686a106e6bb", null ],
     [ "func_80240168_DC4538", "DC43D0_8c.html#a8025bef1661ffc1e12a1947912992216", null ],

@@ -1,6 +1,5 @@
 var DD79B0_8c =
 [
-    [ "func_80240000_DD79B0", "DD79B0_8c.html#ad213358bd60ebdfc8634dad88e6d6244", null ],
     [ "func_8024001C_DD79CC", "DD79B0_8c.html#ae1808ded7dfe42cbd5d7d2cc3f502f2a", null ],
     [ "func_802400E4_DD7A94", "DD79B0_8c.html#aee4996a2402b39761725a454daf5860b", null ],
     [ "func_80240168_DD7B18", "DD79B0_8c.html#a9f208c989eb4eb601993c76e471ab22d", null ],
