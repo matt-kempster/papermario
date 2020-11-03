@@ -21,6 +21,8 @@ var dir_7435fceb9dbcf38c7cda431c492ba8a6 =
     [ "Set8009A650_40.inc.c", "Set8009A650__40_8inc_8c.html", "Set8009A650__40_8inc_8c" ],
     [ "Set80151310.inc.c", "Set80151310_8inc_8c.html", "Set80151310_8inc_8c" ],
     [ "Set80151310_0.inc.c", "Set80151310__0_8inc_8c.html", "Set80151310__0_8inc_8c" ],
+    [ "set_script_owner_npc_anim.inc.c", "set__script__owner__npc__anim_8inc_8c.html", "set__script__owner__npc__anim_8inc_8c" ],
+    [ "set_script_owner_npc_col_height.inc.c", "set__script__owner__npc__col__height_8inc_8c.html", "set__script__owner__npc__col__height_8inc_8c" ],
     [ "SetCamera0MoveFlag1.inc.c", "SetCamera0MoveFlag1_8inc_8c.html", "SetCamera0MoveFlag1_8inc_8c" ],
     [ "SetCamVfov.inc.c", "SetCamVfov_8inc_8c.html", "SetCamVfov_8inc_8c" ],
     [ "SetEntityFlags100000.inc.c", "SetEntityFlags100000_8inc_8c.html", "SetEntityFlags100000_8inc_8c" ],

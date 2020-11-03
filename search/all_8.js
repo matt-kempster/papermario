@@ -92,7 +92,7 @@ var searchData=
   ['encounter_2254',['Encounter',['../structEncounter.html',1,'']]],
   ['encountered_2255',['encountered',['../structEnemy.html#ae2d18a4ed4d680795613749eff7eab21',1,'Enemy']]],
   ['encounterid_2256',['encounterID',['../structEncounter.html#a37ce7fd60168af87452aa85afb11cec9',1,'Encounter']]],
-  ['encounterindex_2257',['encounterIndex',['../structEnemy.html#a0b1c34ef5e5c8804b9b974eaae0a0d89',1,'Enemy']]],
+  ['encounterindex_2257',['encounterIndex',['../structEnemy.html#a41e29cc23695864f7cd0c9aadfb2d1e7',1,'Enemy']]],
   ['encounteroutcome_2258',['EncounterOutcome',['../enums_8h.html#ad9349321df3d9ca3e63d0bfb29d0d88a',1,'enums.h']]],
   ['encounteroutcome_5fenemy_5ffled_2259',['EncounterOutcome_ENEMY_FLED',['../enums_8h.html#a03be99b295dae2c3900cce95405ec0d9',1,'enums.h']]],
   ['encounteroutcome_5fplayer_5ffled_2260',['EncounterOutcome_PLAYER_FLED',['../enums_8h.html#aa196b5396beffd97aa6eacaabbf23ce9',1,'enums.h']]],

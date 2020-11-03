@@ -36,7 +36,7 @@ var structNpc =
     [ "collisionRadius", "structNpc.html#abee620a51b6453bad1c0b68ba0df39d5", null ],
     [ "collisionHeight", "structNpc.html#a92d1547deb33a133acc94b4bd970107b", null ],
     [ "renderMode", "structNpc.html#afb7d8ec70fb0b6a0f1ecd9963e6bef81", null ],
-    [ "unk_AB", "structNpc.html#ac4e144651455894f752abcf0ec8cf61c", null ],
+    [ "unk_AB", "structNpc.html#a2c764c17483813089e81c98db6feaf02", null ],
     [ "unk_AC", "structNpc.html#abd6d28be68b9dd33c0251cc57ad2eafd", null ],
     [ "unk_AD", "structNpc.html#aa4813abec5b15ed36bfdfad6dd755e65", null ]
 ];

@@ -1,12 +1,8 @@
 var A48720_8c =
 [
-    [ "func_80240160_A48720", "A48720_8c.html#a44de2c99ef69f25b0297734a3c02178e", null ],
     [ "func_802401DC_A4879C", "A48720_8c.html#af09f5a8a8401bd17a93b7eabbce9932b", null ],
     [ "func_80240310_A488D0", "A48720_8c.html#a838fe9cca4cbd4cc6c4e4b7b6f0973fc", null ],
-    [ "func_80240474_A48A34", "A48720_8c.html#ab77815c7a8be61110a00a8d5520e6914", null ],
     [ "func_802404F4_A48AB4", "A48720_8c.html#a1dc4d10bcb3b84690da21961cbcaf253", null ],
-    [ "func_80240934_A48EF4", "A48720_8c.html#ac1350be16cab9d0dd7d2babf6bb94d8d", null ],
-    [ "func_802409D4_A48F94", "A48720_8c.html#a7d4997eea502cfdef08c3bfedc3b3fb8", null ],
     [ "func_80240A48_A49008", "A48720_8c.html#af627818ae80df00a860298c504967e4f", null ],
     [ "func_80240C18_A491D8", "A48720_8c.html#afa083d6b1172c1d5f061c3137c1d6423", null ],
     [ "func_80241128_A496E8", "A48720_8c.html#a3407cee5f318e85466c9c0906bf4a8a9", null ],

@@ -1,7 +1,7 @@
 var structEnemy =
 [
     [ "flags", "structEnemy.html#a1fef6f6e580ab9006a2c222efcaa0ff1", null ],
-    [ "encounterIndex", "structEnemy.html#a0b1c34ef5e5c8804b9b974eaae0a0d89", null ],
+    [ "encounterIndex", "structEnemy.html#a41e29cc23695864f7cd0c9aadfb2d1e7", null ],
     [ "encountered", "structEnemy.html#ae2d18a4ed4d680795613749eff7eab21", null ],
     [ "scriptGroup", "structEnemy.html#a4588e4ab12e2da990e5e08297ae7be49", null ],
     [ "unk_07", "structEnemy.html#ae8347572472a80cf3ccc9238461a1f2a", null ],

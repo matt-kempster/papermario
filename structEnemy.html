@@ -95,8 +95,8 @@ $(document).ready(function(){initNavTree('structEnemy.html',''); initResizable()
 Data Fields</h2></td></tr>
 <tr class="memitem:a1fef6f6e580ab9006a2c222efcaa0ff1"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html#a1fef6f6e580ab9006a2c222efcaa0ff1">flags</a></td></tr>
 <tr class="separator:a1fef6f6e580ab9006a2c222efcaa0ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1c34ef5e5c8804b9b974eaae0a0d89"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html#a0b1c34ef5e5c8804b9b974eaae0a0d89">encounterIndex</a></td></tr>
-<tr class="separator:a0b1c34ef5e5c8804b9b974eaae0a0d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41e29cc23695864f7cd0c9aadfb2d1e7"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html#a41e29cc23695864f7cd0c9aadfb2d1e7">encounterIndex</a></td></tr>
+<tr class="separator:a41e29cc23695864f7cd0c9aadfb2d1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2d18a4ed4d680795613749eff7eab21"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html#ae2d18a4ed4d680795613749eff7eab21">encountered</a></td></tr>
 <tr class="separator:ae2d18a4ed4d680795613749eff7eab21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4588e4ab12e2da990e5e08297ae7be49"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html#a4588e4ab12e2da990e5e08297ae7be49">scriptGroup</a></td></tr>
@@ -200,19 +200,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a0b1c34ef5e5c8804b9b974eaae0a0d89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b1c34ef5e5c8804b9b974eaae0a0d89">&#9670;&nbsp;</a></span>encounterIndex</h2>
+<a id="a41e29cc23695864f7cd0c9aadfb2d1e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41e29cc23695864f7cd0c9aadfb2d1e7">&#9670;&nbsp;</a></span>encounterIndex</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 Enemy::encounterIndex</td>
+          <td class="memname">s8 Enemy::encounterIndex</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00196">196</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="AwaitPlayerNearNpc_8inc_8c.html#a95ce2290144a10e31d84d8837dbd195e">func_802408B4_97BEE4()</a>.</p>
 
 </div>
 </div>
@@ -284,7 +286,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00200">200</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a2c4c1d80f4a857010ae7d04b3173fd90">BindNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a0483949132c88e042d12425c571d52eb">BindNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a7452703dd37145bb3e72c3e4302a4d69">BindNpcHit()</a>, <a class="el" href="script__api_2common_8h.html#a54bd8a45e95587d69a3dd56cf74c6203">BindNpcIdle()</a>, <a class="el" href="script__api_2common_8h.html#abfb7b478b361536d6ccbb5fddd031ae9">BindNpcInteract()</a>, <a class="el" href="script__api_2common_8h.html#a932de7d2b266f62698eb3f50dbef19a3">DoNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a6edc75fd220e76dc3a1843d39bc9a388">EnableNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#a48b4b07d583496f2d3d56f1fc0ff5c5c">EnableNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="script__api_2common_8h.html#a9283d9beb1a39313f68e69ea8fe0c679">GetSelfNpcID()</a>, <a class="el" href="script__api_2common_8h.html#ac285ac14c5aae6c003abdaec14945e13">RestartNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#ab5a82e59e6078ce73ca0d4692771d7d1">RestartNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a7c011f660c313898906273d63fb2fdad">SetEnemyFlagBits()</a>, and <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a2c4c1d80f4a857010ae7d04b3173fd90">BindNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a0483949132c88e042d12425c571d52eb">BindNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a7452703dd37145bb3e72c3e4302a4d69">BindNpcHit()</a>, <a class="el" href="script__api_2common_8h.html#a54bd8a45e95587d69a3dd56cf74c6203">BindNpcIdle()</a>, <a class="el" href="script__api_2common_8h.html#abfb7b478b361536d6ccbb5fddd031ae9">BindNpcInteract()</a>, <a class="el" href="script__api_2common_8h.html#a932de7d2b266f62698eb3f50dbef19a3">DoNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a6edc75fd220e76dc3a1843d39bc9a388">EnableNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#a48b4b07d583496f2d3d56f1fc0ff5c5c">EnableNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="script__api_2common_8h.html#a9283d9beb1a39313f68e69ea8fe0c679">GetSelfNpcID()</a>, <a class="el" href="script__api_2common_8h.html#ac285ac14c5aae6c003abdaec14945e13">RestartNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#ab5a82e59e6078ce73ca0d4692771d7d1">RestartNpcAux()</a>, <a class="el" href="set__script__owner__npc__anim_8inc_8c.html#a30da2e3a75bd306ca6d293586eef2d1f">set_script_owner_npc_anim()</a>, <a class="el" href="set__script__owner__npc__col__height_8inc_8c.html#af15d63f7ae7c365a5d381c66e5135958">set_script_owner_npc_col_height()</a>, <a class="el" href="script__api_2common_8h.html#a7c011f660c313898906273d63fb2fdad">SetEnemyFlagBits()</a>, and <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>.</p>
 
 </div>
 </div>
@@ -704,7 +706,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00224">224</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="script__api_2common_8h.html#a1e34b50f2b39a60018f9a94e7485600e">GetSelfVar()</a>, <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>, and <a class="el" href="script__api_2common_8h.html#a4ee4f465e422f32315641332f56e83fd">SetSelfVar()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AwaitPlayerNearNpc_8inc_8c.html#a95ce2290144a10e31d84d8837dbd195e">func_802408B4_97BEE4()</a>, <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="script__api_2common_8h.html#a1e34b50f2b39a60018f9a94e7485600e">GetSelfVar()</a>, <a class="el" href="set__script__owner__npc__anim_8inc_8c.html#a30da2e3a75bd306ca6d293586eef2d1f">set_script_owner_npc_anim()</a>, <a class="el" href="set__script__owner__npc__col__height_8inc_8c.html#af15d63f7ae7c365a5d381c66e5135958">set_script_owner_npc_col_height()</a>, <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>, and <a class="el" href="script__api_2common_8h.html#a4ee4f465e422f32315641332f56e83fd">SetSelfVar()</a>.</p>
 
 </div>
 </div>
@@ -840,7 +842,7 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00232">232</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a932de7d2b266f62698eb3f50dbef19a3">DoNpcDefeat()</a>, and <a class="el" href="script__api_2common_8h.html#a5883afbe8f856a850b2fb7dd4b7c6fbd">GetSelfAnimationFromTable()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a932de7d2b266f62698eb3f50dbef19a3">DoNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a5883afbe8f856a850b2fb7dd4b7c6fbd">GetSelfAnimationFromTable()</a>, and <a class="el" href="set__script__owner__npc__anim_8inc_8c.html#a30da2e3a75bd306ca6d293586eef2d1f">set_script_owner_npc_anim()</a>.</p>
 
 </div>
 </div>
@@ -921,7 +923,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structEnemy.html">Enemy</a></li>
-    <li class="footer">Generated on Mon Nov 2 2020 22:02:15 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Tue Nov 3 2020 14:35:34 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
