@@ -1,5 +1,9 @@
 var NAVTREEINDEX64 =
 {
+"structBattleStatus.html#acf012bf55461233331044d01e0383a48":[4,0,8,96],
+"structBattleStatus.html#acfc21acd9f18eb9299f480ce47379807":[4,0,8,111],
+"structBattleStatus.html#ad3295e676a5a89e7ce2e0e3eff0698b0":[4,0,8,16],
+"structBattleStatus.html#ad48ef161e25eda24ff44667c1631bef7":[4,0,8,93],
 "structBattleStatus.html#ad550b84bab87d00b586e4c4442fd10e3":[4,0,8,47],
 "structBattleStatus.html#ad5f55b1ed0b671c0b06b627cd3e8c509":[4,0,8,87],
 "structBattleStatus.html#ad6c9379483b476e95951739adab6f59a":[4,0,8,106],
@@ -38,6 +42,7 @@ var NAVTREEINDEX64 =
 "structCamera.html#a014404ecdc7ab90da19a1c5920a5dccd":[4,0,11,69],
 "structCamera.html#a02ce49a64d20e34c4442cb65f52d3bd2":[4,0,11,19],
 "structCamera.html#a05257ad1a67fbe4d689c42b586e7f63f":[4,0,11,25],
+"structCamera.html#a0a1d5554590756ed12aa5295c9716cb7":[4,0,11,26],
 "structCamera.html#a0b5ccc197076a2ad12efdf246a8b1ccb":[4,0,11,5],
 "structCamera.html#a0d43b3131a7a245a9cba467be0319820":[4,0,11,59],
 "structCamera.html#a0d74ec7aa711666b65ef16ab53020e55":[4,0,11,28],
@@ -80,7 +85,6 @@ var NAVTREEINDEX64 =
 "structCamera.html#a7805bad323c6e38f0150b51c060206ea":[4,0,11,41],
 "structCamera.html#a7a144dc9541bbf960970b8dd35e2160b":[4,0,11,66],
 "structCamera.html#a7b5aae94eb243469d37b88aca8d79b71":[4,0,11,7],
-"structCamera.html#a7bf4e02bd3370ebf9c86946e6e2822c1":[4,0,11,26],
 "structCamera.html#a7d79560e94c688de0e751511d1f051eb":[4,0,11,54],
 "structCamera.html#a7e979ec78be51c8b137c0093f85aebe4":[4,0,11,48],
 "structCamera.html#a7ef50886570a4291faf0d53212eb47e3":[4,0,11,4],
@@ -241,13 +245,9 @@ var NAVTREEINDEX64 =
 "structEncounter.html#ae3398f4aa13be022fdf8947223192d69":[4,0,25,2],
 "structEncounterStatus.html":[4,0,26],
 "structEncounterStatus.html#a067171758c0f92f3c3296247079a52c0":[4,0,26,3],
-"structEncounterStatus.html#a1129f06081611161f660e5c04d742520":[4,0,26,27],
-"structEncounterStatus.html#a13e497adb2bf83a4bb03e030517426d7":[4,0,26,9],
-"structEncounterStatus.html#a19438c28c413e4742f24b966fabba800":[4,0,26,10],
-"structEncounterStatus.html#a1d52559f9668f50e9c3978698dde4606":[4,0,26,30],
-"structEncounterStatus.html#a29ff582a2d835e936d9aef039901b611":[4,0,26,29],
-"structEncounterStatus.html#a2b10918595bf5ec5093bf5e4646c7d62":[4,0,26,12],
-"structEncounterStatus.html#a2ceaac7f1a87580969f1a6e073e408af":[4,0,26,0],
-"structEncounterStatus.html#a31c75da70a274710530b2a6605f98920":[4,0,26,18],
-"structEncounterStatus.html#a34461187f816239286fe2410b23007b1":[4,0,26,11]
+"structEncounterStatus.html#a1129f06081611161f660e5c04d742520":[4,0,26,28],
+"structEncounterStatus.html#a13e497adb2bf83a4bb03e030517426d7":[4,0,26,10],
+"structEncounterStatus.html#a187abb2534f3c1d6ffbc2e0e318befc6":[4,0,26,4],
+"structEncounterStatus.html#a19438c28c413e4742f24b966fabba800":[4,0,26,11],
+"structEncounterStatus.html#a1d52559f9668f50e9c3978698dde4606":[4,0,26,31]
 };

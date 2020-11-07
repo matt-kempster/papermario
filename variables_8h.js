@@ -68,6 +68,8 @@ var variables_8h =
     [ "gMapTransitionAlpha", "variables_8h.html#af8f1033973eaf4cd3ba32ce0f2cf0fa8", null ],
     [ "D_800A0942", "variables_8h.html#a621c2a71870ef86fb074e20dee1df3ad", null ],
     [ "D_800A0944", "variables_8h.html#ac54077254cfee263474c60d6d34793d9", null ],
+    [ "D_800A0946", "variables_8h.html#ae2441c6d6ecaa5f13f4a7cb29af31774", null ],
+    [ "D_800A0948", "variables_8h.html#a73bb7e0cef5e982d858dab1962e8d395", null ],
     [ "D_800A0954", "variables_8h.html#a8b7591ad47c1fd27b42451dd7b749569", null ],
     [ "D_800A0956", "variables_8h.html#a9f5507204fb69bc156b3f23afffa7a52", null ],
     [ "D_800A0958", "variables_8h.html#ad647622e8985a414c0005e8ef66be22e", null ],

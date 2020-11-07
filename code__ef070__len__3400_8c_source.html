@@ -96,9 +96,9 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    s32 enabled = <a class="code" href="si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623">get_variable</a>(script, *args++);</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">if</span> (!enabled) {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        (&amp;<a class="code" href="variables_8h.html#a692a5d29c29cf9d2cc0acaf3491a6b34">gCameras</a>[id])-&gt;flags |= 0x2;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="macros_8h.html#ac42e78437d897d806dfd910090517ee0">CAM</a>(<span class="keywordtype">id</span>)-&gt;flags |= 0x2;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        (&amp;<a class="code" href="variables_8h.html#a692a5d29c29cf9d2cc0acaf3491a6b34">gCameras</a>[id])-&gt;flags &amp;= ~0x2;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <a class="code" href="macros_8h.html#ac42e78437d897d806dfd910090517ee0">CAM</a>(<span class="keywordtype">id</span>)-&gt;flags &amp;= ~0x2;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    }</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div>
@@ -109,9 +109,9 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    s32 enabled = <a class="code" href="si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623">get_variable</a>(script, *args++);</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (!enabled) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        (&amp;<a class="code" href="variables_8h.html#a692a5d29c29cf9d2cc0acaf3491a6b34">gCameras</a>[id])-&gt;flags |= 0x80;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="macros_8h.html#ac42e78437d897d806dfd910090517ee0">CAM</a>(<span class="keywordtype">id</span>)-&gt;flags |= 0x80;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        (&amp;<a class="code" href="variables_8h.html#a692a5d29c29cf9d2cc0acaf3491a6b34">gCameras</a>[id])-&gt;flags &amp;= ~0x80;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="macros_8h.html#ac42e78437d897d806dfd910090517ee0">CAM</a>(<span class="keywordtype">id</span>)-&gt;flags &amp;= ~0x80;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
@@ -158,25 +158,25 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">    Bytecode outVar4 = *ptrReadPos++;</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    f32 temp1, temp2, temp3;</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;mode = 2;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_06 = 0;</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_1C = -round((&amp;gCameras[id])-&gt;currentPitch);</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_1E = -(&amp;gCameras[id])-&gt;currentBlendedYawNegated;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">    CAM(id)-&gt;mode = 2;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    CAM(id)-&gt;unk_06 = 0;</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    CAM(id)-&gt;unk_1C = -round(CAM(id)-&gt;currentPitch);</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    CAM(id)-&gt;unk_1E = -CAM(id)-&gt;currentBlendedYawNegated;</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    temp1 = (&amp;gCameras[id])-&gt;lookAt_obj[0] - (&amp;gCameras[id])-&gt;lookAt_eye[0];</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    temp2 = (&amp;gCameras[id])-&gt;lookAt_obj[1] - (&amp;gCameras[id])-&gt;lookAt_eye[1];</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">    temp3 = (&amp;gCameras[id])-&gt;lookAt_obj[2] - (&amp;gCameras[id])-&gt;lookAt_eye[2];</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    temp1 = CAM(id)-&gt;lookAt_obj.x - CAM(id)-&gt;lookAt_eye[0];</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">    temp2 = CAM(id)-&gt;lookAt_obj.y - CAM(id)-&gt;lookAt_eye[1];</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">    temp3 = CAM(id)-&gt;lookAt_obj.z - CAM(id)-&gt;lookAt_eye[2];</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_20 = round(sqrtf((temp1 * temp1) + (temp2 * temp2) + (temp3 * temp3)));</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_22 = 0;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_54 = (&amp;gCameras[id])-&gt;lookAt_obj[0];</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_58 = (&amp;gCameras[id])-&gt;lookAt_obj[1];</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">    (&amp;gCameras[id])-&gt;unk_5C = (&amp;gCameras[id])-&gt;lookAt_obj[2];</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    CAM(id)-&gt;unk_20 = round(sqrtf((temp1 * temp1) + (temp2 * temp2) + (temp3 * temp3)));</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">    CAM(id)-&gt;unk_22 = 0;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    CAM(id)-&gt;unk_54 = CAM(id)-&gt;lookAt_obj.x;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    CAM(id)-&gt;unk_58 = CAM(id)-&gt;lookAt_obj.y;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">    CAM(id)-&gt;unk_5C = CAM(id)-&gt;lookAt_obj.z;</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    set_variable(script, outVar1, (&amp;gCameras[id])-&gt;unk_1C);</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    set_variable(script, outVar2, (&amp;gCameras[id])-&gt;unk_1E);</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    set_variable(script, outVar3, (&amp;gCameras[id])-&gt;unk_20);</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    set_variable(script, outVar4, (&amp;gCameras[id])-&gt;unk_22);</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">    set_variable(script, outVar1, CAM(id)-&gt;unk_1C);</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    set_variable(script, outVar2, CAM(id)-&gt;unk_1E);</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    set_variable(script, outVar3, CAM(id)-&gt;unk_20);</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    set_variable(script, outVar4, CAM(id)-&gt;unk_22);</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">    return ApiStatus_DONE2;</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">}</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">*/</span></div>
@@ -189,7 +189,7 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    s16 width = <a class="code" href="si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623">get_variable</a>(script, *args++);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    s16 height = <a class="code" href="si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623">get_variable</a>(script, *args++);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="code__8230__len__1ae0_8c.html#af9ca5fd81dd4d67e80165141c930cc15">set_cam_viewport</a>(<span class="keywordtype">id</span>, x, y, width, height);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="code__8560_8c.html#af9ca5fd81dd4d67e80165141c930cc15">set_cam_viewport</a>(<span class="keywordtype">id</span>, x, y, width, height);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
@@ -664,7 +664,6 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="ttc" id="acode__ef070__len__3400_8c_html_af65d2622f807a0762c474131e3c3245a"><div class="ttname"><a href="code__ef070__len__3400_8c.html#af65d2622f807a0762c474131e3c3245a">func_802CD3C0</a></div><div class="ttdeci">s32 func_802CD3C0()</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00499">code_ef070_len_3400.c:499</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_a02e4332528e0f6bbdb043eec3214fc1f"><div class="ttname"><a href="code__ef070__len__3400_8c.html#a02e4332528e0f6bbdb043eec3214fc1f">SetCamProperties</a></div><div class="ttdeci">s32 SetCamProperties(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00465">code_ef070_len_3400.c:465</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_abf777e1eb29ca373df931118fbc1727e"><div class="ttname"><a href="code__ef070__len__3400_8c.html#abf777e1eb29ca373df931118fbc1727e">ShakeCam</a></div><div class="ttdeci">s32 ShakeCam(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00187">code_ef070_len_3400.c:187</a></div></div>
-<div class="ttc" id="acode__8230__len__1ae0_8c_html_af9ca5fd81dd4d67e80165141c930cc15"><div class="ttname"><a href="code__8230__len__1ae0_8c.html#af9ca5fd81dd4d67e80165141c930cc15">set_cam_viewport</a></div><div class="ttdeci">void set_cam_viewport(s16 id, s16 x, s16 y, s16 width, s16 height)</div><div class="ttdef"><b>Definition:</b> <a href="code__8230__len__1ae0_8c_source.html#l00025">code_8230_len_1ae0.c:25</a></div></div>
 <div class="ttc" id="astructCamera_html_a7a144dc9541bbf960970b8dd35e2160b"><div class="ttname"><a href="structCamera.html#a7a144dc9541bbf960970b8dd35e2160b">Camera::boolTargetPlayer</a></div><div class="ttdeci">s16 boolTargetPlayer</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00475">common_structs.h:475</a></div></div>
 <div class="ttc" id="astructCamera_html_a4f679ea3014d1b88abc666baebc416a3"><div class="ttname"><a href="structCamera.html#a4f679ea3014d1b88abc666baebc416a3">Camera::controllerBoomLen</a></div><div class="ttdeci">f32 controllerBoomLen</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00469">common_structs.h:469</a></div></div>
 <div class="ttc" id="astructCamera_html_a0fed2e29133db69802411a5166c3f08a"><div class="ttname"><a href="structCamera.html#a0fed2e29133db69802411a5166c3f08a">Camera::movePos</a></div><div class="ttdeci">Vec3f movePos</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00466">common_structs.h:466</a></div></div>
@@ -676,10 +675,12 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div class="ttc" id="astructCamera_html_a0d74ec7aa711666b65ef16ab53020e55"><div class="ttname"><a href="structCamera.html#a0d74ec7aa711666b65ef16ab53020e55">Camera::unk_58</a></div><div class="ttdeci">f32 unk_58</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00437">common_structs.h:437</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_a89bd67a1a9098c39241ef630a0ffdb55"><div class="ttname"><a href="code__ef070__len__3400_8c.html#a89bd67a1a9098c39241ef630a0ffdb55">func_802CD8F8</a></div><div class="ttdeci">s32 func_802CD8F8()</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00513">code_ef070_len_3400.c:513</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_a6d91585666f353d1b8341ab734c5e0fb"><div class="ttname"><a href="code__ef070__len__3400_8c.html#a6d91585666f353d1b8341ab734c5e0fb">func_802CD7D8</a></div><div class="ttdeci">s32 func_802CD7D8()</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00511">code_ef070_len_3400.c:511</a></div></div>
+<div class="ttc" id="amacros_8h_html_ac42e78437d897d806dfd910090517ee0"><div class="ttname"><a href="macros_8h.html#ac42e78437d897d806dfd910090517ee0">CAM</a></div><div class="ttdeci">#define CAM(id)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00023">macros.h:23</a></div></div>
 <div class="ttc" id="asi_8c_html_ae14ebe73a16ea803b73263d4e048e7da"><div class="ttname"><a href="si_8c.html#ae14ebe73a16ea803b73263d4e048e7da">set_variable</a></div><div class="ttdeci">s32 set_variable(ScriptInstance *script, Bytecode var, s32 value)</div><div class="ttdef"><b>Definition:</b> <a href="si_8c_source.html#l01329">si.c:1329</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_aec13df9a4ca0dc5596ed0f141c12c423"><div class="ttname"><a href="code__ef070__len__3400_8c.html#aec13df9a4ca0dc5596ed0f141c12c423">SetCamPerspective</a></div><div class="ttdeci">ApiStatus SetCamPerspective(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00029">code_ef070_len_3400.c:29</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_adeaf76504b845d70fbf84810a69a2963"><div class="ttname"><a href="code__ef070__len__3400_8c.html#adeaf76504b845d70fbf84810a69a2963">SetCamPitch</a></div><div class="ttdeci">ApiStatus SetCamPitch(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00271">code_ef070_len_3400.c:271</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_a622b2d518383846aaaa1ec94070b5ed9"><div class="ttname"><a href="code__ef070__len__3400_8c.html#a622b2d518383846aaaa1ec94070b5ed9">func_802CD57C</a></div><div class="ttdeci">s32 func_802CD57C()</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00505">code_ef070_len_3400.c:505</a></div></div>
+<div class="ttc" id="acode__8560_8c_html_af9ca5fd81dd4d67e80165141c930cc15"><div class="ttname"><a href="code__8560_8c.html#af9ca5fd81dd4d67e80165141c930cc15">set_cam_viewport</a></div><div class="ttdeci">void set_cam_viewport(s16 id, s16 x, s16 y, s16 width, s16 height)</div><div class="ttdef"><b>Definition:</b> <a href="code__8560_8c_source.html#l00015">code_8560.c:15</a></div></div>
 <div class="ttc" id="acode__ef070__len__3400_8c_html_ac02e97809e6b5ce3510dada3e115cd14"><div class="ttname"><a href="code__ef070__len__3400_8c.html#ac02e97809e6b5ce3510dada3e115cd14">GetCamPosA</a></div><div class="ttdeci">ApiStatus GetCamPosA(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ef070__len__3400_8c_source.html#l00398">code_ef070_len_3400.c:398</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="astructCamera_html_a6d017bc22be10828497baf2ec32aa782"><div class="ttname"><a href="structCamera.html#a6d017bc22be10828497baf2ec32aa782">Camera::nearClip</a></div><div class="ttdeci">s16 nearClip</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00418">common_structs.h:418</a></div></div>
@@ -727,7 +728,7 @@ $(document).ready(function(){initNavTree('code__ef070__len__3400_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__ef070__len__3400_8c.html">code_ef070_len_3400.c</a></li>
-    <li class="footer">Generated on Sat Nov 7 2020 15:07:24 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Nov 7 2020 19:48:50 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

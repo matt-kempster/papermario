@@ -1,5 +1,10 @@
 var NAVTREEINDEX67 =
 {
+"structPlayerStatus.html#a0a7d7d0f88da9fc42c810a7a1514afe2":[4,0,58,18],
+"structPlayerStatus.html#a1085705954c21d3b8fe45a15d25c6be6":[4,0,58,28],
+"structPlayerStatus.html#a11c7e65803f922fea1230c3afe9afa1b":[4,0,58,27],
+"structPlayerStatus.html#a1923a0fb74945aa31071ca93675d62d8":[4,0,58,5],
+"structPlayerStatus.html#a2118bec9e0ffa70b948beab675cf472c":[4,0,58,16],
 "structPlayerStatus.html#a298d3d68710748de3a261e0f5f4f03cf":[4,0,58,34],
 "structPlayerStatus.html#a34e91397db15737197b7d3bca11fb83e":[4,0,58,51],
 "structPlayerStatus.html#a357d333aae66e912bed2c41325b4fa55":[4,0,58,23],
@@ -244,10 +249,5 @@ var NAVTREEINDEX67 =
 "structStaticActorPart.html#abefa893a7b687c8513244fb24c1a369f":[4,0,71,9],
 "structStaticActorPart.html#ae3a0100ffd14f7e1e1e7aaa50b621485":[4,0,71,5],
 "structStaticActorPart.html#aebd5c435427426e0effbeaabdf69fcbc":[4,0,71,3],
-"structStaticEntityData.html":[4,0,72],
-"structStaticEntityData.html#a1e47b54cb31c1b525df44f7408658968":[4,0,72,1],
-"structStaticEntityData.html#a21fdb7332281318523f7df52e44760c4":[4,0,72,5],
-"structStaticEntityData.html#a3d40af76305876a4f7dd20a38e10521a":[4,0,72,8],
-"structStaticEntityData.html#a7142a95a29fbaa5dbb37efcae6a761f3":[4,0,72,6],
-"structStaticEntityData.html#a724347b92b8112a40221684f947162fa":[4,0,72,3]
+"structStaticEntityData.html":[4,0,72]
 };

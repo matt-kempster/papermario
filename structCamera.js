@@ -26,7 +26,7 @@ var structCamera =
     [ "perspNorm", "structCamera.html#a9a4e9dbfd5c03a43d002482e82818da5", null ],
     [ "unk_3A", "structCamera.html#a10db8d5f7c81a471f1e80e09cb07bb1d", null ],
     [ "lookAt_eye", "structCamera.html#a05257ad1a67fbe4d689c42b586e7f63f", null ],
-    [ "lookAt_obj", "structCamera.html#a7bf4e02bd3370ebf9c86946e6e2822c1", null ],
+    [ "lookAt_obj", "structCamera.html#a0a1d5554590756ed12aa5295c9716cb7", null ],
     [ "unk_54", "structCamera.html#a705df10165105ff0a99e3d62268cc992", null ],
     [ "unk_58", "structCamera.html#a0d74ec7aa711666b65ef16ab53020e55", null ],
     [ "unk_5C", "structCamera.html#a6dc292ef1f3d8e5980f06dfd151bf461", null ],

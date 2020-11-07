@@ -1,7 +1,7 @@
 var code__6240__len__c00_8c =
 [
     [ "fio_serialize_state", "code__6240__len__c00_8c.html#a4b19fb7f7f2a3fecff6810b3c8c62e40", null ],
-    [ "get_spirits_rescued", "code__6240__len__c00_8c.html#af64aaf169ad6102e3d639d72e0313817", null ],
+    [ "get_spirits_rescued", "code__6240__len__c00_8c.html#a5414adea0fed6b7ad0d49929f3c0a8c0", null ],
     [ "fio_calc_header_checksum", "code__6240__len__c00_8c.html#ab9b99c1ca2c350839814d148d8a80d50", null ],
     [ "fio_validate_header_checksums", "code__6240__len__c00_8c.html#a9057a251ec38591ddcd6bee0391920d5", null ],
     [ "fio_has_valid_backup", "code__6240__len__c00_8c.html#a9ccc32f5a7d300ebf610651ab720de24", null ],

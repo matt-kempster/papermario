@@ -67,7 +67,7 @@ var code__20ec0__len__5040_8c =
     [ "func_80049F7C", "code__20ec0__len__5040_8c.html#a5f3dfa59580fe1c35a41c3590b6191f9", null ],
     [ "func_8004A124", "code__20ec0__len__5040_8c.html#a4e622255504506a4e0c6ca71260e4e46", null ],
     [ "func_8004A3E8", "code__20ec0__len__5040_8c.html#ad454963262f0a70801ec5b0f6258caaa", null ],
-    [ "DoBasicAI", "code__20ec0__len__5040_8c.html#aab4dc73fdbc389c9e463856ff88f0387", null ],
+    [ "DoBasicAI", "code__20ec0__len__5040_8c.html#a4ce0281c7d734d29db65381d50d91217", null ],
     [ "func_8004A6F0", "code__20ec0__len__5040_8c.html#a0a5705674f970a2a7435b32cf2bbdb59", null ],
     [ "func_8004A73C", "code__20ec0__len__5040_8c.html#a1d1f52504be4388ea0aee94777d91a7f", null ],
     [ "func_8004A784", "code__20ec0__len__5040_8c.html#a542a5998de917ae8dc1bfaba6586fc3a", null ]

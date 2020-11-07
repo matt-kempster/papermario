@@ -104,16 +104,32 @@ $(document).ready(function(){initNavTree('code__25f00__len__940_8c_source.html',
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="code__25f00__len__940_8c.html#abf47b1ebb6fdd09198676b0b2d3cd08d">   15</a></span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_25f00_len_940&quot;</span>, <a class="code" href="code__25f00__len__940_8c.html#abf47b1ebb6fdd09198676b0b2d3cd08d">func_8004B328</a>);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="code__25f00__len__940_8c.html#a727dd4e0f450bd79bb4f4a78c991af46">   17</a></span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_25f00_len_940&quot;</span>, <a class="code" href="code__25f00__len__940_8c.html#a727dd4e0f450bd79bb4f4a78c991af46">alLink</a>, ALLink* element, ALLink* after);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">   19</a></span>&#160;<a class="code" href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_25f00_len_940&quot;</span>, <a class="code" href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">alUnlink</a>, ALLink* element);</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="code__25f00__len__940_8c.html#a727dd4e0f450bd79bb4f4a78c991af46">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__25f00__len__940_8c.html#a727dd4e0f450bd79bb4f4a78c991af46">alLink</a>(ALLink* element, ALLink* after) {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    element-&gt;next = after-&gt;next;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    element-&gt;prev = after;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (after-&gt;next != NULL) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        after-&gt;next-&gt;prev = element;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    after-&gt;next = element;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">alUnlink</a>(ALLink* element) {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (element-&gt;next != NULL) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        element-&gt;next-&gt;prev = element-&gt;prev;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (element-&gt;prev != NULL) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        element-&gt;prev-&gt;next = element-&gt;next;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="amacros_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="macros_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00007">macros.h:7</a></div></div>
 <div class="ttc" id="acode__25f00__len__940_8c_html_ac3045bbeb777414738f30e2c8526cbee"><div class="ttname"><a href="code__25f00__len__940_8c.html#ac3045bbeb777414738f30e2c8526cbee">nuAuDmaNew</a></div><div class="ttdeci">s32 nuAuDmaNew()</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00011">code_25f00_len_940.c:11</a></div></div>
 <div class="ttc" id="acode__25f00__len__940_8c_html_ae9152ef01dc4d7530124d4de6050f7ce"><div class="ttname"><a href="code__25f00__len__940_8c.html#ae9152ef01dc4d7530124d4de6050f7ce">nuAuCleanDMABuffers</a></div><div class="ttdeci">s32 nuAuCleanDMABuffers()</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00013">code_25f00_len_940.c:13</a></div></div>
 <div class="ttc" id="acode__25f00__len__940_8c_html_af85ba2326b1337834cc5208fd6abd5d9"><div class="ttname"><a href="code__25f00__len__940_8c.html#af85ba2326b1337834cc5208fd6abd5d9">nuAuDmaCallBack</a></div><div class="ttdeci">s32 nuAuDmaCallBack()</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00009">code_25f00_len_940.c:9</a></div></div>
-<div class="ttc" id="acode__25f00__len__940_8c_html_aa135bfa17b15b614a5e05810d814b0c4"><div class="ttname"><a href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">alUnlink</a></div><div class="ttdeci">void alUnlink(ALLink *element)</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00019">code_25f00_len_940.c:19</a></div></div>
+<div class="ttc" id="acode__25f00__len__940_8c_html_aa135bfa17b15b614a5e05810d814b0c4"><div class="ttname"><a href="code__25f00__len__940_8c.html#aa135bfa17b15b614a5e05810d814b0c4">alUnlink</a></div><div class="ttdeci">void alUnlink(ALLink *element)</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00027">code_25f00_len_940.c:27</a></div></div>
 <div class="ttc" id="acode__25f00__len__940_8c_html_a727dd4e0f450bd79bb4f4a78c991af46"><div class="ttname"><a href="code__25f00__len__940_8c.html#a727dd4e0f450bd79bb4f4a78c991af46">alLink</a></div><div class="ttdeci">void alLink(ALLink *element, ALLink *after)</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00017">code_25f00_len_940.c:17</a></div></div>
 <div class="ttc" id="acode__25f00__len__940_8c_html_a2c9108adb281a5019381bc885709f1d3"><div class="ttname"><a href="code__25f00__len__940_8c.html#a2c9108adb281a5019381bc885709f1d3">func_8004ADD0</a></div><div class="ttdeci">s32 func_8004ADD0()</div><div class="ttdef"><b>Definition:</b> <a href="code__25f00__len__940_8c_source.html#l00005">code_25f00_len_940.c:5</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
@@ -124,7 +140,7 @@ $(document).ready(function(){initNavTree('code__25f00__len__940_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__25f00__len__940_8c.html">code_25f00_len_940.c</a></li>
-    <li class="footer">Generated on Sat Nov 7 2020 15:07:24 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Nov 7 2020 19:48:50 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

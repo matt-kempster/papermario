@@ -3,7 +3,7 @@ var functions_8h =
     [ "osCleanupThread", "functions_8h.html#adedfd4de12e9393cafda3f836385a619", null ],
     [ "heap_malloc", "functions_8h.html#a1cbb60be24fe2518c4e23834d813bd99", null ],
     [ "_heap_create", "functions_8h.html#a225e0a5d213944f18bc7ef3bc80b9b82", null ],
-    [ "dma_copy", "functions_8h.html#a2f3eb801e0b7dd0b3da5d299f6c2dd57", null ],
+    [ "dma_copy", "functions_8h.html#a433fdd12f747a18df35ad6c0c5124ebd", null ],
     [ "get_global_byte", "functions_8h.html#a7c58d397d2de2cba62f4dfd2310e9532", null ],
     [ "get_global_flag", "functions_8h.html#a201c910847522ae3ddc42f6fa59b976b", null ],
     [ "get_area_byte", "functions_8h.html#ac1964d3fcdc88b17140d1f33f804f506", null ],

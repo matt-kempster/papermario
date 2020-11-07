@@ -1,6 +1,5 @@
 var code__1b40__len__20b0_8c =
 [
-    [ "dma_copy", "code__1b40__len__20b0_8c.html#a4f209e05d9eebd44f72ffc4f76d9fa00", null ],
     [ "step_game_loop", "code__1b40__len__20b0_8c.html#ac20a766331f252d854df81bb58302189", null ],
     [ "func_800269EC", "code__1b40__len__20b0_8c.html#a5dbfb8b4b3be48424349ea1869efc930", null ],
     [ "gfx_draw_frame", "code__1b40__len__20b0_8c.html#afed5cec2656bc696e9ec898e8abae0f9", null ],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX63 =
 {
+"structActor.html#a602752c2e0126fcd9dc65dd1a916b30b":[4,0,0,94],
+"structActor.html#a638add749ca2bb44074ed42d8d01aea9":[4,0,0,2],
+"structActor.html#a6620342e3cff8fe94355e5da20b6a698":[4,0,0,95],
+"structActor.html#a68651fc97816377a0051a642e9ddd788":[4,0,0,80],
 "structActor.html#a6932a5520882932f5d535eca97984241":[4,0,0,72],
 "structActor.html#a6b0b6f1763bc03cf6bf5efe2c46202ae":[4,0,0,77],
 "structActor.html#a6c0ac3bf13fb557a94cd28213e0827c7":[4,0,0,28],
@@ -245,9 +249,5 @@ var NAVTREEINDEX63 =
 "structBattleStatus.html#ac21e98b93bb18b10ad00a4709efe8357":[4,0,8,36],
 "structBattleStatus.html#ac3839c592357b044617e3dc5de8f9a1a":[4,0,8,6],
 "structBattleStatus.html#ac8e503094218c25947fd652c8bd5477c":[4,0,8,109],
-"structBattleStatus.html#acd1f4816b52b8f319e4c657a63fe32da":[4,0,8,79],
-"structBattleStatus.html#acf012bf55461233331044d01e0383a48":[4,0,8,96],
-"structBattleStatus.html#acfc21acd9f18eb9299f480ce47379807":[4,0,8,111],
-"structBattleStatus.html#ad3295e676a5a89e7ce2e0e3eff0698b0":[4,0,8,16],
-"structBattleStatus.html#ad48ef161e25eda24ff44667c1631bef7":[4,0,8,93]
+"structBattleStatus.html#acd1f4816b52b8f319e4c657a63fe32da":[4,0,8,79]
 };

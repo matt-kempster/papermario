@@ -15,5 +15,6 @@ var dir_9ef2b62e2fdf8f26529bc674320ff5b4 =
     [ "nuGfxTaskAllEndWait.c", "nuGfxTaskAllEndWait_8c.html", "nuGfxTaskAllEndWait_8c" ],
     [ "nuPiInit.c", "nuPiInit_8c.html", "nuPiInit_8c" ],
     [ "nuPiReadRom.c", "nuPiReadRom_8c.html", "nuPiReadRom_8c" ],
-    [ "nuSched.c", "nuSched_8c.html", "nuSched_8c" ]
+    [ "nuSched.c", "nuSched_8c.html", "nuSched_8c" ],
+    [ "nuSiMgr.c", "nuSiMgr_8c.html", "nuSiMgr_8c" ]
 ];
