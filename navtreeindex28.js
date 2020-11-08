@@ -1,5 +1,6 @@
 var NAVTREEINDEX28 =
 {
+"battle_8h.html#a26ffa04f78a7c3e0da932bbf630e8e06":[5,0,0,0,0,317],
 "battle_8h.html#a271a020663dd037728df34b9e718ab73":[5,0,0,0,0,146],
 "battle_8h.html#a27686c14698a4bb3a7d69bd7a42b3472":[5,0,0,0,0,29],
 "battle_8h.html#a2839ca27731bc7a961dc9a7e6700bdcb":[5,0,0,0,0,222],
@@ -248,6 +249,5 @@ var NAVTREEINDEX28 =
 "battle_8h.html#aec14411f812b4d5e8146c461fd97c18c":[5,0,0,0,0,174],
 "battle_8h.html#aec7852a68dbadf53d115e7f440cb5a67":[5,0,0,0,0,272],
 "battle_8h.html#aede4c13a6fe1cb66d0c9387b61bbc580":[5,0,0,0,0,280],
-"battle_8h.html#aee94da9d6bab23ed8487e75ea0ec7755":[5,0,0,0,0,316],
-"battle_8h.html#aef41dd3b98c871e5f9c7e628dc118623":[5,0,0,0,0,175]
+"battle_8h.html#aee94da9d6bab23ed8487e75ea0ec7755":[5,0,0,0,0,316]
 };

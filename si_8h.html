@@ -86,7 +86,8 @@ $(document).ready(function(){initNavTree('si_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">si.h File Reference</div>  </div>
 </div><!--header-->
@@ -136,170 +137,6 @@ Macros</h2></td></tr>
 <tr class="separator:a6d87fb096585b921b9b75fbdacf2c01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa86150ffe3a5012eea716399c6e4c875"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(opcode,  argv...)</td></tr>
 <tr class="separator:aa86150ffe3a5012eea716399c6e4c875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3972c3eb08af92fa3e966998bcd98dd9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3972c3eb08af92fa3e966998bcd98dd9">SI_END</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x01)</td></tr>
-<tr class="separator:a3972c3eb08af92fa3e966998bcd98dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c174b47b1826a072822507e8db31e6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a1c174b47b1826a072822507e8db31e6b">SI_RETURN</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x02)</td></tr>
-<tr class="separator:a1c174b47b1826a072822507e8db31e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790300c057eace33142bc223a61337c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a790300c057eace33142bc223a61337c1">SI_LABEL</a>(i)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x03, i)</td></tr>
-<tr class="separator:a790300c057eace33142bc223a61337c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81cdcc5ebf44d0fde91e9d10adc1f9b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a81cdcc5ebf44d0fde91e9d10adc1f9b8">SI_GOTO</a>(i)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x04, i)</td></tr>
-<tr class="separator:a81cdcc5ebf44d0fde91e9d10adc1f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f2084183110764980f5cc036f4b669"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa7f2084183110764980f5cc036f4b669">SI_LOOP</a>(i)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x05, i)</td></tr>
-<tr class="separator:aa7f2084183110764980f5cc036f4b669"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3080a5ea4d7f69d0eb5cf8e57283226d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3080a5ea4d7f69d0eb5cf8e57283226d">SI_END_LOOP</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x06)</td></tr>
-<tr class="separator:a3080a5ea4d7f69d0eb5cf8e57283226d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0862f42d6c7b8a1120da71b7f7e41747"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a0862f42d6c7b8a1120da71b7f7e41747">SI_BREAK_LOOP</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x07)</td></tr>
-<tr class="separator:a0862f42d6c7b8a1120da71b7f7e41747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8f66ec00df601a9b8088774b97c8969"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ab8f66ec00df601a9b8088774b97c8969">SI_WAIT_FRAMES</a>(i)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x08, i)</td></tr>
-<tr class="separator:ab8f66ec00df601a9b8088774b97c8969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792318bfc71ad1dd93425d31f08da9b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a792318bfc71ad1dd93425d31f08da9b0">SI_WAIT_SECS</a>(i)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x09, i)</td></tr>
-<tr class="separator:a792318bfc71ad1dd93425d31f08da9b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f9a04c96aa3369f70b623932446642e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a9f9a04c96aa3369f70b623932446642e">SI_IF_EQ</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0A, a, b)</td></tr>
-<tr class="separator:a9f9a04c96aa3369f70b623932446642e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0966e99adad3273d73ed2cc6e51efc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ae0966e99adad3273d73ed2cc6e51efc5">SI_IF_NE</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0B, a, b)</td></tr>
-<tr class="separator:ae0966e99adad3273d73ed2cc6e51efc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469f949b39eb26d0b3620d85b7330e9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a469f949b39eb26d0b3620d85b7330e9a">SI_IF_LT</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0C, a, b)</td></tr>
-<tr class="separator:a469f949b39eb26d0b3620d85b7330e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4bab07598e385354ae4e74c8fe2d4c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ae4bab07598e385354ae4e74c8fe2d4c0">SI_IF_GT</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0D, a, b)</td></tr>
-<tr class="separator:ae4bab07598e385354ae4e74c8fe2d4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17876abbde03be941842d629cefa17fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a17876abbde03be941842d629cefa17fa">SI_IF_LE</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0E, a, b)</td></tr>
-<tr class="separator:a17876abbde03be941842d629cefa17fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ff3e4e4db875c49155c496cfcd93758"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a8ff3e4e4db875c49155c496cfcd93758">SI_IF_GE</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0F, a, b)</td></tr>
-<tr class="separator:a8ff3e4e4db875c49155c496cfcd93758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cadd39cb78d882752d9c23fb64e6699"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a2cadd39cb78d882752d9c23fb64e6699">SI_IF_BITS_ON</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x10, a, b)</td></tr>
-<tr class="separator:a2cadd39cb78d882752d9c23fb64e6699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d84371a6a46abbf87095c19c0be76cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3d84371a6a46abbf87095c19c0be76cd">SI_IF_BITS_OFF</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x11, a, b)</td></tr>
-<tr class="separator:a3d84371a6a46abbf87095c19c0be76cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50f79f9f6c9dd7da839af8fb85eaecf3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a50f79f9f6c9dd7da839af8fb85eaecf3">SI_ELSE</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x12)</td></tr>
-<tr class="separator:a50f79f9f6c9dd7da839af8fb85eaecf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7146d8f4012043df8aa475919b40ed14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a7146d8f4012043df8aa475919b40ed14">SI_END_IF</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x13)</td></tr>
-<tr class="separator:a7146d8f4012043df8aa475919b40ed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36fd02d89d218479f327feee4101ccc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a36fd02d89d218479f327feee4101ccc7">SI_SWITCH</a>(a)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x14, a)</td></tr>
-<tr class="separator:a36fd02d89d218479f327feee4101ccc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a494c25846c988fd232c335d5285ca95b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a494c25846c988fd232c335d5285ca95b">SI_SWITCH_CONST</a>(a)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x15, a)</td></tr>
-<tr class="separator:a494c25846c988fd232c335d5285ca95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8b4254df536ea0e4cf37b10454ad0c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a9f8b4254df536ea0e4cf37b10454ad0c">SI_CASE_EQ</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x16, b)</td></tr>
-<tr class="separator:a9f8b4254df536ea0e4cf37b10454ad0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd887921e35b291ef6ff85af6c308283"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#acd887921e35b291ef6ff85af6c308283">SI_CASE_NE</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x17, b)</td></tr>
-<tr class="separator:acd887921e35b291ef6ff85af6c308283"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62620ef8751e284c072e997e73e7dd9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a62620ef8751e284c072e997e73e7dd9c">SI_CASE_LT</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x18, b)</td></tr>
-<tr class="separator:a62620ef8751e284c072e997e73e7dd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52ca1d573af7d762e86e9303cf344fb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a52ca1d573af7d762e86e9303cf344fb7">SI_CASE_GT</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x19, b)</td></tr>
-<tr class="separator:a52ca1d573af7d762e86e9303cf344fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890ba7d7550a6d2ed5d4ba1fcae27083"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a890ba7d7550a6d2ed5d4ba1fcae27083">SI_CASE_LE</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1A, b)</td></tr>
-<tr class="separator:a890ba7d7550a6d2ed5d4ba1fcae27083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa98437b611cb02c7a1a7a2a2d69921b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa98437b611cb02c7a1a7a2a2d69921b3">SI_CASE_GE</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1B, b)</td></tr>
-<tr class="separator:aa98437b611cb02c7a1a7a2a2d69921b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5a883a6ab54c271559a9d3cf8776f54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa5a883a6ab54c271559a9d3cf8776f54">SI_CASE_DEFAULT</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1C)</td></tr>
-<tr class="separator:aa5a883a6ab54c271559a9d3cf8776f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a420f7716f86663be78e273260c10b0c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a420f7716f86663be78e273260c10b0c2">SI_CASE_OR_EQ</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1D, b)</td></tr>
-<tr class="separator:a420f7716f86663be78e273260c10b0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0ced9c9696caa738a1f853082eacda8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ac0ced9c9696caa738a1f853082eacda8">SI_CASE_BITS_ON</a>(b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1F, b)</td></tr>
-<tr class="separator:ac0ced9c9696caa738a1f853082eacda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f53513f03b9e4903547eed7503e3278"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a6f53513f03b9e4903547eed7503e3278">SI_END_MULTI_CASE</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x20)</td></tr>
-<tr class="separator:a6f53513f03b9e4903547eed7503e3278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf70fa4e4846ba084984f70a1fa7f5d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aaf70fa4e4846ba084984f70a1fa7f5d6">SI_CASE_RANGE</a>(from,  to)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x21, from, to)</td></tr>
-<tr class="separator:aaf70fa4e4846ba084984f70a1fa7f5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98663983efe21a1b9b04fc2425959b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ac98663983efe21a1b9b04fc2425959b4">SI_BREAK_CASE</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x22)</td></tr>
-<tr class="separator:ac98663983efe21a1b9b04fc2425959b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07d845d8391fa2739a11c65de127a45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa07d845d8391fa2739a11c65de127a45">SI_END_SWITCH</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x23)</td></tr>
-<tr class="separator:aa07d845d8391fa2739a11c65de127a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa56806b231addfd9b40f6f42bb95c0c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa56806b231addfd9b40f6f42bb95c0c7">SI_SET</a>(varA,  varB)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x24, varA, varB)</td></tr>
-<tr class="separator:aa56806b231addfd9b40f6f42bb95c0c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7594c4c5c4b30a283bcb088614251d20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a7594c4c5c4b30a283bcb088614251d20">SI_SET_CONST</a>(var,  value)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x25, var, value)</td></tr>
-<tr class="separator:a7594c4c5c4b30a283bcb088614251d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70386f9c03f1429a4441020bf9081947"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a70386f9c03f1429a4441020bf9081947">SI_ADD</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x27, a, b)</td></tr>
-<tr class="separator:a70386f9c03f1429a4441020bf9081947"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3da87463c326b05f35196815aacd2707"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3da87463c326b05f35196815aacd2707">SI_SUB</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x28, a, b)</td></tr>
-<tr class="separator:a3da87463c326b05f35196815aacd2707"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4066d34ee7b0497cc5a6d429398d3e16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a4066d34ee7b0497cc5a6d429398d3e16">SI_MUL</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x29, a, b)</td></tr>
-<tr class="separator:a4066d34ee7b0497cc5a6d429398d3e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17413249d6e40dfe196db2f92734ce5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a17413249d6e40dfe196db2f92734ce5b">SI_DIV</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2A, a, b)</td></tr>
-<tr class="separator:a17413249d6e40dfe196db2f92734ce5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ade509576ffdb3a0e2eabd68b6ad636"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a9ade509576ffdb3a0e2eabd68b6ad636">SI_MOD</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2B, a, b)</td></tr>
-<tr class="separator:a9ade509576ffdb3a0e2eabd68b6ad636"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3489436320341404a1fb5f1928e433fa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3489436320341404a1fb5f1928e433fa">SI_SET_F</a>(var,  value)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x26, var, value)</td></tr>
-<tr class="separator:a3489436320341404a1fb5f1928e433fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a880e0c49eb84e5fc5243b53aa3d07aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a880e0c49eb84e5fc5243b53aa3d07aec">SI_ADD_F</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2C, a, b)</td></tr>
-<tr class="separator:a880e0c49eb84e5fc5243b53aa3d07aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f50f0123704b1d3eee92f04fd11fd3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a1f50f0123704b1d3eee92f04fd11fd3e">SI_SUB_F</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2D, a, b)</td></tr>
-<tr class="separator:a1f50f0123704b1d3eee92f04fd11fd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a218eaceadfd0e5a727cb53e561515533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a218eaceadfd0e5a727cb53e561515533">SI_MUL_F</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2E, a, b)</td></tr>
-<tr class="separator:a218eaceadfd0e5a727cb53e561515533"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cebf3b9e3096fd0c3c5c83dfbea283c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a0cebf3b9e3096fd0c3c5c83dfbea283c">SI_DIV_F</a>(a,  b)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2F, a, b)</td></tr>
-<tr class="separator:a0cebf3b9e3096fd0c3c5c83dfbea283c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45039b39c449decfcab781f1e68f0843"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a45039b39c449decfcab781f1e68f0843">SI_USE_BUFFER</a>(buf_ptr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x30, buf_ptr)</td></tr>
-<tr class="separator:a45039b39c449decfcab781f1e68f0843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f53a1ca183f3ec5ca3368396339e5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#af3f53a1ca183f3ec5ca3368396339e5c">SI_BUF_READ</a>(vars...)</td></tr>
-<tr class="separator:af3f53a1ca183f3ec5ca3368396339e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21fed79317fde297ee30d38706eb2f69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a21fed79317fde297ee30d38706eb2f69">SI_BUF_PEEK</a>(n,  var)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x35, n, var)</td></tr>
-<tr class="separator:a21fed79317fde297ee30d38706eb2f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8381554e2ce3ac539c6a571de95cdc37"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a8381554e2ce3ac539c6a571de95cdc37">SI_USE_BUFFER_F</a>(buf_ptr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x36, buf_ptr)</td></tr>
-<tr class="separator:a8381554e2ce3ac539c6a571de95cdc37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3200af54d2b4daea18fa02336f01b6af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3200af54d2b4daea18fa02336f01b6af">SI_BUF_READ_F</a>(vars...)</td></tr>
-<tr class="separator:a3200af54d2b4daea18fa02336f01b6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacd2d7a3cc87a5f03e595870f7fe3b11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aacd2d7a3cc87a5f03e595870f7fe3b11">SI_BUF_PEEK_F</a>(n,  var)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3B, n, var)</td></tr>
-<tr class="separator:aacd2d7a3cc87a5f03e595870f7fe3b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8523789ae63acf373b68a48263a4c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ae8523789ae63acf373b68a48263a4c90">SI_USE_ARRAY</a>(arrPtr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3C, arrPtr)</td></tr>
-<tr class="separator:ae8523789ae63acf373b68a48263a4c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73fecc6d469fc1a5ee11d230e1ec2379"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a73fecc6d469fc1a5ee11d230e1ec2379">SI_NEW_ARRAY</a>(len,  arrPtr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3D, len, arrPtr)</td></tr>
-<tr class="separator:a73fecc6d469fc1a5ee11d230e1ec2379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4379e4dd3262ee910ce43f14b3b5730f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a4379e4dd3262ee910ce43f14b3b5730f">SI_USE_FLAGS</a>(arrPtr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3E, arrPtr)</td></tr>
-<tr class="separator:a4379e4dd3262ee910ce43f14b3b5730f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad68ae510260e3a1f1b9f78fdbe1ad00d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ad68ae510260e3a1f1b9f78fdbe1ad00d">SI_AND</a>(varA,  varB)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3F, varA, varB)</td></tr>
-<tr class="separator:ad68ae510260e3a1f1b9f78fdbe1ad00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a667b5112d9ca3cfa93854144394e4d2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a667b5112d9ca3cfa93854144394e4d2d">SI_AND_CONST</a>(var,  value)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x40, var, value)</td></tr>
-<tr class="separator:a667b5112d9ca3cfa93854144394e4d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17e43d6f19fb39924a3a61a31b99de2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a17e43d6f19fb39924a3a61a31b99de2f">SI_OR</a>(varA,  varB)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x41, varA, varB)</td></tr>
-<tr class="separator:a17e43d6f19fb39924a3a61a31b99de2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4883dd99811ed24dabf3455babd83f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aa4883dd99811ed24dabf3455babd83f6">SI_OR_CONST</a>(var,  value)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x41, var, value)</td></tr>
-<tr class="separator:aa4883dd99811ed24dabf3455babd83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0724cbf0e017c1d3c60deed9336f6e9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ad0724cbf0e017c1d3c60deed9336f6e9">SI_CALL</a>(func,  argv...)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x43, func, ##argv)</td></tr>
-<tr class="separator:ad0724cbf0e017c1d3c60deed9336f6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebf8d1d0763d4afcc15c52dfb002c4c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a1ebf8d1d0763d4afcc15c52dfb002c4c">SI_EXEC</a>(script)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x44, script)</td></tr>
-<tr class="separator:a1ebf8d1d0763d4afcc15c52dfb002c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a469e7cf291cfe20a0f3b31f4a7a40550"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a469e7cf291cfe20a0f3b31f4a7a40550">SI_EXEC_GET_ID</a>(script,  outScriptID)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x45, script, outScriptID)</td></tr>
-<tr class="separator:a469e7cf291cfe20a0f3b31f4a7a40550"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4418e276bf82818ea8ef7fd34782e796"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a4418e276bf82818ea8ef7fd34782e796">SI_EXEC_WAIT</a>(script)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x46, script)</td></tr>
-<tr class="separator:a4418e276bf82818ea8ef7fd34782e796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7b19f89632951057281d87f6a1cfa05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ac7b19f89632951057281d87f6a1cfa05">SI_JUMP</a>(script)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4A, script)</td></tr>
-<tr class="separator:ac7b19f89632951057281d87f6a1cfa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a98e57809fadbd4307edcb56a0f6dc4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a5a98e57809fadbd4307edcb56a0f6dc4">SI_BIND</a>(script,  trigger,  target,  outTriggerPtr)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x47, script, trigger, target, 1, outTriggerPtr)</td></tr>
-<tr class="separator:a5a98e57809fadbd4307edcb56a0f6dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3c7e87afe0a4de3a89ff6a954e7b18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a6e3c7e87afe0a4de3a89ff6a954e7b18">SI_BIND_PADLOCK</a>(script,  trigger,  target,  itemList)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4E, script, trigger, target, itemList, 0, 1)</td></tr>
-<tr class="separator:a6e3c7e87afe0a4de3a89ff6a954e7b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ca9b92c5eb09fdc024a9002a3b7c8f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a7ca9b92c5eb09fdc024a9002a3b7c8f0">SI_UNBIND_ME</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x48)</td></tr>
-<tr class="separator:a7ca9b92c5eb09fdc024a9002a3b7c8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d809641abe64476cbb5f25541d5c4c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a0d809641abe64476cbb5f25541d5c4c1">SI_PRIORITY</a>(p)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4B, p)</td></tr>
-<tr class="separator:a0d809641abe64476cbb5f25541d5c4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafec0c1dc262dfbf3427ae8fd56df45d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#aafec0c1dc262dfbf3427ae8fd56df45d">SI_TIMESCALE</a>(t)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4C, t)</td></tr>
-<tr class="separator:aafec0c1dc262dfbf3427ae8fd56df45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3280c00ded484359d0b6ef98fd11d549"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a3280c00ded484359d0b6ef98fd11d549">SI_GROUP</a>(g)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4D, g)</td></tr>
-<tr class="separator:a3280c00ded484359d0b6ef98fd11d549"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2222e5f52734a8cdd4272485e04fa2d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a2222e5f52734a8cdd4272485e04fa2d1">SI_SUSPEND_GROUP</a>(group)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4F, group)</td></tr>
-<tr class="separator:a2222e5f52734a8cdd4272485e04fa2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bbb65af54ac96cba8e1010a55ac9b6b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a9bbb65af54ac96cba8e1010a55ac9b6b">SI_RESUME_GROUP</a>(group)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x50, group)</td></tr>
-<tr class="separator:a9bbb65af54ac96cba8e1010a55ac9b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b51331c05790c0beac903e347123a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a65b51331c05790c0beac903e347123a6">SI_SUSPEND_GROUP_NOT_ME</a>(group)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x51, group)</td></tr>
-<tr class="separator:a65b51331c05790c0beac903e347123a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a920935a27177a0d6c22fa78b13b74b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a4a920935a27177a0d6c22fa78b13b74b">SI_RESUME_GROUP_NOT_ME</a>(group)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x52, group)</td></tr>
-<tr class="separator:a4a920935a27177a0d6c22fa78b13b74b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad337806caeaf95987a84bffd974bbca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ad337806caeaf95987a84bffd974bbca4">SI_KILL</a>(scriptID)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x49, scriptID)</td></tr>
-<tr class="separator:ad337806caeaf95987a84bffd974bbca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add513f6746ca05a72d41952faea77ef0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#add513f6746ca05a72d41952faea77ef0">SI_SUSPEND</a>(scriptID)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x53, scriptID)</td></tr>
-<tr class="separator:add513f6746ca05a72d41952faea77ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185852cb60894b639613c6f61550aad1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a185852cb60894b639613c6f61550aad1">SI_RESUME</a>(scriptID)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x54, scriptID)</td></tr>
-<tr class="separator:a185852cb60894b639613c6f61550aad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a412c40887966bef759f5debf027f1326"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a412c40887966bef759f5debf027f1326">SI_EXISTS</a>(scriptID)&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x55, scriptID)</td></tr>
-<tr class="separator:a412c40887966bef759f5debf027f1326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b1dc97e3d36e6e80d919a7ef29fbef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ab0b1dc97e3d36e6e80d919a7ef29fbef">SI_THREAD</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x56)</td></tr>
-<tr class="separator:ab0b1dc97e3d36e6e80d919a7ef29fbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142106cc43ab51e227ffe7fcf867deeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a142106cc43ab51e227ffe7fcf867deeb">SI_END_THREAD</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x57)</td></tr>
-<tr class="separator:a142106cc43ab51e227ffe7fcf867deeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90630ca57196d640a3514df1ebfbb9d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a90630ca57196d640a3514df1ebfbb9d6">SI_CHILD_THREAD</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x58)</td></tr>
-<tr class="separator:a90630ca57196d640a3514df1ebfbb9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a9eeba542a979a176668677c2de18a4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a4a9eeba542a979a176668677c2de18a4">SI_END_CHILD_THREAD</a>()&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x59)</td></tr>
-<tr class="separator:a4a9eeba542a979a176668677c2de18a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6432b17b39b1d109bff488b3dbc647f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#ab6432b17b39b1d109bff488b3dbc647f">EXIT_WALK_SCRIPT</a>(walkDistance,  exitIdx,  map,  entryIdx)</td></tr>
 <tr class="separator:ab6432b17b39b1d109bff488b3dbc647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -311,6 +148,125 @@ Typedefs</h2></td></tr>
 <tr class="separator:ab22f0b49ed279531e43557af32a1855d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a353709e4af3228665d8fbc5a4c6e25b4"><td class="memItemLeft" align="right" valign="top">typedef s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a></td></tr>
 <tr class="separator:a353709e4af3228665d8fbc5a4c6e25b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abb1eab93e44604a3a4a3861f63c8e261"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261">ScriptOpcode</a> { <br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ab00b6e1898517c1ba1cfcec5be4ebbd6">ScriptOpcode_END</a> = 0x01, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a4ef9680268f63cca691e5a66240614dc">ScriptOpcode_RETURN</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a06f892882d88b0375c4b91b381c6d074">ScriptOpcode_LABEL</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a81aca78c73d708e85f566132a833c1f1">ScriptOpcode_GOTO</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aa9748aee23781cb548c153b01a801fdc">ScriptOpcode_LOOP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a9158c81f6191cd39355cf30276ef80e7">ScriptOpcode_END_LOOP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a2e7d1d4ec5d7683de346f94852dbcb0a">ScriptOpcode_BREAK_LOOP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aee9b67bbd3b47a4f81f3dac78877f10f">ScriptOpcode_SLEEP_FRAMES</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a31a40defd1889c33b4e71228c09f5841">ScriptOpcode_SLEEP_SECS</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aca8e7dfac1bce926d74943ad5d8aabf0">ScriptOpcode_IF_EQ</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aebc100d977dd9b3f8c88094dc8eaf286">ScriptOpcode_IF_NE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261adab140c569b79647cdaf2b1b999c8e5e">ScriptOpcode_IF_LT</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a7135737751e49324637713637d41cf1a">ScriptOpcode_IF_GT</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a98ac1446bc2aecf9ed6b1b01b225b76d">ScriptOpcode_IF_LE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aa86039d1193d765caa6552be1c2e2f37">ScriptOpcode_IF_GE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae2b5061ff21c2bd2918328df3e9b7050">ScriptOpcode_IF_FLAG</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ad6e434038728a188aa0240fea9be16b9">ScriptOpcode_IF_NOT_FLAG</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a5e7322ad7c79015cd48f8525aab592dd">ScriptOpcode_ELSE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261add4d45230146444bacfc3d17f6160b60">ScriptOpcode_END_IF</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a47b46361f533e708f69fd2189ce82d6a">ScriptOpcode_MATCH</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a381749b40f536b94aa38ea2ed1523455">ScriptOpcode_MATCH_CONST</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a4f5254fd754ddb7da3aa81f11c40f945">ScriptOpcode_CASE_EQ</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ac9886fad4b5eafcdecca35f72cd02d96">ScriptOpcode_CASE_NE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a115093ad5f808c6e46de9bb3ae819f09">ScriptOpcode_CASE_LT</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a2737c715f10f6e9ff7470fd645cd82b8">ScriptOpcode_CASE_GT</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a982f8e09286ccec64b33837a1867d77f">ScriptOpcode_CASE_LE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aacf78630cb7a5de794b2a36e35e8f6bf">ScriptOpcode_CASE_GE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a80037d9c19314d85713d61ae34d260e5">ScriptOpcode_CASE_ELSE</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ac5a154b914af518e07256dfba92c27a8">ScriptOpcode_CASE_MULTI_OR_EQ</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261af5b9041b4b06a54ebe71a687f70befae">ScriptOpcode_CASE_MULTI_AND_EQ</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aecd53fac5f65a16d636d8e657f52ceb7">ScriptOpcode_CASE_FLAG</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a7a7096169eedd6a13da2e895f9f16570">ScriptOpcode_END_CASE_MULTI</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a471ae73d3416c7b461a2a63b54e4fff2">ScriptOpcode_CASE_RANGE</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a91fe67a9520701d6732f3e9999901a20">ScriptOpcode_BREAK_MATCH</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a5c63ad58d3dda93b399ef2ffb8bd7428">ScriptOpcode_END_MATCH</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a230c90eb9d4046acd3d40aadca2963c6">ScriptOpcode_SET</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a554bf29c8ccb9b7e5694cf4705bbff6e">ScriptOpcode_SET_CONST</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a4402582fbbb4e54c92e38896cdad378a">ScriptOpcode_SET_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ad190bbe4d9a3a36aaf09c058c8ca8eb8">ScriptOpcode_ADD</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261afd214ed8b08f0a3f84be4134cbe2de66">ScriptOpcode_SUB</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a02a3b23ae00096948398e4021ba33501">ScriptOpcode_MUL</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a90a51eee50f2488ab41b337105bbc793">ScriptOpcode_DIV</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a6fed727a3cd584c80571649e1f2a16c7">ScriptOpcode_MOD</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a23ce7a8f605ec30cfbe6d4ce4cc8d47c">ScriptOpcode_ADD_F</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a464ffc396ea72a79003bd5e33ee19091">ScriptOpcode_SUB_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ad501cb813cbf769f219fba2d08251c3b">ScriptOpcode_MUL_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a36ed2bdcba04570bc6ed60735e2131a0">ScriptOpcode_DIV_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261abf0e346bf9d279cbdb73dadd725f404f">ScriptOpcode_USE_BUFFER</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a8894fce76ee4f3e0cb26c99b3b1150dd">ScriptOpcode_BUFFER_READ_1</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a917081bd71eeab5800d63c70b89c3d8b">ScriptOpcode_BUFFER_READ_2</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aacf977cae8fb39a3ee29f19f05448b5b">ScriptOpcode_BUFFER_READ_3</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261acfe36a6fc7b1639536a610d4bc1150b5">ScriptOpcode_BUFFER_READ_4</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261abdc83ce781985bc1dd73abf0b65f3227">ScriptOpcode_BUFFER_PEEK</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a7475f8c6bc6596481ac0d637d05a463a">ScriptOpcode_USE_BUFFER_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a76c419f222d1bc93fd7019218862a75b">ScriptOpcode_BUFFER_READ_1_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae3196474db8876b54e010772e6f9abc8">ScriptOpcode_BUFFER_READ_2_F</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ac62a3af1e2a31ee17581b04e860bc3cf">ScriptOpcode_BUFFER_READ_3_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a00853a6a41945f04189780cf79918846">ScriptOpcode_BUFFER_READ_4_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a1b84ce561157bebe7714a90d4d1a6970">ScriptOpcode_BUFFER_PEEK_F</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a1556f721141fe7d503cb2268bf0d34b6">ScriptOpcode_USE_ARRAY</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae7b2e0e731b3c6b7525444980c3e9c3c">ScriptOpcode_USE_FLAGS</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261afdf69add2c628be0df58d4c6253749db">ScriptOpcode_NEW_ARRAY</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a9f573a2c8cf7b10fccd3318686c6006a">ScriptOpcode_AND</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261aa75b13d13db92f71c0005134a50d05c4">ScriptOpcode_AND_CONST</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a840758f01a5074c6eac90b742c44b0be">ScriptOpcode_OR</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a3544af2f50c3195a87283200e6ba03ee">ScriptOpcode_OR_CONST</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ab36f838303f709afd9b3921781f7d958">ScriptOpcode_CALL</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261afc6f23bd234359bdfc887634d7f35efd">ScriptOpcode_SPAWN_SCRIPT</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ac16c60b06a12670a3e5a6448e3ceeb05">ScriptOpcode_SPAWN_SCRIPT_GET_ID</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ab3a7d2c2d65d0199753b112bfe514dc1">ScriptOpcode_AWAIT_SCRIPT</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a79c2922dd10ece5435624fee3665cf94">ScriptOpcode_BIND_TRIGGER</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a2fdf544d254a8b1cb5b8679d6d139e44">ScriptOpcode_UNBIND</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae9531bdf67f0ac5065947758b6a170ea">ScriptOpcode_KILL_SCRIPT</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261afce4e4f70322f24577121e5053361211">ScriptOpcode_JUMP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a44e0a63af505574d6e97c9114596ff48">ScriptOpcode_SET_PRIORITY</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae2386b4db494f4d3064d9fe44c4aefac">ScriptOpcode_SET_TIMESCALE</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a29aafe4aaccab4f297204e5be64f6948">ScriptOpcode_SET_GROUP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a036beec2fb51c1bdcc10f5badf659bd1">ScriptOpcode_BIND_PADLOCK</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a833fa2c668df9945dbd3e5db2d236d75">ScriptOpcode_SUSPEND_GROUP</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a956627b19f8ac2448884d56ac62d3a1e">ScriptOpcode_RESUME_GROUP</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a060134766544fc3751a0a799b6b02309">ScriptOpcode_SUSPEND_OTHERS</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a6e05d4aefe6a47484c42c7774fab4cdc">ScriptOpcode_RESUME_OTHERS</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a730eca1112673d447858e43c6d5f2e52">ScriptOpcode_SUSPEND_SCRIPT</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261ae895fcc4312da796ecf226a8342c8a64">ScriptOpcode_RESUME_SCRIPT</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a601e6abf6845c19fa2098429a9df1c98">ScriptOpcode_SCRIPT_EXISTS</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261af77e5788efd415a562f8d5904d4098be">ScriptOpcode_SPAWN_THREAD</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a10fd3959d15ee2eb85c194b8706540cb">ScriptOpcode_END_SPAWN_THREAD</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261afffc8c21dcfa777abb5bd465171d078b">ScriptOpcode_PARALLEL_THREAD</a>, 
+<br />
+&#160;&#160;<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a53bfb9f39dc86cb06f2397471e4b7ef4">ScriptOpcode_END_PARALLEL_THREAD</a>, 
+<a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261a095cf5e39dc0711b00c009ac2d41e5c3">ScriptOpcode_DEBUG_PRINT</a> = 0x5B
+<br />
+ }</td></tr>
+<tr class="separator:abb1eab93e44604a3a4a3861f63c8e261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a9e1e44457abac8b434f64369673f165a"></a>
@@ -329,7 +285,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00009">9</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00102">102</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -349,7 +305,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00010">10</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00103">103</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -369,7 +325,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00011">11</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00104">104</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -389,7 +345,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00012">12</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00105">105</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -409,7 +365,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00013">13</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00106">106</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -429,7 +385,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00014">14</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00107">107</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -449,7 +405,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00015">15</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00108">108</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -469,7 +425,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00016">16</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00109">109</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -489,7 +445,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00017">17</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00110">110</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -509,7 +465,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00018">18</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00111">111</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -529,7 +485,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00019">19</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00112">112</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -545,7 +501,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00022">22</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00115">115</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -561,7 +517,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00023">23</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00116">116</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -577,7 +533,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00024">24</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00117">117</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -593,7 +549,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00028">28</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00121">121</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -609,7 +565,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00029">29</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00122">122</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -625,7 +581,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00030">30</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00123">123</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -641,7 +597,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00031">31</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00124">124</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -657,7 +613,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00032">32</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00125">125</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -687,1976 +643,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00034">34</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3972c3eb08af92fa3e966998bcd98dd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3972c3eb08af92fa3e966998bcd98dd9">&#9670;&nbsp;</a></span>SI_END</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x01)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00039">39</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a1c174b47b1826a072822507e8db31e6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c174b47b1826a072822507e8db31e6b">&#9670;&nbsp;</a></span>SI_RETURN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_RETURN</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x02)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00040">40</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a790300c057eace33142bc223a61337c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a790300c057eace33142bc223a61337c1">&#9670;&nbsp;</a></span>SI_LABEL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_LABEL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x03, i)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00042">42</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a81cdcc5ebf44d0fde91e9d10adc1f9b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81cdcc5ebf44d0fde91e9d10adc1f9b8">&#9670;&nbsp;</a></span>SI_GOTO</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_GOTO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x04, i)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00043">43</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa7f2084183110764980f5cc036f4b669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7f2084183110764980f5cc036f4b669">&#9670;&nbsp;</a></span>SI_LOOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_LOOP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x05, i)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00045">45</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3080a5ea4d7f69d0eb5cf8e57283226d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3080a5ea4d7f69d0eb5cf8e57283226d">&#9670;&nbsp;</a></span>SI_END_LOOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_LOOP</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x06)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00046">46</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a0862f42d6c7b8a1120da71b7f7e41747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0862f42d6c7b8a1120da71b7f7e41747">&#9670;&nbsp;</a></span>SI_BREAK_LOOP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BREAK_LOOP</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x07)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00047">47</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ab8f66ec00df601a9b8088774b97c8969"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f66ec00df601a9b8088774b97c8969">&#9670;&nbsp;</a></span>SI_WAIT_FRAMES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_WAIT_FRAMES</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x08, i)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00049">49</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a792318bfc71ad1dd93425d31f08da9b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a792318bfc71ad1dd93425d31f08da9b0">&#9670;&nbsp;</a></span>SI_WAIT_SECS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_WAIT_SECS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">i</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x09, i)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00050">50</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a9f9a04c96aa3369f70b623932446642e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f9a04c96aa3369f70b623932446642e">&#9670;&nbsp;</a></span>SI_IF_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0A, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00052">52</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ae0966e99adad3273d73ed2cc6e51efc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0966e99adad3273d73ed2cc6e51efc5">&#9670;&nbsp;</a></span>SI_IF_NE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_NE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0B, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00053">53</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a469f949b39eb26d0b3620d85b7330e9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469f949b39eb26d0b3620d85b7330e9a">&#9670;&nbsp;</a></span>SI_IF_LT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_LT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0C, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00054">54</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ae4bab07598e385354ae4e74c8fe2d4c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4bab07598e385354ae4e74c8fe2d4c0">&#9670;&nbsp;</a></span>SI_IF_GT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_GT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0D, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00055">55</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a17876abbde03be941842d629cefa17fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17876abbde03be941842d629cefa17fa">&#9670;&nbsp;</a></span>SI_IF_LE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_LE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0E, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00056">56</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a8ff3e4e4db875c49155c496cfcd93758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8ff3e4e4db875c49155c496cfcd93758">&#9670;&nbsp;</a></span>SI_IF_GE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_GE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x0F, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00057">57</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a2cadd39cb78d882752d9c23fb64e6699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cadd39cb78d882752d9c23fb64e6699">&#9670;&nbsp;</a></span>SI_IF_BITS_ON</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_BITS_ON</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x10, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00058">58</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3d84371a6a46abbf87095c19c0be76cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d84371a6a46abbf87095c19c0be76cd">&#9670;&nbsp;</a></span>SI_IF_BITS_OFF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_IF_BITS_OFF</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x11, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00059">59</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a50f79f9f6c9dd7da839af8fb85eaecf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50f79f9f6c9dd7da839af8fb85eaecf3">&#9670;&nbsp;</a></span>SI_ELSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_ELSE</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x12)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00060">60</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a7146d8f4012043df8aa475919b40ed14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7146d8f4012043df8aa475919b40ed14">&#9670;&nbsp;</a></span>SI_END_IF</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_IF</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x13)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00061">61</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a36fd02d89d218479f327feee4101ccc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36fd02d89d218479f327feee4101ccc7">&#9670;&nbsp;</a></span>SI_SWITCH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SWITCH</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x14, a)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00063">63</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a494c25846c988fd232c335d5285ca95b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a494c25846c988fd232c335d5285ca95b">&#9670;&nbsp;</a></span>SI_SWITCH_CONST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SWITCH_CONST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x15, a)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00064">64</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a9f8b4254df536ea0e4cf37b10454ad0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f8b4254df536ea0e4cf37b10454ad0c">&#9670;&nbsp;</a></span>SI_CASE_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x16, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00065">65</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="acd887921e35b291ef6ff85af6c308283"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd887921e35b291ef6ff85af6c308283">&#9670;&nbsp;</a></span>SI_CASE_NE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_NE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x17, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00066">66</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a62620ef8751e284c072e997e73e7dd9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62620ef8751e284c072e997e73e7dd9c">&#9670;&nbsp;</a></span>SI_CASE_LT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_LT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x18, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00067">67</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a52ca1d573af7d762e86e9303cf344fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52ca1d573af7d762e86e9303cf344fb7">&#9670;&nbsp;</a></span>SI_CASE_GT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_GT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x19, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00068">68</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a890ba7d7550a6d2ed5d4ba1fcae27083"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890ba7d7550a6d2ed5d4ba1fcae27083">&#9670;&nbsp;</a></span>SI_CASE_LE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_LE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1A, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00069">69</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa98437b611cb02c7a1a7a2a2d69921b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa98437b611cb02c7a1a7a2a2d69921b3">&#9670;&nbsp;</a></span>SI_CASE_GE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_GE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1B, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00070">70</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa5a883a6ab54c271559a9d3cf8776f54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5a883a6ab54c271559a9d3cf8776f54">&#9670;&nbsp;</a></span>SI_CASE_DEFAULT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_DEFAULT</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1C)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00071">71</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a420f7716f86663be78e273260c10b0c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a420f7716f86663be78e273260c10b0c2">&#9670;&nbsp;</a></span>SI_CASE_OR_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_OR_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1D, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00072">72</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ac0ced9c9696caa738a1f853082eacda8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0ced9c9696caa738a1f853082eacda8">&#9670;&nbsp;</a></span>SI_CASE_BITS_ON</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_BITS_ON</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x1F, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00073">73</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a6f53513f03b9e4903547eed7503e3278"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f53513f03b9e4903547eed7503e3278">&#9670;&nbsp;</a></span>SI_END_MULTI_CASE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_MULTI_CASE</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x20)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00074">74</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aaf70fa4e4846ba084984f70a1fa7f5d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf70fa4e4846ba084984f70a1fa7f5d6">&#9670;&nbsp;</a></span>SI_CASE_RANGE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CASE_RANGE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">from, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">to&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x21, from, to)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00075">75</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ac98663983efe21a1b9b04fc2425959b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac98663983efe21a1b9b04fc2425959b4">&#9670;&nbsp;</a></span>SI_BREAK_CASE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BREAK_CASE</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x22)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00076">76</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa07d845d8391fa2739a11c65de127a45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa07d845d8391fa2739a11c65de127a45">&#9670;&nbsp;</a></span>SI_END_SWITCH</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_SWITCH</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x23)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00077">77</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa56806b231addfd9b40f6f42bb95c0c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa56806b231addfd9b40f6f42bb95c0c7">&#9670;&nbsp;</a></span>SI_SET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varA, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varB&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x24, varA, varB)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00079">79</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a7594c4c5c4b30a283bcb088614251d20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7594c4c5c4b30a283bcb088614251d20">&#9670;&nbsp;</a></span>SI_SET_CONST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SET_CONST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x25, var, value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00080">80</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a70386f9c03f1429a4441020bf9081947"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70386f9c03f1429a4441020bf9081947">&#9670;&nbsp;</a></span>SI_ADD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_ADD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x27, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00081">81</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3da87463c326b05f35196815aacd2707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3da87463c326b05f35196815aacd2707">&#9670;&nbsp;</a></span>SI_SUB</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SUB</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x28, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00082">82</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a4066d34ee7b0497cc5a6d429398d3e16"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4066d34ee7b0497cc5a6d429398d3e16">&#9670;&nbsp;</a></span>SI_MUL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_MUL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x29, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00083">83</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a17413249d6e40dfe196db2f92734ce5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17413249d6e40dfe196db2f92734ce5b">&#9670;&nbsp;</a></span>SI_DIV</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_DIV</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2A, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00084">84</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a9ade509576ffdb3a0e2eabd68b6ad636"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ade509576ffdb3a0e2eabd68b6ad636">&#9670;&nbsp;</a></span>SI_MOD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_MOD</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2B, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00085">85</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3489436320341404a1fb5f1928e433fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3489436320341404a1fb5f1928e433fa">&#9670;&nbsp;</a></span>SI_SET_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SET_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x26, var, value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00087">87</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a880e0c49eb84e5fc5243b53aa3d07aec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a880e0c49eb84e5fc5243b53aa3d07aec">&#9670;&nbsp;</a></span>SI_ADD_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_ADD_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2C, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00088">88</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a1f50f0123704b1d3eee92f04fd11fd3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f50f0123704b1d3eee92f04fd11fd3e">&#9670;&nbsp;</a></span>SI_SUB_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SUB_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2D, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00089">89</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a218eaceadfd0e5a727cb53e561515533"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a218eaceadfd0e5a727cb53e561515533">&#9670;&nbsp;</a></span>SI_MUL_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_MUL_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2E, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00090">90</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a0cebf3b9e3096fd0c3c5c83dfbea283c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cebf3b9e3096fd0c3c5c83dfbea283c">&#9670;&nbsp;</a></span>SI_DIV_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_DIV_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">a, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">b&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x2F, a, b)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00091">91</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a45039b39c449decfcab781f1e68f0843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45039b39c449decfcab781f1e68f0843">&#9670;&nbsp;</a></span>SI_USE_BUFFER</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_USE_BUFFER</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">buf_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x30, buf_ptr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00094">94</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="af3f53a1ca183f3ec5ca3368396339e5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3f53a1ca183f3ec5ca3368396339e5c">&#9670;&nbsp;</a></span>SI_BUF_READ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BUF_READ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">vars...</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00095">95</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a21fed79317fde297ee30d38706eb2f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21fed79317fde297ee30d38706eb2f69">&#9670;&nbsp;</a></span>SI_BUF_PEEK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BUF_PEEK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x35, n, var)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00098">98</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a8381554e2ce3ac539c6a571de95cdc37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8381554e2ce3ac539c6a571de95cdc37">&#9670;&nbsp;</a></span>SI_USE_BUFFER_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_USE_BUFFER_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">buf_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x36, buf_ptr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00099">99</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3200af54d2b4daea18fa02336f01b6af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3200af54d2b4daea18fa02336f01b6af">&#9670;&nbsp;</a></span>SI_BUF_READ_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BUF_READ_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">vars...</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00100">100</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aacd2d7a3cc87a5f03e595870f7fe3b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacd2d7a3cc87a5f03e595870f7fe3b11">&#9670;&nbsp;</a></span>SI_BUF_PEEK_F</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BUF_PEEK_F</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">n, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3B, n, var)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00103">103</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ae8523789ae63acf373b68a48263a4c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8523789ae63acf373b68a48263a4c90">&#9670;&nbsp;</a></span>SI_USE_ARRAY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_USE_ARRAY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">arrPtr</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3C, arrPtr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00105">105</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a73fecc6d469fc1a5ee11d230e1ec2379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73fecc6d469fc1a5ee11d230e1ec2379">&#9670;&nbsp;</a></span>SI_NEW_ARRAY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_NEW_ARRAY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">len, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">arrPtr&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3D, len, arrPtr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00106">106</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a4379e4dd3262ee910ce43f14b3b5730f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4379e4dd3262ee910ce43f14b3b5730f">&#9670;&nbsp;</a></span>SI_USE_FLAGS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_USE_FLAGS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">arrPtr</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3E, arrPtr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00107">107</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ad68ae510260e3a1f1b9f78fdbe1ad00d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad68ae510260e3a1f1b9f78fdbe1ad00d">&#9670;&nbsp;</a></span>SI_AND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_AND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varA, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varB&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x3F, varA, varB)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00109">109</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a667b5112d9ca3cfa93854144394e4d2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a667b5112d9ca3cfa93854144394e4d2d">&#9670;&nbsp;</a></span>SI_AND_CONST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_AND_CONST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x40, var, value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00110">110</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a17e43d6f19fb39924a3a61a31b99de2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17e43d6f19fb39924a3a61a31b99de2f">&#9670;&nbsp;</a></span>SI_OR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_OR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varA, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">varB&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x41, varA, varB)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00111">111</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aa4883dd99811ed24dabf3455babd83f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4883dd99811ed24dabf3455babd83f6">&#9670;&nbsp;</a></span>SI_OR_CONST</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_OR_CONST</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">value&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x41, var, value)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00112">112</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ad0724cbf0e017c1d3c60deed9336f6e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0724cbf0e017c1d3c60deed9336f6e9">&#9670;&nbsp;</a></span>SI_CALL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CALL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">func, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">argv...&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x43, func, ##argv)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00114">114</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a1ebf8d1d0763d4afcc15c52dfb002c4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ebf8d1d0763d4afcc15c52dfb002c4c">&#9670;&nbsp;</a></span>SI_EXEC</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_EXEC</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x44, script)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00115">115</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a469e7cf291cfe20a0f3b31f4a7a40550"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a469e7cf291cfe20a0f3b31f4a7a40550">&#9670;&nbsp;</a></span>SI_EXEC_GET_ID</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_EXEC_GET_ID</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">outScriptID&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x45, script, outScriptID)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00116">116</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a4418e276bf82818ea8ef7fd34782e796"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4418e276bf82818ea8ef7fd34782e796">&#9670;&nbsp;</a></span>SI_EXEC_WAIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_EXEC_WAIT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x46, script)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00117">117</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ac7b19f89632951057281d87f6a1cfa05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7b19f89632951057281d87f6a1cfa05">&#9670;&nbsp;</a></span>SI_JUMP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_JUMP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4A, script)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00118">118</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a5a98e57809fadbd4307edcb56a0f6dc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a98e57809fadbd4307edcb56a0f6dc4">&#9670;&nbsp;</a></span>SI_BIND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BIND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">trigger, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">target, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">outTriggerPtr&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x47, script, trigger, target, 1, outTriggerPtr)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00120">120</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a6e3c7e87afe0a4de3a89ff6a954e7b18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e3c7e87afe0a4de3a89ff6a954e7b18">&#9670;&nbsp;</a></span>SI_BIND_PADLOCK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_BIND_PADLOCK</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">script, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">trigger, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">target, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">itemList&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4E, script, trigger, target, itemList, 0, 1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00121">121</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a7ca9b92c5eb09fdc024a9002a3b7c8f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ca9b92c5eb09fdc024a9002a3b7c8f0">&#9670;&nbsp;</a></span>SI_UNBIND_ME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_UNBIND_ME</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x48)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00122">122</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a0d809641abe64476cbb5f25541d5c4c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d809641abe64476cbb5f25541d5c4c1">&#9670;&nbsp;</a></span>SI_PRIORITY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_PRIORITY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">p</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4B, p)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00124">124</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="aafec0c1dc262dfbf3427ae8fd56df45d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafec0c1dc262dfbf3427ae8fd56df45d">&#9670;&nbsp;</a></span>SI_TIMESCALE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_TIMESCALE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">t</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4C, t)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00125">125</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a3280c00ded484359d0b6ef98fd11d549"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3280c00ded484359d0b6ef98fd11d549">&#9670;&nbsp;</a></span>SI_GROUP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_GROUP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">g</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4D, g)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00126">126</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a2222e5f52734a8cdd4272485e04fa2d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2222e5f52734a8cdd4272485e04fa2d1">&#9670;&nbsp;</a></span>SI_SUSPEND_GROUP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SUSPEND_GROUP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">group</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x4F, group)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00128">128</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a9bbb65af54ac96cba8e1010a55ac9b6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bbb65af54ac96cba8e1010a55ac9b6b">&#9670;&nbsp;</a></span>SI_RESUME_GROUP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_RESUME_GROUP</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">group</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x50, group)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00129">129</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a65b51331c05790c0beac903e347123a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b51331c05790c0beac903e347123a6">&#9670;&nbsp;</a></span>SI_SUSPEND_GROUP_NOT_ME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SUSPEND_GROUP_NOT_ME</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">group</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x51, group)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00130">130</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a4a920935a27177a0d6c22fa78b13b74b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a920935a27177a0d6c22fa78b13b74b">&#9670;&nbsp;</a></span>SI_RESUME_GROUP_NOT_ME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_RESUME_GROUP_NOT_ME</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">group</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x52, group)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00131">131</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ad337806caeaf95987a84bffd974bbca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad337806caeaf95987a84bffd974bbca4">&#9670;&nbsp;</a></span>SI_KILL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_KILL</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">scriptID</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x49, scriptID)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00133">133</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="add513f6746ca05a72d41952faea77ef0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add513f6746ca05a72d41952faea77ef0">&#9670;&nbsp;</a></span>SI_SUSPEND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_SUSPEND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">scriptID</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x53, scriptID)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00134">134</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a185852cb60894b639613c6f61550aad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185852cb60894b639613c6f61550aad1">&#9670;&nbsp;</a></span>SI_RESUME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_RESUME</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">scriptID</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x54, scriptID)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00135">135</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a412c40887966bef759f5debf027f1326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a412c40887966bef759f5debf027f1326">&#9670;&nbsp;</a></span>SI_EXISTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_EXISTS</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">scriptID</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x55, scriptID)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00136">136</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="ab0b1dc97e3d36e6e80d919a7ef29fbef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab0b1dc97e3d36e6e80d919a7ef29fbef">&#9670;&nbsp;</a></span>SI_THREAD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_THREAD</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x56)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00138">138</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a142106cc43ab51e227ffe7fcf867deeb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a142106cc43ab51e227ffe7fcf867deeb">&#9670;&nbsp;</a></span>SI_END_THREAD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_THREAD</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x57)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00139">139</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a90630ca57196d640a3514df1ebfbb9d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90630ca57196d640a3514df1ebfbb9d6">&#9670;&nbsp;</a></span>SI_CHILD_THREAD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_CHILD_THREAD</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x58)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00141">141</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
-
-</div>
-</div>
-<a id="a4a9eeba542a979a176668677c2de18a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9eeba542a979a176668677c2de18a4">&#9670;&nbsp;</a></span>SI_END_CHILD_THREAD</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SI_END_CHILD_THREAD</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="si_8h.html#aa86150ffe3a5012eea716399c6e4c875">SI_CMD</a>(0x59)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00142">142</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00127">127</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -2698,7 +685,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00144">144</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00132">132</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -2747,7 +734,192 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00027">27</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00120">120</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abb1eab93e44604a3a4a3861f63c8e261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb1eab93e44604a3a4a3861f63c8e261">&#9670;&nbsp;</a></span>ScriptOpcode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="si_8h.html#abb1eab93e44604a3a4a3861f63c8e261">ScriptOpcode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ab00b6e1898517c1ba1cfcec5be4ebbd6"></a>ScriptOpcode_END&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a4ef9680268f63cca691e5a66240614dc"></a>ScriptOpcode_RETURN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a06f892882d88b0375c4b91b381c6d074"></a>ScriptOpcode_LABEL&#160;</td><td class="fielddoc"><p>Args: index. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a81aca78c73d708e85f566132a833c1f1"></a>ScriptOpcode_GOTO&#160;</td><td class="fielddoc"><p>Args: index. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aa9748aee23781cb548c153b01a801fdc"></a>ScriptOpcode_LOOP&#160;</td><td class="fielddoc"><p>Args: number of repeats (0 = infinite) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a9158c81f6191cd39355cf30276ef80e7"></a>ScriptOpcode_END_LOOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a2e7d1d4ec5d7683de346f94852dbcb0a"></a>ScriptOpcode_BREAK_LOOP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aee9b67bbd3b47a4f81f3dac78877f10f"></a>ScriptOpcode_SLEEP_FRAMES&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a31a40defd1889c33b4e71228c09f5841"></a>ScriptOpcode_SLEEP_SECS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aca8e7dfac1bce926d74943ad5d8aabf0"></a>ScriptOpcode_IF_EQ&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aebc100d977dd9b3f8c88094dc8eaf286"></a>ScriptOpcode_IF_NE&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261adab140c569b79647cdaf2b1b999c8e5e"></a>ScriptOpcode_IF_LT&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a7135737751e49324637713637d41cf1a"></a>ScriptOpcode_IF_GT&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a98ac1446bc2aecf9ed6b1b01b225b76d"></a>ScriptOpcode_IF_LE&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aa86039d1193d765caa6552be1c2e2f37"></a>ScriptOpcode_IF_GE&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae2b5061ff21c2bd2918328df3e9b7050"></a>ScriptOpcode_IF_FLAG&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ad6e434038728a188aa0240fea9be16b9"></a>ScriptOpcode_IF_NOT_FLAG&#160;</td><td class="fielddoc"><p>Args: a, b. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a5e7322ad7c79015cd48f8525aab592dd"></a>ScriptOpcode_ELSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261add4d45230146444bacfc3d17f6160b60"></a>ScriptOpcode_END_IF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a47b46361f533e708f69fd2189ce82d6a"></a>ScriptOpcode_MATCH&#160;</td><td class="fielddoc"><p>Args: expression to test against. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a381749b40f536b94aa38ea2ed1523455"></a>ScriptOpcode_MATCH_CONST&#160;</td><td class="fielddoc"><p>Args: value to test against. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a4f5254fd754ddb7da3aa81f11c40f945"></a>ScriptOpcode_CASE_EQ&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ac9886fad4b5eafcdecca35f72cd02d96"></a>ScriptOpcode_CASE_NE&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a115093ad5f808c6e46de9bb3ae819f09"></a>ScriptOpcode_CASE_LT&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a2737c715f10f6e9ff7470fd645cd82b8"></a>ScriptOpcode_CASE_GT&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a982f8e09286ccec64b33837a1867d77f"></a>ScriptOpcode_CASE_LE&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aacf78630cb7a5de794b2a36e35e8f6bf"></a>ScriptOpcode_CASE_GE&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a80037d9c19314d85713d61ae34d260e5"></a>ScriptOpcode_CASE_ELSE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ac5a154b914af518e07256dfba92c27a8"></a>ScriptOpcode_CASE_MULTI_OR_EQ&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261af5b9041b4b06a54ebe71a687f70befae"></a>ScriptOpcode_CASE_MULTI_AND_EQ&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aecd53fac5f65a16d636d8e657f52ceb7"></a>ScriptOpcode_CASE_FLAG&#160;</td><td class="fielddoc"><p>Args: expression to test for. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a7a7096169eedd6a13da2e895f9f16570"></a>ScriptOpcode_END_CASE_MULTI&#160;</td><td class="fielddoc"><p>Ends the case block of ScriptOpcode_CASE_MULTI_OR_EQ condition(s). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a471ae73d3416c7b461a2a63b54e4fff2"></a>ScriptOpcode_CASE_RANGE&#160;</td><td class="fielddoc"><p>Args: from, to. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a91fe67a9520701d6732f3e9999901a20"></a>ScriptOpcode_BREAK_MATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a5c63ad58d3dda93b399ef2ffb8bd7428"></a>ScriptOpcode_END_MATCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a230c90eb9d4046acd3d40aadca2963c6"></a>ScriptOpcode_SET&#160;</td><td class="fielddoc"><p>Args: container, expression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a554bf29c8ccb9b7e5694cf4705bbff6e"></a>ScriptOpcode_SET_CONST&#160;</td><td class="fielddoc"><p>Args: container, value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a4402582fbbb4e54c92e38896cdad378a"></a>ScriptOpcode_SET_F&#160;</td><td class="fielddoc"><p>Args: container, expression. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ad190bbe4d9a3a36aaf09c058c8ca8eb8"></a>ScriptOpcode_ADD&#160;</td><td class="fielddoc"><p>Args: container, expression to increment by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261afd214ed8b08f0a3f84be4134cbe2de66"></a>ScriptOpcode_SUB&#160;</td><td class="fielddoc"><p>Args: container, expression to decrement by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a02a3b23ae00096948398e4021ba33501"></a>ScriptOpcode_MUL&#160;</td><td class="fielddoc"><p>Args: container, expression to multiply by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a90a51eee50f2488ab41b337105bbc793"></a>ScriptOpcode_DIV&#160;</td><td class="fielddoc"><p>Integer division. Args: container, expression to divide by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a6fed727a3cd584c80571649e1f2a16c7"></a>ScriptOpcode_MOD&#160;</td><td class="fielddoc"><p>Args: container, expression to divide by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a23ce7a8f605ec30cfbe6d4ce4cc8d47c"></a>ScriptOpcode_ADD_F&#160;</td><td class="fielddoc"><p>Args: container, expression to increment by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a464ffc396ea72a79003bd5e33ee19091"></a>ScriptOpcode_SUB_F&#160;</td><td class="fielddoc"><p>Args: container, expression to decrement by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ad501cb813cbf769f219fba2d08251c3b"></a>ScriptOpcode_MUL_F&#160;</td><td class="fielddoc"><p>Args: container, expression to multiply by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a36ed2bdcba04570bc6ed60735e2131a0"></a>ScriptOpcode_DIV_F&#160;</td><td class="fielddoc"><p>Args: container, expression to divide by. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261abf0e346bf9d279cbdb73dadd725f404f"></a>ScriptOpcode_USE_BUFFER&#160;</td><td class="fielddoc"><p>Args: s32*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a8894fce76ee4f3e0cb26c99b3b1150dd"></a>ScriptOpcode_BUFFER_READ_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a917081bd71eeab5800d63c70b89c3d8b"></a>ScriptOpcode_BUFFER_READ_2&#160;</td><td class="fielddoc"><p>Args: container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aacf977cae8fb39a3ee29f19f05448b5b"></a>ScriptOpcode_BUFFER_READ_3&#160;</td><td class="fielddoc"><p>Args: container, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261acfe36a6fc7b1639536a610d4bc1150b5"></a>ScriptOpcode_BUFFER_READ_4&#160;</td><td class="fielddoc"><p>Args: container, container, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261abdc83ce781985bc1dd73abf0b65f3227"></a>ScriptOpcode_BUFFER_PEEK&#160;</td><td class="fielddoc"><p>Args: container, container, container, container. </p>
+<p>Args: index, container </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a7475f8c6bc6596481ac0d637d05a463a"></a>ScriptOpcode_USE_BUFFER_F&#160;</td><td class="fielddoc"><p>Identical to USE_BUFFER. Args: f32*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a76c419f222d1bc93fd7019218862a75b"></a>ScriptOpcode_BUFFER_READ_1_F&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae3196474db8876b54e010772e6f9abc8"></a>ScriptOpcode_BUFFER_READ_2_F&#160;</td><td class="fielddoc"><p>Args: container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ac62a3af1e2a31ee17581b04e860bc3cf"></a>ScriptOpcode_BUFFER_READ_3_F&#160;</td><td class="fielddoc"><p>Args: container, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a00853a6a41945f04189780cf79918846"></a>ScriptOpcode_BUFFER_READ_4_F&#160;</td><td class="fielddoc"><p>Args: container, container, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a1b84ce561157bebe7714a90d4d1a6970"></a>ScriptOpcode_BUFFER_PEEK_F&#160;</td><td class="fielddoc"><p>Args: container, container, container, container. </p>
+<p>Args: index, container </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a1556f721141fe7d503cb2268bf0d34b6"></a>ScriptOpcode_USE_ARRAY&#160;</td><td class="fielddoc"><p>Args: *s32. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae7b2e0e731b3c6b7525444980c3e9c3c"></a>ScriptOpcode_USE_FLAGS&#160;</td><td class="fielddoc"><p>Args: *s32. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261afdf69add2c628be0df58d4c6253749db"></a>ScriptOpcode_NEW_ARRAY&#160;</td><td class="fielddoc"><p>Allocates a new array. Args: length, s32*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a9f573a2c8cf7b10fccd3318686c6006a"></a>ScriptOpcode_AND&#160;</td><td class="fielddoc"><p>Args: container, expression to bitwise AND with. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261aa75b13d13db92f71c0005134a50d05c4"></a>ScriptOpcode_AND_CONST&#160;</td><td class="fielddoc"><p>Args: container, value to bitwise AND with. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a840758f01a5074c6eac90b742c44b0be"></a>ScriptOpcode_OR&#160;</td><td class="fielddoc"><p>Args: container, expression to bitwise OR with. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a3544af2f50c3195a87283200e6ba03ee"></a>ScriptOpcode_OR_CONST&#160;</td><td class="fielddoc"><p>Args: container, value to bitwise OR with. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ab36f838303f709afd9b3921781f7d958"></a>ScriptOpcode_CALL&#160;</td><td class="fielddoc"><p>Args: *function, ... </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261afc6f23bd234359bdfc887634d7f35efd"></a>ScriptOpcode_SPAWN_SCRIPT&#160;</td><td class="fielddoc"><p>Args: Script*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ac16c60b06a12670a3e5a6448e3ceeb05"></a>ScriptOpcode_SPAWN_SCRIPT_GET_ID&#160;</td><td class="fielddoc"><p>Args: Script*, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ab3a7d2c2d65d0199753b112bfe514dc1"></a>ScriptOpcode_AWAIT_SCRIPT&#160;</td><td class="fielddoc"><p>Spawns a script and waits for it to return before continuing. Args: Script*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a79c2922dd10ece5435624fee3665cf94"></a>ScriptOpcode_BIND_TRIGGER&#160;</td><td class="fielddoc"><p>Args: Script*, trigger flags, s32 target, 1, Trigger*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a2fdf544d254a8b1cb5b8679d6d139e44"></a>ScriptOpcode_UNBIND&#160;</td><td class="fielddoc"><p>Unbinds any triggers bound to this script. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae9531bdf67f0ac5065947758b6a170ea"></a>ScriptOpcode_KILL_SCRIPT&#160;</td><td class="fielddoc"><p>Args: ScriptID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261afce4e4f70322f24577121e5053361211"></a>ScriptOpcode_JUMP&#160;</td><td class="fielddoc"><p>Args: Script*. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a44e0a63af505574d6e97c9114596ff48"></a>ScriptOpcode_SET_PRIORITY&#160;</td><td class="fielddoc"><p>Args: priority. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae2386b4db494f4d3064d9fe44c4aefac"></a>ScriptOpcode_SET_TIMESCALE&#160;</td><td class="fielddoc"><p>Args: timescale. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a29aafe4aaccab4f297204e5be64f6948"></a>ScriptOpcode_SET_GROUP&#160;</td><td class="fielddoc"><p>Args: group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a036beec2fb51c1bdcc10f5badf659bd1"></a>ScriptOpcode_BIND_PADLOCK&#160;</td><td class="fielddoc"><p>Args: Script*, trigger flags, s32 target, ItemList*, 0, 1. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a833fa2c668df9945dbd3e5db2d236d75"></a>ScriptOpcode_SUSPEND_GROUP&#160;</td><td class="fielddoc"><p>Args: group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a956627b19f8ac2448884d56ac62d3a1e"></a>ScriptOpcode_RESUME_GROUP&#160;</td><td class="fielddoc"><p>Args: group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a060134766544fc3751a0a799b6b02309"></a>ScriptOpcode_SUSPEND_OTHERS&#160;</td><td class="fielddoc"><p>Args: group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a6e05d4aefe6a47484c42c7774fab4cdc"></a>ScriptOpcode_RESUME_OTHERS&#160;</td><td class="fielddoc"><p>Args: group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a730eca1112673d447858e43c6d5f2e52"></a>ScriptOpcode_SUSPEND_SCRIPT&#160;</td><td class="fielddoc"><p>Args: ScriptID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261ae895fcc4312da796ecf226a8342c8a64"></a>ScriptOpcode_RESUME_SCRIPT&#160;</td><td class="fielddoc"><p>Args: ScriptID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a601e6abf6845c19fa2098429a9df1c98"></a>ScriptOpcode_SCRIPT_EXISTS&#160;</td><td class="fielddoc"><p>Args: ScriptID, container. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261af77e5788efd415a562f8d5904d4098be"></a>ScriptOpcode_SPAWN_THREAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a10fd3959d15ee2eb85c194b8706540cb"></a>ScriptOpcode_END_SPAWN_THREAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261afffc8c21dcfa777abb5bd465171d078b"></a>ScriptOpcode_PARALLEL_THREAD&#160;</td><td class="fielddoc"><p>Parallel threads are killed as soon as the parent script returns. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a53bfb9f39dc86cb06f2397471e4b7ef4"></a>ScriptOpcode_END_PARALLEL_THREAD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abb1eab93e44604a3a4a3861f63c8e261a095cf5e39dc0711b00c009ac2d41e5c3"></a>ScriptOpcode_DEBUG_PRINT&#160;</td><td class="fielddoc"><p>Args: expression. </p>
+</td></tr>
+</table>
+
+<p class="definition">Definition at line <a class="el" href="si_8h_source.html#l00009">9</a> of file <a class="el" href="si_8h_source.html">si.h</a>.</p>
 
 </div>
 </div>
@@ -2757,7 +929,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="si_8h.html">si.h</a></li>
-    <li class="footer">Generated on Sat Nov 7 2020 19:48:52 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sun Nov 8 2020 21:59:43 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

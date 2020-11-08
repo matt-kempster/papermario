@@ -1,5 +1,17 @@
 var NAVTREEINDEX67 =
 {
+"structPlayerData.html#af2e40cc4f826b9204f7dc2395e10980e":[4,0,56,32],
+"structPlayerData.html#af40968988062d6a5e1e84c5dadca9f53":[4,0,56,33],
+"structPlayerData.html#af562db7066ed20dae23292318c42de3a":[4,0,56,2],
+"structPlayerData.html#af65876b963d9d23ccb698066d37957ed":[4,0,56,22],
+"structPlayerData.html#af8023f9a02f4304b5843dfb7f09469a0":[4,0,56,17],
+"structPlayerData.html#affa39bfebd99551ed920f21e6423aeb3":[4,0,56,39],
+"structPlayerPathElement.html":[4,0,57],
+"structPlayerPathElement.html#a5b7e7790e79b8dc09b936d4c8ff70ad6":[4,0,57,1],
+"structPlayerPathElement.html#a88f98d45cae0da418f20d48710b34ede":[4,0,57,0],
+"structPlayerStatus.html":[4,0,58],
+"structPlayerStatus.html#a051fffbf826599fd550d75fb32b21c16":[4,0,58,19],
+"structPlayerStatus.html#a0a368f485c8c9e561df16f501ca363ff":[4,0,58,7],
 "structPlayerStatus.html#a0a7d7d0f88da9fc42c810a7a1514afe2":[4,0,58,18],
 "structPlayerStatus.html#a1085705954c21d3b8fe45a15d25c6be6":[4,0,58,28],
 "structPlayerStatus.html#a11c7e65803f922fea1230c3afe9afa1b":[4,0,58,27],
@@ -237,17 +249,5 @@ var NAVTREEINDEX67 =
 "structStaticActorData.html#ae6238d01dcf013cba56ddf6083f2a5a3":[4,0,70,14],
 "structStaticActorData.html#ae7eba2d043cb762eea3c3ae9b002fa68":[4,0,70,11],
 "structStaticActorData.html#af1f1e61c79057749e84db3620cec8d36":[4,0,70,10],
-"structStaticActorData.html#af295e1209f5958267f9160374fbe520e":[4,0,70,16],
-"structStaticActorPart.html":[4,0,71],
-"structStaticActorPart.html#a196c08f929e4ca20d3b1f272fc1c1b9d":[4,0,71,0],
-"structStaticActorPart.html#a2bf3d0fc2bf315aaedb43df75929c6ba":[4,0,71,4],
-"structStaticActorPart.html#a5c6b1721087bf8b408c35b86fd0cc4b8":[4,0,71,6],
-"structStaticActorPart.html#a780d1f40ed67c0754c666c1e6a4258d8":[4,0,71,8],
-"structStaticActorPart.html#a8deeb73278f011ee2a321280e6111938":[4,0,71,1],
-"structStaticActorPart.html#aabbe29359e0ccd5c507e7f2d1bb05e10":[4,0,71,7],
-"structStaticActorPart.html#ab723f7c266fc82656fb359cfb8bc88df":[4,0,71,2],
-"structStaticActorPart.html#abefa893a7b687c8513244fb24c1a369f":[4,0,71,9],
-"structStaticActorPart.html#ae3a0100ffd14f7e1e1e7aaa50b621485":[4,0,71,5],
-"structStaticActorPart.html#aebd5c435427426e0effbeaabdf69fcbc":[4,0,71,3],
-"structStaticEntityData.html":[4,0,72]
+"structStaticActorData.html#af295e1209f5958267f9160374fbe520e":[4,0,70,16]
 };

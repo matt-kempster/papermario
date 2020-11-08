@@ -1,5 +1,17 @@
 var NAVTREEINDEX64 =
 {
+"structBattleStatus.html#aabe8905a186055855aac933b9e9aa71f":[4,0,8,80],
+"structBattleStatus.html#aabef6d0fa3a935267cbb5c88e4d0ccfa":[4,0,8,9],
+"structBattleStatus.html#ab30cfedc2649df52ded3e699f7d8b584":[4,0,8,108],
+"structBattleStatus.html#ab6b5a54c8ad60553171ee3211cdfceb3":[4,0,8,37],
+"structBattleStatus.html#ab9b8ac605acf4571891092731d49b806":[4,0,8,35],
+"structBattleStatus.html#aba7c832759b90fac41b5b519b5c6f39f":[4,0,8,71],
+"structBattleStatus.html#abad12a0b46289d20748d444db1b05231":[4,0,8,90],
+"structBattleStatus.html#ac13513d192a38510e3ac5e807da33d53":[4,0,8,55],
+"structBattleStatus.html#ac21e98b93bb18b10ad00a4709efe8357":[4,0,8,36],
+"structBattleStatus.html#ac3839c592357b044617e3dc5de8f9a1a":[4,0,8,6],
+"structBattleStatus.html#ac8e503094218c25947fd652c8bd5477c":[4,0,8,109],
+"structBattleStatus.html#acd1f4816b52b8f319e4c657a63fe32da":[4,0,8,79],
 "structBattleStatus.html#acf012bf55461233331044d01e0383a48":[4,0,8,96],
 "structBattleStatus.html#acfc21acd9f18eb9299f480ce47379807":[4,0,8,111],
 "structBattleStatus.html#ad3295e676a5a89e7ce2e0e3eff0698b0":[4,0,8,16],
@@ -237,17 +249,5 @@ var NAVTREEINDEX64 =
 "structEffectTableEntry.html#a602c7bcde6581e2f90b257ba46332011":[4,0,24,0],
 "structEffectTableEntry.html#af4dddd8c3bbd6348052b78da65c29da4":[4,0,24,1],
 "structEncounter.html":[4,0,25],
-"structEncounter.html#a1c319fd99fb77143d84517342fe4f69c":[4,0,25,5],
-"structEncounter.html#a37ce7fd60168af87452aa85afb11cec9":[4,0,25,4],
-"structEncounter.html#a43734ff925c67ad84f51eb4f7dcd88e4":[4,0,25,1],
-"structEncounter.html#a8675463b8fb42064eeefc5106383d565":[4,0,25,0],
-"structEncounter.html#ac9950e7db0ebc5942fca2b5a05e914c5":[4,0,25,3],
-"structEncounter.html#ae3398f4aa13be022fdf8947223192d69":[4,0,25,2],
-"structEncounterStatus.html":[4,0,26],
-"structEncounterStatus.html#a067171758c0f92f3c3296247079a52c0":[4,0,26,3],
-"structEncounterStatus.html#a1129f06081611161f660e5c04d742520":[4,0,26,28],
-"structEncounterStatus.html#a13e497adb2bf83a4bb03e030517426d7":[4,0,26,10],
-"structEncounterStatus.html#a187abb2534f3c1d6ffbc2e0e318befc6":[4,0,26,4],
-"structEncounterStatus.html#a19438c28c413e4742f24b966fabba800":[4,0,26,11],
-"structEncounterStatus.html#a1d52559f9668f50e9c3978698dde4606":[4,0,26,31]
+"structEncounter.html#a1c319fd99fb77143d84517342fe4f69c":[4,0,25,5]
 };

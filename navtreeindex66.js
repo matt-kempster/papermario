@@ -1,5 +1,17 @@
 var NAVTREEINDEX66 =
 {
+"structMap.html#a81120b9643fb0dc0fb06295b7678454a":[4,0,37,9],
+"structMap.html#aba239533d85be68e1e6dce38f3fcea27":[4,0,37,5],
+"structMap.html#ac5c5e4120085be576ec8b6ce34dabcd6":[4,0,37,1],
+"structMap.html#ad18f4835730df2db0e3b67f23eeba5a2":[4,0,37,8],
+"structMapConfig.html":[4,0,38],
+"structMapConfig.html#a04615224be8c618d58371171ed4ab8fc":[4,0,38,13],
+"structMapConfig.html#a18e3ca25d281f35ffe1134e30a5bef48":[4,0,38,4],
+"structMapConfig.html#a1e07c8a95f23e773d34316b380c1dc6d":[4,0,38,0],
+"structMapConfig.html#a366627e9a906af1b4f2f5c060ccc5bc4":[4,0,38,6],
+"structMapConfig.html#a3e2362f8436ee24c2286ffc0e69ce6df":[4,0,38,1],
+"structMapConfig.html#a481c1d6b5edd2d8b53f41eabb377bae7":[4,0,38,14],
+"structMapConfig.html#a603d6f97004fdff0fada1122b1c1613f":[4,0,38,9],
 "structMapConfig.html#a65ad25ea1f9a328f697039cd4b8fed0f":[4,0,38,7],
 "structMapConfig.html#a98e5c9f492c9693d92edbbcd27d95212":[4,0,38,10],
 "structMapConfig.html#a9c3d1db801c307a0ef4c5332997e6a25":[4,0,38,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX66 =
 "structPlayerData.html#ad650c6cd1c48ae3d9752393df01b2cfa":[4,0,56,61],
 "structPlayerData.html#adc4297c8e2b6f47513024fd196f14ec1":[4,0,56,37],
 "structPlayerData.html#ae32de0485bcde00dd559efa62374953c":[4,0,56,20],
-"structPlayerData.html#aeb5b0e1720c28644590b3573c5ac2b1f":[4,0,56,14],
-"structPlayerData.html#af2e40cc4f826b9204f7dc2395e10980e":[4,0,56,32],
-"structPlayerData.html#af40968988062d6a5e1e84c5dadca9f53":[4,0,56,33],
-"structPlayerData.html#af562db7066ed20dae23292318c42de3a":[4,0,56,2],
-"structPlayerData.html#af65876b963d9d23ccb698066d37957ed":[4,0,56,22],
-"structPlayerData.html#af8023f9a02f4304b5843dfb7f09469a0":[4,0,56,17],
-"structPlayerData.html#affa39bfebd99551ed920f21e6423aeb3":[4,0,56,39],
-"structPlayerPathElement.html":[4,0,57],
-"structPlayerPathElement.html#a5b7e7790e79b8dc09b936d4c8ff70ad6":[4,0,57,1],
-"structPlayerPathElement.html#a88f98d45cae0da418f20d48710b34ede":[4,0,57,0],
-"structPlayerStatus.html":[4,0,58],
-"structPlayerStatus.html#a051fffbf826599fd550d75fb32b21c16":[4,0,58,19],
-"structPlayerStatus.html#a0a368f485c8c9e561df16f501ca363ff":[4,0,58,7]
+"structPlayerData.html#aeb5b0e1720c28644590b3573c5ac2b1f":[4,0,56,14]
 };

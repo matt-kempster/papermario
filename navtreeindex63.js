@@ -1,5 +1,17 @@
 var NAVTREEINDEX63 =
 {
+"structActor.html#a49126591bde9d1eaa6f00fab6b2e809b":[4,0,0,112],
+"structActor.html#a49e59917564cf051769ab0675c4a819a":[4,0,0,39],
+"structActor.html#a4bdd3dc8006c053c349452e4efac6552":[4,0,0,11],
+"structActor.html#a4be35bc0bf726b77e228f3acc0133a96":[4,0,0,37],
+"structActor.html#a4c35c4168907d4b57a3be1f7f5df2cd0":[4,0,0,18],
+"structActor.html#a4c541c8f86b51348e1c05e88695d320a":[4,0,0,42],
+"structActor.html#a4dde10914c0ae43f060663f80d2ca6dd":[4,0,0,14],
+"structActor.html#a5130964d0ac40664c5b11ed5dabf8e9b":[4,0,0,6],
+"structActor.html#a52fc73690cbfad7e26263b8fffc4f787":[4,0,0,92],
+"structActor.html#a56bd4bd85dbbb4a09d3ac28626494736":[4,0,0,66],
+"structActor.html#a57dc8beb603d934e7e67c521d4bba2ad":[4,0,0,27],
+"structActor.html#a59b46326f0705305f7b8b3054c8209f2":[4,0,0,49],
 "structActor.html#a602752c2e0126fcd9dc65dd1a916b30b":[4,0,0,94],
 "structActor.html#a638add749ca2bb44074ed42d8d01aea9":[4,0,0,2],
 "structActor.html#a6620342e3cff8fe94355e5da20b6a698":[4,0,0,95],
@@ -237,17 +249,5 @@ var NAVTREEINDEX63 =
 "structBattleStatus.html#aa8aeae83656a32816555793e0af6a5a0":[4,0,8,42],
 "structBattleStatus.html#aa8e4305aea6593f74f9228c087eecacd":[4,0,8,0],
 "structBattleStatus.html#aaa1f621d3e22887763aae47336790a26":[4,0,8,77],
-"structBattleStatus.html#aaa5e0afeca32643fd6b5c9bdeddca70d":[4,0,8,32],
-"structBattleStatus.html#aabe8905a186055855aac933b9e9aa71f":[4,0,8,80],
-"structBattleStatus.html#aabef6d0fa3a935267cbb5c88e4d0ccfa":[4,0,8,9],
-"structBattleStatus.html#ab30cfedc2649df52ded3e699f7d8b584":[4,0,8,108],
-"structBattleStatus.html#ab6b5a54c8ad60553171ee3211cdfceb3":[4,0,8,37],
-"structBattleStatus.html#ab9b8ac605acf4571891092731d49b806":[4,0,8,35],
-"structBattleStatus.html#aba7c832759b90fac41b5b519b5c6f39f":[4,0,8,71],
-"structBattleStatus.html#abad12a0b46289d20748d444db1b05231":[4,0,8,90],
-"structBattleStatus.html#ac13513d192a38510e3ac5e807da33d53":[4,0,8,55],
-"structBattleStatus.html#ac21e98b93bb18b10ad00a4709efe8357":[4,0,8,36],
-"structBattleStatus.html#ac3839c592357b044617e3dc5de8f9a1a":[4,0,8,6],
-"structBattleStatus.html#ac8e503094218c25947fd652c8bd5477c":[4,0,8,109],
-"structBattleStatus.html#acd1f4816b52b8f319e4c657a63fe32da":[4,0,8,79]
+"structBattleStatus.html#aaa5e0afeca32643fd6b5c9bdeddca70d":[4,0,8,32]
 };
