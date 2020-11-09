@@ -6,7 +6,7 @@ var 7E0E80_8c =
     [ "func_80280208", "7E0E80_8c.html#ad42c3c3a5e30b18a1c78deefa6ee6558", null ],
     [ "func_802802D0", "7E0E80_8c.html#a92671b12f702c996aae1278d65cfe98c", null ],
     [ "func_8028035C", "7E0E80_8c.html#aaf641c7cac5cfed59c4e98e24eae78bb", null ],
-    [ "func_802803C8", "7E0E80_8c.html#a6d173be73af1dfe84d83219a1fb838c9", null ],
+    [ "func_802803C8", "7E0E80_8c.html#a20d115efc906be20f80c3e079abd4153", null ],
     [ "func_80280410", "7E0E80_8c.html#a5b6e62af54e1579661222a3b1cb3f955", null ],
     [ "func_8028051C", "7E0E80_8c.html#aa2a374060b5f3549f5019e3628d1f712", null ],
     [ "func_80280954", "7E0E80_8c.html#a4fe0abdba16a9067633fd6e7d5426cca", null ],
@@ -18,5 +18,5 @@ var 7E0E80_8c =
     [ "func_802814D0", "7E0E80_8c.html#a7d2a31f8c2ab93e956355f9bcb9dbea7", null ],
     [ "draw_shop_items", "7E0E80_8c.html#a7f504eb37c02a7a58840a2e83d1fb117", null ],
     [ "MakeShop", "7E0E80_8c.html#a8090282482f4062a2568551d906c92ac", null ],
-    [ "MakeShopOwner", "7E0E80_8c.html#a4f8bb3ef1f902c2ba4823de52ffb3f31", null ]
+    [ "MakeShopOwner", "7E0E80_8c.html#acc34267ff4499b6ec0dd9882e26f34b3", null ]
 ];

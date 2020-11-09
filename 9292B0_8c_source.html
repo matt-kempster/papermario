@@ -89,16 +89,92 @@ $(document).ready(function(){initNavTree('9292B0_8c_source.html',''); initResiza
 </div><!--header-->
 <div class="contents">
 <a href="9292B0_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sbk__00_8h.html">sbk_00.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SetNpcB5__3_8inc_8c.html">world/common/SetNpcB5_3.inc.c</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="SetNpcB5__3_8inc_8c.html">world/common/SetNpcB5_3.inc.c</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="9292B0_8c.html#abcc81bec0604f84683ae82926371ec30">    5</a></span>&#160;s32 <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(aISettings_80240300)[] = {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    0x3FE66666, 0x00000032, 0x0000000A, 0x437A0000, 0x00000000, 0x00000002, 0x40600000, 0x0000002D,</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    0x00000006, 0x43960000, 0x00000000, 0x00000001,</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;};</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a4fcc2146629721bff653b5b9f3d728eb">   10</a></span>&#160;<a class="code" href="script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e">Script</a> <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(NpcAI_80240330) = SCRIPT({</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="SetNpcB5__3_8inc_8c.html#ad8132118f912ae02605f400350fa7bae">SetNpcB5_3</a>()</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="code__20ec0__len__5040_8c.html#a4ce0281c7d734d29db65381d50d91217">DoBasicAI</a>(<a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(aISettings_80240300))</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;});</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a61d51a1687414cf71da0d163261bc0f0">   15</a></span>&#160;s32 <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcSettings_8024035C)[] = {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    0x00000000, 0x0048000F, 0x00000000, 0x00000000, <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(NpcAI_80240330), 0x80077F70, 0x00000000, 0x8007809C,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    0x00000000, 0x00000000, 0x00090000,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a5c091c9db4c800e635ba7bbd6b393e8e">   20</a></span>&#160;s32 <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcGroup_80240388)[] = {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    0x00000000, <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcSettings_8024035C), 0xC2200000, 0x00000000, 0x43200000, 0x00000800, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    0x00000000, 0x0000005A, 0x800F00A8, 0x00090000, 0x00890001, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00001999, 0x59980002,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    0x3FFF2666, 0x4CCC0002, 0x3FFF3FFF, 0x3FFF0002, 0x33326665, 0x33320002, 0x33327FFF, 0x26660002,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    0x26660000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00001999, 0x3FFF0002,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    0x33322666, 0x33320002, 0x33323FFF, 0x33320002, 0x33326665, 0x33320002, 0x33327FFF, 0x26660002,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    0x33320000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00010000,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    0xFFFFFFD8, 0x00000000, 0x000000A0, 0x00000064, 0x00000000, 0xFFFF8001, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    0x00000000, 0x00000000, 0x000003E8, 0x00000000, 0x00000000, 0x00000001, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    0x00310004, 0x00310008, 0x00310008, 0x00310008, 0x00310004, 0x00310004, 0x0031000C, 0x0031000C,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    0x00000001, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a2bcb5756441418235521e2a4a9a2f2c4">   39</a></span>&#160;s32 <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcGroup_80240578)[] = {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    0x00000001, <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcSettings_8024035C), 0x43750000, 0x00000000, 0x42960000, 0x00000800, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    0x00000000, 0x0000010E, 0x800F00A8, 0x00090000, 0x00890001, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00001999, 0x59980002,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    0x3FFF2666, 0x4CCC0002, 0x3FFF3FFF, 0x3FFF0002, 0x33326665, 0x33320002, 0x33327FFF, 0x26660002,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    0x26660000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00001999, 0x3FFF0002,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    0x33322666, 0x33320002, 0x33323FFF, 0x33320002, 0x33326665, 0x33320002, 0x33327FFF, 0x26660002,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    0x33320000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00010000,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    0x000000F5, 0x00000000, 0x0000004B, 0x00000064, 0x00000000, 0xFFFF8001, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    0x00000000, 0x00000000, 0x000003E8, 0x00000000, 0x00000000, 0x00000001, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    0x00310004, 0x00310008, 0x00310008, 0x00310008, 0x00310004, 0x00310004, 0x0031000C, 0x0031000C,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008, 0x00310008,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    0x00000001, 0x00000000, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a36950076140282a90952b887e75c9665">   58</a></span>&#160;s32 <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcGroupList_80240768)[] = {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    0x00000001, <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcGroup_80240388), 0x0A000001, 0x00000001, <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(npcGroup_80240578), 0x0A010001, 0x00000000, 0x00000000,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    0x00000000,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="9292B0_8c.html#a6195e80de91d51142f959108e08d8458">   63</a></span>&#160;<span class="keyword">static</span> s32 <a class="code" href="9292B0_8c.html#a6195e80de91d51142f959108e08d8458">padding</a> = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="9292B0_8c.html#ab191b4152bdc963b0af0956e6ad17815">   65</a></span>&#160;<a class="code" href="script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e">Script</a> <a class="code" href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a>(MakeEntities) = SCRIPT({</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#acc7c88c72ca522a5373bf7b63b7e0ddb">MakeEntity</a>(0x802EA564, 0xFFFFFF1A, 0, 155, 0, 152, 0x80000000)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#af37db1312ea1f89d740da93f12201da3">AssignBlockFlag</a>(<a class="code" href="si_8h.html#a202dfe4633546c46cbb4d2347bc7ee86">SI_SAVE_FLAG</a>(797))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#acc7c88c72ca522a5373bf7b63b7e0ddb">MakeEntity</a>(0x802EA564, 160, 0, 205, 0, 343, 0x80000000)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#af37db1312ea1f89d740da93f12201da3">AssignBlockFlag</a>(<a class="code" href="si_8h.html#a202dfe4633546c46cbb4d2347bc7ee86">SI_SAVE_FLAG</a>(798))</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;});</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="ascript__api_2common_8h_html_a2d034b4391ef0bcbc5bfc3cd40c2893e"><div class="ttname"><a href="script__api_2common_8h.html#a2d034b4391ef0bcbc5bfc3cd40c2893e">Script</a></div><div class="ttdeci">Bytecode Script[0]</div><div class="ttdef"><b>Definition:</b> <a href="script__api_2common_8h_source.html#l00007">common.h:7</a></div></div>
+<div class="ttc" id="asi_8h_html_a202dfe4633546c46cbb4d2347bc7ee86"><div class="ttname"><a href="si_8h.html#a202dfe4633546c46cbb4d2347bc7ee86">SI_SAVE_FLAG</a></div><div class="ttdeci">#define SI_SAVE_FLAG(v)</div><div class="ttdef"><b>Definition:</b> <a href="si_8h_source.html#l00107">si.h:107</a></div></div>
+<div class="ttc" id="acode__a5dd0__len__114e0_8c_html_af37db1312ea1f89d740da93f12201da3"><div class="ttname"><a href="code__a5dd0__len__114e0_8c.html#af37db1312ea1f89d740da93f12201da3">AssignBlockFlag</a></div><div class="ttdeci">s32 AssignBlockFlag(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__a5dd0__len__114e0_8c_source.html#l00117">code_a5dd0_len_114e0.c:117</a></div></div>
+<div class="ttc" id="amap_8h_html_a77640234fd4bdf7d7b7d8288a6aa542c"><div class="ttname"><a href="map_8h.html#a77640234fd4bdf7d7b7d8288a6aa542c">M</a></div><div class="ttdeci">#define M(sym)</div><div class="ttdef"><b>Definition:</b> <a href="map_8h_source.html#l00010">map.h:10</a></div></div>
 <div class="ttc" id="aSetNpcB5__3_8inc_8c_html"><div class="ttname"><a href="SetNpcB5__3_8inc_8c.html">SetNpcB5_3.inc.c</a></div></div>
+<div class="ttc" id="acode__a5dd0__len__114e0_8c_html_acc7c88c72ca522a5373bf7b63b7e0ddb"><div class="ttname"><a href="code__a5dd0__len__114e0_8c.html#acc7c88c72ca522a5373bf7b63b7e0ddb">MakeEntity</a></div><div class="ttdeci">s32 MakeEntity(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__a5dd0__len__114e0_8c_source.html#l00107">code_a5dd0_len_114e0.c:107</a></div></div>
+<div class="ttc" id="a9292B0_8c_html_a6195e80de91d51142f959108e08d8458"><div class="ttname"><a href="9292B0_8c.html#a6195e80de91d51142f959108e08d8458">padding</a></div><div class="ttdeci">static s32 padding</div><div class="ttdef"><b>Definition:</b> <a href="9292B0_8c_source.html#l00063">9292B0.c:63</a></div></div>
+<div class="ttc" id="aSetNpcB5__3_8inc_8c_html_ad8132118f912ae02605f400350fa7bae"><div class="ttname"><a href="SetNpcB5__3_8inc_8c.html#ad8132118f912ae02605f400350fa7bae">SetNpcB5_3</a></div><div class="ttdeci">static ApiStatus SetNpcB5_3(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="SetNpcB5__3_8inc_8c_source.html#l00004">SetNpcB5_3.inc.c:4</a></div></div>
 <div class="ttc" id="asbk__00_8h_html"><div class="ttname"><a href="sbk__00_8h.html">sbk_00.h</a></div></div>
+<div class="ttc" id="acode__20ec0__len__5040_8c_html_a4ce0281c7d734d29db65381d50d91217"><div class="ttname"><a href="code__20ec0__len__5040_8c.html#a4ce0281c7d734d29db65381d50d91217">DoBasicAI</a></div><div class="ttdeci">s32 DoBasicAI(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__20ec0__len__5040_8c_source.html#l00213">code_20ec0_len_5040.c:213</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6826d79532171ff2338799cfd298b875.html">world</a></li><li class="navelem"><a class="el" href="dir_a1c23d31fb064b08e7816515e8973757.html">area_sbk</a></li><li class="navelem"><a class="el" href="dir_bd8b470b4180c47848c5d6aa722dd233.html">sbk_00</a></li><li class="navelem"><a class="el" href="9292B0_8c.html">9292B0.c</a></li>
-    <li class="footer">Generated on Sun Nov 8 2020 21:59:42 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 9 2020 01:23:18 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

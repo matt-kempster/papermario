@@ -1,8 +1,8 @@
 var code__ED510_8c =
 [
-    [ "TranslateModel", "code__ED510_8c.html#a3948717dad405f5df93b055c30bd67d0", null ],
-    [ "RotateModel", "code__ED510_8c.html#a3074fdc48206a8c9b75b0440b1472dc0", null ],
-    [ "ScaleModel", "code__ED510_8c.html#a8cb6371f5392da4fa0ab17a7acc65df7", null ],
+    [ "TranslateModel", "code__ED510_8c.html#a371919986689cca5316f14c71a2c6b1b", null ],
+    [ "RotateModel", "code__ED510_8c.html#a9c92001ccdba777c8840a2ff5e52b4d0", null ],
+    [ "ScaleModel", "code__ED510_8c.html#ac999ea4fdc89c53c73c2a86e34370496", null ],
     [ "GetModelIndex", "code__ED510_8c.html#a43ca78a4fbb9c22005572b4423251dca", null ],
     [ "func_802C8EE4", "code__ED510_8c.html#a324f3fd6fb2c1a2a4dcd751eb0fa5fde", null ],
     [ "CloneModel", "code__ED510_8c.html#a9f5470dbdda258eba2fc0d3969bb267e", null ],
@@ -14,7 +14,7 @@ var code__ED510_8c =
     [ "EnableTexPanning", "code__ED510_8c.html#a8ef92413ad394d707828173524031b42", null ],
     [ "EnableModel", "code__ED510_8c.html#ace71e41b2f4aebf59f9e1372ac33d0dd", null ],
     [ "SetGroupEnabled", "code__ED510_8c.html#a42d4bc2f23b97a4ca2f081ac5630c408", null ],
-    [ "SetTexPanOffset", "code__ED510_8c.html#aa76481fcb10e2796b8d3bd8c491a5633", null ],
+    [ "SetTexPanOffset", "code__ED510_8c.html#aaa0f64d28a01c63e47379fcdf48bedd2", null ],
     [ "func_802C9428", "code__ED510_8c.html#a31b542cb8f4ef9788fc6bcbb398b2a5c", null ],
     [ "func_802C94A0", "code__ED510_8c.html#a80868ab606f765aa36ae1f9dd4be5534", null ],
     [ "SetModelFlags", "code__ED510_8c.html#afef168ce0cab6ae084043fc2cb3f56b2", null ],
@@ -44,6 +44,6 @@ var code__ED510_8c =
     [ "GetMapID", "code__ED510_8c.html#aae4bfb2ce633a9adf43c702657a89507", null ],
     [ "GetLoadType", "code__ED510_8c.html#a5d05696e69840d0f5e4310d8c7fedd65", null ],
     [ "SetRenderMode", "code__ED510_8c.html#a30c06a4d77cf4d4139f35b63c0ba12f2", null ],
-    [ "PlaySoundAtModel", "code__ED510_8c.html#a134996ebd4c7db6ec6d85986b9ec7ef7", null ],
-    [ "PlaySoundAtCollider", "code__ED510_8c.html#acb3aea4a83a1f158bf2ce3ea02e20a1a", null ]
+    [ "PlaySoundAtModel", "code__ED510_8c.html#a3276e98c71409a615e4c1517acb50857", null ],
+    [ "PlaySoundAtCollider", "code__ED510_8c.html#a98adc2026bae5e5f169f2994794f2a92", null ]
 ];

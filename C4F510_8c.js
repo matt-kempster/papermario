@@ -18,6 +18,5 @@ var C4F510_8c =
     [ "func_8024121C_C5072C", "C4F510_8c.html#a18f2f2ad930755ad00c1cec0e1ac2e43", null ],
     [ "func_8024133C_C5084C", "C4F510_8c.html#a2e636d589595103a29fe0310db741bcb", null ],
     [ "func_802413A4_C508B4", "C4F510_8c.html#a818283c8caea2b59bed32a895afc3b1e", null ],
-    [ "func_80241464_C50974", "C4F510_8c.html#a742b33cb1fdd1e0973806174aa9b8bd1", null ],
-    [ "func_80241760_C50C70", "C4F510_8c.html#af22f2c5ffcd34176f8fe60c417ba7fc1", null ]
+    [ "func_80241464_C50974", "C4F510_8c.html#a742b33cb1fdd1e0973806174aa9b8bd1", null ]
 ];

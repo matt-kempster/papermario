@@ -13,6 +13,8 @@ var macros_8h =
     [ "CURRENT_CAM", "macros_8h.html#a13f11f66c8c305b0a4c546629245f7a2", null ],
     [ "MAX_MAPVARS", "macros_8h.html#a762aa4f0e44663837fcb4d873f9590ac", null ],
     [ "MAX_MAPFLAGS", "macros_8h.html#a0c6b639cf251eb50904360647b315db3", null ],
+    [ "MAX_ANIMATED_MODELS", "macros_8h.html#a096da269f6fd5559bf945e8c130b3a7c", null ],
+    [ "MAX_ANIMATED_MESHES", "macros_8h.html#ac2df632b62bece417422e91a5a22f312", null ],
     [ "MAX_MODELS", "macros_8h.html#aff903af1964a7ac4a6fe71edd5efaa6a", null ],
     [ "MAX_SCRIPTS", "macros_8h.html#a425d11b3cb897bccb0a68b0173a68e76", null ],
     [ "MAX_NPCS", "macros_8h.html#ac90bac744ea01849c510a99ae2dade51", null ],

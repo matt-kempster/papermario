@@ -83,6 +83,8 @@ var common__structs_8h =
     [ "EntityList", "common__structs_8h.html#a4305c50251c29f95597097fb40e4acb5", null ],
     [ "DynamicEntityList", "common__structs_8h.html#ad0572db22425938f1d65d9d7c4b24abe", null ],
     [ "ModelList", "common__structs_8h.html#ada75a3b8335171313040e0bccf544399", null ],
+    [ "AnimatedMeshList", "common__structs_8h.html#acff3a1a26274f824287b7b9789a8c1c4", null ],
     [ "ShadowList", "common__structs_8h.html#a8812050dc47137f640e1297a5fd48691", null ],
-    [ "TriggerHandlerFunc", "common__structs_8h.html#a0b2a4152ae0a43f0cc26de00e802710d", null ]
+    [ "TriggerHandlerFunc", "common__structs_8h.html#a0b2a4152ae0a43f0cc26de00e802710d", null ],
+    [ "AnimatedModelList", "common__structs_8h.html#aadb231a1811d5bc7d08cf772b37e2158", null ]
 ];

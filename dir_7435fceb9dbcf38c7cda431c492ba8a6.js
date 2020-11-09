@@ -36,6 +36,7 @@ var dir_7435fceb9dbcf38c7cda431c492ba8a6 =
     [ "SpawnSunEffect.inc.c", "SpawnSunEffect_8inc_8c.html", "SpawnSunEffect_8inc_8c" ],
     [ "SyncStatusMenu.inc.c", "SyncStatusMenu_8inc_8c.html", "SyncStatusMenu_8inc_8c" ],
     [ "UnkCameraFunc.inc.c", "UnkCameraFunc_8inc_8c.html", "UnkCameraFunc_8inc_8c" ],
+    [ "UnkFunc1.inc.c", "UnkFunc1_8inc_8c.html", "UnkFunc1_8inc_8c" ],
     [ "UnkPartnerFuncs.inc.c", "UnkPartnerFuncs_8inc_8c.html", "UnkPartnerFuncs_8inc_8c" ],
     [ "UnkPositionFunc.inc.c", "UnkPositionFunc_8inc_8c.html", "UnkPositionFunc_8inc_8c" ],
     [ "UnkRotatePlayer.inc.c", "UnkRotatePlayer_8inc_8c.html", "UnkRotatePlayer_8inc_8c" ],

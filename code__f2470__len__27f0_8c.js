@@ -1,7 +1,7 @@
 var code__f2470__len__27f0_8c =
 [
     [ "resolve_npc", "code__f2470__len__27f0_8c.html#a3521a808a1fda982f8548ded077f4619", null ],
-    [ "set_npc_animation", "code__f2470__len__27f0_8c.html#abaf5603784534b75ca05ca8e95b541f1", null ],
+    [ "set_npc_animation", "code__f2470__len__27f0_8c.html#ac093b51bcbf366a3f33b6bafe1e80ef9", null ],
     [ "CreateNpc", "code__f2470__len__27f0_8c.html#a511f684491a0c307c113862c6f9b09dd", null ],
     [ "DeleteNpc", "code__f2470__len__27f0_8c.html#a6adb90a28d2bc65199ed0e84c63b09d0", null ],
     [ "GetNpcPointer", "code__f2470__len__27f0_8c.html#a924c4a7181a44048cb6a3f0523577ffe", null ],
@@ -25,7 +25,7 @@ var code__f2470__len__27f0_8c =
     [ "InterpNpcYaw", "code__f2470__len__27f0_8c.html#ab8e613494d50ccaf33707739a75a714f", null ],
     [ "NpcFacePlayer", "code__f2470__len__27f0_8c.html#a22463aefcfc5e350cad6d1ff451e089c", null ],
     [ "NpcFaceNpc", "code__f2470__len__27f0_8c.html#a13a7b0bc16d756305d912f1b93836be0", null ],
-    [ "SetNpcFlagBits", "code__f2470__len__27f0_8c.html#ae2d9b921e407d43a95f700e8dac2ce55", null ],
+    [ "SetNpcFlagBits", "code__f2470__len__27f0_8c.html#acd9168bb1b449744768d7c096a388934", null ],
     [ "GetNpcPos", "code__f2470__len__27f0_8c.html#a6e11fb7d50e82ae5cb5346505c4c69cc", null ],
     [ "func_802CF1B4", "code__f2470__len__27f0_8c.html#aefe4ce4c240b4b0f5d795d90277c7143", null ],
     [ "func_802CF208", "code__f2470__len__27f0_8c.html#abcb4145ba08869ddbcec2985539cd9e3", null ],

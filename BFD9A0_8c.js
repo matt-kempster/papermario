@@ -33,6 +33,5 @@ var BFD9A0_8c =
     [ "func_80242E78_C006F8", "BFD9A0_8c.html#ab4f74c4817af8c1b8bfd062de4d90c98", null ],
     [ "func_80242F98_C00818", "BFD9A0_8c.html#a1a1f5c7e1a16b90531997915dc201d0a", null ],
     [ "func_80243000_C00880", "BFD9A0_8c.html#a53c889ed68a4f45d042e0338ba3abaa3", null ],
-    [ "func_802430C0_C00940", "BFD9A0_8c.html#a872312cc8ef511e60f601b07a205fbc3", null ],
-    [ "func_802433BC_C00C3C", "BFD9A0_8c.html#a800f4c7d974a8618f4182e458337dd27", null ]
+    [ "func_802430C0_C00940", "BFD9A0_8c.html#a872312cc8ef511e60f601b07a205fbc3", null ]
 ];

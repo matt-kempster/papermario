@@ -81,7 +81,7 @@ var structGameStatus =
     [ "backgroundPalette", "structGameStatus.html#a5639ae49087506bf9f32d3c589ef67dc", null ],
     [ "unk_15C", "structGameStatus.html#a087e0eb5ef0c2bb1492885ed03e0087b", null ],
     [ "unk_15E", "structGameStatus.html#a2ab640db03cce84e0b69b99b9a34ea66", null ],
-    [ "savedPos", "structGameStatus.html#a4d7fe41a5bf1831e3789f239b43d6baf", null ],
+    [ "savedPos", "structGameStatus.html#ad84f19ba31351b3c81dd9ce14f2ff607", null ],
     [ "saveSlot", "structGameStatus.html#a074cde45ec1c6b90a1d5c3979a848e53", null ],
     [ "loadType", "structGameStatus.html#a0f33f43d6b1af2c4d09cbad056713d5e", null ],
     [ "saveCount", "structGameStatus.html#a47f38938ec65c82b26c21c794894b99b", null ],

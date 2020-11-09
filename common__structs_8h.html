@@ -265,10 +265,14 @@ Typedefs</h2></td></tr>
 <tr class="separator:ad0572db22425938f1d65d9d7c4b24abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada75a3b8335171313040e0bccf544399"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structModel.html">Model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__structs_8h.html#ada75a3b8335171313040e0bccf544399">ModelList</a>[<a class="el" href="macros_8h.html#aff903af1964a7ac4a6fe71edd5efaa6a">MAX_MODELS</a>]</td></tr>
 <tr class="separator:ada75a3b8335171313040e0bccf544399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff3a1a26274f824287b7b9789a8c1c4"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structAnimatedMesh.html">AnimatedMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__structs_8h.html#acff3a1a26274f824287b7b9789a8c1c4">AnimatedMeshList</a>[<a class="el" href="macros_8h.html#ac2df632b62bece417422e91a5a22f312">MAX_ANIMATED_MESHES</a>]</td></tr>
+<tr class="separator:acff3a1a26274f824287b7b9789a8c1c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8812050dc47137f640e1297a5fd48691"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structShadow.html">Shadow</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__structs_8h.html#a8812050dc47137f640e1297a5fd48691">ShadowList</a>[<a class="el" href="macros_8h.html#abbd34f2d84dbdc34a8989ffa57bf2234">MAX_SHADOWS</a>]</td></tr>
 <tr class="separator:a8812050dc47137f640e1297a5fd48691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b2a4152ae0a43f0cc26de00e802710d"><td class="memItemLeft" align="right" valign="top">typedef s32(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__structs_8h.html#a0b2a4152ae0a43f0cc26de00e802710d">TriggerHandlerFunc</a>) (struct <a class="el" href="structTrigger.html">Trigger</a> *)</td></tr>
 <tr class="separator:a0b2a4152ae0a43f0cc26de00e802710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb231a1811d5bc7d08cf772b37e2158"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structAnimatedModel.html">AnimatedModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common__structs_8h.html#aadb231a1811d5bc7d08cf772b37e2158">AnimatedModelList</a>[<a class="el" href="macros_8h.html#a096da269f6fd5559bf945e8c130b3a7c">MAX_ANIMATED_MODELS</a>]</td></tr>
+<tr class="separator:aadb231a1811d5bc7d08cf772b37e2158"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="acfce2016cb766b2b881cfc19671550f0"></a>
@@ -383,6 +387,22 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="acff3a1a26274f824287b7b9789a8c1c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acff3a1a26274f824287b7b9789a8c1c4">&#9670;&nbsp;</a></span>AnimatedMeshList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structAnimatedMesh.html">AnimatedMesh</a>* AnimatedMeshList[<a class="el" href="macros_8h.html#ac2df632b62bece417422e91a5a22f312">MAX_ANIMATED_MESHES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00719">719</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+</div>
+</div>
 <a id="a8812050dc47137f640e1297a5fd48691"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8812050dc47137f640e1297a5fd48691">&#9670;&nbsp;</a></span>ShadowList</h2>
 
@@ -395,7 +415,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00956">956</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00966">966</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -411,7 +431,23 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01082">1082</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01092">1092</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+</div>
+</div>
+<a id="aadb231a1811d5bc7d08cf772b37e2158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb231a1811d5bc7d08cf772b37e2158">&#9670;&nbsp;</a></span>AnimatedModelList</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structAnimatedModel.html">AnimatedModel</a>* AnimatedModelList[<a class="el" href="macros_8h.html#a096da269f6fd5559bf945e8c130b3a7c">MAX_ANIMATED_MODELS</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01175">1175</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -421,7 +457,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="common__structs_8h.html">common_structs.h</a></li>
-    <li class="footer">Generated on Sun Nov 8 2020 21:59:43 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Nov 9 2020 01:23:19 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
