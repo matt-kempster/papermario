@@ -11,6 +11,7 @@ var macros_8h =
     [ "PLAYER_DATA", "macros_8h.html#a6baaf628665b883428b10e2d2d78a299", null ],
     [ "CAM", "macros_8h.html#ac42e78437d897d806dfd910090517ee0", null ],
     [ "CURRENT_CAM", "macros_8h.html#a13f11f66c8c305b0a4c546629245f7a2", null ],
+    [ "BADGE_MENU_PAGE", "macros_8h.html#aee489521cd322a6b51b3beffd3565d15", null ],
     [ "MAX_MAPVARS", "macros_8h.html#a762aa4f0e44663837fcb4d873f9590ac", null ],
     [ "MAX_MAPFLAGS", "macros_8h.html#a0c6b639cf251eb50904360647b315db3", null ],
     [ "MAX_ANIMATED_MODELS", "macros_8h.html#a096da269f6fd5559bf945e8c130b3a7c", null ],

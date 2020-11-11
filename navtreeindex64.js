@@ -1,5 +1,13 @@
 var NAVTREEINDEX64 =
 {
+"structBattleStatus.html#a5c413a51d0a471e561bc0f6f8b4d570f":[4,0,8,30],
+"structBattleStatus.html#a5e0a1fe70ba1e193bbcc65ab5bc0f446":[4,0,8,69],
+"structBattleStatus.html#a60b9b1ca9e179e5799534c3ba5916fda":[4,0,8,10],
+"structBattleStatus.html#a62d92e5abeb540bb9f805cf5cc0243ee":[4,0,8,98],
+"structBattleStatus.html#a63a24e1f8c91ee07709e830c6c0529fc":[4,0,8,83],
+"structBattleStatus.html#a658cbd9851fa05bd7c895f1945ef34f6":[4,0,8,70],
+"structBattleStatus.html#a65cec25c60a350ab0329c3c8ae79b5c1":[4,0,8,82],
+"structBattleStatus.html#a65f323e74dc6712d46758dc79ac674ea":[4,0,8,73],
 "structBattleStatus.html#a66465817284dd93c5cd1335fea101d12":[4,0,8,49],
 "structBattleStatus.html#a66917e6113786ead3dc531f742e86638":[4,0,8,89],
 "structBattleStatus.html#a68844b5f858de88cc0457d4453cb8e01":[4,0,8,51],
@@ -241,13 +249,5 @@ var NAVTREEINDEX64 =
 "structDecorationTable.html#a28c02b58526df606b512345f20cbef5a":[4,0,20,16],
 "structDecorationTable.html#a2ca61970f70c29438e80fee9df35aad0":[4,0,20,2],
 "structDecorationTable.html#a3a555512361bddf9eb2095ca41c4b09f":[4,0,20,8],
-"structDecorationTable.html#a4a7d4742883dc842d6fa36913150127b":[4,0,20,15],
-"structDecorationTable.html#a4da1bc3e3e26fc73c1a4e09c57a6f329":[4,0,20,7],
-"structDecorationTable.html#a526dcea2b215fa018138f5a48df3a50d":[4,0,20,5],
-"structDecorationTable.html#a6a020f47b47ed8bc0bcd2955622fc10a":[4,0,20,12],
-"structDecorationTable.html#a6ef6f64bbd2a6fc51d2a25c635035ff4":[4,0,20,1],
-"structDecorationTable.html#a766786b470df043da97aca9e6417fb74":[4,0,20,9],
-"structDecorationTable.html#a8d3f228db7ac3ddb9a1c5f16be457c06":[4,0,20,14],
-"structDecorationTable.html#a9ce83692ec13aecc17d34ecb9eeeb2d0":[4,0,20,0],
-"structDecorationTable.html#acf829ba137874f8c2e6e54440a0c7945":[4,0,20,4]
+"structDecorationTable.html#a4a7d4742883dc842d6fa36913150127b":[4,0,20,15]
 };

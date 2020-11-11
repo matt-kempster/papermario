@@ -19,7 +19,7 @@ var code__fee30__len__2d60_8c =
     [ "set_anim_timescale", "code__fee30__len__2d60_8c.html#a03f114a0e0f8fb6d467c2c61e7db8243", null ],
     [ "func_802DD89C", "code__fee30__len__2d60_8c.html#a10bc630d81a540cf8104bd74145db4c8", null ],
     [ "func_802DD8F8", "code__fee30__len__2d60_8c.html#afc6e06807984f2d963ad9f6fffc1acec", null ],
-    [ "func_802DDA60", "code__fee30__len__2d60_8c.html#af05d00028332e60e0d52d30487d8bf83", null ],
+    [ "func_802DDA60", "code__fee30__len__2d60_8c.html#a7db52d38e22f5bf92fc5da3454286157", null ],
     [ "func_802DDA84", "code__fee30__len__2d60_8c.html#a7c98e55c1076b3fa84a61a46a326ecc9", null ],
     [ "func_802DDA8C", "code__fee30__len__2d60_8c.html#a20f1eb9ed07af742ee49140fc68358e0", null ],
     [ "render_sprite", "code__fee30__len__2d60_8c.html#a125e53bc20445e4369099f8e2b4ec061", null ],

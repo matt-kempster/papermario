@@ -41,6 +41,7 @@ var functions_8h =
     [ "round", "functions_8h.html#a5839134386724d9d065b8aae70e58a2b", null ],
     [ "atan2", "functions_8h.html#a35ea6bd5b9635321d3db97a84df90dac", null ],
     [ "clamp_angle", "functions_8h.html#a136f7711b19ce2f83bd47b7fcb1f37e7", null ],
+    [ "sign", "functions_8h.html#a01445ffbab5f14c3251f67251f198bdd", null ],
     [ "func_80055448", "functions_8h.html#a913ab1d2a6f5160687d858045004f979", null ],
     [ "func_80055464", "functions_8h.html#a3f4975f12bd6f2549a4c3ec7a9b559cc", null ],
     [ "func_800554A4", "functions_8h.html#ad8ec71b53f7aed5df49fff04503b77d5", null ],

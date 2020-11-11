@@ -98,20 +98,19 @@ $(document).ready(function(){initNavTree('nuContRmbCheck_8c_source.html',''); in
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    mesg.contNo = contNo;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    err = <a class="code" href="nuSiMgr_8c.html#a0d2e66246eed95d6d68b00ca49cb71f1">nuSiSendMesg</a>(NU_CONT_RMB_CHECK_MSG, &amp;mesg);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    mask = <a class="code" href="code__3bd20__len__c0_8c.html#a515439753ecc371c45114f7c89da8d35">osSetIntMask</a>(1);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    mask = osSetIntMask(1);</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> (err == 0) {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        nuContRmbCtl[contNo].type = NU_CONT_PAK_TYPE_RUMBLE;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        nuContRmbCtl[contNo].type = NU_CONT_PAK_TYPE_NONE;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="code__3bd20__len__c0_8c.html#a515439753ecc371c45114f7c89da8d35">osSetIntMask</a>(mask);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    osSetIntMask(mask);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> err;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="acode__3bd20__len__c0_8c_html_a515439753ecc371c45114f7c89da8d35"><div class="ttname"><a href="code__3bd20__len__c0_8c.html#a515439753ecc371c45114f7c89da8d35">osSetIntMask</a></div><div class="ttdeci">OSIntMask osSetIntMask(OSIntMask mask)</div><div class="ttdef"><b>Definition:</b> <a href="code__3bd20__len__c0_8c_source.html#l00005">code_3bd20_len_c0.c:5</a></div></div>
 <div class="ttc" id="anuSiMgr_8c_html_a0d2e66246eed95d6d68b00ca49cb71f1"><div class="ttname"><a href="nuSiMgr_8c.html#a0d2e66246eed95d6d68b00ca49cb71f1">nuSiSendMesg</a></div><div class="ttdeci">s32 nuSiSendMesg(NUScMsg mesg, void *dataPtr)</div><div class="ttdef"><b>Definition:</b> <a href="nuSiMgr_8c_source.html#l00006">nuSiMgr.c:6</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="anuContRmbCheck_8c_html_a8a0fcc04149f5ccb0e597821928139cf"><div class="ttname"><a href="nuContRmbCheck_8c.html#a8a0fcc04149f5ccb0e597821928139cf">nuContRmbCheck</a></div><div class="ttdeci">s32 nuContRmbCheck(u32 contNo)</div><div class="ttdef"><b>Definition:</b> <a href="nuContRmbCheck_8c_source.html#l00004">nuContRmbCheck.c:4</a></div></div>
@@ -119,7 +118,7 @@ $(document).ready(function(){initNavTree('nuContRmbCheck_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="dir_9ef2b62e2fdf8f26529bc674320ff5b4.html">nusys</a></li><li class="navelem"><a class="el" href="nuContRmbCheck_8c.html">nuContRmbCheck.c</a></li>
-    <li class="footer">Generated on Mon Nov 9 2020 01:23:17 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Wed Nov 11 2020 21:36:02 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,13 @@
 var NAVTREEINDEX65 =
 {
+"structDecorationTable.html#a4da1bc3e3e26fc73c1a4e09c57a6f329":[4,0,20,7],
+"structDecorationTable.html#a526dcea2b215fa018138f5a48df3a50d":[4,0,20,5],
+"structDecorationTable.html#a6a020f47b47ed8bc0bcd2955622fc10a":[4,0,20,12],
+"structDecorationTable.html#a6ef6f64bbd2a6fc51d2a25c635035ff4":[4,0,20,1],
+"structDecorationTable.html#a766786b470df043da97aca9e6417fb74":[4,0,20,9],
+"structDecorationTable.html#a8d3f228db7ac3ddb9a1c5f16be457c06":[4,0,20,14],
+"structDecorationTable.html#a9ce83692ec13aecc17d34ecb9eeeb2d0":[4,0,20,0],
+"structDecorationTable.html#acf829ba137874f8c2e6e54440a0c7945":[4,0,20,4],
 "structDecorationTable.html#ad9e953deca4542a3ca925322b70588d7":[4,0,20,10],
 "structDecorationTable.html#af8f46a5272ef29afed0bde2eace9d1ca":[4,0,20,13],
 "structDefenseTableEntry.html":[4,0,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX65 =
 "structGameStatus.html#afe5d0430d0ebfb5e93e7fad0ca039788":[4,0,32,10],
 "structHeapNode.html":[4,0,33],
 "structHeapNode.html#a6a54a2358ada44f9f460e0efe0a547b9":[4,0,33,4],
-"structHeapNode.html#a91dadcd49797c1db0159ca1c130d968a":[4,0,33,1],
-"structHeapNode.html#a946d3e4bacb6fe0f35a00056190480fe":[4,0,33,2],
-"structHeapNode.html#ab6ad1823d787b0577509dfcae1f1743c":[4,0,33,3],
-"structHeapNode.html#ae86c793177dd9a416551c30d695b61c1":[4,0,33,0],
-"structItemDrop.html":[4,0,34],
-"structItemDrop.html#a4fb50a3d399f06508864c96f0046117f":[4,0,34,2],
-"structItemDrop.html#a8b4b72c721868f0e7dd6976e4446c5cd":[4,0,34,0],
-"structItemDrop.html#a9d7be004e6a08eabd8c7fde69c328a6b":[4,0,34,1],
-"structItemEntity.html":[4,0,35]
+"structHeapNode.html#a91dadcd49797c1db0159ca1c130d968a":[4,0,33,1]
 };

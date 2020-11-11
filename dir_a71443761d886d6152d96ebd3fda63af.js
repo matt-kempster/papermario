@@ -117,5 +117,6 @@ var dir_a71443761d886d6152d96ebd3fda63af =
     [ "code_7e40_len_3f0.c", "code__7e40__len__3f0_8c.html", "code__7e40__len__3f0_8c" ],
     [ "guMtxIdentF.c", "guMtxIdentF_8c.html", "guMtxIdentF_8c" ],
     [ "osCreateThread.c", "osCreateThread_8c.html", "osCreateThread_8c" ],
+    [ "osEPiWriteIo.c", "osEPiWriteIo_8c.html", "osEPiWriteIo_8c" ],
     [ "osGetThreadPri.c", "osGetThreadPri_8c.html", "osGetThreadPri_8c" ]
 ];

@@ -9,5 +9,8 @@ var structAnimatedMesh =
     [ "mtx", "structAnimatedMesh.html#ac6d1b8ac515b07c64d2527f09e9d8f70", null ],
     [ "unk_D8", "structAnimatedMesh.html#a034c5ef19943f882766e80d8ca5eb325", null ],
     [ "time", "structAnimatedMesh.html#a088ce8835ca9c57bc5b8399d51e437a0", null ],
-    [ "unk_2D0", "structAnimatedMesh.html#a306c64236ea633f5de1d373ee90e659f", null ]
+    [ "unk_2D0", "structAnimatedMesh.html#af9ce9263b6208c2b22a1c6c89dd4ab37", null ],
+    [ "unk_2D4", "structAnimatedMesh.html#a391f4fecce753fcdf2b66f69e22de1cd", null ],
+    [ "unk_2D8", "structAnimatedMesh.html#abf8071bc03ec53f20bca523233ee3a4e", null ],
+    [ "unk_2DC", "structAnimatedMesh.html#a17eb1eec0aa5851df60f575a65dc54e4", null ]
 ];
