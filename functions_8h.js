@@ -54,6 +54,8 @@ var functions_8h =
     [ "func_800E0088", "functions_8h.html#a64408410cf0a99ea9b082289a1fc82d7", null ],
     [ "func_800EB168", "functions_8h.html#ab55043852ef930615b082e45aab498bf", null ],
     [ "get_player_data", "functions_8h.html#a92a60e0622836ab81ec330546e58cec9", null ],
+    [ "pause_interp_vertical_scroll", "functions_8h.html#a221c265be0c5aaed249a539a580eff9d", null ],
+    [ "pause_draw_rect", "functions_8h.html#a9c4f51b847b7ddfbec7afec6f8d4fc35", null ],
     [ "func_800EBA3C", "functions_8h.html#acd26088b1adf4bb391155f26f7326173", null ],
     [ "func_800EBB40", "functions_8h.html#a1365b15396e199ffd26880a5a17e2b6a", null ],
     [ "enable_partner_ai", "functions_8h.html#a91695fc83f25ef70ddb4e05841249da7", null ],

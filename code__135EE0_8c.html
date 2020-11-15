@@ -145,8 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa6ba6a038587f9fe10c695ff8f2ded9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360781e0f09b4d3fc93f72b17dc7be9c"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__135EE0_8c.html#a360781e0f09b4d3fc93f72b17dc7be9c">pause_get_total_equipped_bp_cost</a> ()</td></tr>
 <tr class="separator:a360781e0f09b4d3fc93f72b17dc7be9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03471f912c1200a4453ab1274eca4436"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__135EE0_8c.html#a03471f912c1200a4453ab1274eca4436">pause_draw_rect</a> ()</td></tr>
-<tr class="separator:a03471f912c1200a4453ab1274eca4436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4f51b847b7ddfbec7afec6f8d4fc35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__135EE0_8c.html#a9c4f51b847b7ddfbec7afec6f8d4fc35">pause_draw_rect</a> (s32 ulx, s32 uly, s32 lrx, s32 lry, s32 tileDescriptor, s32 uls, s32 ult, s32 dsdx, s32 dtdy)</td></tr>
+<tr class="separator:a9c4f51b847b7ddfbec7afec6f8d4fc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb196807f11587877b3877bff70d08b2"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__135EE0_8c.html#abb196807f11587877b3877bff70d08b2">pause_sort_item_list</a> ()</td></tr>
 <tr class="separator:abb196807f11587877b3877bff70d08b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f305067fa940725e99ab330c5efce7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__135EE0_8c.html#a4f305067fa940725e99ab330c5efce7d">pause_tabs_draw_invis</a> (void)</td></tr>
@@ -480,6 +480,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00093">93</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="code__138CC0_8c.html#a058b363c32659a6c823c49e22993293c">pause_badges_update()</a>.</p>
+
 </div>
 </div>
 <a id="a3d100eb487305e0174952f9b277b3f4a"></a>
@@ -671,22 +673,75 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a03471f912c1200a4453ab1274eca4436"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03471f912c1200a4453ab1274eca4436">&#9670;&nbsp;</a></span>pause_draw_rect()</h2>
+<a id="a9c4f51b847b7ddfbec7afec6f8d4fc35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4f51b847b7ddfbec7afec6f8d4fc35">&#9670;&nbsp;</a></span>pause_draw_rect()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 pause_draw_rect </td>
+          <td class="memname">void pause_draw_rect </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>ulx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>uly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>lrx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>lry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>tileDescriptor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>uls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>ult</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>dsdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>dtdy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00152">152</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00153">153</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -705,7 +760,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00154">154</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00155">155</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__138CC0_8c.html#ae27078d426570279ee91303fabe6c211">pause_badges_count_all()</a>, and <a class="el" href="code__138CC0_8c.html#a78dfd6cafea336cbb5c9683a6af3edba">pause_badges_count_equipped()</a>.</p>
 
@@ -727,7 +782,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00156">156</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00157">157</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -746,7 +801,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00159">159</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00160">160</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -765,7 +820,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00161">161</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00162">162</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -784,7 +839,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00163">163</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00164">164</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -803,7 +858,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00165">165</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00166">166</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -822,7 +877,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00167">167</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00168">168</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -841,7 +896,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00169">169</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00170">170</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -860,7 +915,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00171">171</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00172">172</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -879,7 +934,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00173">173</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00174">174</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -898,7 +953,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00175">175</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00176">176</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -918,7 +973,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00177">177</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__135EE0_8c_source.html#l00178">178</a> of file <a class="el" href="code__135EE0_8c_source.html">code_135EE0.c</a>.</p>
 
 </div>
 </div>
@@ -928,7 +983,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__135EE0_8c.html">code_135EE0.c</a></li>
-    <li class="footer">Generated on Wed Nov 11 2020 21:36:04 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sun Nov 15 2020 23:34:25 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

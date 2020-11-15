@@ -10,7 +10,6 @@ var dir_a71443761d886d6152d96ebd3fda63af =
     [ "code_3b910_len_410.c", "code__3b910__len__410_8c.html", "code__3b910__len__410_8c" ],
     [ "code_3bd20_len_c0.c", "code__3bd20__len__c0_8c.html", "code__3bd20__len__c0_8c" ],
     [ "code_3bde0_len_3e0.c", "code__3bde0__len__3e0_8c.html", "code__3bde0__len__3e0_8c" ],
-    [ "code_3c1c0_len_60.c", "code__3c1c0__len__60_8c.html", "code__3c1c0__len__60_8c" ],
     [ "code_3c220_len_a0.c", "code__3c220__len__a0_8c.html", "code__3c220__len__a0_8c" ],
     [ "code_3c2c0_len_50.c", "code__3c2c0__len__50_8c.html", "code__3c2c0__len__50_8c" ],
     [ "code_3c310_len_180.c", "code__3c310__len__180_8c.html", "code__3c310__len__180_8c" ],
@@ -85,7 +84,6 @@ var dir_a71443761d886d6152d96ebd3fda63af =
     [ "code_457c0_len_270.c", "code__457c0__len__270_8c.html", "code__457c0__len__270_8c" ],
     [ "code_45a30_len_20.c", "code__45a30__len__20_8c.html", "code__45a30__len__20_8c" ],
     [ "code_45a50_len_3a0.c", "code__45a50__len__3a0_8c.html", "code__45a50__len__3a0_8c" ],
-    [ "code_46760_len_90.c", "code__46760__len__90_8c.html", "code__46760__len__90_8c" ],
     [ "code_467f0_len_90.c", "code__467f0__len__90_8c.html", "code__467f0__len__90_8c" ],
     [ "code_46880_len_260.c", "code__46880__len__260_8c.html", "code__46880__len__260_8c" ],
     [ "code_46ae0_len_170.c", "code__46ae0__len__170_8c.html", "code__46ae0__len__170_8c" ],
@@ -104,8 +102,6 @@ var dir_a71443761d886d6152d96ebd3fda63af =
     [ "code_47fa0_len_20.c", "code__47fa0__len__20_8c.html", "code__47fa0__len__20_8c" ],
     [ "code_47fc0_len_60.c", "code__47fc0__len__60_8c.html", "code__47fc0__len__60_8c" ],
     [ "code_48020_len_a00.c", "code__48020__len__a00_8c.html", "code__48020__len__a00_8c" ],
-    [ "code_48a20_len_1c0.c", "code__48a20__len__1c0_8c.html", "code__48a20__len__1c0_8c" ],
-    [ "code_48be0_len_20.c", "code__48be0__len__20_8c.html", "code__48be0__len__20_8c" ],
     [ "code_48c00_len_5c0.c", "code__48c00__len__5c0_8c.html", "code__48c00__len__5c0_8c" ],
     [ "code_491c0_len_f80.c", "code__491c0__len__f80_8c.html", "code__491c0__len__f80_8c" ],
     [ "code_49C70.c", "code__49C70_8c.html", "code__49C70_8c" ],
@@ -116,7 +112,10 @@ var dir_a71443761d886d6152d96ebd3fda63af =
     [ "code_4ac90_len_3910.c", "code__4ac90__len__3910_8c.html", "code__4ac90__len__3910_8c" ],
     [ "code_7e40_len_3f0.c", "code__7e40__len__3f0_8c.html", "code__7e40__len__3f0_8c" ],
     [ "guMtxIdentF.c", "guMtxIdentF_8c.html", "guMtxIdentF_8c" ],
+    [ "ldiv.c", "ldiv_8c.html", "ldiv_8c" ],
     [ "osCreateThread.c", "osCreateThread_8c.html", "osCreateThread_8c" ],
+    [ "osEPiReadIo.c", "osEPiReadIo_8c.html", "osEPiReadIo_8c" ],
     [ "osEPiWriteIo.c", "osEPiWriteIo_8c.html", "osEPiWriteIo_8c" ],
-    [ "osGetThreadPri.c", "osGetThreadPri_8c.html", "osGetThreadPri_8c" ]
+    [ "osGetThreadPri.c", "osGetThreadPri_8c.html", "osGetThreadPri_8c" ],
+    [ "osSiDeviceBusy.c", "osSiDeviceBusy_8c.html", "osSiDeviceBusy_8c" ]
 ];

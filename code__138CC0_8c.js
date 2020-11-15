@@ -4,7 +4,7 @@ var code__138CC0_8c =
     [ "pause_stats_init", "code__138CC0_8c.html#ab79e687d8341fca3b590bac746f9be8d", null ],
     [ "pause_stats_handle_input", "code__138CC0_8c.html#a23337611dc1831f7bcea4b1cb81cbf45", null ],
     [ "pause_stats_cleanup", "code__138CC0_8c.html#a60d2f0f5cffe0c28721b5f580187b880", null ],
-    [ "pause_badges_comparator", "code__138CC0_8c.html#a151b076bd696414221746ecbec84758b", null ],
+    [ "pause_badges_comparator", "code__138CC0_8c.html#abf16005ed5976d0bd63927163714b34c", null ],
     [ "pause_badges_count_all", "code__138CC0_8c.html#ae27078d426570279ee91303fabe6c211", null ],
     [ "pause_badges_count_equipped", "code__138CC0_8c.html#a78dfd6cafea336cbb5c9683a6af3edba", null ],
     [ "pause_badges_get_pos_x", "code__138CC0_8c.html#ae3794d893796c4a045a0df094a3eceb2", null ],
@@ -21,6 +21,6 @@ var code__138CC0_8c =
     [ "pause_badges_load_badges", "code__138CC0_8c.html#ad73cf7a210b04d475e51b7223470f752", null ],
     [ "pause_badges_init", "code__138CC0_8c.html#ac52485753d1560a97f2f1035932b99da", null ],
     [ "pause_badges_handle_input", "code__138CC0_8c.html#a724a96e4f57212ecc5ac21219b3573c9", null ],
-    [ "pause_badges_update", "code__138CC0_8c.html#afea026edd4beb356adf0487d100933e4", null ],
+    [ "pause_badges_update", "code__138CC0_8c.html#a058b363c32659a6c823c49e22993293c", null ],
     [ "pause_badges_cleanup", "code__138CC0_8c.html#aef91ee811a0d933af2028d80d98c7714", null ]
 ];
