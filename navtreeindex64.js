@@ -246,8 +246,8 @@ var NAVTREEINDEX64 =
 "structDecorationTable.html#a048635e8937616092b1e65712456c6fa":[4,0,20,6],
 "structDecorationTable.html#a196351db2951202434fcdea77802ba17":[4,0,20,3],
 "structDecorationTable.html#a19c5106046f416debd07b545da5f2cb8":[4,0,20,11],
-"structDecorationTable.html#a28c02b58526df606b512345f20cbef5a":[4,0,20,16],
 "structDecorationTable.html#a2ca61970f70c29438e80fee9df35aad0":[4,0,20,2],
 "structDecorationTable.html#a3a555512361bddf9eb2095ca41c4b09f":[4,0,20,8],
-"structDecorationTable.html#a4a7d4742883dc842d6fa36913150127b":[4,0,20,15]
+"structDecorationTable.html#a3c63b83616cfbf0ced8a10b041e3e3f0":[4,0,20,13],
+"structDecorationTable.html#a4da1bc3e3e26fc73c1a4e09c57a6f329":[4,0,20,7]
 };

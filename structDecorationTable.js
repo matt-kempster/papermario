@@ -13,8 +13,7 @@ var structDecorationTable =
     [ "effectType", "structDecorationTable.html#ad9e953deca4542a3ca925322b70588d7", null ],
     [ "unk_8AD", "structDecorationTable.html#a19c5106046f416debd07b545da5f2cb8", null ],
     [ "decorationType", "structDecorationTable.html#a6a020f47b47ed8bc0bcd2955622fc10a", null ],
-    [ "unk_8BA", "structDecorationTable.html#af8f46a5272ef29afed0bde2eace9d1ca", null ],
-    [ "unk_8BB", "structDecorationTable.html#a8d3f228db7ac3ddb9a1c5f16be457c06", null ],
-    [ "unk_8BC", "structDecorationTable.html#a4a7d4742883dc842d6fa36913150127b", null ],
-    [ "unk_8BD", "structDecorationTable.html#a28c02b58526df606b512345f20cbef5a", null ]
+    [ "unk_8BA", "structDecorationTable.html#a3c63b83616cfbf0ced8a10b041e3e3f0", null ],
+    [ "unk_8BC", "structDecorationTable.html#a992ce100458f7a06a29e35776d44043a", null ],
+    [ "unk_8BD", "structDecorationTable.html#a56058c7be7d2ad3e36a3e40345c09fd5", null ]
 ];
