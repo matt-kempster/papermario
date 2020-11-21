@@ -6,6 +6,7 @@ var macros_8h =
     [ "ASSERT", "macros_8h.html#ac22830a985e1daed0c9eadba8c6f606e", null ],
     [ "PANIC", "macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7", null ],
     [ "STATIC_ASSERT", "macros_8h.html#a695e64485eb9535f5ddcfec01167bddc", null ],
+    [ "BATTLE_STATUS", "macros_8h.html#a38b31d01afc2f5b36e2c51d838f7a3ab", null ],
     [ "GAME_STATUS", "macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1", null ],
     [ "PLAYER_STATUS", "macros_8h.html#a3643affbbcc36ae76527bbcf11bcce8e", null ],
     [ "PLAYER_DATA", "macros_8h.html#a6baaf628665b883428b10e2d2d78a299", null ],

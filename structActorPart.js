@@ -17,7 +17,7 @@ var structActorPart =
     [ "yaw", "structActorPart.html#aa6bd57f0c4061d2128257ac0f2b9035c", null ],
     [ "unkOffset", "structActorPart.html#af6ad32ae97feeb8127b6cbba9fa1f462", null ],
     [ "targetOffset", "structActorPart.html#a4168ea74ceb0b3088a6e023420a6be32", null ],
-    [ "unk", "structActorPart.html#a514c96b46a60ec158b8a21485b6b9ce6", null ],
+    [ "unk_70", "structActorPart.html#ad5e9370e27608a3c84ef32a24d55a44a", null ],
     [ "size", "structActorPart.html#abe711add25cf085e18bfd8b33c718c07", null ],
     [ "verticalStretch", "structActorPart.html#ad25df4d6faf1f8f586ac0d1dd561e1e1", null ],
     [ "unk_75", "structActorPart.html#a80361e64f1606354afb83f920fecf4a6", null ],

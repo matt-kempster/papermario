@@ -22,7 +22,7 @@ var code__181810_8c =
     [ "is_actortype_hpbar_visible", "code__181810_8c.html#ad4352bb6be19eb117642b77a03f05777", null ],
     [ "save_tattle_flags", "code__181810_8c.html#adae6e8f7cc55c91c17b0dfa1c33e8881", null ],
     [ "load_tattle_flags", "code__181810_8c.html#a60cb93c2a6d7b175c53564f85e326f75", null ],
-    [ "func_80253FB0", "code__181810_8c.html#aa69a07fb2b4d73b32ca5a9472ec85efa", null ],
+    [ "func_80253FB0", "code__181810_8c.html#afdd53cf6e912653d76db5ea3097e9f19", null ],
     [ "MultiplyByActorScale", "code__181810_8c.html#a1daa2208296fb1d78694869f7b722536", null ],
     [ "MultiplyVec2ByActorScale", "code__181810_8c.html#aa226b7801d9983a713e025faf28a2b91", null ],
     [ "MultiplyVec3ByActorScale", "code__181810_8c.html#a15ec3c2729e3b70d9f1620a9acd02c46", null ],

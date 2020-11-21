@@ -64,6 +64,7 @@ var common__structs_8h =
     [ "AnimatedModel", "structAnimatedModel.html", "structAnimatedModel" ],
     [ "CollisionHeader", "structCollisionHeader.html", "structCollisionHeader" ],
     [ "Zone", "structZone.html", "structZone" ],
+    [ "ActorMovePos", "structActorMovePos.html", "structActorMovePos" ],
     [ "Actor", "structActor.html", "structActor" ],
     [ "StaticActorPart", "structStaticActorPart.html", "structStaticActorPart" ],
     [ "TileDescriptor", "structTileDescriptor.html", "structTileDescriptor" ],

@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "Actor", "structActor.html", "structActor" ],
+    [ "ActorMovePos", "structActorMovePos.html", "structActorMovePos" ],
     [ "ActorPart", "structActorPart.html", "structActorPart" ],
     [ "ActorPartMovement", "structActorPartMovement.html", "structActorPartMovement" ],
     [ "AnimatedMesh", "structAnimatedMesh.html", "structAnimatedMesh" ],

@@ -66,6 +66,7 @@ var functions_8h =
     [ "func_800ED5D0", "functions_8h.html#a56e4517a14ffe7a8f5cbe48e5fcfe662", null ],
     [ "func_800EF394", "functions_8h.html#a9d5fe00080533bf45a780a04f0878a2a", null ],
     [ "does_script_exist", "functions_8h.html#ac5560f4d95483ff65a192e1794eb88f3", null ],
+    [ "does_script_exist_by_ref", "functions_8h.html#acd8b37dc957155223f76f8f202ebe0ab", null ],
     [ "start_script", "functions_8h.html#a993f6b548f6aa06833fe4a71cbc287cc", null ],
     [ "start_script_in_group", "functions_8h.html#ada003a1da902e990930bc0d105509bf2", null ],
     [ "func_8011B7C0", "functions_8h.html#a621335a857682bc94421a5392ef3f670", null ],

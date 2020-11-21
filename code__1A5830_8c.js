@@ -1,9 +1,9 @@
 var code__1A5830_8c =
 [
-    [ "func_80276F50", "code__1A5830_8c.html#ad755b2035c73ee36046f8aa8466dc7e1", null ],
-    [ "dispatch_event_general", "code__1A5830_8c.html#a8f08fb821427857607d452c33da85c9a", null ],
+    [ "dispatch_event_actor", "code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f", null ],
+    [ "func_80276F50", "code__1A5830_8c.html#af2f7263551702e26cb777c339d6a297f", null ],
+    [ "dispatch_event_general", "code__1A5830_8c.html#a0510852305cbe1dcb3c6148ab15911e2", null ],
     [ "play_hit_sound", "code__1A5830_8c.html#add9a9d14651a1276baf4d4b9b3b1b286", null ],
-    [ "dispatch_event_actor", "code__1A5830_8c.html#a842d0b0dcf1d73583af36ce685624c8f", null ],
     [ "calc_enemy_test_target", "code__1A5830_8c.html#a801e6a9d83cc9160caa984ae59298f66", null ],
     [ "calc_enemy_damage_target", "code__1A5830_8c.html#af53cdd7ef054895a5fbd804efcdf7f2c", null ],
     [ "dispatch_damage_event_actor", "code__1A5830_8c.html#a27e8e13390dd2b929b0676aeccb75aeb", null ],
@@ -46,12 +46,12 @@ var code__1A5830_8c =
     [ "EnemyDamageTarget", "code__1A5830_8c.html#a770e67f608f29fbb0338b6b8856d7c8d", null ],
     [ "EnemyFollowupAfflictTarget", "code__1A5830_8c.html#a1dcef43362cb6ec4a7571d02f45b73e0", null ],
     [ "EnemyTestTarget", "code__1A5830_8c.html#a5cdd1e4ba38aee968670b957b0a0a736", null ],
-    [ "DispatchDamageEvent", "code__1A5830_8c.html#ab4c00a06f701e737f1281f36f0fa8161", null ],
+    [ "DispatchDamageEvent", "code__1A5830_8c.html#ab1e66e83caffa9f241f3a3a7b6a6ff63", null ],
     [ "DispatchEvent", "code__1A5830_8c.html#aea3b53bb7e216d00ce75eda15ca4ad24", null ],
     [ "func_8027D2D8", "code__1A5830_8c.html#ac2feb5b31dc312761e7018ca0f48fde0", null ],
     [ "func_8027D32C", "code__1A5830_8c.html#adc2d8ee9d622a816217044d4667d1231", null ],
     [ "SetTargetOffset", "code__1A5830_8c.html#abb9b337f4be897940821b42c309f0069", null ],
-    [ "func_8027D434", "code__1A5830_8c.html#a018d10d7461570e85b06fe867bad9679", null ],
+    [ "func_8027D434", "code__1A5830_8c.html#a08c0d300f0eca42603e44927eb917bb2", null ],
     [ "func_8027D4C8", "code__1A5830_8c.html#acc9c4785fd3ee62a9a5a87dc911cadc7", null ],
     [ "EnableActorBlur", "code__1A5830_8c.html#ae4c6ed64d1e7ef6ce1d171682969fa76", null ],
     [ "func_8027D628", "code__1A5830_8c.html#ac98768a34029a317643af20cdee450b3", null ],
@@ -66,7 +66,7 @@ var code__1A5830_8c =
     [ "GetCurrentActorType", "code__1A5830_8c.html#af79d699b45c97d4fe27a847fa16b3bc7", null ],
     [ "GetLastDamage", "code__1A5830_8c.html#aa7f8077582db08f17a7e04ef294ba2ce", null ],
     [ "EnableActorGlow", "code__1A5830_8c.html#a18e2714bb4d4fade009e7c0600c1b45e", null ],
-    [ "WasStatusInflicted", "code__1A5830_8c.html#a8bebc2853504f2fc30f9819a1a2be481", null ],
+    [ "WasStatusInflicted", "code__1A5830_8c.html#a9433e252e92c1b0ab275dd5df55e05a0", null ],
     [ "CopyStatusEffects", "code__1A5830_8c.html#a690d627b650df59d9f94b406c9b0e22e", null ],
     [ "ClearStatusEffects", "code__1A5830_8c.html#a5762042318a963401e9cecd5d0768c07", null ]
 ];

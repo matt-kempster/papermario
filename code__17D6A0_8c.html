@@ -147,10 +147,10 @@ Functions</h2></td></tr>
 <tr class="separator:afe2d8612dce296a41f80ce2f863dcbde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a054f124660adef3f9b8b8f3125ada4c2"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#a054f124660adef3f9b8b8f3125ada4c2">ShowVariableMessageBox</a> ()</td></tr>
 <tr class="separator:a054f124660adef3f9b8b8f3125ada4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3947a317f67b6514bd67eda986eeac32"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#a3947a317f67b6514bd67eda986eeac32">IsMessageBoxDisplayed</a> ()</td></tr>
-<tr class="separator:a3947a317f67b6514bd67eda986eeac32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adeea495c1b6761b721baff2ac90d4f04"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#adeea495c1b6761b721baff2ac90d4f04">WaitForMessageBoxDone</a> ()</td></tr>
-<tr class="separator:adeea495c1b6761b721baff2ac90d4f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cbe53d18e53e9c7fcbbcc56de25ed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#a96cbe53d18e53e9c7fcbbcc56de25ed5">IsMessageBoxDisplayed</a> (<a class="el" href="structScriptInstance.html">ScriptInstance</a> *script, s32 isInitialCall)</td></tr>
+<tr class="separator:a96cbe53d18e53e9c7fcbbcc56de25ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b71b448194318ebac5764c0ca4351d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#ac9b71b448194318ebac5764c0ca4351d">WaitForMessageBoxDone</a> (<a class="el" href="structScriptInstance.html">ScriptInstance</a> *script, s32 isInitialCall)</td></tr>
+<tr class="separator:ac9b71b448194318ebac5764c0ca4351d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d4b04dedafb4697dda103b0457c3872"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#a6d4b04dedafb4697dda103b0457c3872">ForceCloseMessageBox</a> ()</td></tr>
 <tr class="separator:a6d4b04dedafb4697dda103b0457c3872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1030fc6a3d2bac75289975a7f7ee6146"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__17D6A0_8c.html#a1030fc6a3d2bac75289975a7f7ee6146">SetMessageBoxDuration</a> ()</td></tr>
@@ -486,6 +486,8 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00035">35</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a96cbe53d18e53e9c7fcbbcc56de25ed5">IsMessageBoxDisplayed()</a>, and <a class="el" href="battle_8h.html#ac9b71b448194318ebac5764c0ca4351d">WaitForMessageBoxDone()</a>.</p>
+
 </div>
 </div>
 <a id="a03e5be4d3f6c9382c3b0915ed9a4f529"></a>
@@ -659,17 +661,28 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3947a317f67b6514bd67eda986eeac32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3947a317f67b6514bd67eda986eeac32">&#9670;&nbsp;</a></span>IsMessageBoxDisplayed()</h2>
+<a id="a96cbe53d18e53e9c7fcbbcc56de25ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cbe53d18e53e9c7fcbbcc56de25ed5">&#9670;&nbsp;</a></span>IsMessageBoxDisplayed()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 IsMessageBoxDisplayed </td>
+          <td class="memname"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a> IsMessageBoxDisplayed </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structScriptInstance.html">ScriptInstance</a> *&#160;</td>
+          <td class="paramname"><em>script</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>isInitialCall</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -678,22 +691,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adeea495c1b6761b721baff2ac90d4f04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adeea495c1b6761b721baff2ac90d4f04">&#9670;&nbsp;</a></span>WaitForMessageBoxDone()</h2>
+<a id="ac9b71b448194318ebac5764c0ca4351d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9b71b448194318ebac5764c0ca4351d">&#9670;&nbsp;</a></span>WaitForMessageBoxDone()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 WaitForMessageBoxDone </td>
+          <td class="memname"><a class="el" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a> WaitForMessageBoxDone </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structScriptInstance.html">ScriptInstance</a> *&#160;</td>
+          <td class="paramname"><em>script</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>isInitialCall</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00057">57</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00063">63</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -712,7 +736,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00059">59</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00067">67</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -731,7 +755,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00061">61</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00069">69</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -750,7 +774,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00063">63</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00071">71</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -769,7 +793,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00065">65</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00073">73</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -788,7 +812,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00067">67</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="code__17D6A0_8c_source.html#l00075">75</a> of file <a class="el" href="code__17D6A0_8c_source.html">code_17D6A0.c</a>.</p>
 
 </div>
 </div>
@@ -798,7 +822,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__17D6A0_8c.html">code_17D6A0.c</a></li>
-    <li class="footer">Generated on Wed Nov 18 2020 01:25:14 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Sat Nov 21 2020 07:10:48 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
