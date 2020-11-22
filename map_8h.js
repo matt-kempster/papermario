@@ -20,7 +20,6 @@ var map_8h =
     [ "STANDARD_FLOWER_DROPS", "map_8h.html#a4584a5dd806209366023784d1b1358d3", null ],
     [ "GENEROUS_WHEN_LOW_FLOWER_DROPS", "map_8h.html#a6a8772393985bcc0c722fb25a0bda179", null ],
     [ "REDUCED_FLOWER_DROPS", "map_8h.html#afe59bbf12bfe00c5c6bedf8ca9387a13", null ],
-    [ "ANIMATION", "map_8h.html#a242e2a4dcc3fc144fcde084a57002c5c", null ],
     [ "OVERRIDE_MOVEMENT_SPEED", "map_8h.html#a7cfcc617458312fb7daa9a0eca0efcc0", null ],
     [ "NO_OVERRIDE_MOVEMENT_SPEED", "map_8h.html#a6b25ff3c05678e76e92e678e79b7b826", null ],
     [ "NPC_GROUP", "map_8h.html#a3e15fafcb21bfb136d358cb21975fb30", null ],

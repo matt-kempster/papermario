@@ -16,8 +16,8 @@ var structStaticNpc =
     [ "maxCoinBonus", "structStaticNpc.html#a72df0bf053309621c55e64cf44df3fdd", null ],
     [ "unk_DE", "structStaticNpc.html#ad42c4594b40c8b07c9c8fb256da938d6", null ],
     [ "movement", "structStaticNpc.html#a51056ed5b9b020f7768e52c527f04798", null ],
-    [ "animations", "structStaticNpc.html#a2b98465851770c2aeadf713d9bf2ccb9", null ],
+    [ "animations", "structStaticNpc.html#a845b87f712dafacb0c05d5465ad8e839", null ],
     [ "unk_1E0", "structStaticNpc.html#abd20c18b5e7540a27b7448eb174dc934", null ],
-    [ "extraAnimations", "structStaticNpc.html#ad59c186b2fa2e909ed558719ad1e7c25", null ],
+    [ "extraAnimations", "structStaticNpc.html#a298dd7a8e9607034a3f8fc9aa9f80fe9", null ],
     [ "tattle", "structStaticNpc.html#a568318e97925b1fe6a4bf77ecfdca652", null ]
 ];
