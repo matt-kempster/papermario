@@ -2,10 +2,6 @@ var C3AA10_8c =
 [
     [ "func_80240000_C3AA10", "C3AA10_8c.html#a6b8857b0a5cb1d8d5015dd8e9c93d224", null ],
     [ "func_80240030_C3AA40", "C3AA10_8c.html#aff3df6d7393bc733531bc9d152517b83", null ],
-    [ "func_80240060_C3AA70", "C3AA10_8c.html#a9bd839fc4ac8adb8c8874e0b00e94dd8", null ],
-    [ "func_802400CC_C3AADC", "C3AA10_8c.html#a4bcaae7f2096838c934f3e21d6c393e4", null ],
-    [ "func_8024013C_C3AB4C", "C3AA10_8c.html#a27ef8d3f2a15956d952d7f23d299c7da", null ],
-    [ "func_80240214_C3AC24", "C3AA10_8c.html#a6dd58e9963f06f7c8805c3ad7b38d0ad", null ],
     [ "func_80240268_C3AC78", "C3AA10_8c.html#a4108435fec2a453404b63c33fb62f126", null ],
     [ "func_8024041C_C3AE2C", "C3AA10_8c.html#ab26d4e81a9a30804deadb894b46f1038", null ],
     [ "func_8024067C_C3B08C", "C3AA10_8c.html#ae1ac654118ca0722d1e3b3eab817eb6f", null ],

@@ -1,9 +1,5 @@
 var D187E0_8c =
 [
-    [ "func_80240000_D187E0", "D187E0_8c.html#a0983cd131bb872a7598c873405b5fa69", null ],
-    [ "func_8024006C_D1884C", "D187E0_8c.html#aba481ff7874043071e00b049d10fc80d", null ],
-    [ "func_802400DC_D188BC", "D187E0_8c.html#a2d5504b90eeffa05ffabce18dbd40797", null ],
-    [ "func_802401B4_D18994", "D187E0_8c.html#a6c537730a97e595996d73e6a238ffd7e", null ],
     [ "func_80240208_D189E8", "D187E0_8c.html#a018afd14003a4932cad33c3b8ac4f7ba", null ],
     [ "update_starpoints_display_D18B9C", "D187E0_8c.html#ae91656f809a19ffa4ed96efd42c7f3eb", null ],
     [ "func_8024061C_D18DFC", "D187E0_8c.html#ab52b280278530ed64524b86a562edd68", null ],

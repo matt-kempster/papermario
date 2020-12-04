@@ -1,9 +1,5 @@
 var C52540_8c =
 [
-    [ "func_80240000_C52540", "C52540_8c.html#ad479d91dbf83e58bbe78b5ddd1b43ac9", null ],
-    [ "func_8024006C_C525AC", "C52540_8c.html#a2400c8c746722e386f8f44c7d4a5f6aa", null ],
-    [ "func_802400DC_C5261C", "C52540_8c.html#a97bda12f21764eea5eb1cea4c687f110", null ],
-    [ "func_802401B4_C526F4", "C52540_8c.html#a6adc7b02980e5b5f6b2e5ea187ae03a2", null ],
     [ "func_80240208_C52748", "C52540_8c.html#a0bebd2dba7f8929ba6f52259c35f3b1a", null ],
     [ "update_starpoints_display_C528FC", "C52540_8c.html#ad7caca91d57bfcfbbe0a36fd71ad98db", null ],
     [ "func_8024061C_C52B5C", "C52540_8c.html#a176f2ad3a1a374a2493b332c489ac105", null ],

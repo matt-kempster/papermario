@@ -135,12 +135,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a8924777365128e3cdcc62924e2c4f21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad16d6d9469e9b90bdb0971c2abadf64d"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ad16d6d9469e9b90bdb0971c2abadf64d">varTable</a> [16]</td></tr>
 <tr class="separator:ad16d6d9469e9b90bdb0971c2abadf64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e3d0b57c6a3788a9159783ec814c109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a0e3d0b57c6a3788a9159783ec814c109">flyCurrentPos</a></td></tr>
-<tr class="separator:a0e3d0b57c6a3788a9159783ec814c109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04d251d70b5d735a1079bbec6fc9de2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ab04d251d70b5d735a1079bbec6fc9de2">flyGoalPos</a></td></tr>
-<tr class="separator:ab04d251d70b5d735a1079bbec6fc9de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0677d65aed8f80bc8ef4424eedc09182"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a0677d65aed8f80bc8ef4424eedc09182">flyTempPos</a></td></tr>
-<tr class="separator:a0677d65aed8f80bc8ef4424eedc09182"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc6430992fab330bd496ae89decac5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structActorFlyPos.html">ActorFlyPos</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a5cc6430992fab330bd496ae89decac5f">flyPos</a></td></tr>
+<tr class="separator:a5cc6430992fab330bd496ae89decac5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3595be31d5fa5d7fbc7e9b38c1592fa5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a3595be31d5fa5d7fbc7e9b38c1592fa5">unk_EC</a> [24]</td></tr>
 <tr class="separator:a3595be31d5fa5d7fbc7e9b38c1592fa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57dc8beb603d934e7e67c521d4bba2ad"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a57dc8beb603d934e7e67c521d4bba2ad">flyJumpAccel</a></td></tr>
@@ -175,34 +171,44 @@ Data Fields</h2></td></tr>
 <tr class="separator:a1c7de9158943b09bfcfd1398564f838c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c541c8f86b51348e1c05e88695d320a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3s.html">Vec3s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a4c541c8f86b51348e1c05e88695d320a">headOffset</a></td></tr>
 <tr class="separator:a4c541c8f86b51348e1c05e88695d320a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac30e66b2905ec696da49db77f405d8f9"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ac30e66b2905ec696da49db77f405d8f9">healthBarPosition</a> [3]</td></tr>
-<tr class="separator:ac30e66b2905ec696da49db77f405d8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e1bcae41f35c800576205f49e04d69d"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a8e1bcae41f35c800576205f49e04d69d">rotation</a> [3]</td></tr>
-<tr class="separator:a8e1bcae41f35c800576205f49e04d69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb39bff252a79636fa7387f494faa7e1"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#afb39bff252a79636fa7387f494faa7e1">rotationPivotOffset</a> [3]</td></tr>
-<tr class="separator:afb39bff252a79636fa7387f494faa7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42405e5a24979a1b336d02b543eb66b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3s.html">Vec3s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a42405e5a24979a1b336d02b543eb66b0">healthBarPosition</a></td></tr>
+<tr class="separator:a42405e5a24979a1b336d02b543eb66b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6809dd42269abe4b9558e142b66250ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a6809dd42269abe4b9558e142b66250ff">rotation</a></td></tr>
+<tr class="separator:a6809dd42269abe4b9558e142b66250ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae904f625900275950806d6515897a8f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3s.html">Vec3s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ae904f625900275950806d6515897a8f4">rotationPivotOffset</a></td></tr>
+<tr class="separator:ae904f625900275950806d6515897a8f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aa34f6311615b80937c14e7c9ea8b5b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a1aa34f6311615b80937c14e7c9ea8b5b">unk_16E</a> [2]</td></tr>
 <tr class="separator:a1aa34f6311615b80937c14e7c9ea8b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf74e4324dfc58fa0eaba57cd072276d"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#acf74e4324dfc58fa0eaba57cd072276d">scale</a> [3]</td></tr>
-<tr class="separator:acf74e4324dfc58fa0eaba57cd072276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a024f69abbce30057d9be0f44cf8f3c99"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a024f69abbce30057d9be0f44cf8f3c99">scaleModifier</a> [3]</td></tr>
-<tr class="separator:a024f69abbce30057d9be0f44cf8f3c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6df072d872e3b0ec36eb13b156184b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#afe6df072d872e3b0ec36eb13b156184b">scale</a></td></tr>
+<tr class="separator:afe6df072d872e3b0ec36eb13b156184b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e1b06119d87e9779ff04055c81ee89a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3f.html">Vec3f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a7e1b06119d87e9779ff04055c81ee89a">scaleModifier</a></td></tr>
+<tr class="separator:a7e1b06119d87e9779ff04055c81ee89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59b46326f0705305f7b8b3054c8209f2"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a59b46326f0705305f7b8b3054c8209f2">scalingFactor</a></td></tr>
 <tr class="separator:a59b46326f0705305f7b8b3054c8209f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdfa0b9d52f21efb44212cd509255c18"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#abdfa0b9d52f21efb44212cd509255c18">yaw</a></td></tr>
 <tr class="separator:abdfa0b9d52f21efb44212cd509255c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba456ca87ee3583b7c365ff0df88eff2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec2b.html">Vec2b</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aba456ca87ee3583b7c365ff0df88eff2">size</a></td></tr>
-<tr class="separator:aba456ca87ee3583b7c365ff0df88eff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f39f6c94b7c2a199d062d3830513be4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec2bu.html">Vec2bu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a8f39f6c94b7c2a199d062d3830513be4">size</a></td></tr>
+<tr class="separator:a8f39f6c94b7c2a199d062d3830513be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a65d23733dd4b33e22fb8216f94ac2a"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a2a65d23733dd4b33e22fb8216f94ac2a">actorID</a></td></tr>
 <tr class="separator:a2a65d23733dd4b33e22fb8216f94ac2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6e7e54653a6ada2412d7d08fa14ec9d"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ac6e7e54653a6ada2412d7d08fa14ec9d">unk_194</a> [8]</td></tr>
-<tr class="separator:ac6e7e54653a6ada2412d7d08fa14ec9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b065bc3edaf4f48711920fe28e9196"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a64b065bc3edaf4f48711920fe28e9196">unk_194</a></td></tr>
+<tr class="separator:a64b065bc3edaf4f48711920fe28e9196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1c6dfd1751cd16e236758c880b694f"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a0b1c6dfd1751cd16e236758c880b694f">unk_195</a></td></tr>
+<tr class="separator:a0b1c6dfd1751cd16e236758c880b694f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c42a10dcf8f783424b066dfcbdaaa5"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a56c42a10dcf8f783424b066dfcbdaaa5">unk_196</a></td></tr>
+<tr class="separator:a56c42a10dcf8f783424b066dfcbdaaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1cffa5713e36aab92ca9a83a3733e0a"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ae1cffa5713e36aab92ca9a83a3733e0a">unk_197</a></td></tr>
+<tr class="separator:ae1cffa5713e36aab92ca9a83a3733e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261bdd243cea150185b5fc596f9ff106"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec2b.html">Vec2b</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a261bdd243cea150185b5fc596f9ff106">unk_198</a></td></tr>
+<tr class="separator:a261bdd243cea150185b5fc596f9ff106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd6e94c222750d788a7008164242625"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a6fd6e94c222750d788a7008164242625">unk_19A</a> [2]</td></tr>
+<tr class="separator:a6fd6e94c222750d788a7008164242625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4112c3eec3c5856242a9d0ea4290c738"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a4112c3eec3c5856242a9d0ea4290c738">actorTypeData1</a> [6]</td></tr>
 <tr class="separator:a4112c3eec3c5856242a9d0ea4290c738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a712a7a3c5018f6a423638ee3c0b0b784"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a712a7a3c5018f6a423638ee3c0b0b784">actorTypeData1b</a> [2]</td></tr>
 <tr class="separator:a712a7a3c5018f6a423638ee3c0b0b784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77f68cf7d2c045eb0b0da44ce1e6863"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ac77f68cf7d2c045eb0b0da44ce1e6863">currentHP</a></td></tr>
-<tr class="separator:ac77f68cf7d2c045eb0b0da44ce1e6863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aaf765aae9c557d6848ce8edb81dbfc"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a8aaf765aae9c557d6848ce8edb81dbfc">currentHP</a></td></tr>
+<tr class="separator:a8aaf765aae9c557d6848ce8edb81dbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1cc4f868ea81f3c5a48827aa1f52f5e"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ad1cc4f868ea81f3c5a48827aa1f52f5e">maxHP</a></td></tr>
 <tr class="separator:ad1cc4f868ea81f3c5a48827aa1f52f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1418c2c776c3d2a78c90eee7b77e7a4"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ae1418c2c776c3d2a78c90eee7b77e7a4">unk_1BA</a> [2]</td></tr>
@@ -265,8 +271,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a059101a5e2c3395e7022680e4a114f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaffbe4092da9272b269ea6c27440c534"><td class="memItemLeft" align="right" valign="top">u32 *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aaffbe4092da9272b269ea6c27440c534">statusTable</a></td></tr>
 <tr class="separator:aaffbe4092da9272b269ea6c27440c534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a088663d4ab74e1d27a3e33716dea2b0e"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a088663d4ab74e1d27a3e33716dea2b0e">debuff</a></td></tr>
-<tr class="separator:a088663d4ab74e1d27a3e33716dea2b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84fcb7236d014ee361e69f0b26f3fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enums_8h.html#a002d3c04ccb90b5728ac76f15492f16d">Debuff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ab84fcb7236d014ee361e69f0b26f3fab">debuff</a></td></tr>
+<tr class="separator:ab84fcb7236d014ee361e69f0b26f3fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea2b80f2e135422b45194a2c0b506b9a"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aea2b80f2e135422b45194a2c0b506b9a">debuffDuration</a></td></tr>
 <tr class="separator:aea2b80f2e135422b45194a2c0b506b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad22fa69137187b388b86dd56a9cdb0f"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aad22fa69137187b388b86dd56a9cdb0f">staticStatus</a></td></tr>
@@ -307,8 +313,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a71cf42d66355fa22f4ce5545eee97cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd891d5f4d1c9d2b90033f8f574acd75"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#acd891d5f4d1c9d2b90033f8f574acd75">targetListLength</a></td></tr>
 <tr class="separator:acd891d5f4d1c9d2b90033f8f574acd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bd95f8d8de7379be6863f5c9f704ecf"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#a8bd95f8d8de7379be6863f5c9f704ecf">targetIndexList</a> [24]</td></tr>
-<tr class="separator:a8bd95f8d8de7379be6863f5c9f704ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf846117da1403e4ce387234cd46342f"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aaf846117da1403e4ce387234cd46342f">targetIndexList</a> [24]</td></tr>
+<tr class="separator:aaf846117da1403e4ce387234cd46342f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd7765df4d20453a0dcfe2a881e1275"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#aebd7765df4d20453a0dcfe2a881e1275">selectedTargetIndex</a></td></tr>
 <tr class="separator:aebd7765df4d20453a0dcfe2a881e1275"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d0646937f6934e398c023e9d769b62"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActor.html#ac4d0646937f6934e398c023e9d769b62">targetPartIndex</a></td></tr>
@@ -334,7 +340,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01207">1207</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01236">1236</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a17161489222e3fc236c671b7ae449ec6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a17161489222e3fc236c671b7ae449ec6">&#9670;&nbsp;</a></span>flags</h2>
@@ -348,9 +354,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01208">1208</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01237">1237</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>, <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>, <a class="el" href="code__181810_8c.html#a8dc39f5988976e4a4016831dc4ee1032">is_actor_hp_bar_visible()</a>, <a class="el" href="battle_8h.html#a29b051cd435463be64a19a03e85249db">SetActorFlagBits()</a>, and <a class="el" href="battle_8h.html#a6626f2791109b4e1a42f22cb7be58ecc">SetActorFlags()</a>.</p>
 
 </div>
 </div>
@@ -366,7 +372,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01209">1209</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01238">1238</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -382,7 +388,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01210">1210</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01239">1239</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>, <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
@@ -398,9 +406,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01211">1211</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01240">1240</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1aa0642ac698059e567ee7cc25adf65d">calc_item_check_hit()</a>, <a class="el" href="battle_8h.html#ae775bd0814e6eacd45dd18498a7d10e5">SetGoalToHome()</a>, and <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a04d407eb0bec06d5535f7d0e7ea1562b">AddGoalPos()</a>, <a class="el" href="code__17FEB0_8c.html#a1aa0642ac698059e567ee7cc25adf65d">calc_item_check_hit()</a>, <a class="el" href="battle_8h.html#a52691e1bdca7c27612b23614167f2141">GetGoalPos()</a>, <a class="el" href="battle_8h.html#adbb997c0881fe3e3adf1a49f66393ff1">SetGoalPos()</a>, <a class="el" href="battle_8h.html#afac81de8f93a14dd7b52fb002b62844c">SetGoalToFirstTarget()</a>, <a class="el" href="battle_8h.html#ae775bd0814e6eacd45dd18498a7d10e5">SetGoalToHome()</a>, and <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>.</p>
 
 </div>
 </div>
@@ -416,7 +424,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01212">1212</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01241">1241</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -432,7 +440,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01213">1213</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01242">1242</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aa09acbc8757ba8d2e1192c41e85746d1">SetActorJumpGravity()</a>.</p>
 
 </div>
 </div>
@@ -448,7 +458,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01214">1214</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01243">1243</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a0ba4f8581e12441bc2da02ad2b8274cd">SetActorSpeed()</a>.</p>
 
 </div>
 </div>
@@ -464,7 +476,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01215">1215</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01244">1244</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -480,7 +492,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01216">1216</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01245">1245</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -496,7 +508,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01217">1217</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01246">1246</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -512,7 +524,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01218">1218</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01247">1247</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -528,7 +540,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01219">1219</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01248">1248</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -544,7 +556,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01220">1220</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01249">1249</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a344d57b8310f05a5f41fd931f8d7f472">SetJumpAnimations()</a>.</p>
 
 </div>
 </div>
@@ -560,7 +574,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01221">1221</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01250">1250</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a344d57b8310f05a5f41fd931f8d7f472">SetJumpAnimations()</a>.</p>
 
 </div>
 </div>
@@ -576,7 +592,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01222">1222</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01251">1251</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a344d57b8310f05a5f41fd931f8d7f472">SetJumpAnimations()</a>.</p>
 
 </div>
 </div>
@@ -592,7 +610,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01223">1223</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01252">1252</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -608,7 +626,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01224">1224</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01253">1253</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -624,7 +642,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01225">1225</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01254">1254</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -640,7 +658,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01226">1226</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01255">1255</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a344d57b8310f05a5f41fd931f8d7f472">SetJumpAnimations()</a>.</p>
 
 </div>
 </div>
@@ -656,7 +676,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01227">1227</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01256">1256</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -672,59 +692,27 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01228">1228</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01257">1257</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__18F340_8c.html#a89b55d42a5035d1731011526bb605752">func_80260DD8()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a19e5fe6245e00da82fe18828c1bfed09">AddActorVar()</a>, <a class="el" href="code__18F340_8c.html#a89b55d42a5035d1731011526bb605752">func_80260DD8()</a>, and <a class="el" href="battle_8h.html#a287b31c5a2350ff89341981704029f9e">SetActorVar()</a>.</p>
 
 </div>
 </div>
-<a id="a0e3d0b57c6a3788a9159783ec814c109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e3d0b57c6a3788a9159783ec814c109">&#9670;&nbsp;</a></span>flyCurrentPos</h2>
+<a id="a5cc6430992fab330bd496ae89decac5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cc6430992fab330bd496ae89decac5f">&#9670;&nbsp;</a></span>flyPos</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::flyCurrentPos</td>
+          <td class="memname"><a class="el" href="structActorFlyPos.html">ActorFlyPos</a> Actor::flyPos</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01229">1229</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01258">1258</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-</div>
-</div>
-<a id="ab04d251d70b5d735a1079bbec6fc9de2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab04d251d70b5d735a1079bbec6fc9de2">&#9670;&nbsp;</a></span>flyGoalPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::flyGoalPos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01230">1230</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a099dec4b2cee3c32c709ea58c0c7ff8c">SetIdleGoalToHome()</a>.</p>
-
-</div>
-</div>
-<a id="a0677d65aed8f80bc8ef4424eedc09182"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0677d65aed8f80bc8ef4424eedc09182">&#9670;&nbsp;</a></span>flyTempPos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::flyTempPos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01231">1231</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a1361c4cff768e9a381399642078f8ac2">GetIdleGoal()</a>, <a class="el" href="battle_8h.html#a3def00da0214f85045037755ddaadb5f">SetIdleGoal()</a>, and <a class="el" href="battle_8h.html#a099dec4b2cee3c32c709ea58c0c7ff8c">SetIdleGoalToHome()</a>.</p>
 
 </div>
 </div>
@@ -740,7 +728,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01232">1232</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01259">1259</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +744,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01233">1233</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01260">1260</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a55223bb71ee5f440d87021f00ff57584">SetActorIdleJumpGravity()</a>.</p>
 
 </div>
 </div>
@@ -772,7 +762,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01234">1234</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01261">1261</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a94f7728ccaf9c4b86c07b30029c1e0a8">SetActorIdleSpeed()</a>.</p>
 
 </div>
 </div>
@@ -788,7 +780,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01235">1235</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01262">1262</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -804,7 +796,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01236">1236</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01263">1263</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -820,7 +812,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01237">1237</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01264">1264</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -836,7 +828,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01238">1238</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01265">1265</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -852,7 +844,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01239">1239</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01266">1266</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -868,7 +860,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01240">1240</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01267">1267</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -884,7 +876,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01241">1241</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01268">1268</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -900,7 +892,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01242">1242</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01269">1269</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -916,7 +908,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01243">1243</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01270">1270</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -932,7 +924,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01244">1244</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01271">1271</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__181810_8c.html#a8dc39f5988976e4a4016831dc4ee1032">is_actor_hp_bar_visible()</a>.</p>
 
 </div>
 </div>
@@ -948,7 +942,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01245">1245</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01272">1272</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -964,9 +958,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01246">1246</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01273">1273</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a75503e8d9c436347c3502267dd234213">ForceHomePos()</a>, <a class="el" href="battle_8h.html#ae363522f6d0dcb03171e389c5d898842">GetIndexFromHome()</a>, <a class="el" href="code__197F40_8c.html#a33659a90c4fde40225548e1b5a65f0c5">set_actor_home_position()</a>, <a class="el" href="battle_8h.html#ae775bd0814e6eacd45dd18498a7d10e5">SetGoalToHome()</a>, <a class="el" href="battle_8h.html#a3491bb1d002116d646fea90cf66cf571">SetHomePos()</a>, and <a class="el" href="battle_8h.html#a099dec4b2cee3c32c709ea58c0c7ff8c">SetIdleGoalToHome()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a75503e8d9c436347c3502267dd234213">ForceHomePos()</a>, <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>, <a class="el" href="battle_8h.html#a8288f70a40272ef8317f7e4a0103f20b">GetHomePos()</a>, <a class="el" href="battle_8h.html#ae363522f6d0dcb03171e389c5d898842">GetIndexFromHome()</a>, <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>, <a class="el" href="code__197F40_8c.html#a22d21d587a029579ba63d8b48763b98d">set_actor_home_position()</a>, <a class="el" href="battle_8h.html#ae775bd0814e6eacd45dd18498a7d10e5">SetGoalToHome()</a>, <a class="el" href="battle_8h.html#a3491bb1d002116d646fea90cf66cf571">SetHomePos()</a>, and <a class="el" href="battle_8h.html#a099dec4b2cee3c32c709ea58c0c7ff8c">SetIdleGoalToHome()</a>.</p>
 
 </div>
 </div>
@@ -982,9 +976,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01247">1247</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01274">1274</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, <a class="el" href="battle_8h.html#a4f9c61a874b21a6ebc6351c7c40bc793">CountPlayerTargets()</a>, <a class="el" href="battle_8h.html#a75503e8d9c436347c3502267dd234213">ForceHomePos()</a>, <a class="el" href="battle_8h.html#a6b919af6b694e05657190130eb6ccbc5">GetIndexFromPos()</a>, <a class="el" href="battle_8h.html#a67e2554a9de633957619c27adb98a5a6">PlaySoundAtActor()</a>, <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>, and <a class="el" href="code__197F40_8c.html#a566aa901e0061fb32f54a235d218f325">set_actor_current_position()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, <a class="el" href="battle_8h.html#a228567d563eb4dc0a5451dd851b0ccdd">AddActorPos()</a>, <a class="el" href="battle_8h.html#a4f9c61a874b21a6ebc6351c7c40bc793">CountPlayerTargets()</a>, <a class="el" href="battle_8h.html#a75503e8d9c436347c3502267dd234213">ForceHomePos()</a>, <a class="el" href="battle_8h.html#af350d50894628581ffd2120ed2ec1316">GetActorPos()</a>, <a class="el" href="battle_8h.html#a6b919af6b694e05657190130eb6ccbc5">GetIndexFromPos()</a>, <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, <a class="el" href="code__181810_8c.html#a915c3c529874ad0010af432e38513600">PlayLoopingSoundAtActor()</a>, <a class="el" href="battle_8h.html#a67e2554a9de633957619c27adb98a5a6">PlaySoundAtActor()</a>, <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>, <a class="el" href="code__197F40_8c.html#a41b96095ed47abf843dfe03b93038ff2">set_actor_current_position()</a>, <a class="el" href="code__197F40_8c.html#a2c6795ef9c1944da78038efac175b235">set_part_absolute_position()</a>, <a class="el" href="battle_8h.html#a256ed2bc0440b20a4aa4bdff37901787">SetActorPos()</a>, and <a class="el" href="battle_8h.html#ad06bc5db5d5be472964365b4cebb2ffa">SetPartPos()</a>.</p>
 
 </div>
 </div>
@@ -1000,57 +994,63 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01248">1248</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01275">1275</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, and <a class="el" href="battle_8h.html#a563788fd79d0a367004e21a42276b856">SetActorDispOffset()</a>.</p>
 
 </div>
 </div>
-<a id="ac30e66b2905ec696da49db77f405d8f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac30e66b2905ec696da49db77f405d8f9">&#9670;&nbsp;</a></span>healthBarPosition</h2>
+<a id="a42405e5a24979a1b336d02b543eb66b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42405e5a24979a1b336d02b543eb66b0">&#9670;&nbsp;</a></span>healthBarPosition</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s16 Actor::healthBarPosition[3]</td>
+          <td class="memname"><a class="el" href="structVec3s.html">Vec3s</a> Actor::healthBarPosition</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01249">1249</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01276">1276</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>, <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
-<a id="a8e1bcae41f35c800576205f49e04d69d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e1bcae41f35c800576205f49e04d69d">&#9670;&nbsp;</a></span>rotation</h2>
+<a id="a6809dd42269abe4b9558e142b66250ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6809dd42269abe4b9558e142b66250ff">&#9670;&nbsp;</a></span>rotation</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 Actor::rotation[3]</td>
+          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::rotation</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01250">1250</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01277">1277</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#ad11014a1477a98985f276f50d6fd9fbe">GetActorRotation()</a>, and <a class="el" href="battle_8h.html#a1bab3a182b9725e1f3c54afbaa9a54ae">SetActorRotation()</a>.</p>
 
 </div>
 </div>
-<a id="afb39bff252a79636fa7387f494faa7e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb39bff252a79636fa7387f494faa7e1">&#9670;&nbsp;</a></span>rotationPivotOffset</h2>
+<a id="ae904f625900275950806d6515897a8f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae904f625900275950806d6515897a8f4">&#9670;&nbsp;</a></span>rotationPivotOffset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s16 Actor::rotationPivotOffset[3]</td>
+          <td class="memname"><a class="el" href="structVec3s.html">Vec3s</a> Actor::rotationPivotOffset</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01251">1251</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01278">1278</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a55a810ed4eb0862bc2255d4768c38308">SetActorRotationOffset()</a>.</p>
 
 </div>
 </div>
@@ -1066,39 +1066,43 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01252">1252</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01279">1279</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
-<a id="acf74e4324dfc58fa0eaba57cd072276d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf74e4324dfc58fa0eaba57cd072276d">&#9670;&nbsp;</a></span>scale</h2>
+<a id="afe6df072d872e3b0ec36eb13b156184b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6df072d872e3b0ec36eb13b156184b">&#9670;&nbsp;</a></span>scale</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 Actor::scale[3]</td>
+          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::scale</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01253">1253</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01280">1280</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aa8b4188e682b5a1ff13e306d6d643591">GetActorScale()</a>, and <a class="el" href="battle_8h.html#ac7948dd7af0bac9e5168911e55585b12">SetActorScale()</a>.</p>
 
 </div>
 </div>
-<a id="a024f69abbce30057d9be0f44cf8f3c99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a024f69abbce30057d9be0f44cf8f3c99">&#9670;&nbsp;</a></span>scaleModifier</h2>
+<a id="a7e1b06119d87e9779ff04055c81ee89a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e1b06119d87e9779ff04055c81ee89a">&#9670;&nbsp;</a></span>scaleModifier</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 Actor::scaleModifier[3]</td>
+          <td class="memname"><a class="el" href="structVec3f.html">Vec3f</a> Actor::scaleModifier</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01254">1254</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01281">1281</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a808833c2f131eec9a768829a5fc4799b">SetActorScaleModifier()</a>.</p>
 
 </div>
 </div>
@@ -1114,9 +1118,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01255">1255</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01282">1282</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a1daa2208296fb1d78694869f7b722536">MultiplyByActorScale()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a1daa2208296fb1d78694869f7b722536">MultiplyByActorScale()</a>, <a class="el" href="battle_8h.html#a5cd4d2a2e3dcb76ed1432bd7757bfd30">MultiplyVec2ByActorScale()</a>, and <a class="el" href="code__181810_8c.html#a824e44b5f38eed2a04be031c93913582">MultiplyVec3yActorScale()</a>.</p>
 
 </div>
 </div>
@@ -1132,27 +1136,27 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01256">1256</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01283">1283</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__190B20_8h.html#a6fc305b670a8f2bf82b13cebc74913a4">set_actor_yaw()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="code__190B20_8h.html#ab3de956100207b0fcbd92bbc754bb373">set_actor_yaw()</a>.</p>
 
 </div>
 </div>
-<a id="aba456ca87ee3583b7c365ff0df88eff2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba456ca87ee3583b7c365ff0df88eff2">&#9670;&nbsp;</a></span>size</h2>
+<a id="a8f39f6c94b7c2a199d062d3830513be4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f39f6c94b7c2a199d062d3830513be4">&#9670;&nbsp;</a></span>size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structVec2b.html">Vec2b</a> Actor::size</td>
+          <td class="memname"><a class="el" href="structVec2bu.html">Vec2bu</a> Actor::size</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01257">1257</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01284">1284</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, and <a class="el" href="battle_8h.html#a09b9ad71e8940946965ac9def2690ff7">GetActorSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a41171338779ad80eabdf8d9713ee6f9d">ActorSpeak()</a>, <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>, <a class="el" href="battle_8h.html#a09b9ad71e8940946965ac9def2690ff7">GetActorSize()</a>, <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
@@ -1168,25 +1172,115 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01258">1258</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01285">1285</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>, and <a class="el" href="code__190B20_8h.html#a5730ad699ee6af22abc77f9b6734872f">heroes_is_ability_active()</a>.</p>
 
 </div>
 </div>
-<a id="ac6e7e54653a6ada2412d7d08fa14ec9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6e7e54653a6ada2412d7d08fa14ec9d">&#9670;&nbsp;</a></span>unk_194</h2>
+<a id="a64b065bc3edaf4f48711920fe28e9196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64b065bc3edaf4f48711920fe28e9196">&#9670;&nbsp;</a></span>unk_194</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char Actor::unk_194[8]</td>
+          <td class="memname">s8 Actor::unk_194</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01259">1259</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01286">1286</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#a71ce3229ec2efa232154dadf3a60c2c1">func_8026DA94()</a>.</p>
+
+</div>
+</div>
+<a id="a0b1c6dfd1751cd16e236758c880b694f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b1c6dfd1751cd16e236758c880b694f">&#9670;&nbsp;</a></span>unk_195</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s8 Actor::unk_195</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01287">1287</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#a71ce3229ec2efa232154dadf3a60c2c1">func_8026DA94()</a>.</p>
+
+</div>
+</div>
+<a id="a56c42a10dcf8f783424b066dfcbdaaa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56c42a10dcf8f783424b066dfcbdaaa5">&#9670;&nbsp;</a></span>unk_196</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s8 Actor::unk_196</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01288">1288</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#a71ce3229ec2efa232154dadf3a60c2c1">func_8026DA94()</a>.</p>
+
+</div>
+</div>
+<a id="ae1cffa5713e36aab92ca9a83a3733e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1cffa5713e36aab92ca9a83a3733e0a">&#9670;&nbsp;</a></span>unk_197</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s8 Actor::unk_197</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01289">1289</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#a71ce3229ec2efa232154dadf3a60c2c1">func_8026DA94()</a>.</p>
+
+</div>
+</div>
+<a id="a261bdd243cea150185b5fc596f9ff106"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261bdd243cea150185b5fc596f9ff106">&#9670;&nbsp;</a></span>unk_198</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structVec2b.html">Vec2b</a> Actor::unk_198</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01290">1290</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#ab5f8590e27e895b57fac107ee3e133d0">func_8026D940()</a>.</p>
+
+</div>
+</div>
+<a id="a6fd6e94c222750d788a7008164242625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd6e94c222750d788a7008164242625">&#9670;&nbsp;</a></span>unk_19A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Actor::unk_19A[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01291">1291</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1202,7 +1296,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01260">1260</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01292">1292</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1218,23 +1312,25 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01261">1261</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01293">1293</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
-<a id="ac77f68cf7d2c045eb0b0da44ce1e6863"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac77f68cf7d2c045eb0b0da44ce1e6863">&#9670;&nbsp;</a></span>currentHP</h2>
+<a id="a8aaf765aae9c557d6848ce8edb81dbfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aaf765aae9c557d6848ce8edb81dbfc">&#9670;&nbsp;</a></span>currentHP</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 Actor::currentHP</td>
+          <td class="memname">s8 Actor::currentHP</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01262">1262</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01294">1294</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
@@ -1250,7 +1346,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01263">1263</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01295">1295</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
@@ -1266,7 +1364,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01264">1264</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01296">1296</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1380,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01265">1265</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01297">1297</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#a75e3e41eefdf6a954925bbef53abd427">HPBarToCurrent()</a>, and <a class="el" href="battle_8h.html#a56c29c4e7e419aa5dc0221767b641ddd">HPBarToHome()</a>.</p>
 
 </div>
 </div>
@@ -1298,7 +1398,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01266">1266</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01298">1298</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1314,7 +1414,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01267">1267</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01299">1299</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aaf66248ad75413d0ce9b849e54ac05f6">BindIdle()</a>.</p>
 
 </div>
 </div>
@@ -1330,7 +1432,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01268">1268</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01300">1300</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="battle_8h.html#ac8341bb8e8ffabab70cd6023dc16cd69">BindTakeTurn()</a>.</p>
 
@@ -1348,7 +1450,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01269">1269</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01301">1301</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="battle_8h.html#a0ff7315ac5eb8d635138a23e80abc779">BindHandleEvent()</a>, and <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1366,7 +1468,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01270">1270</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01302">1302</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="battle_8h.html#acbba8b5be6a54aaa56a3694f1d0b6b24">BindNextTurn()</a>.</p>
 
@@ -1384,9 +1486,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01271">1271</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01303">1303</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aaf66248ad75413d0ce9b849e54ac05f6">BindIdle()</a>, and <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
 
 </div>
 </div>
@@ -1402,7 +1504,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01272">1272</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01304">1304</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, and <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1420,7 +1522,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01273">1273</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01305">1305</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, and <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1438,7 +1540,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01274">1274</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01306">1306</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1454,9 +1556,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01275">1275</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01307">1307</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aaf66248ad75413d0ce9b849e54ac05f6">BindIdle()</a>, and <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
 
 </div>
 </div>
@@ -1472,7 +1574,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01276">1276</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01308">1308</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, and <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1490,7 +1592,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01277">1277</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01309">1309</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, and <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1508,7 +1610,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01278">1278</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01310">1310</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1524,7 +1626,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01279">1279</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01311">1311</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__1A5830_8c.html#ada2fcdbd5e1c8a519773082450c77c9f">dispatch_event_actor()</a>.</p>
 
@@ -1542,7 +1644,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01280">1280</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01312">1312</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1558,7 +1660,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01281">1281</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01313">1313</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1574,7 +1676,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01282">1282</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01314">1314</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1590,7 +1692,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01283">1283</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01315">1315</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8h.html#a7b4d38c3eab427fce86dd2bbebc62099">add_actor_decoration()</a>, <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, <a class="el" href="code__1A5830_8c.html#af2f7263551702e26cb777c339d6a297f">func_80276F50()</a>, <a class="el" href="functions_8h.html#ad7c543435aaccfb076fe634326fc6b9c">get_actor_part()</a>, <a class="el" href="code__190B20_8h.html#a16953a6264615bf196f504a4032df181">remove_actor_decoration()</a>, and <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1608,7 +1710,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01284">1284</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01316">1316</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1726,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01285">1285</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01317">1317</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1640,7 +1742,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01286">1286</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01318">1318</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1656,7 +1758,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01287">1287</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01319">1319</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1672,7 +1774,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01288">1288</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01320">1320</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
 
@@ -1690,7 +1792,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01289">1289</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01321">1321</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1706,7 +1808,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01290">1290</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01322">1322</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1722,7 +1824,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01291">1291</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01323">1323</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1738,7 +1840,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01292">1292</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01324">1324</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1754,25 +1856,27 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01293">1293</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01325">1325</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="battle_8h.html#a661274680ae47b57b84cc2ffbeecd699">SetStatusTable()</a>.</p>
 
 </div>
 </div>
-<a id="a088663d4ab74e1d27a3e33716dea2b0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a088663d4ab74e1d27a3e33716dea2b0e">&#9670;&nbsp;</a></span>debuff</h2>
+<a id="ab84fcb7236d014ee361e69f0b26f3fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84fcb7236d014ee361e69f0b26f3fab">&#9670;&nbsp;</a></span>debuff</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 Actor::debuff</td>
+          <td class="memname"><a class="el" href="enums_8h.html#a002d3c04ccb90b5728ac76f15492f16d">Debuff</a> Actor::debuff</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01294">1294</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01326">1326</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#aa04da2ad0c6fa2afa768d9b5bf2f8170">ApplyShrinkFromOwner()</a>.</p>
 
 </div>
 </div>
@@ -1788,7 +1892,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01295">1295</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01327">1327</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1804,7 +1908,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01296">1296</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01328">1328</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1822,7 +1926,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01297">1297</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01329">1329</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1840,7 +1944,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01298">1298</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01330">1330</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1aa0642ac698059e567ee7cc25adf65d">calc_item_check_hit()</a>, and <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1858,7 +1962,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01299">1299</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01331">1331</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1876,7 +1980,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01300">1300</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01332">1332</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#aec36b34efa2fa1927171d0b02b42a57a">inflict_partner_ko()</a>.</p>
 
@@ -1894,7 +1998,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01301">1301</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01333">1333</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#aec36b34efa2fa1927171d0b02b42a57a">inflict_partner_ko()</a>.</p>
 
@@ -1912,7 +2016,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01302">1302</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01334">1334</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1aa0642ac698059e567ee7cc25adf65d">calc_item_check_hit()</a>, and <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1930,7 +2034,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01303">1303</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01335">1335</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -1948,7 +2052,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01304">1304</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01336">1336</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1964,7 +2068,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01305">1305</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01337">1337</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1980,7 +2084,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01306">1306</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01338">1338</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -1996,7 +2100,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01307">1307</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01339">1339</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -2014,7 +2118,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01308">1308</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01340">1340</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2030,7 +2134,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01309">1309</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01341">1341</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2046,7 +2150,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01310">1310</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01342">1342</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2062,7 +2166,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01311">1311</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01343">1343</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2078,7 +2182,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01312">1312</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01344">1344</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2094,7 +2198,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01312">1312</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01344">1344</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#afac81de8f93a14dd7b52fb002b62844c">SetGoalToFirstTarget()</a>.</p>
 
 </div>
 </div>
@@ -2110,25 +2216,27 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01314">1314</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01346">1346</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__197F40_8c.html#a19ab4bdfc563c1648cfd193059c665a8">count_targets()</a>, and <a class="el" href="code__197F40_8c.html#a8cbc873e84df90322c239bffec15cb1b">GetTargetListLength()</a>.</p>
 
 </div>
 </div>
-<a id="a8bd95f8d8de7379be6863f5c9f704ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bd95f8d8de7379be6863f5c9f704ecf">&#9670;&nbsp;</a></span>targetIndexList</h2>
+<a id="aaf846117da1403e4ce387234cd46342f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf846117da1403e4ce387234cd46342f">&#9670;&nbsp;</a></span>targetIndexList</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">u8 Actor::targetIndexList[24]</td>
+          <td class="memname">s8 Actor::targetIndexList[24]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01315">1315</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01347">1347</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="battle_8h.html#afac81de8f93a14dd7b52fb002b62844c">SetGoalToFirstTarget()</a>.</p>
 
 </div>
 </div>
@@ -2144,7 +2252,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01316">1316</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01348">1348</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2160,9 +2268,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01317">1317</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01349">1349</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1fd97c633a7065c2d693d6f2fce2f1a1">func_80252B3C()</a>, <a class="el" href="battle_8h.html#af7c2c2dbee55be3dcd7d56a629cf5112">ItemAfflictEnemy()</a>, <a class="el" href="battle_8h.html#aaf65dab4feaad3c11b369d9cf4a6fdfd">ItemCheckHit()</a>, <a class="el" href="battle_8h.html#a446cf1e453dcb8fec1d7fb68827142a4">ItemDamageEnemy()</a>, <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>, and <a class="el" href="battle_8h.html#aab27227bf6108b8545fe5faf96d3489d">SetTargetActor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1fd97c633a7065c2d693d6f2fce2f1a1">func_80252B3C()</a>, <a class="el" href="battle_8h.html#af7c2c2dbee55be3dcd7d56a629cf5112">ItemAfflictEnemy()</a>, <a class="el" href="battle_8h.html#aaf65dab4feaad3c11b369d9cf4a6fdfd">ItemCheckHit()</a>, <a class="el" href="battle_8h.html#a446cf1e453dcb8fec1d7fb68827142a4">ItemDamageEnemy()</a>, <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>, <a class="el" href="battle_8h.html#a714121591018631f0eadcdb9144ac5fa">SetPartGoalToTarget()</a>, and <a class="el" href="battle_8h.html#aab27227bf6108b8545fe5faf96d3489d">SetTargetActor()</a>.</p>
 
 </div>
 </div>
@@ -2178,7 +2286,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01318">1318</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01350">1350</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2194,9 +2302,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01319">1319</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01351">1351</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1fd97c633a7065c2d693d6f2fce2f1a1">func_80252B3C()</a>, <a class="el" href="battle_8h.html#af7c2c2dbee55be3dcd7d56a629cf5112">ItemAfflictEnemy()</a>, <a class="el" href="battle_8h.html#aaf65dab4feaad3c11b369d9cf4a6fdfd">ItemCheckHit()</a>, <a class="el" href="battle_8h.html#a446cf1e453dcb8fec1d7fb68827142a4">ItemDamageEnemy()</a>, <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>, and <a class="el" href="battle_8h.html#aab27227bf6108b8545fe5faf96d3489d">SetTargetActor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="code__17FEB0_8c.html#a1fd97c633a7065c2d693d6f2fce2f1a1">func_80252B3C()</a>, <a class="el" href="battle_8h.html#af7c2c2dbee55be3dcd7d56a629cf5112">ItemAfflictEnemy()</a>, <a class="el" href="battle_8h.html#aaf65dab4feaad3c11b369d9cf4a6fdfd">ItemCheckHit()</a>, <a class="el" href="battle_8h.html#a446cf1e453dcb8fec1d7fb68827142a4">ItemDamageEnemy()</a>, <a class="el" href="battle_8h.html#a79657aaf2011982bddcd841b29078a4f">SetGoalToTarget()</a>, <a class="el" href="battle_8h.html#a714121591018631f0eadcdb9144ac5fa">SetPartGoalToTarget()</a>, and <a class="el" href="battle_8h.html#aab27227bf6108b8545fe5faf96d3489d">SetTargetActor()</a>.</p>
 
 </div>
 </div>
@@ -2212,7 +2320,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01320">1320</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01352">1352</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2228,7 +2336,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01321">1321</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01353">1353</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
 
@@ -2246,7 +2354,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01322">1322</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01354">1354</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2262,7 +2370,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01323">1323</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01355">1355</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 </div>
 </div>
@@ -2278,7 +2386,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01324">1324</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01356">1356</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>, and <a class="el" href="code__190B20_8c.html#a581cdd0e0d86a97d7a3b21d41d5a97c4">remove_player_buffs()</a>.</p>
 
@@ -2296,7 +2404,9 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01325">1325</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01357">1357</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__181810_8c.html#a915c3c529874ad0010af432e38513600">PlayLoopingSoundAtActor()</a>, and <a class="el" href="code__181810_8c.html#a0ceeb9aa9b011c05d7bdfc6239b6af08">StopLoopingSoundAtActor()</a>.</p>
 
 </div>
 </div>
@@ -2312,7 +2422,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01326">1326</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l01358">1358</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__16c8e0_8c.html#a1fdc661c2019a401c50ba570c0e009aa">delete_player_actor()</a>.</p>
 
@@ -2327,7 +2437,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structActor.html">Actor</a></li>
-    <li class="footer">Generated on Sun Nov 22 2020 13:44:58 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Dec 4 2020 21:12:47 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

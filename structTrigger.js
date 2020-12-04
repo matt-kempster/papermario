@@ -8,7 +8,8 @@ var structTrigger =
     [ "runningScript", "structTrigger.html#a85dd88e86b0089d1bc14b0282cd902b5", null ],
     [ "priority", "structTrigger.html#aaea56e276520a4acc3a3423ba4792df7", null ],
     [ "scriptVars", "structTrigger.html#a7a170e0005d647a946a6936cda62252a", null ],
-    [ "unk_28", "structTrigger.html#a3dded5361278ace5bd71e4cd43dd33a4", null ],
+    [ "unk_28", "structTrigger.html#a9fbd5be83a91715fa7fca09446a5c83c", null ],
+    [ "unk_2C", "structTrigger.html#a488fa5a2f0ce9aa9d920c5a000b33100", null ],
     [ "unk_30", "structTrigger.html#af83b5b2f8e8ff1929e2925c5af08e242", null ],
     [ "unk_31", "structTrigger.html#a83f7cb28348f65a6d9c56b443fb52566", null ],
     [ "runningScriptID", "structTrigger.html#a958d17ad1ff1cb93649837ae6cbaed6a", null ]

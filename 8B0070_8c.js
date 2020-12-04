@@ -1,7 +1,6 @@
 var 8B0070_8c =
 [
     [ "func_80240034_8B00A4", "8B0070_8c.html#a93d7fe8f47a44bf0439ae691b534d72d", null ],
-    [ "func_802400F0_8B0160", "8B0070_8c.html#a1fae73b7d18b0134dcb205b403f64ed7", null ],
     [ "func_8024023C_8B02AC", "8B0070_8c.html#a311af6b79eb3c165f3b4dbe6dd9c2362", null ],
     [ "func_802402E0_8B0350", "8B0070_8c.html#aafebc5ad61c043f3df39e3f6951696a8", null ],
     [ "func_80240370_8B03E0", "8B0070_8c.html#a1e2b60b73d12fbf4899c2bce81ee043b", null ],
@@ -23,11 +22,7 @@ var 8B0070_8c =
     [ "func_802413F4_8B1464", "8B0070_8c.html#a63724bca87e249f8d6e36b64c98deff0", null ],
     [ "func_80241424_8B1494", "8B0070_8c.html#a10217baf706bd9637b274efe8c6b0267", null ],
     [ "func_802414D8_8B1548", "8B0070_8c.html#ac36a8b64370b78e7f6f587bdbf002c76", null ],
-    [ "func_802415F8_8B1668", "8B0070_8c.html#aa24f6b873d1457bcb40e2befba62bbcd", null ],
-    [ "func_80241658_8B16C8", "8B0070_8c.html#afd3f15adce903a02f4b8af153effc80e", null ],
     [ "func_802416D0_8B1740", "8B0070_8c.html#a2b42cb64590d7ec060ca0f88697dc4e4", null ],
-    [ "func_80241800_8B1870", "8B0070_8c.html#aa890e8d138f70549d131e7c8015d4e1d", null ],
-    [ "func_8024191C_8B198C", "8B0070_8c.html#ae24e03c19d3d31daa93ffc09af2c99c5", null ],
     [ "func_80241964_8B19D4", "8B0070_8c.html#a4294d923719d445621d22a6a8d5736e0", null ],
     [ "func_80241A10_8B1A80", "8B0070_8c.html#a868cfcbfffb9bf7a9ef99fb626c45345", null ],
     [ "func_80241C18_8B1C88", "8B0070_8c.html#acbd8420aaaec4d0a0f5069470acb2f5f", null ],
@@ -37,7 +32,6 @@ var 8B0070_8c =
     [ "func_802422C0_8B2330", "8B0070_8c.html#a15a2cc2f85761146f08d0b5579260ab2", null ],
     [ "func_802422F8_8B2368", "8B0070_8c.html#ad1faca43f7801bbbf5c6f37490fb8efe", null ],
     [ "func_80242394_8B2404", "8B0070_8c.html#a7fc4f1c9360e8067d0e948b2d79be776", null ],
-    [ "func_80242514_8B2584", "8B0070_8c.html#a9960f9c60eeda76ed48ae848fc95b052", null ],
     [ "func_802426A0_8B2710", "8B0070_8c.html#ace05fbecce249463cec692d6dd0bf65d", null ],
     [ "func_802426E4_8B2754", "8B0070_8c.html#a09c5a52c64714054cdc3824431fe6b64", null ],
     [ "func_80242710_8B2780", "8B0070_8c.html#a93380330514c61b5f1643025039a7b6e", null ],

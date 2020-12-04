@@ -26,7 +26,7 @@ var structNpc =
     [ "unk_84", "structNpc.html#a3821146c4ef82d5f62b23a416c8fb5fe", null ],
     [ "isFacingAway", "structNpc.html#ad9e5ea8864aabb3f5646da1229781ebd", null ],
     [ "yawCamOffset", "structNpc.html#aa95dfbdeb21ea523217732f43c7242c7", null ],
-    [ "unk_8C", "structNpc.html#aeb96d433ba92e56e5248f5285b0f6be5", null ],
+    [ "unk_8C", "structNpc.html#a447f65d7bc1386304ddfb75c67f21787", null ],
     [ "duration", "structNpc.html#afebed843f138515797a65c6c621a4291", null ],
     [ "homePos", "structNpc.html#ad9c1a49eefddb510d179ddf5e21ce9f2", null ],
     [ "unk_96", "structNpc.html#aab43dfca94c3e0bda34292b3cd2a538d", null ],

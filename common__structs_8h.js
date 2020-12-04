@@ -1,7 +1,9 @@
 var common__structs_8h =
 [
     [ "Vec2b", "structVec2b.html", "structVec2b" ],
+    [ "Vec2bu", "structVec2bu.html", "structVec2bu" ],
     [ "Vec3f", "structVec3f.html", "structVec3f" ],
+    [ "Vec2s", "structVec2s.html", "structVec2s" ],
     [ "Vec3s", "structVec3s.html", "structVec3s" ],
     [ "Vec4f", "structVec4f.html", "structVec4f" ],
     [ "Matrix4f", "structMatrix4f.html", "structMatrix4f" ],
@@ -14,6 +16,7 @@ var common__structs_8h =
     [ "PlayerData", "structPlayerData.html", "structPlayerData" ],
     [ "TriggerFlags", "unionTriggerFlags.html", "unionTriggerFlags" ],
     [ "Trigger", "structTrigger.html", "structTrigger" ],
+    [ "X32", "unionX32.html", "unionX32" ],
     [ "ScriptInstance", "structScriptInstance.html", "structScriptInstance" ],
     [ "Entity", "structEntity.html", "structEntity" ],
     [ "StaticEntityData", "structStaticEntityData.html", "structStaticEntityData" ],
@@ -65,6 +68,7 @@ var common__structs_8h =
     [ "CollisionHeader", "structCollisionHeader.html", "structCollisionHeader" ],
     [ "Zone", "structZone.html", "structZone" ],
     [ "ActorMovePos", "structActorMovePos.html", "structActorMovePos" ],
+    [ "ActorFlyPos", "structActorFlyPos.html", "structActorFlyPos" ],
     [ "Actor", "structActor.html", "structActor" ],
     [ "StaticActorPart", "structStaticActorPart.html", "structStaticActorPart" ],
     [ "TileDescriptor", "structTileDescriptor.html", "structTileDescriptor" ],

@@ -19,7 +19,7 @@ var structStaticActorData =
     [ "powerBounceChance", "structStaticActorData.html#af295e1209f5958267f9160374fbe520e", null ],
     [ "coinReward", "structStaticActorData.html#a7452726a6d46ff34a3f4e62cc3ce20f0", null ],
     [ "size", "structStaticActorData.html#ac0d4095fb59b7a8e2958a8d95bd8260f", null ],
-    [ "hpBarOffset", "structStaticActorData.html#a1da031cdd7dc1d9ccf40dcf5de351b6f", null ],
+    [ "hpBarOffset", "structStaticActorData.html#af753de005d71e95fac140327779aca5a", null ],
     [ "statusIconOffset", "structStaticActorData.html#a398144acfeb08b97674845d19b3505b6", null ],
     [ "statusMessageOffset", "structStaticActorData.html#a9b897aeb06daca3443aab27dd55c8806", null ]
 ];

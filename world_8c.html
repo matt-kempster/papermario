@@ -152,8 +152,8 @@ Functions</h2></td></tr>
 <tr class="separator:a3496605a70e2f17d97df36be24d05a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a213fe5ca48b0f008ba1d0bfb2dab0591"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a213fe5ca48b0f008ba1d0bfb2dab0591">get_current_map_config</a> ()</td></tr>
 <tr class="separator:a213fe5ca48b0f008ba1d0bfb2dab0591"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdaeb5f3d5a37591bab77cc37c4fef88"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#acdaeb5f3d5a37591bab77cc37c4fef88">get_current_map_header</a> ()</td></tr>
-<tr class="separator:acdaeb5f3d5a37591bab77cc37c4fef88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b753d7d82c91a2aec6a0593200f954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMapConfig.html">MapConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#ae6b753d7d82c91a2aec6a0593200f954">get_current_map_header</a> ()</td></tr>
+<tr class="separator:ae6b753d7d82c91a2aec6a0593200f954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a446132047c3bf1a27956cd0551d465bc"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a446132047c3bf1a27956cd0551d465bc">get_map_IDs_by_name</a> ()</td></tr>
 <tr class="separator:a446132047c3bf1a27956cd0551d465bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a753355bb9adb627f5e793f0f78a2d644"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a753355bb9adb627f5e793f0f78a2d644">load_asset_by_name</a> (char *name, s32 *decompressedSize)</td></tr>
@@ -165,6 +165,12 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:aabd5b91da7cdd3eed76bbbbbc63fd33d"><td class="memItemLeft" align="right" valign="top">static const s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#aabd5b91da7cdd3eed76bbbbbc63fd33d">rodata_73DA0</a> []</td></tr>
 <tr class="separator:aabd5b91da7cdd3eed76bbbbbc63fd33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa650a9412349490ce8b5922961e081e0"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#aa650a9412349490ce8b5922961e081e0">D_80098A10</a> [] = &quot;%s_shape&quot;</td></tr>
+<tr class="separator:aa650a9412349490ce8b5922961e081e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f545c0e2374ef27aac24c871fcda98"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a16f545c0e2374ef27aac24c871fcda98">D_80098A1C</a> [] = &quot;%s_hit&quot;</td></tr>
+<tr class="separator:a16f545c0e2374ef27aac24c871fcda98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b043a7838097e5a51ea9bbaba11edb"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a86b043a7838097e5a51ea9bbaba11edb">D_80098A24</a> [] = &quot;%s_tex&quot;</td></tr>
+<tr class="separator:a86b043a7838097e5a51ea9bbaba11edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3e515c92cd31f38bb0fc24c024fe26"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structMap.html">Map</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="world_8c.html#a6a3e515c92cd31f38bb0fc24c024fe26">mac_maps</a> []</td></tr>
 <tr class="memdesc:a6a3e515c92cd31f38bb0fc24c024fe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toad Town.  <a href="world_8c.html#a6a3e515c92cd31f38bb0fc24c024fe26">More...</a><br /></td></tr>
 <tr class="separator:a6a3e515c92cd31f38bb0fc24c024fe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -781,15 +787,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="acdaeb5f3d5a37591bab77cc37c4fef88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdaeb5f3d5a37591bab77cc37c4fef88">&#9670;&nbsp;</a></span>get_current_map_header()</h2>
+<a id="ae6b753d7d82c91a2aec6a0593200f954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b753d7d82c91a2aec6a0593200f954">&#9670;&nbsp;</a></span>get_current_map_header()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 get_current_map_header </td>
+          <td class="memname"><a class="el" href="structMapConfig.html">MapConfig</a>* get_current_map_header </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -797,6 +804,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00071">71</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="GetEntryPos_8inc_8c.html#a101aea2b5b223f951231e5f89133ba5f">GetEntryPos()</a>.</p>
 
 </div>
 </div>
@@ -892,6 +901,78 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00052">52</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
+
+</div>
+</div>
+<a id="aa650a9412349490ce8b5922961e081e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa650a9412349490ce8b5922961e081e0">&#9670;&nbsp;</a></span>D_80098A10</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char D_80098A10[] = &quot;%s_shape&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00063">63</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
+
+</div>
+</div>
+<a id="a16f545c0e2374ef27aac24c871fcda98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f545c0e2374ef27aac24c871fcda98">&#9670;&nbsp;</a></span>D_80098A1C</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char D_80098A1C[] = &quot;%s_hit&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00064">64</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
+
+</div>
+</div>
+<a id="a86b043a7838097e5a51ea9bbaba11edb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b043a7838097e5a51ea9bbaba11edb">&#9670;&nbsp;</a></span>D_80098A24</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char D_80098A24[] = &quot;%s_tex&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00065">65</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
 
 </div>
 </div>
@@ -1662,7 +1743,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6826d79532171ff2338799cfd298b875.html">world</a></li><li class="navelem"><a class="el" href="world_8c.html">world.c</a></li>
-    <li class="footer">Generated on Sun Nov 22 2020 13:44:58 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Fri Dec 4 2020 21:12:46 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

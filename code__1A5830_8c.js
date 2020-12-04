@@ -12,7 +12,7 @@ var code__1A5830_8c =
     [ "BindTakeTurn", "code__1A5830_8c.html#ac8341bb8e8ffabab70cd6023dc16cd69", null ],
     [ "PauseTakeTurn", "code__1A5830_8c.html#af8654201f50ae0c577b98cdaaeb86bea", null ],
     [ "ResumeTakeTurn", "code__1A5830_8c.html#a195954f6f78af81ac00101fe38d9eab2", null ],
-    [ "BindIdle", "code__1A5830_8c.html#adbfec1d96a07220553f8859f2c094494", null ],
+    [ "BindIdle", "code__1A5830_8c.html#aaf66248ad75413d0ce9b849e54ac05f6", null ],
     [ "EnableIdleScript", "code__1A5830_8c.html#a636144e067f44476ea9b234a807723cd", null ],
     [ "BindHandleEvent", "code__1A5830_8c.html#a0ff7315ac5eb8d635138a23e80abc779", null ],
     [ "BindNextTurn", "code__1A5830_8c.html#acbba8b5be6a54aaa56a3694f1d0b6b24", null ],

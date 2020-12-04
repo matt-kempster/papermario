@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "Actor", "structActor.html", "structActor" ],
+    [ "ActorFlyPos", "structActorFlyPos.html", "structActorFlyPos" ],
     [ "ActorMovePos", "structActorMovePos.html", "structActorMovePos" ],
     [ "ActorPart", "structActorPart.html", "structActorPart" ],
     [ "ActorPartMovement", "structActorPartMovement.html", "structActorPartMovement" ],
@@ -95,8 +96,11 @@ var annotated_dup =
     [ "UnkStructFor8004DAA8", "structUnkStructFor8004DAA8.html", "structUnkStructFor8004DAA8" ],
     [ "UnkStructFor80053A18", "structUnkStructFor80053A18.html", "structUnkStructFor80053A18" ],
     [ "Vec2b", "structVec2b.html", "structVec2b" ],
+    [ "Vec2bu", "structVec2bu.html", "structVec2bu" ],
+    [ "Vec2s", "structVec2s.html", "structVec2s" ],
     [ "Vec3f", "structVec3f.html", "structVec3f" ],
     [ "Vec3s", "structVec3s.html", "structVec3s" ],
     [ "Vec4f", "structVec4f.html", "structVec4f" ],
+    [ "X32", "unionX32.html", "unionX32" ],
     [ "Zone", "structZone.html", "structZone" ]
 ];

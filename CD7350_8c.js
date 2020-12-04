@@ -2,12 +2,9 @@ var CD7350_8c =
 [
     [ "func_80240070_CD7350", "CD7350_8c.html#a0807ba62ca07cffd7cdcef9d5142f0b3", null ],
     [ "func_80240220_CD7500", "CD7350_8c.html#ae6bbaaac795d74e3abb5eab0718b97b3", null ],
-    [ "func_80240848_CD7B28", "CD7350_8c.html#a85ac9a366d6ac133f7eee5f4c8bd303a", null ],
     [ "func_80240908_CD7BE8", "CD7350_8c.html#a303a85543c8e69756b0bb66c776319ae", null ],
-    [ "func_80240C4C_CD7F2C", "CD7350_8c.html#a4b2a941a460595b13f8f540d564737e3", null ],
     [ "func_80240CC4_CD7FA4", "CD7350_8c.html#aad6dd697a3f50d92f8f52517cd73e048", null ],
     [ "func_80240D30_CD8010", "CD7350_8c.html#a6775ead3efd43f2c19e6a61f1d4ba243", null ],
-    [ "func_80240E64_CD8144", "CD7350_8c.html#a36b06d5dd0a33d28a9914aff2d30c73d", null ],
     [ "func_80240EC8_CD81A8", "CD7350_8c.html#a9aad38f049adf72d21ec74c7674eb415", null ],
     [ "func_80241258_CD8538", "CD7350_8c.html#af1f80df9b029f583405b2007fbe4ddd6", null ],
     [ "func_8024137C_CD865C", "CD7350_8c.html#a697c6c1155e048fae34b730fa30beb3d", null ],

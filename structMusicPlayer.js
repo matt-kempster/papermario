@@ -11,5 +11,7 @@ var structMusicPlayer =
     [ "unk_18", "structMusicPlayer.html#aa06f3d456ad01d24c61c218db5c597e6", null ],
     [ "unk_1C", "structMusicPlayer.html#a9e22604b7412b965dcdd7cbce88229ac", null ],
     [ "unk_20", "structMusicPlayer.html#af864ea14c1eb82860942272387a25571", null ],
-    [ "unk_24", "structMusicPlayer.html#ab6c591f88550d7c40492fcd420ea7287", null ]
+    [ "unk_24", "structMusicPlayer.html#a6f8e230ea3b24b8965ae7063c8ee7582", null ],
+    [ "unk_28", "structMusicPlayer.html#a8590fb52438558b79f49ba78cde7d677", null ],
+    [ "unk_2C", "structMusicPlayer.html#af7f4c2dcf33634bda1e1196793730223", null ]
 ];

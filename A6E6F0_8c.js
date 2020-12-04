@@ -19,6 +19,5 @@ var A6E6F0_8c =
     [ "func_80241E5C_A7023C", "A6E6F0_8c.html#a328929970e1600d6a8a5ca15d117db5a", null ],
     [ "func_80241F4C_A7032C", "A6E6F0_8c.html#a094051d70afadcfa326a3a84372e4fce", null ],
     [ "update_heroes_start_turn_A70404", "A6E6F0_8c.html#a14c5611482e1f0930a3cfbfb58005f19", null ],
-    [ "func_802422B8_A70698", "A6E6F0_8c.html#a05c54f366e3c2ee143ba7af8e81b8e21", null ],
     [ "func_802422F0_A706D0", "A6E6F0_8c.html#a01c5ce1f0d96808dad41cdb889f1a132", null ]
 ];

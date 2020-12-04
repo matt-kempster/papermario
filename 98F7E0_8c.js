@@ -2,11 +2,9 @@ var 98F7E0_8c =
 [
     [ "func_80240000_98F7E0", "98F7E0_8c.html#afc335a5caea1118d45ee04afced5e8e6", null ],
     [ "func_80240230_98FA10", "98F7E0_8c.html#ab60476a67cea91de8b0b75a24d14fa67", null ],
-    [ "func_80240568_98FD48", "98F7E0_8c.html#ae90c7ed1f683fbabbc66479fc400b35c", null ],
     [ "func_80240628_98FE08", "98F7E0_8c.html#a0629cf92fd7b0c4a250113714735ae2d", null ],
     [ "func_802407CC_98FFAC", "98F7E0_8c.html#a830a4a3fa9d94eddd651423cdd2a585e", null ],
     [ "func_802408AC_99008C", "98F7E0_8c.html#a4e000d9e776ef9ed0d08a85843e2c898", null ],
-    [ "func_80240BAC_99038C", "98F7E0_8c.html#aae18fc0f861943cd8bc14d03c19fd0f7", null ],
     [ "func_80240BF0_9903D0", "98F7E0_8c.html#a034902ef817e3f0225d3dee7a8fc1b69", null ],
     [ "func_80240E14_9905F4", "98F7E0_8c.html#aa57dded2141a329c6bbbc8ec40292684", null ],
     [ "func_80240EA8_990688", "98F7E0_8c.html#a78752bf9cbc43679998b8fc01106364f", null ],

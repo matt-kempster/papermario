@@ -1,9 +1,5 @@
 var C3DBF0_8c =
 [
-    [ "func_80240000_C3DBF0", "C3DBF0_8c.html#a82277adea75ff6d5419b5bd975066f23", null ],
-    [ "func_8024006C_C3DC5C", "C3DBF0_8c.html#a9e920d5c9ec5569b0d54ed7ebfa159c2", null ],
-    [ "func_802400DC_C3DCCC", "C3DBF0_8c.html#a325d3cccf2fa947ebff9024f9eae9b78", null ],
-    [ "func_802401B4_C3DDA4", "C3DBF0_8c.html#a93f22b9311ed7050c5898b5c86a4e9da", null ],
     [ "func_80240208_C3DDF8", "C3DBF0_8c.html#afaebe912ac1fb7b851ae7951804eb2c3", null ],
     [ "update_starpoints_display_C3DFAC", "C3DBF0_8c.html#af84912292ea322379918aadac29643ab", null ],
     [ "func_8024061C_C3E20C", "C3DBF0_8c.html#ae666a8a63b5845295616626bcadd874e", null ],

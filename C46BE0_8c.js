@@ -1,9 +1,5 @@
 var C46BE0_8c =
 [
-    [ "func_80240000_C46BE0", "C46BE0_8c.html#a7c3e7ea2d331c0132c4cf4d58f08cfd5", null ],
-    [ "func_8024006C_C46C4C", "C46BE0_8c.html#a299f0a96e92b7bafeac790ccfc4c322c", null ],
-    [ "func_802400DC_C46CBC", "C46BE0_8c.html#a06255bd53f7b543bffd8c8491db8c62c", null ],
-    [ "func_802401B4_C46D94", "C46BE0_8c.html#abb6b192bdf41c11397249b2fcae08853", null ],
     [ "func_80240208_C46DE8", "C46BE0_8c.html#a9a96fcb5c62480e7bb8d55ba2bc7d707", null ],
     [ "update_starpoints_display_C46F9C", "C46BE0_8c.html#a980a43bde5cb2b31a5488cd391dc7dd9", null ],
     [ "func_8024061C_C471FC", "C46BE0_8c.html#ad9462b01b34f4002747d4e68eed04b5a", null ],
@@ -18,12 +14,9 @@ var C46BE0_8c =
     [ "func_802410D4_C47CB4", "C46BE0_8c.html#a03efd9c79fe10df75348726231f7a955", null ],
     [ "func_80241424_C48004", "C46BE0_8c.html#aef55db4ae54d9764566842c9625d3f9b", null ],
     [ "func_802415D4_C481B4", "C46BE0_8c.html#a06c7680b7ce4a4943a9481b3aca4e0b5", null ],
-    [ "func_80241BFC_C487DC", "C46BE0_8c.html#a2756f33cf2c10c74b686b7d8318e35e1", null ],
     [ "func_80241CBC_C4889C", "C46BE0_8c.html#ab6ee1fa308a50d7c5e08b16c70f83068", null ],
-    [ "func_80242000_C48BE0", "C46BE0_8c.html#a63b6635f755d0e6b865600606be42f58", null ],
     [ "func_80242078_C48C58", "C46BE0_8c.html#a8a60b6b2d7371c57b24c4829371c845e", null ],
     [ "func_802420E4_C48CC4", "C46BE0_8c.html#aa8ae8cfe0b11b205e912a00512f80fbd", null ],
-    [ "func_80242218_C48DF8", "C46BE0_8c.html#adc35585ec7347fc2069b17a9720d2e5b", null ],
     [ "func_8024227C_C48E5C", "C46BE0_8c.html#a7e772b30006b9319ab13238483ab7154", null ],
     [ "func_8024260C_C491EC", "C46BE0_8c.html#a3b745b956566510670451e31716900a2", null ],
     [ "func_80242730_C49310", "C46BE0_8c.html#ad83c066c287165f6ccdef85558b143a6", null ],

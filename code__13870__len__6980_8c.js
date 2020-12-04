@@ -21,7 +21,7 @@ var code__13870__len__6980_8c =
     [ "func_80039DA4", "code__13870__len__6980_8c.html#ad7afc375ed1e4fc4bc1687b23b2107ef", null ],
     [ "appendGfx_npc", "code__13870__len__6980_8c.html#a25a953e61c5b6e0679b5760a7c0ab7ba", null ],
     [ "render_npcs", "code__13870__len__6980_8c.html#ad73f728d36a509403d28205983892bb6", null ],
-    [ "npc_move_heading", "code__13870__len__6980_8c.html#a1cd4514cf46af53467de74e0177de0c4", null ],
+    [ "npc_move_heading", "code__13870__len__6980_8c.html#acc82b32024cc2c6c6236d829ebee1030", null ],
     [ "get_npc_unsafe", "code__13870__len__6980_8c.html#a7cee75b7889dc0492acc0a7f8d9c62d7", null ],
     [ "get_npc_safe", "code__13870__len__6980_8c.html#ac399bbcc06cc4635da68410e3d71ec87", null ],
     [ "enable_npc_shadow", "code__13870__len__6980_8c.html#abe83fccbd8f73958be064e3e1989c32a", null ],
