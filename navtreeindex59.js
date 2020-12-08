@@ -1,5 +1,7 @@
 var NAVTREEINDEX59 =
 {
+"set__script__owner__npc__anim_8inc_8c.html#a30da2e3a75bd306ca6d293586eef2d1f":[5,0,1,1,28,26,0],
+"set__script__owner__npc__anim_8inc_8c_source.html":[5,0,1,1,28,26],
 "set__script__owner__npc__col__height_8inc_8c.html":[5,0,1,1,28,27],
 "set__script__owner__npc__col__height_8inc_8c.html#af15d63f7ae7c365a5d381c66e5135958":[5,0,1,1,28,27,0],
 "set__script__owner__npc__col__height_8inc_8c_source.html":[5,0,1,1,28,27],
@@ -247,7 +249,5 @@ var NAVTREEINDEX59 =
 "structActor.html#a1aa34f6311615b80937c14e7c9ea8b5b":[4,0,0,42],
 "structActor.html#a1c7de9158943b09bfcfd1398564f838c":[4,0,0,37],
 "structActor.html#a20f30cbc0f6b163d026b3585a6aa4213":[4,0,0,71],
-"structActor.html#a24d19a7cafb445c394c657ec1935ba0d":[4,0,0,10],
-"structActor.html#a261bdd243cea150185b5fc596f9ff106":[4,0,0,53],
-"structActor.html#a27cd7bad54c8b08e0a2d4fbd2b11cf29":[4,0,0,62]
+"structActor.html#a24d19a7cafb445c394c657ec1935ba0d":[4,0,0,10]
 };

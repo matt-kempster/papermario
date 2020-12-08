@@ -58,6 +58,7 @@ var functions_8h =
     [ "fx_walk_normal", "functions_8h.html#a27402f196d5394e72ce87a6b7d0dcb3a", null ],
     [ "fx_emote", "functions_8h.html#aca1121c2c30df1f7bd89ee3f088564ca", null ],
     [ "func_800E0088", "functions_8h.html#a64408410cf0a99ea9b082289a1fc82d7", null ],
+    [ "func_800E97B8", "functions_8h.html#a1244e25e8676d0e6b3cfb689e2dd1d7f", null ],
     [ "func_800EB168", "functions_8h.html#ab55043852ef930615b082e45aab498bf", null ],
     [ "get_player_data", "functions_8h.html#a92a60e0622836ab81ec330546e58cec9", null ],
     [ "pause_interp_vertical_scroll", "functions_8h.html#a221c265be0c5aaed249a539a580eff9d", null ],

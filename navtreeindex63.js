@@ -1,5 +1,7 @@
 var NAVTREEINDEX63 =
 {
+"structHeapNode.html#ab6ad1823d787b0577509dfcae1f1743c":[4,0,35,3],
+"structHeapNode.html#ae86c793177dd9a416551c30d695b61c1":[4,0,35,0],
 "structItemDrop.html":[4,0,36],
 "structItemDrop.html#a4fb50a3d399f06508864c96f0046117f":[4,0,36,2],
 "structItemDrop.html#a8b4b72c721868f0e7dd6976e4446c5cd":[4,0,36,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX63 =
 "structPath.html#a56a379305df58fce43c4529ceaf193ca":[4,0,58,0],
 "structPath.html#a7947a4b6f23224ef5e30eddc017d2d40":[4,0,58,4],
 "structPath.html#a9f2445843f4bc4ae968ded4c07342dea":[4,0,58,5],
-"structPath.html#ac866f37b531cc36c1ecc426fc8f3585b":[4,0,58,6],
-"structPath.html#ae879ba1fed83e6aac561ee646f88d149":[4,0,58,2],
-"structPath.html#af574c79bb70d1a224d014ebfef1b2975":[4,0,58,1]
+"structPath.html#ac866f37b531cc36c1ecc426fc8f3585b":[4,0,58,6]
 };

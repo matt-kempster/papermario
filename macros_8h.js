@@ -9,6 +9,7 @@ var macros_8h =
     [ "BATTLE_STATUS", "macros_8h.html#a38b31d01afc2f5b36e2c51d838f7a3ab", null ],
     [ "GAME_STATUS", "macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1", null ],
     [ "PLAYER_STATUS", "macros_8h.html#a3643affbbcc36ae76527bbcf11bcce8e", null ],
+    [ "UI_STATUS", "macros_8h.html#abb968dabf9e3dc762781e0430725fe70", null ],
     [ "PLAYER_DATA", "macros_8h.html#a6baaf628665b883428b10e2d2d78a299", null ],
     [ "CAM", "macros_8h.html#ac42e78437d897d806dfd910090517ee0", null ],
     [ "CURRENT_CAM", "macros_8h.html#a13f11f66c8c305b0a4c546629245f7a2", null ],

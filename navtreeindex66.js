@@ -1,5 +1,7 @@
 var NAVTREEINDEX66 =
 {
+"structUiStatus.html#ab8e7547155ce3d02ef7038605d6eafe5":[4,0,91,12],
+"structUiStatus.html#aba1c9efed7fa58886cd5cd1526d1d419":[4,0,91,38],
 "structUiStatus.html#abcd0d40d1f53c16359f1b5e758b02c07":[4,0,91,22],
 "structUiStatus.html#ac799994e7d813af31e7fd0653a9e57ea":[4,0,91,0],
 "structUiStatus.html#ac7fbf75530dec4a63ff9d11d5701db0d":[4,0,91,1],
@@ -230,15 +232,16 @@ var NAVTREEINDEX66 =
 "variables_8h.html#a103dc6be48d2be7b751e41eaaf207f9b":[5,0,0,10,58],
 "variables_8h.html#a11416d01611405d4c18fe95638414a1f":[5,0,0,10,113],
 "variables_8h.html#a14f5f9fb4380d0ce0b69a5a06b57bf7a":[5,0,0,10,138],
-"variables_8h.html#a152533598956d577df8198d11a748947":[5,0,0,10,149],
+"variables_8h.html#a152533598956d577df8198d11a748947":[5,0,0,10,158],
 "variables_8h.html#a1653442d7d2ed6356be178423f0ff3dc":[5,0,0,10,86],
+"variables_8h.html#a1c0580f264582ca6dd3d839a28e5863d":[5,0,0,10,149],
 "variables_8h.html#a1f9eec39785e225c77be7cdbb329674d":[5,0,0,10,115],
 "variables_8h.html#a236ad78d64f2aad878ba1643153a84dd":[5,0,0,10,88],
 "variables_8h.html#a23aafdc7a0618a5ab9e03bfc044f5a3b":[5,0,0,10,2],
 "variables_8h.html#a257980fb6e3419d4e2cbf43d10f0ef92":[5,0,0,10,33],
 "variables_8h.html#a268adb60d85efacc1f9ac8084b57cb39":[5,0,0,10,5],
 "variables_8h.html#a28670c12415193ad8d8f6929ab1e77fc":[5,0,0,10,121],
-"variables_8h.html#a293068f3d5b95213452dfbdf0427c67c":[5,0,0,10,171],
+"variables_8h.html#a293068f3d5b95213452dfbdf0427c67c":[5,0,0,10,180],
 "variables_8h.html#a299b2817b91971adea7e5f42069bfffa":[5,0,0,10,11],
 "variables_8h.html#a2c803dac868c136cea9a63c2978eedfc":[5,0,0,10,28],
 "variables_8h.html#a3081bb911d469338cc8304e788f53eed":[5,0,0,10,50],
@@ -246,8 +249,5 @@ var NAVTREEINDEX66 =
 "variables_8h.html#a3b311cb0e4230ba3537aa362419ba289":[5,0,0,10,6],
 "variables_8h.html#a3bacd3b27ee60c0ed551035a89ee31d2":[5,0,0,10,100],
 "variables_8h.html#a3bc2ad3a0bdd2691467bf6469466c520":[5,0,0,10,21],
-"variables_8h.html#a3d94ea76cda2da4c02fdb8bde87027c6":[5,0,0,10,30],
-"variables_8h.html#a3f5f0ea6adca35d6047715a4b54edd8b":[5,0,0,10,139],
-"variables_8h.html#a3fc97160cdbb03f3cb50d3aaea658499":[5,0,0,10,147],
-"variables_8h.html#a411fbf96155b50c9884dbac9a39b41cd":[5,0,0,10,98]
+"variables_8h.html#a3d94ea76cda2da4c02fdb8bde87027c6":[5,0,0,10,30]
 };

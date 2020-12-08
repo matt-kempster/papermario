@@ -12,7 +12,7 @@ var code__80850__len__3060_8c =
     [ "get_stored_count", "code__80850__len__3060_8c.html#a9c5f0c3c4f1bc8e20cd0cf2250db4110", null ],
     [ "get_stored_empty_count", "code__80850__len__3060_8c.html#a7bdae5128ba43d4c5d2460107c2accb3", null ],
     [ "enforce_hpfp_limits", "code__80850__len__3060_8c.html#acd3a427361fcc975aa8a9d7990915113", null ],
-    [ "initialize_status_menu", "code__80850__len__3060_8c.html#ab149b75984170c02600287152553fe96", null ],
+    [ "initialize_status_menu", "code__80850__len__3060_8c.html#a60e122d3bd946a0b5d0ea04030346561", null ],
     [ "status_menu_draw_number", "code__80850__len__3060_8c.html#a1ce8d7721306fc437bbc605c89a76fcf", null ],
     [ "status_menu_draw_stat", "code__80850__len__3060_8c.html#a9f11594754538f0eaddd503e4700e424", null ],
     [ "update_status_menu", "code__80850__len__3060_8c.html#ae743d6b9d356826b96f238d66dd2dc59", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX64 =
 {
+"structPath.html#ae879ba1fed83e6aac561ee646f88d149":[4,0,58,2],
+"structPath.html#af574c79bb70d1a224d014ebfef1b2975":[4,0,58,1],
 "structPauseItemPage.html":[4,0,59],
 "structPauseItemPage.html#a1eaec3c81e8a83c24b81f22ccddf1be6":[4,0,59,5],
 "structPauseItemPage.html#a272303019eb1da847234c67222fe062c":[4,0,59,4],
@@ -247,7 +249,5 @@ var NAVTREEINDEX64 =
 "structScriptInstance.html#ac88c1efe74f4d334f4bb1df7dd182bb8":[4,0,68,29],
 "structScriptInstance.html#ad37e641ded9cecc850330f95fc14d405":[4,0,68,11],
 "structScriptInstance.html#ad48f5e12ce27c3aa5715c00bfb2ee957":[4,0,68,0],
-"structScriptInstance.html#ad994b89c826f88089806f8775cbc5a5f":[4,0,68,34],
-"structScriptInstance.html#ada393b875a3e89545858f2288bfc9bca":[4,0,68,5],
-"structScriptInstance.html#ae41c12cb76dbd583d207902297934e38":[4,0,68,3]
+"structScriptInstance.html#ad994b89c826f88089806f8775cbc5a5f":[4,0,68,34]
 };

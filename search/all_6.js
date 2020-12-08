@@ -83,7 +83,7 @@ var searchData=
   ['call800e98c4syncstatusmenu_2einc_2ec_1129',['Call800E98C4SyncStatusMenu.inc.c',['../Call800E98C4SyncStatusMenu_8inc_8c.html',1,'']]],
   ['call800eb168_1130',['Call800EB168',['../GetPartnerCall800EB168_8inc_8c.html#af503d7a3cdd36947de18738be7e8f57b',1,'GetPartnerCall800EB168.inc.c']]],
   ['callfunction_1131',['callFunction',['../structScriptInstance.html#af4eed1ed9b762261100c66cc71e536a8',1,'ScriptInstance']]],
-  ['cam_1132',['Cam',['../enums_8h.html#a60c3da23da2b3905c2c1d148de995012',1,'Cam():&#160;enums.h'],['../macros_8h.html#ac42e78437d897d806dfd910090517ee0',1,'CAM():&#160;macros.h']]],
+  ['cam_1132',['CAM',['../macros_8h.html#ac42e78437d897d806dfd910090517ee0',1,'CAM():&#160;macros.h'],['../enums_8h.html#a60c3da23da2b3905c2c1d148de995012',1,'Cam():&#160;enums.h']]],
   ['cam_5fbattle_1133',['Cam_BATTLE',['../enums_8h.html#a9ac85a745d2422d80d92bba890fa1a21',1,'enums.h']]],
   ['cam_5fcam3_1134',['Cam_CAM3',['../enums_8h.html#af09579f959ef0488f1dac4ebbfbfc69d',1,'enums.h']]],
   ['cam_5fdefault_1135',['Cam_DEFAULT',['../enums_8h.html#a244924870af2f2f041459b907c1a6bc2',1,'enums.h']]],

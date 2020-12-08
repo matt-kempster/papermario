@@ -1,5 +1,7 @@
 var NAVTREEINDEX61 =
 {
+"structBattleStatus.html#a658cbd9851fa05bd7c895f1945ef34f6":[4,0,10,75],
+"structBattleStatus.html#a65cec25c60a350ab0329c3c8ae79b5c1":[4,0,10,87],
 "structBattleStatus.html#a65f323e74dc6712d46758dc79ac674ea":[4,0,10,78],
 "structBattleStatus.html#a66465817284dd93c5cd1335fea101d12":[4,0,10,54],
 "structBattleStatus.html#a66917e6113786ead3dc531f742e86638":[4,0,10,94],
@@ -247,7 +249,5 @@ var NAVTREEINDEX61 =
 "structDecorationTable.html#a526dcea2b215fa018138f5a48df3a50d":[4,0,22,5],
 "structDecorationTable.html#a56058c7be7d2ad3e36a3e40345c09fd5":[4,0,22,15],
 "structDecorationTable.html#a6a020f47b47ed8bc0bcd2955622fc10a":[4,0,22,12],
-"structDecorationTable.html#a6ef6f64bbd2a6fc51d2a25c635035ff4":[4,0,22,1],
-"structDecorationTable.html#a766786b470df043da97aca9e6417fb74":[4,0,22,9],
-"structDecorationTable.html#a992ce100458f7a06a29e35776d44043a":[4,0,22,14]
+"structDecorationTable.html#a6ef6f64bbd2a6fc51d2a25c635035ff4":[4,0,22,1]
 };
