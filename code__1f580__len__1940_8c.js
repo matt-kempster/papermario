@@ -5,7 +5,7 @@ var code__1f580__len__1940_8c =
     [ "func_80044238", "code__1f580__len__1940_8c.html#aabca7d72fa62aa9fd336e14de74570d8", null ],
     [ "LoadDemoBattle", "code__1f580__len__1940_8c.html#aa155e1ec81722b49acb0260898eab1ac", null ],
     [ "func_80044290", "code__1f580__len__1940_8c.html#a821c3703db667d15b71f08b3a5ab4c6b", null ],
-    [ "MakeNpcs", "code__1f580__len__1940_8c.html#a93fc74e42276b264951e291e3fced055", null ],
+    [ "MakeNpcs", "code__1f580__len__1940_8c.html#a5590553bab109a30e6472808acbf04f8", null ],
     [ "RemoveNpc", "code__1f580__len__1940_8c.html#ac46f85b2fb0bc19976ef562997aeb835", null ],
     [ "RemoveEncounter", "code__1f580__len__1940_8c.html#a4c71a0dc72cb4ec47ea481944e87b34a", null ],
     [ "GetBattleOutcome", "code__1f580__len__1940_8c.html#a16a6873860892a2df6b8affb3c4130c2", null ],
@@ -48,6 +48,6 @@ var code__1f580__len__1940_8c =
     [ "func_8004580C", "code__1f580__len__1940_8c.html#a7bdfe2c0e49a812dcb9358fe204ff4df", null ],
     [ "func_80045838", "code__1f580__len__1940_8c.html#a796bd782488190fe2108cd0b90793d17", null ],
     [ "func_800458CC", "code__1f580__len__1940_8c.html#a16eb76654b14a6e19561160d1117ede2", null ],
-    [ "func_80045900", "code__1f580__len__1940_8c.html#aa52e94fffb1e1dc7d98ba3c86396baf9", null ],
+    [ "func_80045900", "code__1f580__len__1940_8c.html#a5d7ac69f51603150d0acbe10518c60d2", null ],
     [ "SetTattleString", "code__1f580__len__1940_8c.html#a4e64a90ee853a77957232e3c18204d54", null ]
 ];

@@ -173,6 +173,7 @@ var variables_8h =
     [ "gBattleMapFlags", "variables_8h.html#aa77e703702d21ee81096fa89748b0c24", null ],
     [ "D_8009A5D8", "variables_8h.html#a7f9c9bd773134b418fe3fc481a1e116a", null ],
     [ "D_800779B0", "variables_8h.html#af601a64158a21c8e55b7777197e57a07", null ],
+    [ "D_80078174", "variables_8h.html#a23738ee9cb2c594fe1e53c785637dd16", null ],
     [ "D_800A0963", "variables_8h.html#a426d7703a45933bf87133e3f3a6d2d64", null ],
     [ "SCRIPT_NpcDefeat", "variables_8h.html#ac34380fdc74a9ac56d418452809ab11d", null ],
     [ "ShakeCam1", "variables_8h.html#a83ebe47e73160675323482359493ed3d", null ],

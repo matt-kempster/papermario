@@ -35,7 +35,7 @@ var code__13870__len__6980_8c =
     [ "func_8003B198", "code__13870__len__6980_8c.html#ae3c1b2ed2527cdb456265125e9b62181", null ],
     [ "func_8003B1A8", "code__13870__len__6980_8c.html#ad68813061acf687f74be77fd40592cea", null ],
     [ "func_8003B1B0", "code__13870__len__6980_8c.html#a6d4b5b9e9929f90c6bfb2c2232986e32", null ],
-    [ "set_npc_yaw", "code__13870__len__6980_8c.html#a51c34f860ca38a41cfa516f3e286edee", null ],
+    [ "set_npc_yaw", "code__13870__len__6980_8c.html#a2751a0163154097131397a6ac3c61e1b", null ],
     [ "func_8003B3D0", "code__13870__len__6980_8c.html#aabe9b73a7a3638d90deca3ba029355a3", null ],
     [ "func_8003B3F8", "code__13870__len__6980_8c.html#a452ec41f15414488a21d4c03626391d7", null ],
     [ "func_8003B420", "code__13870__len__6980_8c.html#a7f24025a83bd426dcd8b5a9dd228dbc7", null ],

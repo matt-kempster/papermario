@@ -1,6 +1,7 @@
 var macros_8h =
 [
     [ "INCLUDE_ASM", "macros_8h.html#ad39045bbe7b04313d415e097b1cbb653", null ],
+    [ "ALIGN16", "macros_8h.html#a08b2c3c00c27891c0b0179c9d8a1c2b6", null ],
     [ "ARRAY_COUNT", "macros_8h.html#a4bf0a01781df461ad257e5391ac09ae7", null ],
     [ "ARRAY_COUNTU", "macros_8h.html#a18a894f28186d5f8936a3afc4322a13b", null ],
     [ "ASSERT", "macros_8h.html#ac22830a985e1daed0c9eadba8c6f606e", null ],
@@ -27,6 +28,7 @@ var macros_8h =
     [ "MAX_ENTITIES", "macros_8h.html#a0b7e155f796ed5e7b49b0f44867135ee", null ],
     [ "MAX_DYNAMIC_ENTITIES", "macros_8h.html#a95fd2f03b9c5f1626d55ae9899bd8fdc", null ],
     [ "PI", "macros_8h.html#a598a3330b3c21701223ee0ca14316eca", null ],
+    [ "TAU", "macros_8h.html#a3d8c9c145887af5174ba4cc6789862ad", null ],
     [ "SCRIPT_ALLOC", "macros_8h.html#ab0d7d85d70bf05c363a14a21247693b8", null ],
     [ "SCRIPT_FREE", "macros_8h.html#a337b4a06d467e2742d43cde93c63bfd8", null ],
     [ "SQ", "macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc", null ],
