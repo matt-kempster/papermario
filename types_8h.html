@@ -108,15 +108,15 @@ Macros</h2></td></tr>
 <tr class="separator:abb3af713cff819dd9437ccc12db0d9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e5a9d4486e1358ef595bf9ce9a6d069"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5e5a9d4486e1358ef595bf9ce9a6d069">UNK_ARGS</a></td></tr>
 <tr class="separator:a5e5a9d4486e1358ef595bf9ce9a6d069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2993b3332565798451de4a2af4518b85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a2993b3332565798451de4a2af4518b85">FORMATION_ID</a>(section,  stage,  index)&#160;&#160;&#160;(((section &lt;&lt; 16) + (stage &lt;&lt; 8) + index))</td></tr>
-<tr class="separator:a2993b3332565798451de4a2af4518b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dafcd03834c76dd076d1c33d73930d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a9dafcd03834c76dd076d1c33d73930d5">BATTLE_ID</a>(area,  stage,  index)&#160;&#160;&#160;((area &lt;&lt; 16) + (stage &lt;&lt; 8) + index)</td></tr>
+<tr class="separator:a9dafcd03834c76dd076d1c33d73930d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da2c98e12c6bcd72878d8638478261a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a5da2c98e12c6bcd72878d8638478261a">NPC_ANIM</a>(sprite,  palette,  anim)&#160;&#160;&#160;(((_NPC_SPRITE_##sprite &lt;&lt; 16) + (_NPC_PALETTE_##sprite##_##palette &lt;&lt; 8) + _NPC_ANIM_##sprite##_##anim))</td></tr>
 <tr class="separator:a5da2c98e12c6bcd72878d8638478261a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a4e48cf7c95007bd257fecf5fa4f0139f"><td class="memItemLeft" align="right" valign="top">typedef s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#a4e48cf7c95007bd257fecf5fa4f0139f">FormationID</a></td></tr>
-<tr class="separator:a4e48cf7c95007bd257fecf5fa4f0139f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace18f9cf1f776e18e8ceeeb3de98d9c7"><td class="memItemLeft" align="right" valign="top">typedef s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ace18f9cf1f776e18e8ceeeb3de98d9c7">BattleID</a></td></tr>
+<tr class="separator:ace18f9cf1f776e18e8ceeeb3de98d9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5456767e39de7903eb11e43977c80a5"><td class="memItemLeft" align="right" valign="top">typedef s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="types_8h.html#ad5456767e39de7903eb11e43977c80a5">NpcAnimID</a></td></tr>
 <tr class="separator:ad5456767e39de7903eb11e43977c80a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -221,17 +221,17 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
-<a id="a2993b3332565798451de4a2af4518b85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2993b3332565798451de4a2af4518b85">&#9670;&nbsp;</a></span>FORMATION_ID</h2>
+<a id="a9dafcd03834c76dd076d1c33d73930d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dafcd03834c76dd076d1c33d73930d5">&#9670;&nbsp;</a></span>BATTLE_ID</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define FORMATION_ID</td>
+          <td class="memname">#define BATTLE_ID</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">section, </td>
+          <td class="paramname">area, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -248,7 +248,7 @@ Typedefs</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((section &lt;&lt; 16) + (stage &lt;&lt; 8) + index))</td>
+          <td></td><td>&#160;&#160;&#160;((area &lt;&lt; 16) + (stage &lt;&lt; 8) + index)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -294,14 +294,14 @@ Typedefs</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="a4e48cf7c95007bd257fecf5fa4f0139f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e48cf7c95007bd257fecf5fa4f0139f">&#9670;&nbsp;</a></span>FormationID</h2>
+<a id="ace18f9cf1f776e18e8ceeeb3de98d9c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace18f9cf1f776e18e8ceeeb3de98d9c7">&#9670;&nbsp;</a></span>BattleID</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef s32 <a class="el" href="types_8h.html#a4e48cf7c95007bd257fecf5fa4f0139f">FormationID</a></td>
+          <td class="memname">typedef s32 <a class="el" href="types_8h.html#ace18f9cf1f776e18e8ceeeb3de98d9c7">BattleID</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -332,7 +332,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="types_8h.html">types.h</a></li>
-    <li class="footer">Generated on Sat Dec 26 2020 12:43:40 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Dec 28 2020 02:39:15 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

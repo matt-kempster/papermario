@@ -1,4 +1,28 @@
 var searchData=
 [
-  ['variables_2eh_15281',['variables.h',['../variables_8h.html',1,'']]]
+  ['unkcamerafunc_2einc_2ec_15323',['UnkCameraFunc.inc.c',['../UnkCameraFunc_8inc_8c.html',1,'']]],
+  ['unkdurationcheck_2einc_2ec_15324',['UnkDurationCheck.inc.c',['../UnkDurationCheck_8inc_8c.html',1,'']]],
+  ['unkfunc1_2einc_2ec_15325',['UnkFunc1.inc.c',['../UnkFunc1_8inc_8c.html',1,'']]],
+  ['unkfunc2_2einc_2ec_15326',['UnkFunc2.inc.c',['../UnkFunc2_8inc_8c.html',1,'']]],
+  ['unkmusicfunc_2einc_2ec_15327',['UnkMusicFunc.inc.c',['../UnkMusicFunc_8inc_8c.html',1,'']]],
+  ['unknpcaifunc1_2einc_2ec_15328',['UnkNpcAIFunc1.inc.c',['../UnkNpcAIFunc1_8inc_8c.html',1,'']]],
+  ['unknpcaifunc10_2einc_2ec_15329',['UnkNpcAIFunc10.inc.c',['../UnkNpcAIFunc10_8inc_8c.html',1,'']]],
+  ['unknpcaifunc11_2einc_2ec_15330',['UnkNpcAIFunc11.inc.c',['../UnkNpcAIFunc11_8inc_8c.html',1,'']]],
+  ['unknpcaifunc2_2einc_2ec_15331',['UnkNpcAIFunc2.inc.c',['../UnkNpcAIFunc2_8inc_8c.html',1,'']]],
+  ['unknpcaifunc3_2einc_2ec_15332',['UnkNpcAIFunc3.inc.c',['../UnkNpcAIFunc3_8inc_8c.html',1,'']]],
+  ['unknpcaifunc4_2einc_2ec_15333',['UnkNpcAIFunc4.inc.c',['../UnkNpcAIFunc4_8inc_8c.html',1,'']]],
+  ['unknpcaifunc5_2einc_2ec_15334',['UnkNpcAIFunc5.inc.c',['../UnkNpcAIFunc5_8inc_8c.html',1,'']]],
+  ['unknpcaifunc6_2einc_2ec_15335',['UnkNpcAIFunc6.inc.c',['../UnkNpcAIFunc6_8inc_8c.html',1,'']]],
+  ['unknpcaifunc7_2einc_2ec_15336',['UnkNpcAIFunc7.inc.c',['../UnkNpcAIFunc7_8inc_8c.html',1,'']]],
+  ['unknpcaifunc8_2einc_2ec_15337',['UnkNpcAIFunc8.inc.c',['../UnkNpcAIFunc8_8inc_8c.html',1,'']]],
+  ['unknpcaifunc9_2einc_2ec_15338',['UnkNpcAIFunc9.inc.c',['../UnkNpcAIFunc9_8inc_8c.html',1,'']]],
+  ['unknpcdurationflagfunc_2einc_2ec_15339',['UnkNpcDurationFlagFunc.inc.c',['../UnkNpcDurationFlagFunc_8inc_8c.html',1,'']]],
+  ['unkpartnerfuncs_2einc_2ec_15340',['UnkPartnerFuncs.inc.c',['../UnkPartnerFuncs_8inc_8c.html',1,'']]],
+  ['unkpositionfunc_2einc_2ec_15341',['UnkPositionFunc.inc.c',['../UnkPositionFunc_8inc_8c.html',1,'']]],
+  ['unkrotateplayer_2einc_2ec_15342',['UnkRotatePlayer.inc.c',['../UnkRotatePlayer_8inc_8c.html',1,'']]],
+  ['unksetdurationfunc_2einc_2ec_15343',['UnkSetDurationFunc.inc.c',['../UnkSetDurationFunc_8inc_8c.html',1,'']]],
+  ['unktexturepanfunc_2einc_2ec_15344',['UnkTexturePanFunc.inc.c',['../UnkTexturePanFunc_8inc_8c.html',1,'']]],
+  ['unktexturepanfunc2_2einc_2ec_15345',['UnkTexturePanFunc2.inc.c',['../UnkTexturePanFunc2_8inc_8c.html',1,'']]],
+  ['unkyawfunc_2einc_2ec_15346',['UnkYawFunc.inc.c',['../UnkYawFunc_8inc_8c.html',1,'']]],
+  ['unsetcamera0moveflag1_2einc_2ec_15347',['UnsetCamera0MoveFlag1.inc.c',['../UnsetCamera0MoveFlag1_8inc_8c.html',1,'']]]
 ];

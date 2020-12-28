@@ -120,6 +120,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEnemy.html">Enemy</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcGroupList.html">NpcGroupList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="structNpcGroupList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -149,10 +150,8 @@ Macros</h2></td></tr>
 <tr class="separator:a7cfcc617458312fb7daa9a0eca0efcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b25ff3c05678e76e92e678e79b7b826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a6b25ff3c05678e76e92e678e79b7b826">NO_OVERRIDE_MOVEMENT_SPEED</a>&#160;&#160;&#160;<a class="el" href="map_8h.html#a7cfcc617458312fb7daa9a0eca0efcc0">OVERRIDE_MOVEMENT_SPEED</a>(-1)</td></tr>
 <tr class="separator:a6b25ff3c05678e76e92e678e79b7b826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e15fafcb21bfb136d358cb21975fb30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#a3e15fafcb21bfb136d358cb21975fb30">NPC_GROUP</a>(npcs,  formationID)&#160;&#160;&#160;{ sizeof(npcs) / sizeof(<a class="el" href="structStaticNpc.html">StaticNpc</a>), &amp;npcs, formationID }</td></tr>
-<tr class="separator:a3e15fafcb21bfb136d358cb21975fb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff0eb6408ab05f5d10b9f60c0075832f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#aff0eb6408ab05f5d10b9f60c0075832f">NPC_GROUP_LIST_END</a>()&#160;&#160;&#160;{ 0, 0, 0 }</td></tr>
-<tr class="separator:aff0eb6408ab05f5d10b9f60c0075832f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab133970d0ac85b42a4afa302482bdf3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map_8h.html#ab133970d0ac85b42a4afa302482bdf3e">NPC_GROUP</a>(npcs,  battle)&#160;&#160;&#160;{ sizeof(npcs) / sizeof(<a class="el" href="structStaticNpc.html">StaticNpc</a>), &amp;npcs, battle }</td></tr>
+<tr class="separator:ab133970d0ac85b42a4afa302482bdf3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -411,8 +410,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3e15fafcb21bfb136d358cb21975fb30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e15fafcb21bfb136d358cb21975fb30">&#9670;&nbsp;</a></span>NPC_GROUP</h2>
+<a id="ab133970d0ac85b42a4afa302482bdf3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab133970d0ac85b42a4afa302482bdf3e">&#9670;&nbsp;</a></span>NPC_GROUP</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -427,31 +426,12 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">formationID&#160;</td>
+          <td class="paramname">battle&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;{ sizeof(npcs) / sizeof(<a class="el" href="structStaticNpc.html">StaticNpc</a>), &amp;npcs, formationID }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00246">246</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
-
-</div>
-</div>
-<a id="aff0eb6408ab05f5d10b9f60c0075832f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff0eb6408ab05f5d10b9f60c0075832f">&#9670;&nbsp;</a></span>NPC_GROUP_LIST_END</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NPC_GROUP_LIST_END</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;{ 0, 0, 0 }</td>
+          <td></td><td>&#160;&#160;&#160;{ sizeof(npcs) / sizeof(<a class="el" href="structStaticNpc.html">StaticNpc</a>), &amp;npcs, battle }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -512,7 +492,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__13870__len__6980_8c_source.html#l00253">253</a> of file <a class="el" href="code__13870__len__6980_8c_source.html">code_13870_len_6980.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a2c4c1d80f4a857010ae7d04b3173fd90">BindNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a0483949132c88e042d12425c571d52eb">BindNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a7452703dd37145bb3e72c3e4302a4d69">BindNpcHit()</a>, <a class="el" href="script__api_2common_8h.html#a54bd8a45e95587d69a3dd56cf74c6203">BindNpcIdle()</a>, <a class="el" href="script__api_2common_8h.html#abfb7b478b361536d6ccbb5fddd031ae9">BindNpcInteract()</a>, <a class="el" href="script__api_2common_8h.html#a6edc75fd220e76dc3a1843d39bc9a388">EnableNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#a48b4b07d583496f2d3d56f1fc0ff5c5c">EnableNpcAux()</a>, <a class="el" href="BFA100_8c.html#a21dffcaa75ebc9bb6211596de12f2003">func_80240060_BFA100()</a>, <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="script__api_2common_8h.html#ac285ac14c5aae6c003abdaec14945e13">RestartNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#ab5a82e59e6078ce73ca0d4692771d7d1">RestartNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a7c011f660c313898906273d63fb2fdad">SetEnemyFlagBits()</a>, <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>, <a class="el" href="code__1f580__len__1940_8c.html#a4e64a90ee853a77957232e3c18204d54">SetTattleString()</a>, and <a class="el" href="UnkNpcAIFunc9_8inc_8c.html#a99955666915a3f714b5cfed21ef52cf0">UnkNpcAIFunc9()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="script__api_2common_8h.html#a2c4c1d80f4a857010ae7d04b3173fd90">BindNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a0483949132c88e042d12425c571d52eb">BindNpcDefeat()</a>, <a class="el" href="script__api_2common_8h.html#a7452703dd37145bb3e72c3e4302a4d69">BindNpcHit()</a>, <a class="el" href="script__api_2common_8h.html#a54bd8a45e95587d69a3dd56cf74c6203">BindNpcIdle()</a>, <a class="el" href="script__api_2common_8h.html#abfb7b478b361536d6ccbb5fddd031ae9">BindNpcInteract()</a>, <a class="el" href="script__api_2common_8h.html#a6edc75fd220e76dc3a1843d39bc9a388">EnableNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#a48b4b07d583496f2d3d56f1fc0ff5c5c">EnableNpcAux()</a>, <a class="el" href="BFA100_8c.html#a21dffcaa75ebc9bb6211596de12f2003">func_80240060_BFA100()</a>, <a class="el" href="script__api_2common_8h.html#a79cb8f52cfd83cce6de264e923d66375">GetNpcVar()</a>, <a class="el" href="UnkNpcAIFunc9_8inc_8c.html#a76d6c33dc4370e52bc9bc717f3802b6d">MAP_NAME_UnkNpcAIFunc9()</a>, <a class="el" href="script__api_2common_8h.html#ac285ac14c5aae6c003abdaec14945e13">RestartNpcAI()</a>, <a class="el" href="script__api_2common_8h.html#ab5a82e59e6078ce73ca0d4692771d7d1">RestartNpcAux()</a>, <a class="el" href="script__api_2common_8h.html#a7c011f660c313898906273d63fb2fdad">SetEnemyFlagBits()</a>, <a class="el" href="script__api_2common_8h.html#a96fb17018916344b6e679441d8b0aec0">SetNpcVar()</a>, and <a class="el" href="code__1f580__len__1940_8c.html#a4e64a90ee853a77957232e3c18204d54">SetTattleString()</a>.</p>
 
 </div>
 </div>
@@ -534,7 +514,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="world_8c_source.html#l00071">71</a> of file <a class="el" href="world_8c_source.html">world.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="GetEntryPos_8inc_8c.html#a101aea2b5b223f951231e5f89133ba5f">GetEntryPos()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="GetEntryPos_8inc_8c.html#a5ad577699cf300a49862a82472ddfff1">MAP_NAME_GetEntryPos()</a>.</p>
 
 </div>
 </div>
@@ -584,7 +564,7 @@ Variables</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="code__20ec0__len__5040_8c_source.html#l00187">187</a> of file <a class="el" href="code__20ec0__len__5040_8c_source.html">code_20ec0_len_5040.c</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="UnkNpcAIFunc11_8inc_8c.html#a33f1156fd28b94c226877a3cf74bc6b5">UnkNpcAIFunc11()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="UnkNpcAIFunc11_8inc_8c.html#aad88da613470b655a2e88390dbce1668">MAP_NAME_UnkNpcAIFunc11()</a>.</p>
 
 </div>
 </div>
@@ -660,7 +640,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="map_8h.html">map.h</a></li>
-    <li class="footer">Generated on Sat Dec 26 2020 12:43:40 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Mon Dec 28 2020 02:39:15 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
