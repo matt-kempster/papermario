@@ -86,7 +86,8 @@ $(document).ready(function(){initNavTree('src_2battle_2battle_8h.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">battle.h File Reference</div>  </div>
 </div><!--header-->
@@ -96,6 +97,8 @@ $(document).ready(function(){initNavTree('src_2battle_2battle_8h.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorDesc.html">ActorDesc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStage.html">Stage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStageList.html">StageList</a></td></tr>
@@ -106,11 +109,20 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBattleList.html">BattleList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="structBattleList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorPartDesc.html">ActorPartDesc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a081ae2f94aae3ca9b730df727fb55ac1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#a081ae2f94aae3ca9b730df727fb55ac1">BATTLE</a>(name,  formation,  stage)&#160;&#160;&#160;{ name, <a class="el" href="macros_8h.html#a4bf0a01781df461ad257e5391ac09ae7">ARRAY_COUNT</a>(formation), formation, stage }</td></tr>
 <tr class="separator:a081ae2f94aae3ca9b730df727fb55ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ab134bcf4ea8e6c29f6aae73998f6e98e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#ab134bcf4ea8e6c29f6aae73998f6e98e">DefenseTable</a>[]</td></tr>
+<tr class="separator:ab134bcf4ea8e6c29f6aae73998f6e98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a081ae2f94aae3ca9b730df727fb55ac1"></a>
@@ -145,7 +157,24 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00044">44</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00069">69</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ab134bcf4ea8e6c29f6aae73998f6e98e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab134bcf4ea8e6c29f6aae73998f6e98e">&#9670;&nbsp;</a></span>DefenseTable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a> DefenseTable[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00078">78</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
 
 </div>
 </div>
@@ -155,7 +184,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_857dd4ac9b413a9fc388f1a6cd09e9a3.html">battle</a></li><li class="navelem"><a class="el" href="src_2battle_2battle_8h.html">battle.h</a></li>
-    <li class="footer">Generated on Tue Dec 29 2020 22:19:18 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Generated on Wed Dec 30 2020 11:35:20 for Paper Mario by <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>
