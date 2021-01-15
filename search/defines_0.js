@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fnamespace_26051',['_NAMESPACE',['../macros_8h.html#affb24eb5fb3ad0c5e24c50157a5cad32',1,'macros.h']]]
+  ['_5fns_30382',['_NS',['../macros_8h.html#ad05c3961b4ddc3948ae59d3b0ace9a05',1,'macros.h']]]
 ];

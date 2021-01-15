@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['decorationtable_13595',['DecorationTable',['../structDecorationTable.html',1,'']]],
-  ['defensetableentry_13596',['DefenseTableEntry',['../structDefenseTableEntry.html',1,'']]],
-  ['doorstuff_13597',['DoorStuff',['../structDoorStuff.html',1,'']]]
+  ['decorationtable_15761',['DecorationTable',['../structDecorationTable.html',1,'']]],
+  ['defensetableentry_15762',['DefenseTableEntry',['../structDefenseTableEntry.html',1,'']]],
+  ['displaycontext_15763',['DisplayContext',['../structDisplayContext.html',1,'']]],
+  ['doorstuff_15764',['DoorStuff',['../structDoorStuff.html',1,'']]]
 ];
