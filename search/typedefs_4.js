@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['easing_30349',['Easing',['../enums_8h.html#ac291e6abcbe7c764a678bf9fbdf92ef4',1,'enums.h']]],
-  ['element_30350',['Element',['../enums_8h.html#adc5a67b09b0f115f2b8cd6b679338477',1,'enums.h']]],
-  ['emote_30351',['Emote',['../enums_8h.html#a03848cff3f2b9adf079b09076f96e5be',1,'enums.h']]],
-  ['encounteroutcome_30352',['EncounterOutcome',['../enums_8h.html#ad9349321df3d9ca3e63d0bfb29d0d88a',1,'enums.h']]],
-  ['encountertriggerflags_30353',['EncounterTriggerFlags',['../enums_8h.html#ae475e71f2ac29a5a6e7fbc0adb6997ea',1,'enums.h']]],
-  ['entitylist_30354',['EntityList',['../common__structs_8h.html#a4305c50251c29f95597097fb40e4acb5',1,'common_structs.h']]],
-  ['entrylist_30355',['EntryList',['../include_2map_8h.html#a6d8bc76f53057c162e93d4355a13642c',1,'map.h']]],
-  ['event_30356',['Event',['../enums_8h.html#af47928a6e8bc3a284a47e904372c041e',1,'enums.h']]]
+  ['damagetype_30707',['DamageType',['../enums_8h.html#a092f82305e2a4ffad349f4bce56517c7',1,'enums.h']]],
+  ['debuff_30708',['Debuff',['../enums_8h.html#a002d3c04ccb90b5728ac76f15492f16d',1,'enums.h']]],
+  ['decorationid_30709',['DecorationId',['../enums_8h.html#aa66ffd98d805c6b69e53935775981209',1,'enums.h']]],
+  ['defensetable_30710',['DefenseTable',['../src_2battle_2battle_8h.html#ab134bcf4ea8e6c29f6aae73998f6e98e',1,'battle.h']]],
+  ['doorsounds_30711',['DoorSounds',['../enums_8h.html#a0d220b8b396bc377f089109e7655412c',1,'enums.h']]],
+  ['doorswing_30712',['DoorSwing',['../enums_8h.html#a4213d7234e6e4c822e26807c37c66249',1,'enums.h']]],
+  ['dynamicentitylist_30713',['DynamicEntityList',['../common__structs_8h.html#ad0572db22425938f1d65d9d7c4b24abe',1,'common_structs.h']]]
 ];

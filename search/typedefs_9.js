@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['npcanimid_30366',['NpcAnimID',['../types_8h.html#ad5456767e39de7903eb11e43977c80a5',1,'types.h']]],
-  ['npcid_30367',['NpcId',['../enums_8h.html#a2132d3d939cc2119f7a13b696d55d909',1,'enums.h']]],
-  ['npclist_30368',['NpcList',['../common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781',1,'common_structs.h']]]
+  ['mapinit_30728',['MapInit',['../include_2map_8h.html#aac91ebeaafb997cf4cfe0e9372d83ef4',1,'map.h']]],
+  ['messageid_30729',['MessageID',['../messages_8h.html#a9a20487fc19a4b351db89d427491e9b3',1,'messages.h']]],
+  ['modellist_30730',['ModelList',['../common__structs_8h.html#ada75a3b8335171313040e0bccf544399',1,'common_structs.h']]]
 ];

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['partnerid_30369',['PartnerID',['../enums_8h.html#a7b13ebe44d451fa23efbf23df8ff8c51',1,'enums.h']]],
-  ['phase_30370',['Phase',['../enums_8h.html#ac14cab16f97403557b5760135bf65707',1,'enums.h']]],
-  ['playeranim_30371',['PlayerAnim',['../enums_8h.html#a21af339466dcebabd8ffec3cf90082ab',1,'enums.h']]],
-  ['playerbuff_30372',['PlayerBuff',['../enums_8h.html#a013afe257f16c985f919936af8727b6a',1,'enums.h']]]
+  ['npcanimid_30731',['NpcAnimID',['../types_8h.html#ad5456767e39de7903eb11e43977c80a5',1,'types.h']]],
+  ['npcid_30732',['NpcId',['../enums_8h.html#a2132d3d939cc2119f7a13b696d55d909',1,'enums.h']]],
+  ['npclist_30733',['NpcList',['../common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781',1,'common_structs.h']]]
 ];
