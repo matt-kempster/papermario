@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/guOrtho.c Source File - Paper Mario Documentation</title>
+        <title>src/os/guOrtho.c Source File - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('guOrtho_8c_source.html',''); initResiz
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a>, <span class="keywordtype">float</span> mf[4][4], <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t, <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;os/guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#acfef69975824633b7dd94338ce823e93">guOrthoF</a>, <span class="keywordtype">float</span> mf[4][4], <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t, <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordtype">float</span> scale);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('guOrtho_8c_source.html',''); initResiz
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="code__42900__len__80_8c.html#a40ab2d64c609839ff1e0ef0de2d0dcc4">guMtxF2L</a>(mf, m);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a>, Mtx* m, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;os/guOrtho&quot;</span>, <a class="code" href="guOrtho_8c.html#a7e6644e909e37ff61d49723b906264b3">guOrtho</a>, Mtx* m, <span class="keywordtype">float</span> l, <span class="keywordtype">float</span> r, <span class="keywordtype">float</span> b, <span class="keywordtype">float</span> t,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordtype">float</span> n, <span class="keywordtype">float</span> f, <span class="keywordtype">float</span> scale);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acode__42900__len__80_8c_html_a40ab2d64c609839ff1e0ef0de2d0dcc4"><div class="ttname"><a href="code__42900__len__80_8c.html#a40ab2d64c609839ff1e0ef0de2d0dcc4">guMtxF2L</a></div><div class="ttdeci">void guMtxF2L(float mf[4][4], Mtx *m)</div><div class="ttdef"><b>Definition:</b> <a href="code__42900__len__80_8c_source.html#l00003">code_42900_len_80.c:3</a></div></div>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('guOrtho_8c_source.html',''); initResiz
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="guOrtho_8c.html">guOrtho.c</a></li>
-    <li class="footer">Generated on Thu Jan 28 2021 08:40:31 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="guOrtho_8c.html">guOrtho.c</a></li>
+    <li class="footer">Generated on Sat Feb 6 2021 05:04:32 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

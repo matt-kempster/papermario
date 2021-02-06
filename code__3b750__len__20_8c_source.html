@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/code_3b750_len_20.c Source File - Paper Mario Documentation</title>
+        <title>src/os/code_3b750_len_20.c Source File - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -88,28 +88,22 @@ $(document).ready(function(){initNavTree('code__3b750__len__20_8c_source.html','
 <div class="title">code_3b750_len_20.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="code__3b750__len__20_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
+<a href="code__3b750__len__20_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;nu/nusys.h&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="structNUScTask.html">    3</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="structNUScTask.html#abecd80d1b6d2f2973d121492dc45cdb1">    4</a></span>&#160;    <span class="keywordtype">char</span> unk_0[0xC];</div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structNUScTask.html#aeb180aca30b43a86c34c8e08e4c97b51">    5</a></span>&#160;    <span class="keywordtype">void</span>* <a class="code" href="structNUScTask.html#aeb180aca30b43a86c34c8e08e4c97b51">unk_C</a>;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;} <a class="code" href="structNUScTask.html">NUScTask</a>;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="code__3b750__len__20_8c.html#adbf41a152bc5f4927e320a9ee0c9b283">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__3b750__len__20_8c.html#adbf41a152bc5f4927e320a9ee0c9b283">nuGfxSwapCfb</a>(<a class="code" href="structNUScTask.html">NUScTask</a>* task) {</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="code__42420__len__50_8c.html#aecf72fd7bb55a652749c6589946cb8e0">osViSwapBuffer</a>(task-&gt;<a class="code" href="structNUScTask.html#aeb180aca30b43a86c34c8e08e4c97b51">unk_C</a>);</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
-<div class="ttc" id="acode__3b750__len__20_8c_html_adbf41a152bc5f4927e320a9ee0c9b283"><div class="ttname"><a href="code__3b750__len__20_8c.html#adbf41a152bc5f4927e320a9ee0c9b283">nuGfxSwapCfb</a></div><div class="ttdeci">void nuGfxSwapCfb(NUScTask *task)</div><div class="ttdef"><b>Definition:</b> <a href="code__3b750__len__20_8c_source.html#l00008">code_3b750_len_20.c:8</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// TODO make this better if we ever update our nusys header</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This should take NUScTask*, not void*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="code__3b750__len__20_8c.html#ab4691ae2bbf88faab5ffa6a78d71f35a">    5</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__3b750__len__20_8c.html#ab4691ae2bbf88faab5ffa6a78d71f35a">nuGfxSwapCfb</a>(<span class="keywordtype">void</span>* task) {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="code__42420__len__50_8c.html#aecf72fd7bb55a652749c6589946cb8e0">osViSwapBuffer</a>(((NUScTask*)task)-&gt;framebuffer);</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div>
+<div class="ttc" id="acode__3b750__len__20_8c_html_ab4691ae2bbf88faab5ffa6a78d71f35a"><div class="ttname"><a href="code__3b750__len__20_8c.html#ab4691ae2bbf88faab5ffa6a78d71f35a">nuGfxSwapCfb</a></div><div class="ttdeci">void nuGfxSwapCfb(void *task)</div><div class="ttdef"><b>Definition:</b> <a href="code__3b750__len__20_8c_source.html#l00005">code_3b750_len_20.c:5</a></div></div>
 <div class="ttc" id="acode__42420__len__50_8c_html_aecf72fd7bb55a652749c6589946cb8e0"><div class="ttname"><a href="code__42420__len__50_8c.html#aecf72fd7bb55a652749c6589946cb8e0">osViSwapBuffer</a></div><div class="ttdeci">void osViSwapBuffer(void *buf)</div><div class="ttdef"><b>Definition:</b> <a href="code__42420__len__50_8c_source.html#l00003">code_42420_len_50.c:3</a></div></div>
-<div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
-<div class="ttc" id="astructNUScTask_html"><div class="ttname"><a href="structNUScTask.html">NUScTask</a></div><div class="ttdef"><b>Definition:</b> <a href="code__3b750__len__20_8c_source.html#l00003">code_3b750_len_20.c:3</a></div></div>
-<div class="ttc" id="astructNUScTask_html_aeb180aca30b43a86c34c8e08e4c97b51"><div class="ttname"><a href="structNUScTask.html#aeb180aca30b43a86c34c8e08e4c97b51">NUScTask::unk_C</a></div><div class="ttdeci">void * unk_C</div><div class="ttdef"><b>Definition:</b> <a href="code__3b750__len__20_8c_source.html#l00005">code_3b750_len_20.c:5</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__3b750__len__20_8c.html">code_3b750_len_20.c</a></li>
-    <li class="footer">Generated on Thu Jan 28 2021 08:40:30 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__3b750__len__20_8c.html">code_3b750_len_20.c</a></li>
+    <li class="footer">Generated on Sat Feb 6 2021 05:04:32 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
