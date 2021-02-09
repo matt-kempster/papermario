@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('nuGfxInit_8c_source.html',''); initRes
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    Gfx gfx[0x100];</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    Gfx* ptr;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="code__3b4a0__len__270_8c.html#a14b925ce9dbbd5c6cb2c2fff8a165129">nuGfxThreadStart</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="nuGfxThread_8c.html#a7dce3f86e752bbdbfe35e29bd0ab52cd">nuGfxThreadStart</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="nuGfxSetCfb_8c.html#af36c6b720ed49c897d5babe82c7e7c49">nuGfxSetCfb</a>(<a class="code" href="nuGfxInit_8c.html#a8dea71d76684bb41032ca2e50a8c7fd3">FrameBuf</a>, NU_GFX_FRAMEBUFFER_NUM);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    nuGfxSetZBuffer((u16*) NU_GFX_ZBUFFER_ADDR);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="code__3b710__len__40_8c.html#a1e97dfc7454ef61f9098cfc049cfbb7f">nuGfxSwapCfbFuncSet</a>(<a class="code" href="code__3b750__len__20_8c.html#ab4691ae2bbf88faab5ffa6a78d71f35a">nuGfxSwapCfb</a>);</div>
@@ -116,7 +116,6 @@ $(document).ready(function(){initNavTree('nuGfxInit_8c_source.html',''); initRes
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="code__7e40__len__3f0_8c.html#a79f3ad0b9467393e9477fa903306909a">nuGfxTaskStart</a>(gfx, (s32)(ptr - gfx) * <span class="keyword">sizeof</span>(Gfx), NU_GFX_UCODE_F3DEX, NU_SC_NOSWAPBUFFER);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="nuGfxTaskAllEndWait_8c.html#a64e2e55e1c9377af76e1e1e35b9185b0">nuGfxTaskAllEndWait</a>();</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="acode__3b4a0__len__270_8c_html_a14b925ce9dbbd5c6cb2c2fff8a165129"><div class="ttname"><a href="code__3b4a0__len__270_8c.html#a14b925ce9dbbd5c6cb2c2fff8a165129">nuGfxThreadStart</a></div><div class="ttdeci">s32 nuGfxThreadStart()</div><div class="ttdef"><b>Definition:</b> <a href="code__3b4a0__len__270_8c_source.html#l00009">code_3b4a0_len_270.c:9</a></div></div>
 <div class="ttc" id="acode__3b710__len__40_8c_html_a1e97dfc7454ef61f9098cfc049cfbb7f"><div class="ttname"><a href="code__3b710__len__40_8c.html#a1e97dfc7454ef61f9098cfc049cfbb7f">nuGfxSwapCfbFuncSet</a></div><div class="ttdeci">s32 nuGfxSwapCfbFuncSet()</div><div class="ttdef"><b>Definition:</b> <a href="code__3b710__len__40_8c_source.html#l00003">code_3b710_len_40.c:3</a></div></div>
 <div class="ttc" id="acode__3b750__len__20_8c_html_ab4691ae2bbf88faab5ffa6a78d71f35a"><div class="ttname"><a href="code__3b750__len__20_8c.html#ab4691ae2bbf88faab5ffa6a78d71f35a">nuGfxSwapCfb</a></div><div class="ttdeci">void nuGfxSwapCfb(void *task)</div><div class="ttdef"><b>Definition:</b> <a href="code__3b750__len__20_8c_source.html#l00005">code_3b750_len_20.c:5</a></div></div>
 <div class="ttc" id="acode__7e40__len__3f0_8c_html_a63c11849b6e7ce686545c37673797bc1"><div class="ttname"><a href="code__7e40__len__3f0_8c.html#a63c11849b6e7ce686545c37673797bc1">nuGfxTaskMgrInit</a></div><div class="ttdeci">s32 nuGfxTaskMgrInit()</div><div class="ttdef"><b>Definition:</b> <a href="code__7e40__len__3f0_8c_source.html#l00005">code_7e40_len_3f0.c:5</a></div></div>
@@ -128,6 +127,7 @@ $(document).ready(function(){initNavTree('nuGfxInit_8c_source.html',''); initRes
 <div class="ttc" id="anuGfxInit_8c_html_ad40be797c47d5854721422768abfa5db"><div class="ttname"><a href="nuGfxInit_8c.html#ad40be797c47d5854721422768abfa5db">D_80093BA0</a></div><div class="ttdeci">void * D_80093BA0</div></div>
 <div class="ttc" id="anuGfxSetCfb_8c_html_af36c6b720ed49c897d5babe82c7e7c49"><div class="ttname"><a href="nuGfxSetCfb_8c.html#af36c6b720ed49c897d5babe82c7e7c49">nuGfxSetCfb</a></div><div class="ttdeci">void nuGfxSetCfb()</div><div class="ttdef"><b>Definition:</b> <a href="nuGfxSetCfb_8c_source.html#l00003">nuGfxSetCfb.c:3</a></div></div>
 <div class="ttc" id="anuGfxTaskAllEndWait_8c_html_a64e2e55e1c9377af76e1e1e35b9185b0"><div class="ttname"><a href="nuGfxTaskAllEndWait_8c.html#a64e2e55e1c9377af76e1e1e35b9185b0">nuGfxTaskAllEndWait</a></div><div class="ttdeci">void nuGfxTaskAllEndWait(void)</div><div class="ttdef"><b>Definition:</b> <a href="nuGfxTaskAllEndWait_8c_source.html#l00004">nuGfxTaskAllEndWait.c:4</a></div></div>
+<div class="ttc" id="anuGfxThread_8c_html_a7dce3f86e752bbdbfe35e29bd0ab52cd"><div class="ttname"><a href="nuGfxThread_8c.html#a7dce3f86e752bbdbfe35e29bd0ab52cd">nuGfxThreadStart</a></div><div class="ttdeci">void nuGfxThreadStart(void)</div><div class="ttdef"><b>Definition:</b> <a href="nuGfxThread_8c_source.html#l00009">nuGfxThread.c:9</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="atypes_8h_html_a01d4e4f815d02583cc4a6558025cfd77"><div class="ttname"><a href="types_8h.html#a01d4e4f815d02583cc4a6558025cfd77">UNK_PTR</a></div><div class="ttdeci">#define UNK_PTR</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00007">types.h:7</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -136,7 +136,7 @@ $(document).ready(function(){initNavTree('nuGfxInit_8c_source.html',''); initRes
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="dir_9ef2b62e2fdf8f26529bc674320ff5b4.html">nusys</a></li><li class="navelem"><a class="el" href="nuGfxInit_8c.html">nuGfxInit.c</a></li>
-    <li class="footer">Generated on Tue Feb 9 2021 01:41:05 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 9 2021 01:49:28 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

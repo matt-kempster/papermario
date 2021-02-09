@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('code__39cb0__len__100_8c_source.html',
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// TODO: create src/os/nusys/nuSched.h?</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">extern</span> u64 <a class="code" href="code__39cb0__len__100_8c.html#abf55bcf680a9098f70f8538a7dc41545">nuScStack</a>[NU_SC_STACK_SIZE / <span class="keyword">sizeof</span>(u64)];</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//void (*nuIdleFunc)(void) = NULL;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">    9</a></span>&#160;<span class="keyword">static</span> void (*<a class="code" href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">nuIdleFunc</a>)(void);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="code__39cb0__len__100_8c.html#ab4e190a90fa6ba5f226b61cea57c81a6">   11</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__39cb0__len__100_8c.html#ab4e190a90fa6ba5f226b61cea57c81a6">nuBoot</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    osInitialize(); <span class="comment">// __osInitialize_common</span></div>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('code__39cb0__len__100_8c_source.html',
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="code__39cb0__len__100_8c.html#a515a05a871830f9157103ae3b2d7d728">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__39cb0__len__100_8c.html#a515a05a871830f9157103ae3b2d7d728">boot_idle</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    nuIdleFunc = NULL;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">nuIdleFunc</a> = NULL;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="nuPiInit_8c.html#a7f5425c52f26979994d5c245201e5240">nuPiInit</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="nuSched_8c.html#ac5b0c30c694ad637ed0b874317a23663">nuScCreateScheduler</a>(OS_VI_NTSC_LAN1, 1);</div>
@@ -116,16 +116,17 @@ $(document).ready(function(){initNavTree('code__39cb0__len__100_8c_source.html',
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="code__41350__len__d0_8c.html#a0ba3a1830df80ec8ddc33aec4ba85f2b">osSetThreadPri</a>(&amp;<a class="code" href="variables_8h.html#a28900bf520f61278b3e3b4684f8c926e">D_800A4270</a>, NU_IDLE_THREAD_PRI);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">while</span> (1) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (nuIdleFunc != NULL) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            nuIdleFunc();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">nuIdleFunc</a> != NULL) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">nuIdleFunc</a>();</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;os/code_39cb0_len_100&quot;</span>, <a class="code" href="code__39cb0__len__100_8c.html#a515a05a871830f9157103ae3b2d7d728">boot_idle</a>, <span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="acode__1370__len__7d0_8c_html_a6cb8bdec608ab33b1ffae0649da63d75"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a></div><div class="ttdeci">void boot_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00009">code_1370_len_7d0.c:9</a></div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_a6cb8bdec608ab33b1ffae0649da63d75"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a></div><div class="ttdeci">void boot_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00016">code_1370_len_7d0.c:16</a></div></div>
 <div class="ttc" id="acode__39cb0__len__100_8c_html_a515a05a871830f9157103ae3b2d7d728"><div class="ttname"><a href="code__39cb0__len__100_8c.html#a515a05a871830f9157103ae3b2d7d728">boot_idle</a></div><div class="ttdeci">void boot_idle(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__39cb0__len__100_8c_source.html#l00018">code_39cb0_len_100.c:18</a></div></div>
+<div class="ttc" id="acode__39cb0__len__100_8c_html_a820639eb8a451d9ff0baf26e936b532b"><div class="ttname"><a href="code__39cb0__len__100_8c.html#a820639eb8a451d9ff0baf26e936b532b">nuIdleFunc</a></div><div class="ttdeci">static void(* nuIdleFunc)(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__39cb0__len__100_8c_source.html#l00009">code_39cb0_len_100.c:9</a></div></div>
 <div class="ttc" id="acode__39cb0__len__100_8c_html_ab4e190a90fa6ba5f226b61cea57c81a6"><div class="ttname"><a href="code__39cb0__len__100_8c.html#ab4e190a90fa6ba5f226b61cea57c81a6">nuBoot</a></div><div class="ttdeci">void nuBoot(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__39cb0__len__100_8c_source.html#l00011">code_39cb0_len_100.c:11</a></div></div>
 <div class="ttc" id="acode__39cb0__len__100_8c_html_abf55bcf680a9098f70f8538a7dc41545"><div class="ttname"><a href="code__39cb0__len__100_8c.html#abf55bcf680a9098f70f8538a7dc41545">nuScStack</a></div><div class="ttdeci">u64 nuScStack[NU_SC_STACK_SIZE/sizeof(u64)]</div></div>
 <div class="ttc" id="acode__41350__len__d0_8c_html_a0ba3a1830df80ec8ddc33aec4ba85f2b"><div class="ttname"><a href="code__41350__len__d0_8c.html#a0ba3a1830df80ec8ddc33aec4ba85f2b">osSetThreadPri</a></div><div class="ttdeci">void osSetThreadPri(OSThread *thread, OSPri pri)</div><div class="ttdef"><b>Definition:</b> <a href="code__41350__len__d0_8c_source.html#l00003">code_41350_len_d0.c:3</a></div></div>
@@ -146,7 +147,7 @@ $(document).ready(function(){initNavTree('code__39cb0__len__100_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__39cb0__len__100_8c.html">code_39cb0_len_100.c</a></li>
-    <li class="footer">Generated on Tue Feb 9 2021 01:41:05 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Feb 9 2021 01:49:28 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
