@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['ui_5fstatus_31979',['UI_STATUS',['../macros_8h.html#abb968dabf9e3dc762781e0430725fe70',1,'macros.h']]],
-  ['unk_5fargs_31980',['UNK_ARGS',['../types_8h.html#a5e5a9d4486e1358ef595bf9ce9a6d069',1,'types.h']]],
-  ['unk_5ffun_5farg_31981',['UNK_FUN_ARG',['../types_8h.html#accca08002e9305d97563f0049ae93aff',1,'types.h']]],
-  ['unk_5ffun_5fptr_31982',['UNK_FUN_PTR',['../types_8h.html#abb3af713cff819dd9437ccc12db0d9d5',1,'types.h']]],
-  ['unk_5fptr_31983',['UNK_PTR',['../types_8h.html#a01d4e4f815d02583cc4a6558025cfd77',1,'types.h']]],
-  ['unk_5fret_31984',['UNK_RET',['../types_8h.html#aa42f8c01af65b61195da84af502ea69e',1,'types.h']]],
-  ['unk_5ftype_31985',['UNK_TYPE',['../types_8h.html#a4f3273c8d016f04f4465c67939067721',1,'types.h']]],
-  ['unkstruct8013a854_5fsize_31986',['UNKSTRUCT8013A854_SIZE',['../code__d0a70__len__4fe0_8c.html#a6cb52f20b0546598c91af07f6bcd884c',1,'code_d0a70_len_4fe0.c']]]
+  ['tau_32134',['TAU',['../macros_8h.html#a3d8c9c145887af5174ba4cc6789862ad',1,'macros.h']]],
+  ['triggerflag_5farea_5fflag_5fset_32135',['TriggerFlag_AREA_FLAG_SET',['../enums_8h.html#a5030adc5446fb830ab9a1ca7889a3f9d',1,'enums.h']]],
+  ['triggerflag_5fbomb_32136',['TriggerFlag_BOMB',['../enums_8h.html#ab3d8c0f58c13b08e6641b265076f8231',1,'enums.h']]],
+  ['triggerflag_5fceiling_5ftouch_32137',['TriggerFlag_CEILING_TOUCH',['../enums_8h.html#aa5f5e52416820eac9c3b88ed46afe069',1,'enums.h']]],
+  ['triggerflag_5ffloor_5fabove_32138',['TriggerFlag_FLOOR_ABOVE',['../enums_8h.html#a154c2ebb7b3bb409f8e82aad3cef581c',1,'enums.h']]],
+  ['triggerflag_5ffloor_5finteract_32139',['TriggerFlag_FLOOR_INTERACT',['../enums_8h.html#a69cef89ff66d0d653337807ec388a05f',1,'enums.h']]],
+  ['triggerflag_5ffloor_5fjump_32140',['TriggerFlag_FLOOR_JUMP',['../enums_8h.html#a02445e6c7a24b71f5e6cb87c770573a7',1,'enums.h']]],
+  ['triggerflag_5ffloor_5ftouch_32141',['TriggerFlag_FLOOR_TOUCH',['../enums_8h.html#a5cb28c05faf8a91daa28817dbb82cd60',1,'enums.h']]],
+  ['triggerflag_5fsave_5fflag_5fset_32142',['TriggerFlag_SAVE_FLAG_SET',['../enums_8h.html#ac06baae3b9bc2bb6f264babac3f1178f',1,'enums.h']]],
+  ['triggerflag_5fwall_5fhammer_32143',['TriggerFlag_WALL_HAMMER',['../enums_8h.html#af4f175fee20ee312b3adf37dbebe1389',1,'enums.h']]],
+  ['triggerflag_5fwall_5finteract_32144',['TriggerFlag_WALL_INTERACT',['../enums_8h.html#ab824b38c87a55e904aeb13b7af87f2c9',1,'enums.h']]],
+  ['triggerflag_5fwall_5fpush_32145',['TriggerFlag_WALL_PUSH',['../enums_8h.html#a3928ab86fbbfac15e4514a88d9a49b34',1,'enums.h']]],
+  ['triggerflag_5fwall_5ftouch_32146',['TriggerFlag_WALL_TOUCH',['../enums_8h.html#ac6990a4b5adf518ea4189649dfdafa73',1,'enums.h']]],
+  ['tutorial_5fbadges_32147',['Tutorial_Badges',['../kmr_8h.html#a83c66d6865cd3e69c4521c7178b8aa04',1,'kmr.h']]],
+  ['tutorial_5fgotitem_32148',['Tutorial_GotItem',['../kmr_8h.html#a69332d05fea9cc2dbcebf5aea048552c',1,'kmr.h']]],
+  ['tutorial_5fgotstarpiece_32149',['Tutorial_GotStarPiece',['../kmr_8h.html#aacb644893cbbb8f5494e1b6626d152f3',1,'kmr.h']]],
+  ['tutorial_5fheartblock_32150',['Tutorial_HeartBlock',['../kmr_8h.html#a5532b8b00553fe8d2d14cd67957ebd60',1,'kmr.h']]],
+  ['tutorial_5fsaveblock_32151',['Tutorial_SaveBlock',['../kmr_8h.html#a0b5b312a4493c05009f872fbc5e2606b',1,'kmr.h']]]
 ];

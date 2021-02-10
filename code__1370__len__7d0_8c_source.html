@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a>(s32);</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#ac91b0eaaad1b92fefec7e92b3def41ae">func_80026164</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">extern</span> s32* <a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">extern</span> s32 <a class="code" href="code__1370__len__7d0_8c.html#a3680a9174975713740e963842c0ec28e">D_80073E04</a>;</div>
@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> == 2) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="code__1370__len__7d0_8c.html#ac91b0eaaad1b92fefec7e92b3def41ae">func_80026164</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        s16* temp_80073E0A = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a335d6c8c0af539ae0d6d03a329d4116a">D_80073E0A</a>;</div>
@@ -174,14 +174,14 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">if</span> (arg0 &lt; 3) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                *temp_80073E08 = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#a5dbfb8b4b3be48424349ea1869efc930">func_800269EC</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#ad32ec9f27dba25f667664999e6e22560">gfx_task_background</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#afed5cec2656bc696e9ec898e8abae0f9">gfx_draw_frame</a>();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#ac91b0eaaad1b92fefec7e92b3def41ae">   94</a></span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_1370_len_7d0&quot;</span>, <a class="code" href="code__1370__len__7d0_8c.html#ac91b0eaaad1b92fefec7e92b3def41ae">func_80026164</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">   94</a></span>&#160;INCLUDE_ASM(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_1370_len_7d0&quot;</span>, <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">   96</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> = 1;</div>
@@ -195,9 +195,9 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a6cb8bdec608ab33b1ffae0649da63d75"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a></div><div class="ttdeci">void boot_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00016">code_1370_len_7d0.c:16</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a9a0e772a5c85f3862259110352b1f03a"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a></div><div class="ttdeci">s32 * D_80073E00</div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_aa2e13af149f10d3cddb1c216a6b762fb"><div class="ttname"><a href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a></div><div class="ttdeci">void gfxRetrace_Callback(s32)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00052">code_1370_len_7d0.c:52</a></div></div>
-<div class="ttc" id="acode__1370__len__7d0_8c_html_ac91b0eaaad1b92fefec7e92b3def41ae"><div class="ttname"><a href="code__1370__len__7d0_8c.html#ac91b0eaaad1b92fefec7e92b3def41ae">func_80026164</a></div><div class="ttdeci">void func_80026164(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00094">code_1370_len_7d0.c:94</a></div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_abfbc49c5d9da9045ff2072ae71bd048f"><div class="ttname"><a href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a></div><div class="ttdeci">void gfx_task_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00094">code_1370_len_7d0.c:94</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_af3583247643554be5a90b1269458cf72"><div class="ttname"><a href="code__1370__len__7d0_8c.html#af3583247643554be5a90b1269458cf72">D_8009A680</a></div><div class="ttdeci">s32 * D_8009A680</div></div>
-<div class="ttc" id="acode__1b40__len__20b0_8c_html_a5dbfb8b4b3be48424349ea1869efc930"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a5dbfb8b4b3be48424349ea1869efc930">func_800269EC</a></div><div class="ttdeci">s32 func_800269EC()</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00036">code_1b40_len_20b0.c:36</a></div></div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_ad32ec9f27dba25f667664999e6e22560"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#ad32ec9f27dba25f667664999e6e22560">gfx_task_background</a></div><div class="ttdeci">s32 gfx_task_background()</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00036">code_1b40_len_20b0.c:36</a></div></div>
 <div class="ttc" id="acode__1b40__len__20b0_8c_html_ad754bff26b7ed3fbdc414e5bf195de7b"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#ad754bff26b7ed3fbdc414e5bf195de7b">step_game_loop</a></div><div class="ttdeci">void step_game_loop()</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00034">code_1b40_len_20b0.c:34</a></div></div>
 <div class="ttc" id="acode__1b40__len__20b0_8c_html_afed5cec2656bc696e9ec898e8abae0f9"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#afed5cec2656bc696e9ec898e8abae0f9">gfx_draw_frame</a></div><div class="ttdeci">s32 gfx_draw_frame()</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00038">code_1b40_len_20b0.c:38</a></div></div>
 <div class="ttc" id="acode__316f30_8c_html_a1357023d4df011d4c1609f4c65d89dc5"><div class="ttname"><a href="code__316f30_8c.html#a1357023d4df011d4c1609f4c65d89dc5">func_802B2000</a></div><div class="ttdeci">void func_802B2000(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__316f30_8c_source.html#l00013">code_316f30.c:13</a></div></div>
@@ -227,7 +227,7 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__1370__len__7d0_8c.html">code_1370_len_7d0.c</a></li>
-    <li class="footer">Generated on Tue Feb 9 2021 01:49:27 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Feb 10 2021 14:52:26 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
