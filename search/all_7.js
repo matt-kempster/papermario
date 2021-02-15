@@ -432,7 +432,7 @@ var searchData=
   ['actor_5ftype_5fwhite_5fmagikoopa_971',['ACTOR_TYPE_white_magikoopa',['../src_2battle_2battle_8h.html#ad6c35a1fab14b1fc92b72561df823629',1,'battle.h']]],
   ['actor_5ftype_5fyellow_5fmagikoopa_972',['ACTOR_TYPE_yellow_magikoopa',['../src_2battle_2battle_8h.html#a0f8015fd41fffb8510022987b3b6a7f4',1,'battle.h']]],
   ['actor_5ftype_5fyellow_5fninjakoopa_973',['ACTOR_TYPE_yellow_ninjakoopa',['../src_2battle_2battle_8h.html#aa4678cf13ddd32c2ae2c8b54460dcf26',1,'battle.h']]],
-  ['actoraddmovepos_974',['ActorAddMovePos',['../code__1AF120_8c.html#aaff9006ff1d70624f33b0d3a950040ab',1,'ActorAddMovePos():&#160;code_1AF120.c'],['../include_2script__api_2battle_8h.html#af9de0e02b70ade605bd472066d01d8d2',1,'ActorAddMovePos(ScriptInstance *script, s32 isInitialCall):&#160;battle.h']]],
+  ['actoraddmovepos_974',['ActorAddMovePos',['../code__1AF120_8c.html#af9de0e02b70ade605bd472066d01d8d2',1,'ActorAddMovePos(ScriptInstance *script, s32 isInitialCall):&#160;code_1AF120.c'],['../include_2script__api_2battle_8h.html#af9de0e02b70ade605bd472066d01d8d2',1,'ActorAddMovePos(ScriptInstance *script, s32 isInitialCall):&#160;code_1AF120.c']]],
   ['actordesc_975',['ActorDesc',['../structActorDesc.html',1,'']]],
   ['actorexists_976',['ActorExists',['../code__197F40_8c.html#ae10f7cadbaa633223387fcbcb8990185',1,'ActorExists(ScriptInstance *script, s32 isInitialCall):&#160;code_197F40.c'],['../include_2script__api_2battle_8h.html#ae10f7cadbaa633223387fcbcb8990185',1,'ActorExists(ScriptInstance *script, s32 isInitialCall):&#160;code_197F40.c']]],
   ['actorflypos_977',['ActorFlyPos',['../structActorFlyPos.html',1,'']]],

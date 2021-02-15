@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['npcanimid_31244',['NpcAnimID',['../types_8h.html#ad5456767e39de7903eb11e43977c80a5',1,'types.h']]],
-  ['npcid_31245',['NpcId',['../enums_8h.html#a2132d3d939cc2119f7a13b696d55d909',1,'enums.h']]],
-  ['npclist_31246',['NpcList',['../common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781',1,'common_structs.h']]]
+  ['npcanimid_31179',['NpcAnimID',['../types_8h.html#ad5456767e39de7903eb11e43977c80a5',1,'types.h']]],
+  ['npcid_31180',['NpcId',['../enums_8h.html#a2132d3d939cc2119f7a13b696d55d909',1,'enums.h']]],
+  ['npclist_31181',['NpcList',['../common__structs_8h.html#a44653a7e9442ebe45af93faad3cc6781',1,'common_structs.h']]]
 ];
