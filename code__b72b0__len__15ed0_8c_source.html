@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('code__b72b0__len__15ed0_8c_source.html
 <div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="code__b72b0__len__15ed0_8c.html#ad11fa79ec4a7c602b75cf1afdbfd7b48">  103</a></span>&#160;INCLUDE_ASM(s32, <span class="stringliteral">&quot;code_b72b0_len_15ed0&quot;</span>, <a class="code" href="code__b72b0__len__15ed0_8c.html#ad11fa79ec4a7c602b75cf1afdbfd7b48">clear_dynamic_entity_list</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="code__b72b0__len__15ed0_8c.html#aa2ea59196ed78ff663a0a46a8d75e019">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__b72b0__len__15ed0_8c.html#aa2ea59196ed78ff663a0a46a8d75e019">init_dynamic_entity_list</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a>-&gt;isBattle) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (!(*gGameStatusPtr)-&gt;isBattle) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="variables_8h.html#aef061ef5579cb8933d30bf380f927256">gCurrentDynamicEntityListPtr</a> = <a class="code" href="variables_8h.html#a803aa305acd58f83a765904affa03beb">gWorldDynamicEntityList</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="variables_8h.html#aef061ef5579cb8933d30bf380f927256">gCurrentDynamicEntityListPtr</a> = <a class="code" href="variables_8h.html#ae5d196f0f5e3579dbe08fd776ab151dc">gBattleDynamicEntityList</a>;</div>
@@ -270,7 +270,6 @@ $(document).ready(function(){initNavTree('code__b72b0__len__15ed0_8c_source.html
 <div class="ttc" id="acode__b72b0__len__15ed0_8c_html_afa7bc54c2db674ce1df2d3898a26e299"><div class="ttname"><a href="code__b72b0__len__15ed0_8c.html#afa7bc54c2db674ce1df2d3898a26e299">init_entity_models</a></div><div class="ttdeci">s32 init_entity_models()</div><div class="ttdef"><b>Definition:</b> <a href="code__b72b0__len__15ed0_8c_source.html#l00014">code_b72b0_len_15ed0.c:14</a></div></div>
 <div class="ttc" id="acommon__structs_8h_html_a9587453a89fcbd13a2ba23c4b74fc0fd"><div class="ttname"><a href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a></div><div class="ttdeci">f32 Matrix4f[4][4]</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00064">common_structs.h:64</a></div></div>
 <div class="ttc" id="aguMtxIdentF_8c_html_a257a86497fc08677370948eda3163595"><div class="ttname"><a href="guMtxIdentF_8c.html#a257a86497fc08677370948eda3163595">guMtxIdentF</a></div><div class="ttdeci">void guMtxIdentF(float mf[4][4])</div><div class="ttdef"><b>Definition:</b> <a href="guMtxIdentF_8c_source.html#l00003">guMtxIdentF.c:3</a></div></div>
-<div class="ttc" id="amacros_8h_html_ae05ded5ea0a8ac658be1d9bd098fc5b1"><div class="ttname"><a href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a></div><div class="ttdeci">#define GAME_STATUS</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00028">macros.h:28</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="avariables_8h_html_a803aa305acd58f83a765904affa03beb"><div class="ttname"><a href="variables_8h.html#a803aa305acd58f83a765904affa03beb">gWorldDynamicEntityList</a></div><div class="ttdeci">DynamicEntityList gWorldDynamicEntityList</div></div>
 <div class="ttc" id="avariables_8h_html_ae5d196f0f5e3579dbe08fd776ab151dc"><div class="ttname"><a href="variables_8h.html#ae5d196f0f5e3579dbe08fd776ab151dc">gBattleDynamicEntityList</a></div><div class="ttdeci">DynamicEntityList gBattleDynamicEntityList</div></div>
@@ -281,7 +280,7 @@ $(document).ready(function(){initNavTree('code__b72b0__len__15ed0_8c_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__b72b0__len__15ed0_8c.html">code_b72b0_len_15ed0.c</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 10:33:29 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 20 2021 14:42:17 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

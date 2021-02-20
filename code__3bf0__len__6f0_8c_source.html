@@ -95,9 +95,9 @@ $(document).ready(function(){initNavTree('code__3bf0__len__6f0_8c_source.html','
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus2;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    gameStatus = <a class="code" href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    gameStatus = *<a class="code" href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    gameStatus-&gt;<a class="code" href="structGameStatus.html#a3081c0e37538432fd8806893e0564800">stickX</a> = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    gameStatus2 = <a class="code" href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    gameStatus2 = *<a class="code" href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    gameStatus-&gt;<a class="code" href="structGameStatus.html#ae6c7c47900dbb8f47ed8ab19bf28ef1b">currentButtons</a> = 0;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    gameStatus-&gt;<a class="code" href="structGameStatus.html#ae8c6d8ce7ad12e8cbb4908035ec95707">pressedButtons</a> = 0;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    gameStatus-&gt;<a class="code" href="structGameStatus.html#a1c26cc16927a256306c80150ef086c38">heldButtons</a> = 0;</div>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('code__3bf0__len__6f0_8c_source.html','
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// TODO: macro</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus = <a class="code" href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus = *<a class="code" href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a>;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        gameStatus-&gt;<a class="code" href="structGameStatus.html#a039f1204b6a231e514996c8a30ece27e">prevButtons</a> = 0;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        gameStatus-&gt;<a class="code" href="structGameStatus.html#a961bc8eb60b19bc1ac7d864e8076ce5a">unk_50</a>[0] = 4;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        gameStatus-&gt;<a class="code" href="structGameStatus.html#ae0d9c11cddd5a0132c618c17f5b1f703">unk_48</a>[0] = 15;</div>
@@ -123,10 +123,10 @@ $(document).ready(function(){initNavTree('code__3bf0__len__6f0_8c_source.html','
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="code__3bf0__len__6f0_8c.html#ab22f8831684ec923a1d6b8f2e3535d6b">   35</a></span>&#160;INCLUDE_ASM(s32, <span class="stringliteral">&quot;code_3bf0_len_6f0&quot;</span>, <a class="code" href="code__3bf0__len__6f0_8c.html#ab22f8831684ec923a1d6b8f2e3535d6b">update_input</a>);</div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_ab74ac7c11da73affa58fd0052c3c272c"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr[1]</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00011">code_1b40_len_20b0.c:11</a></div></div>
 <div class="ttc" id="acode__3bf0__len__6f0_8c_html_a5fc01c44cfd637e96844bc4ba2aa8259"><div class="ttname"><a href="code__3bf0__len__6f0_8c.html#a5fc01c44cfd637e96844bc4ba2aa8259">func_80028838</a></div><div class="ttdeci">void func_80028838(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__3bf0__len__6f0_8c_source.html#l00027">code_3bf0_len_6f0.c:27</a></div></div>
 <div class="ttc" id="acode__3bf0__len__6f0_8c_html_ab22f8831684ec923a1d6b8f2e3535d6b"><div class="ttname"><a href="code__3bf0__len__6f0_8c.html#ab22f8831684ec923a1d6b8f2e3535d6b">update_input</a></div><div class="ttdeci">s32 update_input()</div><div class="ttdef"><b>Definition:</b> <a href="code__3bf0__len__6f0_8c_source.html#l00035">code_3bf0_len_6f0.c:35</a></div></div>
 <div class="ttc" id="acode__3bf0__len__6f0_8c_html_aeefd8c20bce7aeaad29f0a6b145e48d8"><div class="ttname"><a href="code__3bf0__len__6f0_8c.html#aeefd8c20bce7aeaad29f0a6b145e48d8">func_800287F0</a></div><div class="ttdeci">void func_800287F0(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__3bf0__len__6f0_8c_source.html#l00003">code_3bf0_len_6f0.c:3</a></div></div>
-<div class="ttc" id="amacros_8h_html_ae05ded5ea0a8ac658be1d9bd098fc5b1"><div class="ttname"><a href="macros_8h.html#ae05ded5ea0a8ac658be1d9bd098fc5b1">GAME_STATUS</a></div><div class="ttdeci">#define GAME_STATUS</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00028">macros.h:28</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="astructGameStatus_html"><div class="ttname"><a href="structGameStatus.html">GameStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00907">common_structs.h:907</a></div></div>
 <div class="ttc" id="astructGameStatus_html_a039f1204b6a231e514996c8a30ece27e"><div class="ttname"><a href="structGameStatus.html#a039f1204b6a231e514996c8a30ece27e">GameStatus::prevButtons</a></div><div class="ttdeci">u32 prevButtons</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00917">common_structs.h:917</a></div></div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('code__3bf0__len__6f0_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__3bf0__len__6f0_8c.html">code_3bf0_len_6f0.c</a></li>
-    <li class="footer">Generated on Tue Feb 16 2021 10:33:29 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sat Feb 20 2021 14:42:16 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
