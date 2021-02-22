@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['quizzesanswered_30210',['quizzesAnswered',['../structPlayerData.html#a047fe0332f7d01d9d9bf07dd77f641b0',1,'PlayerData']]],
-  ['quizzescorrect_30211',['quizzesCorrect',['../structPlayerData.html#a60222ac4336d1757aee4d6e4946eb045',1,'PlayerData']]]
+  ['quizzesanswered_30213',['quizzesAnswered',['../structPlayerData.html#a047fe0332f7d01d9d9bf07dd77f641b0',1,'PlayerData']]],
+  ['quizzescorrect_30214',['quizzesCorrect',['../structPlayerData.html#a60222ac4336d1757aee4d6e4946eb045',1,'PlayerData']]]
 ];
