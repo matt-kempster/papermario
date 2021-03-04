@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('osEPiWriteIo_8c_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('os_2osEPiWriteIo_8c_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,10 +88,10 @@ $(document).ready(function(){initNavTree('osEPiWriteIo_8c_source.html',''); init
 <div class="title">osEPiWriteIo.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="osEPiWriteIo_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
+<a href="os_2osEPiWriteIo_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifdef MOVE_ISSUE</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;s32 <a class="code" href="osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a>(OSPiHandle* handle, u32 devAddr, u32 data) {</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;s32 <a class="code" href="jp_2os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a>(OSPiHandle* handle, u32 devAddr, u32 data) {</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">register</span> s32 ret;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="code__3c850__len__f0_8c.html#ad7e0383c7146cc6fa6ac0f5b242bdb16">osPiGetAccess</a>();</div>
@@ -101,20 +101,20 @@ $(document).ready(function(){initNavTree('osEPiWriteIo_8c_source.html',''); init
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">   14</a></span>&#160;INCLUDE_ASM(s32, <span class="stringliteral">&quot;os/osEPiWriteIo&quot;</span>, <a class="code" href="osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a>, OSPiHandle* handle, u32 devAddr, u32 data);</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">   14</a></span>&#160;INCLUDE_ASM(s32, <span class="stringliteral">&quot;os/osEPiWriteIo&quot;</span>, <a class="code" href="jp_2os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a>, OSPiHandle* handle, u32 devAddr, u32 data);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acode__3c850__len__f0_8c_html_a8f371f3fc9f71930ba9da7bbc80f3bd1"><div class="ttname"><a href="code__3c850__len__f0_8c.html#a8f371f3fc9f71930ba9da7bbc80f3bd1">osPiRelAccess</a></div><div class="ttdeci">s32 osPiRelAccess()</div><div class="ttdef"><b>Definition:</b> <a href="code__3c850__len__f0_8c_source.html#l00007">code_3c850_len_f0.c:7</a></div></div>
 <div class="ttc" id="acode__3c850__len__f0_8c_html_ad7e0383c7146cc6fa6ac0f5b242bdb16"><div class="ttname"><a href="code__3c850__len__f0_8c.html#ad7e0383c7146cc6fa6ac0f5b242bdb16">osPiGetAccess</a></div><div class="ttdeci">s32 osPiGetAccess()</div><div class="ttdef"><b>Definition:</b> <a href="code__3c850__len__f0_8c_source.html#l00005">code_3c850_len_f0.c:5</a></div></div>
 <div class="ttc" id="acode__46ae0__len__170_8c_html_a8926f253609274e839b9ae650aae712f"><div class="ttname"><a href="code__46ae0__len__170_8c.html#a8926f253609274e839b9ae650aae712f">osEPiRawWriteIo</a></div><div class="ttdeci">s32 osEPiRawWriteIo()</div><div class="ttdef"><b>Definition:</b> <a href="code__46ae0__len__170_8c_source.html#l00003">code_46ae0_len_170.c:3</a></div></div>
-<div class="ttc" id="aosEPiWriteIo_8c_html_a83116d80985dec6cd811d1167c49969f"><div class="ttname"><a href="osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a></div><div class="ttdeci">s32 osEPiWriteIo(OSPiHandle *handle, u32 devAddr, u32 data)</div><div class="ttdef"><b>Definition:</b> <a href="osEPiWriteIo_8c_source.html#l00014">osEPiWriteIo.c:14</a></div></div>
+<div class="ttc" id="ajp_2os_2osEPiWriteIo_8c_html_a83116d80985dec6cd811d1167c49969f"><div class="ttname"><a href="jp_2os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a></div><div class="ttdeci">s32 osEPiWriteIo(OSPiHandle *handle, u32 devAddr, u32 data)</div><div class="ttdef"><b>Definition:</b> <a href="jp_2os_2osEPiWriteIo_8c_source.html#l00003">osEPiWriteIo.c:3</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="osEPiWriteIo_8c.html">osEPiWriteIo.c</a></li>
-    <li class="footer">Generated on Sun Feb 28 2021 01:06:00 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="os_2osEPiWriteIo_8c.html">osEPiWriteIo.c</a></li>
+    <li class="footer">Generated on Thu Mar 4 2021 09:01:48 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

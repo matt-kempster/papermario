@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('UnkMoveFunc1_8inc_8c_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    f32 goalY = playerActor-&gt;<a class="code" href="structActor.html#ade9c471ae37a3111433275ca76dc7976">walk</a>.<a class="code" href="structActorMovement.html#a98587d71a0dd4a385b81b3371c223818">goalPos</a>.<a class="code" href="structVec3f.html#af767d1a2b053d5bbd5da0e9cd06d43b5">y</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    f32 goalZ = playerActor-&gt;<a class="code" href="structActor.html#ade9c471ae37a3111433275ca76dc7976">walk</a>.<a class="code" href="structActorMovement.html#a98587d71a0dd4a385b81b3371c223818">goalPos</a>.<a class="code" href="structVec3f.html#a9e8627b47b233807d9e5d6214fdaa1df">z</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    script-&gt;varTable[0] = (<a class="code" href="code__42e0__len__1f60_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a>(posX, posY, posZ, goalX, goalY, goalZ) * 15.0f) / 100.0f;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    script-&gt;varTable[0] = (<a class="code" href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a>(posX, posY, posZ, goalX, goalY, goalZ) * 15.0f) / 100.0f;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">if</span> (script-&gt;varTable[0] &gt; 20) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        script-&gt;varTable[0] = 20;</div>
@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('UnkMoveFunc1_8inc_8c_source.html','');
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="ttc" id="aUnkMoveFunc1_8inc_8c_html_a1a18284ffa891cec0e61fcfa4f1eccd9"><div class="ttname"><a href="UnkMoveFunc1_8inc_8c.html#a1a18284ffa891cec0e61fcfa4f1eccd9">UnkMoveFunc1</a></div><div class="ttdeci">ApiStatus N() UnkMoveFunc1(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="UnkMoveFunc1_8inc_8c_source.html#l00004">UnkMoveFunc1.inc.c:4</a></div></div>
-<div class="ttc" id="acode__42e0__len__1f60_8c_html_a5000a1bf8a75a2858e3ed00e76a0ca3f"><div class="ttname"><a href="code__42e0__len__1f60_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a></div><div class="ttdeci">f32 dist3D(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz)</div><div class="ttdef"><b>Definition:</b> <a href="code__42e0__len__1f60_8c_source.html#l00331">code_42e0_len_1f60.c:331</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a5000a1bf8a75a2858e3ed00e76a0ca3f"><div class="ttname"><a href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a></div><div class="ttdeci">f32 dist3D(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00279">code_43F0.c:279</a></div></div>
 <div class="ttc" id="amacros_8h_html_a140931a55df25c359c52a4c414eda943"><div class="ttname"><a href="macros_8h.html#a140931a55df25c359c52a4c414eda943">N</a></div><div class="ttdeci">#define N(sym)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00020">macros.h:20</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="ascript__api_2map_8h_html"><div class="ttname"><a href="script__api_2map_8h.html">map.h</a></div></div>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('UnkMoveFunc1_8inc_8c_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6826d79532171ff2338799cfd298b875.html">world</a></li><li class="navelem"><a class="el" href="dir_7435fceb9dbcf38c7cda431c492ba8a6.html">common</a></li><li class="navelem"><a class="el" href="UnkMoveFunc1_8inc_8c.html">UnkMoveFunc1.inc.c</a></li>
-    <li class="footer">Generated on Sun Feb 28 2021 01:06:01 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 4 2021 09:01:50 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
