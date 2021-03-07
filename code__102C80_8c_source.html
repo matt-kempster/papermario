@@ -170,7 +170,7 @@ $(document).ready(function(){initNavTree('code__102C80_8c_source.html',''); init
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="code__102C80_8c.html#ae912c086dcd9e9f17387f199244ddf94">   80</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__102C80_8c.html#ae912c086dcd9e9f17387f199244ddf94">func_802E1660</a>(<a class="code" href="structEntity.html">Entity</a>* entity) {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="structstruct802E1400.html">struct802E1400</a>* temp = entity-&gt;<a class="code" href="structEntity.html#a85c29c74c2a6728d52c9f8184a7e855e">dataBuf</a>;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="structPlayerStatus.html">PlayerStatus</a>* playerStatus = &amp;<a class="code" href="variables_8h.html#a8aa70d9504c728ab139a8e4d8a283092">gPlayerStatus</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    s8* temp2 = <a class="code" href="variables_8h.html#aa1caf08fc6e81a21005e39acff0e7acd">D_8010EBB0</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="structTemp8010EBB0.html">Temp8010EBB0</a>* temp2 = &amp;<a class="code" href="variables_8h.html#a80eb97db57e1cc03897aacd7cbadff0f">D_8010EBB0</a>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="code__102C80_8c.html#a96ae616122b8f5f6d9d24fb6f2c088b6">func_802E153C</a>(entity);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('code__102C80_8c_source.html',''); init
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> ((temp2[3] == 4) &amp;&amp; (temp2[0] != 0)) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (temp2-&gt;<a class="code" href="structTemp8010EBB0.html#a2542bf641ef5085116ed4a524ac38641">unk_03</a> == 4 &amp;&amp; temp2-&gt;<a class="code" href="structTemp8010EBB0.html#afb7365f54caa9b0fd766b4044a9997ae">unk_00</a> != 0) {</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
@@ -712,6 +712,9 @@ $(document).ready(function(){initNavTree('code__102C80_8c_source.html',''); init
 <div class="ttc" id="astructPlayerStatus_html"><div class="ttname"><a href="structPlayerStatus.html">PlayerStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01448">common_structs.h:1448</a></div></div>
 <div class="ttc" id="astructPlayerStatus_html_a9b46dc466f2bdc5840858c36a328d7b0"><div class="ttname"><a href="structPlayerStatus.html#a9b46dc466f2bdc5840858c36a328d7b0">PlayerStatus::actionState</a></div><div class="ttdeci">s8 actionState</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01486">common_structs.h:1486</a></div></div>
 <div class="ttc" id="astructPlayerStatus_html_ac4c55e06cfb722756f94a45564fcdbbf"><div class="ttname"><a href="structPlayerStatus.html#ac4c55e06cfb722756f94a45564fcdbbf">PlayerStatus::animFlags</a></div><div class="ttdeci">u32 animFlags</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01450">common_structs.h:1450</a></div></div>
+<div class="ttc" id="astructTemp8010EBB0_html"><div class="ttname"><a href="structTemp8010EBB0.html">Temp8010EBB0</a></div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01737">common_structs.h:1737</a></div></div>
+<div class="ttc" id="astructTemp8010EBB0_html_a2542bf641ef5085116ed4a524ac38641"><div class="ttname"><a href="structTemp8010EBB0.html#a2542bf641ef5085116ed4a524ac38641">Temp8010EBB0::unk_03</a></div><div class="ttdeci">s8 unk_03</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01741">common_structs.h:1741</a></div></div>
+<div class="ttc" id="astructTemp8010EBB0_html_afb7365f54caa9b0fd766b4044a9997ae"><div class="ttname"><a href="structTemp8010EBB0.html#afb7365f54caa9b0fd766b4044a9997ae">Temp8010EBB0::unk_00</a></div><div class="ttdeci">s8 unk_00</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l01738">common_structs.h:1738</a></div></div>
 <div class="ttc" id="astructVec3f_html_a9e8627b47b233807d9e5d6214fdaa1df"><div class="ttname"><a href="structVec3f.html#a9e8627b47b233807d9e5d6214fdaa1df">Vec3f::z</a></div><div class="ttdeci">f32 z</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00037">common_structs.h:37</a></div></div>
 <div class="ttc" id="astructVec3f_html_aed1c6edce0046591ce063e054c0e32ec"><div class="ttname"><a href="structVec3f.html#aed1c6edce0046591ce063e054c0e32ec">Vec3f::x</a></div><div class="ttdeci">f32 x</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00035">common_structs.h:35</a></div></div>
 <div class="ttc" id="astructVec3f_html_af767d1a2b053d5bbd5da0e9cd06d43b5"><div class="ttname"><a href="structVec3f.html#af767d1a2b053d5bbd5da0e9cd06d43b5">Vec3f::y</a></div><div class="ttdeci">f32 y</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00036">common_structs.h:36</a></div></div>
@@ -739,9 +742,9 @@ $(document).ready(function(){initNavTree('code__102C80_8c_source.html',''); init
 <div class="ttc" id="avariables_8h_html_a21ca0e56db5aeaaf2dbc1806cd96c67c"><div class="ttname"><a href="variables_8h.html#a21ca0e56db5aeaaf2dbc1806cd96c67c">D_802EB008</a></div><div class="ttdeci">f64 D_802EB008</div></div>
 <div class="ttc" id="avariables_8h_html_a46ed5b78741a37f809c0731b362dfc8b"><div class="ttname"><a href="variables_8h.html#a46ed5b78741a37f809c0731b362dfc8b">gMasterGfxPos</a></div><div class="ttdeci">Gfx * gMasterGfxPos</div></div>
 <div class="ttc" id="avariables_8h_html_a6da6fdbc689bf6cf43c9bc6637bbf666"><div class="ttname"><a href="variables_8h.html#a6da6fdbc689bf6cf43c9bc6637bbf666">gPlayerData</a></div><div class="ttdeci">PlayerData gPlayerData</div></div>
+<div class="ttc" id="avariables_8h_html_a80eb97db57e1cc03897aacd7cbadff0f"><div class="ttname"><a href="variables_8h.html#a80eb97db57e1cc03897aacd7cbadff0f">D_8010EBB0</a></div><div class="ttdeci">Temp8010EBB0 D_8010EBB0</div></div>
 <div class="ttc" id="avariables_8h_html_a86729ee89bebb0859f3b63b66cffe4c3"><div class="ttname"><a href="variables_8h.html#a86729ee89bebb0859f3b63b66cffe4c3">D_802EB3A0</a></div><div class="ttdeci">Entity * D_802EB3A0</div></div>
 <div class="ttc" id="avariables_8h_html_a8aa70d9504c728ab139a8e4d8a283092"><div class="ttname"><a href="variables_8h.html#a8aa70d9504c728ab139a8e4d8a283092">gPlayerStatus</a></div><div class="ttdeci">PlayerStatus gPlayerStatus</div></div>
-<div class="ttc" id="avariables_8h_html_aa1caf08fc6e81a21005e39acff0e7acd"><div class="ttname"><a href="variables_8h.html#aa1caf08fc6e81a21005e39acff0e7acd">D_8010EBB0</a></div><div class="ttdeci">s8 D_8010EBB0[]</div></div>
 <div class="ttc" id="avariables_8h_html_aebe5c35911e507cb592d968899058573"><div class="ttname"><a href="variables_8h.html#aebe5c35911e507cb592d968899058573">D_802EB000</a></div><div class="ttdeci">f64 D_802EB000</div></div>
 <div class="ttc" id="avariables_8h_html_aee064002e72f9f739186dd7864173bda"><div class="ttname"><a href="variables_8h.html#aee064002e72f9f739186dd7864173bda">gDisplayContext</a></div><div class="ttdeci">DisplayContext * gDisplayContext</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -750,7 +753,7 @@ $(document).ready(function(){initNavTree('code__102C80_8c_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__102C80_8c.html">code_102C80.c</a></li>
-    <li class="footer">Generated on Thu Mar 4 2021 09:01:47 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 7 2021 18:33:20 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
