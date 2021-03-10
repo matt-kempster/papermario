@@ -100,13 +100,17 @@ $(document).ready(function(){initNavTree('include__asm_8h_source.html',''); init
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">   TYPE NAME(ARGS); \</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">  TYPE __attribute__((naked)) NAME(ARGS) { __asm__( &quot;.include \&quot;ver/&quot;</span>STRINGIFY(VERSION)&quot;/asm/nonmatchings/&quot;FOLDER&quot;/&quot;#NAME&quot;.s\&quot;\n.set reorder\n.set at&quot;); }</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">   13</a></span>&#160;<a class="code" href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">__asm__</a>( <span class="stringliteral">&quot;.include \&quot;include/macro.inc\&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef PERMUTER</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">   14</a></span>&#160;<a class="code" href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">__asm__</a>( <span class="stringliteral">&quot;.include \&quot;include/macro.inc\&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> __attribute__((naked)) dummy_permuter_func(<span class="keywordtype">void</span>) { <a class="code" href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">__asm__</a>( <span class="stringliteral">&quot;.include \&quot;include/macro.inc\&quot;\n&quot;</span>); }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ainclude__asm_8h_html_a575fa0b77cc080c68e76e06dbc89c64a"><div class="ttname"><a href="include__asm_8h.html#a575fa0b77cc080c68e76e06dbc89c64a">__asm__</a></div><div class="ttdeci">__asm__(&quot;.include \&quot;include/macro.inc\&quot;\n&quot;)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -114,7 +118,7 @@ $(document).ready(function(){initNavTree('include__asm_8h_source.html',''); init
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="include__asm_8h.html">include_asm.h</a></li>
-    <li class="footer">Generated on Tue Mar 9 2021 17:11:01 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 10 2021 04:11:52 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
