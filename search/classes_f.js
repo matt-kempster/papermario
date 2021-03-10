@@ -1,32 +1,4 @@
 var searchData=
 [
-  ['savedata_17706',['SaveData',['../structSaveData.html',1,'']]],
-  ['scriptinstance_17707',['ScriptInstance',['../structScriptInstance.html',1,'']]],
-  ['selectabletarget_17708',['SelectableTarget',['../structSelectableTarget.html',1,'']]],
-  ['shadow_17709',['Shadow',['../structShadow.html',1,'']]],
-  ['shop_17710',['Shop',['../structShop.html',1,'']]],
-  ['spritecomponent_17711',['SpriteComponent',['../structSpriteComponent.html',1,'']]],
-  ['stage_17712',['Stage',['../structStage.html',1,'']]],
-  ['stagelist_17713',['StageList',['../structStageList.html',1,'']]],
-  ['starpowerdesc_17714',['StarPowerDesc',['../structStarPowerDesc.html',1,'']]],
-  ['starpowerentry_17715',['StarPowerEntry',['../structStarPowerEntry.html',1,'']]],
-  ['statdrop_17716',['StatDrop',['../structStatDrop.html',1,'']]],
-  ['staticentitydata_17717',['StaticEntityData',['../structStaticEntityData.html',1,'']]],
-  ['staticitem_17718',['StaticItem',['../structStaticItem.html',1,'']]],
-  ['staticmove_17719',['StaticMove',['../structStaticMove.html',1,'']]],
-  ['staticnpc_17720',['StaticNpc',['../structStaticNpc.html',1,'']]],
-  ['staticpartner_17721',['StaticPartner',['../structStaticPartner.html',1,'']]],
-  ['staticshadowdata_17722',['StaticShadowData',['../structStaticShadowData.html',1,'']]],
-  ['struct802e10f4_17723',['struct802E10F4',['../structstruct802E10F4.html',1,'']]],
-  ['struct802e1400_17724',['struct802E1400',['../structstruct802E1400.html',1,'']]],
-  ['struct802e2ba4_17725',['struct802E2BA4',['../structstruct802E2BA4.html',1,'']]],
-  ['struct802e3650_17726',['struct802E3650',['../structstruct802E3650.html',1,'']]],
-  ['struct802e3f0c_17727',['struct802E3F0C',['../structstruct802E3F0C.html',1,'']]],
-  ['struct802e4b10_17728',['struct802E4B10',['../structstruct802E4B10.html',1,'']]],
-  ['struct802e7de0_17729',['struct802E7DE0',['../structstruct802E7DE0.html',1,'']]],
-  ['struct802e7f40_17730',['struct802E7F40',['../structstruct802E7F40.html',1,'']]],
-  ['struct802e89b0_17731',['struct802E89B0',['../structstruct802E89B0.html',1,'']]],
-  ['struct_5f80147230_17732',['struct_80147230',['../structstruct__80147230.html',1,'']]],
-  ['struct_5ffunc_5f800f0cb0_17733',['struct_func_800F0CB0',['../structstruct__func__800F0CB0.html',1,'']]],
-  ['sub_5fstruct_5ffunc_5f800f0cb0_17734',['sub_struct_func_800F0CB0',['../structsub__struct__func__800F0CB0.html',1,'']]]
+  ['rendertask_17731',['RenderTask',['../structRenderTask.html',1,'']]]
 ];

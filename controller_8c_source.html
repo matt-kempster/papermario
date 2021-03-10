@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/os/code_3f9f0_len_60.c Source File - Paper Mario Documentation</title>
+        <title>src/os/controller.c Source File - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('code__3f9f0__len__60_8c_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('controller_8c_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,13 +85,22 @@ $(document).ready(function(){initNavTree('code__3f9f0__len__60_8c_source.html','
 
 <div class="header">
   <div class="headertitle">
-<div class="title">code_3f9f0_len_60.c</div>  </div>
+<div class="title">controller.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="code__3f9f0__len__60_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
+<a href="controller_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="code__3f9f0__len__60_8c.html#a2810bedd9fe712be33a9477918bd47b3">    3</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s16, <span class="stringliteral">&quot;os/code_3f9f0_len_60&quot;</span>, <a class="code" href="code__3f9f0__len__60_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>, u16 angle);</div>
-<div class="ttc" id="acode__3f9f0__len__60_8c_html_a2810bedd9fe712be33a9477918bd47b3"><div class="ttname"><a href="code__3f9f0__len__60_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a></div><div class="ttdeci">s16 sins(u16 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__3f9f0__len__60_8c_source.html#l00003">code_3f9f0_len_60.c:3</a></div></div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="controller_8c.html#abd3b68083bd122eaf5bcf195e8a10e6a">    3</a></span>&#160;u32 <a class="code" href="controller_8c.html#abd3b68083bd122eaf5bcf195e8a10e6a">__osContinitialized</a> = 0;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="controller_8c.html#adebe0cfb7d3b36853521a53841b1e557">    5</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;controller&quot;</span>, <a class="code" href="controller_8c.html#adebe0cfb7d3b36853521a53841b1e557">osContInit</a>, OSMesgQueue* arg0, u8* arg1, OSContStatus* arg2);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="controller_8c.html#afc23fe870e2e87970492b08c75514e3e">    7</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;controller&quot;</span>, <a class="code" href="controller_8c.html#afc23fe870e2e87970492b08c75514e3e">osContGetInitData</a>);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="controller_8c.html#abab94a12125b731a17bad40bc195461d">    9</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;controller&quot;</span>, <a class="code" href="controller_8c.html#abab94a12125b731a17bad40bc195461d">osPackRequestData</a>);</div>
+<div class="ttc" id="acontroller_8c_html_abab94a12125b731a17bad40bc195461d"><div class="ttname"><a href="controller_8c.html#abab94a12125b731a17bad40bc195461d">osPackRequestData</a></div><div class="ttdeci">s32 osPackRequestData()</div><div class="ttdef"><b>Definition:</b> <a href="controller_8c_source.html#l00009">controller.c:9</a></div></div>
+<div class="ttc" id="acontroller_8c_html_abd3b68083bd122eaf5bcf195e8a10e6a"><div class="ttname"><a href="controller_8c.html#abd3b68083bd122eaf5bcf195e8a10e6a">__osContinitialized</a></div><div class="ttdeci">u32 __osContinitialized</div><div class="ttdef"><b>Definition:</b> <a href="controller_8c_source.html#l00003">controller.c:3</a></div></div>
+<div class="ttc" id="acontroller_8c_html_adebe0cfb7d3b36853521a53841b1e557"><div class="ttname"><a href="controller_8c.html#adebe0cfb7d3b36853521a53841b1e557">osContInit</a></div><div class="ttdeci">s32 osContInit(OSMesgQueue *arg0, u8 *arg1, OSContStatus *arg2)</div><div class="ttdef"><b>Definition:</b> <a href="controller_8c_source.html#l00005">controller.c:5</a></div></div>
+<div class="ttc" id="acontroller_8c_html_afc23fe870e2e87970492b08c75514e3e"><div class="ttname"><a href="controller_8c.html#afc23fe870e2e87970492b08c75514e3e">osContGetInitData</a></div><div class="ttdeci">s32 osContGetInitData()</div><div class="ttdef"><b>Definition:</b> <a href="controller_8c_source.html#l00007">controller.c:7</a></div></div>
 <div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -99,8 +108,8 @@ $(document).ready(function(){initNavTree('code__3f9f0__len__60_8c_source.html','
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__3f9f0__len__60_8c.html">code_3f9f0_len_60.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 04:11:54 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="controller_8c.html">controller.c</a></li>
+    <li class="footer">Generated on Wed Mar 10 2021 05:07:52 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

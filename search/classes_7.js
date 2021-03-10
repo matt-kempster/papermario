@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['heapnode_17674',['HeapNode',['../structHeapNode.html',1,'']]]
+  ['gamestatus_17699',['GameStatus',['../structGameStatus.html',1,'']]]
 ];

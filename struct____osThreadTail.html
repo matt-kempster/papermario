@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/os/code_3c310_len_180.c Source File - Paper Mario Documentation</title>
+        <title>__osThreadTail Struct Reference - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('code__3c310__len__180_8c_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct____osThreadTail.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -84,23 +84,66 @@ $(document).ready(function(){initNavTree('code__3c310__len__180_8c_source.html',
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">code_3c310_len_180.c</div>  </div>
+<div class="title">__osThreadTail Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="code__3c310__len__180_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="code__3c310__len__180_8c.html#abca2961a4035af042c871e81a9647571">    3</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(OSPiHandle*, <span class="stringliteral">&quot;os/code_3c310_len_180&quot;</span>, <a class="code" href="code__3c310__len__180_8c.html#abca2961a4035af042c871e81a9647571">osCartRomInit</a>, <span class="keywordtype">void</span>);</div>
-<div class="ttc" id="acode__3c310__len__180_8c_html_abca2961a4035af042c871e81a9647571"><div class="ttname"><a href="code__3c310__len__180_8c.html#abca2961a4035af042c871e81a9647571">osCartRomInit</a></div><div class="ttdeci">OSPiHandle * osCartRomInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__3c310__len__180_8c_source.html#l00003">code_3c310_len_180.c:3</a></div></div>
-<div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
-<div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
-</div><!-- fragment --></div><!-- contents -->
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1dce50ccddfccd2ab527894819c7b42a"><td class="memItemLeft" align="right" valign="top">OSThread *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____osThreadTail.html#a1dce50ccddfccd2ab527894819c7b42a">next</a></td></tr>
+<tr class="separator:a1dce50ccddfccd2ab527894819c7b42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1bda85addc90a22c413145e1b46afb"><td class="memItemLeft" align="right" valign="top">OSPri&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct____osThreadTail.html#a9f1bda85addc90a22c413145e1b46afb">priority</a></td></tr>
+<tr class="separator:a9f1bda85addc90a22c413145e1b46afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="osSetThreadPri_8c_source.html#l00003">3</a> of file <a class="el" href="osSetThreadPri_8c_source.html">osSetThreadPri.c</a>.</p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a1dce50ccddfccd2ab527894819c7b42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dce50ccddfccd2ab527894819c7b42a">&#9670;&nbsp;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSThread* __osThreadTail::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="osSetThreadPri_8c_source.html#l00004">4</a> of file <a class="el" href="osSetThreadPri_8c_source.html">osSetThreadPri.c</a>.</p>
+
+</div>
+</div>
+<a id="a9f1bda85addc90a22c413145e1b46afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f1bda85addc90a22c413145e1b46afb">&#9670;&nbsp;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OSPri __osThreadTail::priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="osSetThreadPri_8c_source.html#l00005">5</a> of file <a class="el" href="osSetThreadPri_8c_source.html">osSetThreadPri.c</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/os/<a class="el" href="osSetThreadPri_8c_source.html">osSetThreadPri.c</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__3c310__len__180_8c.html">code_3c310_len_180.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 04:11:54 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="struct____osThreadTail.html">__osThreadTail</a></li>
+    <li class="footer">Generated on Wed Mar 10 2021 05:07:58 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
