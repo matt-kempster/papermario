@@ -99,82 +99,89 @@ $(document).ready(function(){initNavTree('code__dd930__len__1c0_8c_source.html',
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structstruct__80147230.html#a51cf08414ad4c5ca605ab267ae5c00e2">    9</a></span>&#160;    <span class="comment">/* 0xC */</span> s32 <a class="code" href="structstruct__80147230.html#a51cf08414ad4c5ca605ab267ae5c00e2">unkC</a>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;} <a class="code" href="structstruct__80147230.html">struct_80147230</a>;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> <a class="code" href="structstruct__80147230.html">struct_80147230</a> <a class="code" href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <a class="code" href="structstruct__80147230.html">struct_80147230</a> <a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">   15</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">reset_ambient_sounds</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a> = <a class="code" href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">   19</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">update_ambient_sounds</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">   12</a></span>&#160;<a class="code" href="structstruct__80147230.html">struct_80147230</a> <a class="code" href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a> = {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    .<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> = 0,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    .fadeState = 0,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    .fadeOutTime = 0,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    .fadeInTime = -1,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    .unkC = -1</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <a class="code" href="structstruct__80147230.html">struct_80147230</a> <a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">switch</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a>) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">case</span> 0: <span class="comment">// idle</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// fading out</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp; 1) {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                s32 phi_v0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a> &lt; 250) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                    phi_v0 = <a class="code" href="code__30450_8c.html#ad254fcbd939684f9f50a426cfea0ca1e">func_800554A4</a>(0, temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    phi_v0 = <a class="code" href="code__30450_8c.html#aaed75a78c2ee11a92bc84354a4b7949e">func_800554E8</a>(0, temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keywordflow">if</span> (phi_v0 != 0) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 2;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// fading in</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp; 1) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a1822eaeb7a3c81fd89d5a8679fa681de">func_800555E4</a>(0) != 0) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp;= ~1;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> &lt; 0) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a3218a184ff0b7c2d350ea58678367a6d">func_80055448</a>(temp-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a>) == 0) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a0a7ebcacc9e29959e0ddeaac7f2c39fa">func_80055464</a>(0, 0) == 0) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                    temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> |= 1;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">   59</a></span>&#160;s32 <a class="code" href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">play_ambient_sounds</a>(s32 fadeInTime, s32 fadeOutTime) {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp1 = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp2 = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (!(*gGameStatusPtr)-&gt;musicEnabled) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="code__30450_8c.html#ad254fcbd939684f9f50a426cfea0ca1e">func_800554A4</a>(temp1-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a>, fadeOutTime);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        temp1-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp;= ~1;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span> (temp1-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> == fadeInTime) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> 2;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> = fadeInTime;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a> = fadeOutTime;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 1;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">reset_ambient_sounds</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a> = <a class="code" href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">update_ambient_sounds</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">switch</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a>) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">case</span> 0: <span class="comment">// idle</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">case</span> 1: <span class="comment">// fading out</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp; 1) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                s32 phi_v0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a> &lt; 250) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                    phi_v0 = <a class="code" href="code__30450_8c.html#ad254fcbd939684f9f50a426cfea0ca1e">func_800554A4</a>(0, temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    phi_v0 = <a class="code" href="code__30450_8c.html#aaed75a78c2ee11a92bc84354a4b7949e">func_800554E8</a>(0, temp-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="keywordflow">if</span> (phi_v0 != 0) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 2;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">case</span> 2: <span class="comment">// fading in</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp; 1) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a1822eaeb7a3c81fd89d5a8679fa681de">func_800555E4</a>(0) != 0) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp;= ~1;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">if</span> (temp-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> &lt; 0) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a3218a184ff0b7c2d350ea58678367a6d">func_80055448</a>(temp-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a>) == 0) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="code__30450_8c.html#a0a7ebcacc9e29959e0ddeaac7f2c39fa">func_80055464</a>(0, 0) == 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                    temp-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 0;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    temp-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> |= 1;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">   66</a></span>&#160;s32 <a class="code" href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">play_ambient_sounds</a>(s32 fadeInTime, s32 fadeOutTime) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp1 = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="structstruct__80147230.html">struct_80147230</a>* temp2 = &amp;<a class="code" href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (!(*gGameStatusPtr)-&gt;musicEnabled) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="code__30450_8c.html#ad254fcbd939684f9f50a426cfea0ca1e">func_800554A4</a>(temp1-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a>, fadeOutTime);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        temp1-&gt;<a class="code" href="structstruct__80147230.html#a6a77efda0c46d3a118570a87c6a7c898">fadeFlags</a> &amp;= ~1;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (temp1-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> == fadeInTime) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#ad859606b2926cf6d6cbabff2e999ba54">fadeInTime</a> = fadeInTime;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#ac941f966c4c2a59fabbc20e57cf1042b">fadeOutTime</a> = fadeOutTime;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    temp2-&gt;<a class="code" href="structstruct__80147230.html#aee7e3a718d02738b43be033f7add9fff">fadeState</a> = 1;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
 <div class="ttc" id="acode__30450_8c_html_a0a7ebcacc9e29959e0ddeaac7f2c39fa"><div class="ttname"><a href="code__30450_8c.html#a0a7ebcacc9e29959e0ddeaac7f2c39fa">func_80055464</a></div><div class="ttdeci">s32 func_80055464(s32 arg0, s32 arg1)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00128">code_30450.c:128</a></div></div>
 <div class="ttc" id="acode__30450_8c_html_a1822eaeb7a3c81fd89d5a8679fa681de"><div class="ttname"><a href="code__30450_8c.html#a1822eaeb7a3c81fd89d5a8679fa681de">func_800555E4</a></div><div class="ttdeci">void func_800555E4(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00174">code_30450.c:174</a></div></div>
 <div class="ttc" id="acode__30450_8c_html_a3218a184ff0b7c2d350ea58678367a6d"><div class="ttname"><a href="code__30450_8c.html#a3218a184ff0b7c2d350ea58678367a6d">func_80055448</a></div><div class="ttdeci">s32 func_80055448(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00124">code_30450.c:124</a></div></div>
 <div class="ttc" id="acode__30450_8c_html_aaed75a78c2ee11a92bc84354a4b7949e"><div class="ttname"><a href="code__30450_8c.html#aaed75a78c2ee11a92bc84354a4b7949e">func_800554E8</a></div><div class="ttdeci">s32 func_800554E8(s32 arg0, s32 arg1)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00144">code_30450.c:144</a></div></div>
 <div class="ttc" id="acode__30450_8c_html_ad254fcbd939684f9f50a426cfea0ca1e"><div class="ttname"><a href="code__30450_8c.html#ad254fcbd939684f9f50a426cfea0ca1e">func_800554A4</a></div><div class="ttdeci">s32 func_800554A4(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00134">code_30450.c:134</a></div></div>
-<div class="ttc" id="acode__dd930__len__1c0_8c_html_a1096eb25633007dba074a6c177ad7920"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">update_ambient_sounds</a></div><div class="ttdeci">void update_ambient_sounds(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00019">code_dd930_len_1c0.c:19</a></div></div>
-<div class="ttc" id="acode__dd930__len__1c0_8c_html_a1195b5f11d29bba5c096970a17a90251"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">play_ambient_sounds</a></div><div class="ttdeci">s32 play_ambient_sounds(s32 fadeInTime, s32 fadeOutTime)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00059">code_dd930_len_1c0.c:59</a></div></div>
+<div class="ttc" id="acode__dd930__len__1c0_8c_html_a1096eb25633007dba074a6c177ad7920"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a1096eb25633007dba074a6c177ad7920">update_ambient_sounds</a></div><div class="ttdeci">void update_ambient_sounds(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00026">code_dd930_len_1c0.c:26</a></div></div>
+<div class="ttc" id="acode__dd930__len__1c0_8c_html_a1195b5f11d29bba5c096970a17a90251"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a1195b5f11d29bba5c096970a17a90251">play_ambient_sounds</a></div><div class="ttdeci">s32 play_ambient_sounds(s32 fadeInTime, s32 fadeOutTime)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00066">code_dd930_len_1c0.c:66</a></div></div>
 <div class="ttc" id="acode__dd930__len__1c0_8c_html_a1f6181b24f13531edaf959960d78e836"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a1f6181b24f13531edaf959960d78e836">D_8015C7C0</a></div><div class="ttdeci">struct_80147230 D_8015C7C0</div></div>
-<div class="ttc" id="acode__dd930__len__1c0_8c_html_a2f316710877ca2594526c6dd00b77139"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a></div><div class="ttdeci">struct_80147230 D_8014F140</div></div>
-<div class="ttc" id="acode__dd930__len__1c0_8c_html_a8c69ba9c29371b6e1a31a44fe3342e8c"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">reset_ambient_sounds</a></div><div class="ttdeci">void reset_ambient_sounds(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00015">code_dd930_len_1c0.c:15</a></div></div>
+<div class="ttc" id="acode__dd930__len__1c0_8c_html_a2f316710877ca2594526c6dd00b77139"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a2f316710877ca2594526c6dd00b77139">D_8014F140</a></div><div class="ttdeci">struct_80147230 D_8014F140</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00012">code_dd930_len_1c0.c:12</a></div></div>
+<div class="ttc" id="acode__dd930__len__1c0_8c_html_a8c69ba9c29371b6e1a31a44fe3342e8c"><div class="ttname"><a href="code__dd930__len__1c0_8c.html#a8c69ba9c29371b6e1a31a44fe3342e8c">reset_ambient_sounds</a></div><div class="ttdeci">void reset_ambient_sounds(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00022">code_dd930_len_1c0.c:22</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="astructstruct__80147230_html"><div class="ttname"><a href="structstruct__80147230.html">struct_80147230</a></div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00004">code_dd930_len_1c0.c:4</a></div></div>
 <div class="ttc" id="astructstruct__80147230_html_a51cf08414ad4c5ca605ab267ae5c00e2"><div class="ttname"><a href="structstruct__80147230.html#a51cf08414ad4c5ca605ab267ae5c00e2">struct_80147230::unkC</a></div><div class="ttdeci">s32 unkC</div><div class="ttdef"><b>Definition:</b> <a href="code__dd930__len__1c0_8c_source.html#l00009">code_dd930_len_1c0.c:9</a></div></div>
@@ -188,7 +195,7 @@ $(document).ready(function(){initNavTree('code__dd930__len__1c0_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__dd930__len__1c0_8c.html">code_dd930_len_1c0.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 05:07:51 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 10 2021 05:14:04 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
