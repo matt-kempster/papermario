@@ -14,7 +14,7 @@ var searchData=
   ['_5f_5fosmotoraccess_508',['__osMotorAccess',['../code__43200__len__7c0_8c.html#a95f5ebeae880951537f5196aec67d751',1,'code_43200_len_7c0.c']]],
   ['_5f_5fospiaccessqueueenabled_509',['__osPiAccessQueueEnabled',['../code__3c850__len__f0_8c.html#a62517581454ce3e9286d0adb4df8b003',1,'code_3c850_len_f0.c']]],
   ['_5f_5fospicreateaccessqueue_510',['__osPiCreateAccessQueue',['../code__3c850__len__f0_8c.html#a87a1dd41c55e3a43ad6b31c0d0f2c6ec',1,'code_3c850_len_f0.c']]],
-  ['_5f_5fospidevmgr_511',['__osPiDevMgr',['../osCreatePiManager_8c.html#a3e05f8f40d1da55183ee0eaec0c5b6bb',1,'osCreatePiManager.c']]],
+  ['_5f_5fospidevmgr_511',['__osPiDevMgr',['../osCreatePiManager_8c.html#a3e05f8f40d1da55183ee0eaec0c5b6bb',1,'__osPiDevMgr():&#160;osCreatePiManager.c'],['../variables_8h.html#a3e05f8f40d1da55183ee0eaec0c5b6bb',1,'__osPiDevMgr():&#160;osCreatePiManager.c']]],
   ['_5f_5fospigetaccess_512',['__osPiGetAccess',['../code__3c850__len__f0_8c.html#a9a0ce6ac7e37ec9ffd40977ddb8ef891',1,'code_3c850_len_f0.c']]],
   ['_5f_5fospirelaccess_513',['__osPiRelAccess',['../code__3c850__len__f0_8c.html#a58cc15a690ae9302df1b59b853f4b1bc',1,'code_3c850_len_f0.c']]],
   ['_5f_5fospitable_514',['__osPiTable',['../osCreatePiManager_8c.html#aae0719cf2d9ddb4a109613bf3356c64a',1,'osCreatePiManager.c']]],

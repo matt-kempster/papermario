@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/os/code_40af0_len_130.c File Reference - Paper Mario Documentation</title>
+        <title>src/os/osEPiStartDma.c File Reference - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('code__40af0__len__130_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('osEPiStartDma_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,43 +85,66 @@ $(document).ready(function(){initNavTree('code__40af0__len__130_8c.html',''); in
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">code_40af0_len_130.c File Reference</div>  </div>
+<div class="title">osEPiStartDma.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="code__40af0__len__130_8c_source.html">Go to the source code of this file.</a></p>
+<p><a href="osEPiStartDma_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abe04e34616090bf1a7b7b775271af8ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="osEPiStartDma_8c.html#abe04e34616090bf1a7b7b775271af8ad">MOVE_ADDU</a></td></tr>
+<tr class="separator:abe04e34616090bf1a7b7b775271af8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1c4bb4490523ee41e1b32617502ca4db"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__40af0__len__130_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a> (OSMesgQueue *queue, OSMesg *mesg, s32 unk)</td></tr>
-<tr class="separator:a1c4bb4490523ee41e1b32617502ca4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a053ed299c8c0b442297a4f0ad0f24825"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a> (OSPiHandle *pihandle, OSIoMesg *mb, s32 direction)</td></tr>
+<tr class="separator:a053ed299c8c0b442297a4f0ad0f24825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a1c4bb4490523ee41e1b32617502ca4db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c4bb4490523ee41e1b32617502ca4db">&#9670;&nbsp;</a></span>osRecvMesg()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="abe04e34616090bf1a7b7b775271af8ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe04e34616090bf1a7b7b775271af8ad">&#9670;&nbsp;</a></span>MOVE_ADDU</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 osRecvMesg </td>
+          <td class="memname">#define MOVE_ADDU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="osEPiStartDma_8c_source.html#l00001">1</a> of file <a class="el" href="osEPiStartDma_8c_source.html">osEPiStartDma.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a053ed299c8c0b442297a4f0ad0f24825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a053ed299c8c0b442297a4f0ad0f24825">&#9670;&nbsp;</a></span>osEPiStartDma()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">s32 osEPiStartDma </td>
           <td>(</td>
-          <td class="paramtype">OSMesgQueue *&#160;</td>
-          <td class="paramname"><em>queue</em>, </td>
+          <td class="paramtype">OSPiHandle *&#160;</td>
+          <td class="paramname"><em>pihandle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">OSMesg *&#160;</td>
-          <td class="paramname"><em>mesg</em>, </td>
+          <td class="paramtype">OSIoMesg *&#160;</td>
+          <td class="paramname"><em>mb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">s32&#160;</td>
-          <td class="paramname"><em>unk</em>&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -131,7 +154,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__40af0__len__130_8c_source.html#l00003">3</a> of file <a class="el" href="code__40af0__len__130_8c_source.html">code_40af0_len_130.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="osEPiStartDma_8c_source.html#l00005">5</a> of file <a class="el" href="osEPiStartDma_8c_source.html">osEPiStartDma.c</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860()</a>, and <a class="el" href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom()</a>.</p>
 
@@ -142,8 +165,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__40af0__len__130_8c.html">code_40af0_len_130.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 08:06:33 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="osEPiStartDma_8c.html">osEPiStartDma.c</a></li>
+    <li class="footer">Generated on Thu Mar 11 2021 08:09:27 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

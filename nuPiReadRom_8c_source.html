@@ -101,8 +101,8 @@ $(document).ready(function(){initNavTree('nuPiReadRom_8c_source.html',''); initR
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    ioMesg.hdr.pri = OS_MESG_PRI_NORMAL;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    ioMesg.hdr.retQueue = &amp;queue;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="code__3cb20__len__130_8c.html#a8625d292137e4ff09e974e9660ff5b52">osInvalDCache</a>(buf_ptr, size);</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="code__3cb20__len__130_8c.html#a997f28df62f656badc61e8d17c6b9e48">osInvalICache</a>(buf_ptr, size);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    osInvalDCache(buf_ptr, size);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    osInvalICache(buf_ptr, size);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">while</span> (size != 0) {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        mesgSize = size;</div>
@@ -115,20 +115,18 @@ $(document).ready(function(){initNavTree('nuPiReadRom_8c_source.html',''); initR
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        ioMesg.devAddr = rom_addr;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        ioMesg.size = mesgSize;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="code__3c220__len__a0_8c.html#a073cda4fdb041e630cfd24018915fe91">osEPiStartDma</a>(<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>, &amp;ioMesg, OS_READ);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="code__40af0__len__130_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a>(&amp;queue, &amp;mesg, OS_MESG_BLOCK);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a>(<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>, &amp;ioMesg, OS_READ);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="osRecvMesg_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a>(&amp;queue, &amp;mesg, OS_MESG_BLOCK);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        rom_addr += mesgSize;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        buf_ptr += mesgSize;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        size -= mesgSize;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="ttc" id="acode__3c220__len__a0_8c_html_a073cda4fdb041e630cfd24018915fe91"><div class="ttname"><a href="code__3c220__len__a0_8c.html#a073cda4fdb041e630cfd24018915fe91">osEPiStartDma</a></div><div class="ttdeci">s32 osEPiStartDma(OSPiHandle *handle, OSIoMesg *mesg, s32 unk)</div><div class="ttdef"><b>Definition:</b> <a href="code__3c220__len__a0_8c_source.html#l00003">code_3c220_len_a0.c:3</a></div></div>
-<div class="ttc" id="acode__3cb20__len__130_8c_html_a8625d292137e4ff09e974e9660ff5b52"><div class="ttname"><a href="code__3cb20__len__130_8c.html#a8625d292137e4ff09e974e9660ff5b52">osInvalDCache</a></div><div class="ttdeci">void osInvalDCache(void *buf, s32 size)</div><div class="ttdef"><b>Definition:</b> <a href="code__3cb20__len__130_8c_source.html#l00003">code_3cb20_len_130.c:3</a></div></div>
-<div class="ttc" id="acode__3cb20__len__130_8c_html_a997f28df62f656badc61e8d17c6b9e48"><div class="ttname"><a href="code__3cb20__len__130_8c.html#a997f28df62f656badc61e8d17c6b9e48">osInvalICache</a></div><div class="ttdeci">void osInvalICache(void *buf, s32 size)</div><div class="ttdef"><b>Definition:</b> <a href="code__3cb20__len__130_8c_source.html#l00005">code_3cb20_len_130.c:5</a></div></div>
-<div class="ttc" id="acode__40af0__len__130_8c_html_a1c4bb4490523ee41e1b32617502ca4db"><div class="ttname"><a href="code__40af0__len__130_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a></div><div class="ttdeci">s32 osRecvMesg(OSMesgQueue *queue, OSMesg *mesg, s32 unk)</div><div class="ttdef"><b>Definition:</b> <a href="code__40af0__len__130_8c_source.html#l00003">code_40af0_len_130.c:3</a></div></div>
 <div class="ttc" id="anuPiReadRom_8c_html_a651698c2eb97bcc678c8e60558594555"><div class="ttname"><a href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a></div><div class="ttdeci">void nuPiReadRom(u32 rom_addr, void *buf_ptr, u32 size)</div><div class="ttdef"><b>Definition:</b> <a href="nuPiReadRom_8c_source.html#l00004">nuPiReadRom.c:4</a></div></div>
 <div class="ttc" id="aosCreateMesgQueue_8c_html_a641af84d8459060ddc4e1057d64490c6"><div class="ttname"><a href="osCreateMesgQueue_8c.html#a641af84d8459060ddc4e1057d64490c6">osCreateMesgQueue</a></div><div class="ttdeci">void osCreateMesgQueue(OSMesgQueue *queue, OSMesg *mesg, s32 unk)</div><div class="ttdef"><b>Definition:</b> <a href="osCreateMesgQueue_8c_source.html#l00003">osCreateMesgQueue.c:3</a></div></div>
+<div class="ttc" id="aosEPiStartDma_8c_html_a053ed299c8c0b442297a4f0ad0f24825"><div class="ttname"><a href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a></div><div class="ttdeci">s32 osEPiStartDma(OSPiHandle *pihandle, OSIoMesg *mb, s32 direction)</div><div class="ttdef"><b>Definition:</b> <a href="osEPiStartDma_8c_source.html#l00005">osEPiStartDma.c:5</a></div></div>
+<div class="ttc" id="aosRecvMesg_8c_html_a1c4bb4490523ee41e1b32617502ca4db"><div class="ttname"><a href="osRecvMesg_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a></div><div class="ttdeci">s32 osRecvMesg(OSMesgQueue *queue, OSMesg *mesg, s32 unk)</div><div class="ttdef"><b>Definition:</b> <a href="osRecvMesg_8c_source.html#l00003">osRecvMesg.c:3</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="avariables_8h_html_ab3bccd9b68667f862d52dfc5dcd87a74"><div class="ttname"><a href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a></div><div class="ttdeci">OSPiHandle * carthandle</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -137,7 +135,7 @@ $(document).ready(function(){initNavTree('nuPiReadRom_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="dir_9ef2b62e2fdf8f26529bc674320ff5b4.html">nusys</a></li><li class="navelem"><a class="el" href="nuPiReadRom_8c.html">nuPiReadRom.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 08:06:30 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 11 2021 08:09:23 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

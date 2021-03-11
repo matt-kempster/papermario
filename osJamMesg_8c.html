@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/os/code_3c2c0_len_50.c File Reference - Paper Mario Documentation</title>
+        <title>src/os/osJamMesg.c File Reference - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('code__3c2c0__len__50_8c.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('osJamMesg_8c.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,35 +87,53 @@ $(document).ready(function(){initNavTree('code__3c2c0__len__50_8c.html',''); ini
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">code_3c2c0_len_50.c File Reference</div>  </div>
+<div class="title">osJamMesg.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><a href="code__3c2c0__len__50_8c_source.html">Go to the source code of this file.</a></p>
+<p><a href="osJamMesg_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a758dc1bfb8ac4ee1c62617c9e9c6326e"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="code__3c2c0__len__50_8c.html#a758dc1bfb8ac4ee1c62617c9e9c6326e">osEPiLinkHandle</a> (OSPiHandle *handle)</td></tr>
-<tr class="separator:a758dc1bfb8ac4ee1c62617c9e9c6326e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7351d2b9d3754a49c708f8f0225ba128"><td class="memItemLeft" align="right" valign="top">s32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="osJamMesg_8c.html#a7351d2b9d3754a49c708f8f0225ba128">osJamMesg</a> (OSMesgQueue *queue, OSMesg mesg, s32 unk)</td></tr>
+<tr class="separator:a7351d2b9d3754a49c708f8f0225ba128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a758dc1bfb8ac4ee1c62617c9e9c6326e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a758dc1bfb8ac4ee1c62617c9e9c6326e">&#9670;&nbsp;</a></span>osEPiLinkHandle()</h2>
+<a id="a7351d2b9d3754a49c708f8f0225ba128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7351d2b9d3754a49c708f8f0225ba128">&#9670;&nbsp;</a></span>osJamMesg()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s32 osEPiLinkHandle </td>
+          <td class="memname">s32 osJamMesg </td>
           <td>(</td>
-          <td class="paramtype">OSPiHandle *&#160;</td>
-          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td class="paramtype">OSMesgQueue *&#160;</td>
+          <td class="paramname"><em>queue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">OSMesg&#160;</td>
+          <td class="paramname"><em>mesg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">s32&#160;</td>
+          <td class="paramname"><em>unk</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="code__3c2c0__len__50_8c_source.html#l00003">3</a> of file <a class="el" href="code__3c2c0__len__50_8c_source.html">code_3c2c0_len_50.c</a>.</p>
+<p class="definition">Definition at line <a class="el" href="osJamMesg_8c_source.html#l00003">3</a> of file <a class="el" href="osJamMesg_8c_source.html">osJamMesg.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma()</a>.</p>
 
 </div>
 </div>
@@ -124,8 +142,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="code__3c2c0__len__50_8c.html">code_3c2c0_len_50.c</a></li>
-    <li class="footer">Generated on Wed Mar 10 2021 08:06:33 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="osJamMesg_8c.html">osJamMesg.c</a></li>
+    <li class="footer">Generated on Thu Mar 11 2021 08:09:27 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
