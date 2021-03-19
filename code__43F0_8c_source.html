@@ -169,346 +169,392 @@ $(document).ready(function(){initNavTree('code__43F0_8c_source.html',''); initRe
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a76afbe01b16e6d1455d6c3abd3eea229">   80</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a76afbe01b16e6d1455d6c3abd3eea229">_heap_realloc</a>);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a24e160f3d4a1a7e550837b48e81cef7c">   82</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a24e160f3d4a1a7e550837b48e81cef7c">cosine</a>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">   84</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>(s32 val) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    s32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = -1;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span> (val &gt;= 0) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = val &gt; 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">   93</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">int_to_string</a>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// should maybe be called bzero</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">   96</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">mem_clear</a>(s8* data, s32 numBytes) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">while</span> (numBytes &gt; 0) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        *data = 0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        data++;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        numBytes--;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a52d2860e7bcc0ce08445094d219b3bc1">   82</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a52d2860e7bcc0ce08445094d219b3bc1">cosine</a>(s16 arg0) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    s16 temp360;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    s16 idx;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    temp360 = arg0 % 360;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (temp360 &lt; 0) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        temp360 += 360;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    idx = temp360 % 180;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span> (idx &gt; 90) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        idx = 180 - idx;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (temp360 &gt;= 180) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> -<a class="code" href="code__43F0_8c.html#af2fa9ff53901fadfe3f559510a4f2ebf">D_80074274</a>[idx];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#af2fa9ff53901fadfe3f559510a4f2ebf">D_80074274</a>[idx];</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a76692ae11abb3cc3f326a41fe43b6339">  104</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a76692ae11abb3cc3f326a41fe43b6339">transform_point</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">  106</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">copy_matrix</a>(<a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>* src, <a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>* dest) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="code__3fa50__len__f60_8c.html#acc9220c00d7b6c8c1f08a1bd288f4390">bcopy</a>(src, dest, <span class="keyword">sizeof</span>(<a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>));</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">  110</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">dma_copy</a>(s32 romStart, s32 romEnd, <span class="keywordtype">void</span>* vramDest) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    u32 length = romEnd - romStart;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    s32 i;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    osInvalICache(vramDest, length);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">for</span> (i = 0; i + <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a> &lt; length; i += <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a>(romStart + i, vramDest + i, <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (i != length) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a>(romStart + i, vramDest + i, length - i);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">  104</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>(s32 val) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    s32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = -1;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (val &gt;= 0) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = val &gt; 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">  113</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">int_to_string</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// should maybe be called bzero</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">mem_clear</a>(s8* data, s32 numBytes) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">while</span> (numBytes &gt; 0) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        *data = 0;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        data++;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        numBytes--;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> length;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">  127</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">func_800297D4</a>(s32 romStart, s32 romEnd, <span class="keywordtype">void</span>* vramDest) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    u32 length = romEnd - romStart;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    s32 i;</div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a6ead8faa756fca596378eaf1517b57ae">  124</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a6ead8faa756fca596378eaf1517b57ae">transform_point</a>(<a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a> mtx, f32 inX, f32 inY, f32 inZ, f32 inS, f32* outX, f32* outY, f32* outZ, f32* outS) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    *outX = ((mtx[0][0] * inX) + (mtx[1][0] * inY) + (mtx[2][0] * inZ) + mtx[3][0]);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    *outY = ((mtx[0][1] * inX) + (mtx[1][1] * inY) + (mtx[2][1] * inZ) + mtx[3][1]);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    *outZ = ((mtx[0][2] * inX) + (mtx[1][2] * inY) + (mtx[2][2] * inZ) + mtx[3][2]);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    *outS = ((mtx[0][3] * inX) + (mtx[1][3] * inY) + (mtx[2][3] * inZ) + mtx[3][3]);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (i = 0; i + <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a> &lt; length; i += <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(romStart + i, vramDest + i, <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">  131</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">copy_matrix</a>(<a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>* src, <a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>* dest) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="code__3fa50__len__f60_8c.html#acc9220c00d7b6c8c1f08a1bd288f4390">bcopy</a>(src, dest, <span class="keyword">sizeof</span>(<a class="code" href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a>));</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (i != length) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(romStart + i, vramDest + i, length - i);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">  135</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">dma_copy</a>(s32 romStart, s32 romEnd, <span class="keywordtype">void</span>* vramDest) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    u32 length = romEnd - romStart;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    s32 i;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> length;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">  142</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(s32 dramAddr, s32 devAddr, s32 size) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    OSIoMesg osIoMesg;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    OSMesg osMesg;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    OSMesgQueue osMesgQueue;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    osWritebackDCache(dramAddr, size);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="osCreateMesgQueue_8c.html#a641af84d8459060ddc4e1057d64490c6">osCreateMesgQueue</a>(&amp;osMesgQueue, &amp;osMesg, 1);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    osIoMesg.hdr.pri = 0;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    osIoMesg.hdr.retQueue = &amp;osMesgQueue;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    osIoMesg.dramAddr = dramAddr;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    osIoMesg.devAddr = devAddr;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    osIoMesg.size = size;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    osInvalICache(vramDest, length);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">for</span> (i = 0; i + <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a> &lt; length; i += <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>) {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <a class="code" href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a>(romStart + i, vramDest + i, <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (i != length) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a>(romStart + i, vramDest + i, length - i);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">return</span> length;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">  152</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">func_800297D4</a>(s32 romStart, s32 romEnd, <span class="keywordtype">void</span>* vramDest) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    u32 length = romEnd - romStart;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    s32 i;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a>(<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>, &amp;osIoMesg, 1);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="osRecvMesg_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a>(&amp;osMesgQueue, &amp;osMesg, 1);</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">for</span> (i = 0; i + <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a> &lt; length; i += <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(romStart + i, vramDest + i, <a class="code" href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">  160</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    s32* rngVal = &amp;<a class="code" href="code__43F0_8c.html#aaf92fb362ff174d1bfc238c2e260a367">gRandSeed</a>;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    (*gGameStatusPtr)-&gt;nextRNG = *rngVal = (*rngVal * 0x5D588B65) + 1;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> *rngVal;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">  168</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">func_80029934</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    s32 temp_v0 = <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>() &amp; 0x7FFF;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    f64 temp_f2 = temp_v0;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">if</span> (i != length) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(romStart + i, vramDest + i, length - i);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">return</span> length;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">  167</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a>(s32 dramAddr, s32 devAddr, s32 size) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    OSIoMesg osIoMesg;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    OSMesg osMesg;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    OSMesgQueue osMesgQueue;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span> (temp_v0 &lt; 0) {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        temp_f2 += 4294967296.0;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> temp_f2 * 3.0517578125e-05;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">  179</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(s32 arg0) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    u32 div = -1;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    s32 plusOne = arg0 + 1;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    u32 result;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    div /= plusOne;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (div == 0) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        div = 1;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">do</span>  {</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        result = <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>() / div;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    } <span class="keywordflow">while</span> (result &gt;= plusOne);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    osWritebackDCache(dramAddr, size);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="osCreateMesgQueue_8c.html#a641af84d8459060ddc4e1057d64490c6">osCreateMesgQueue</a>(&amp;osMesgQueue, &amp;osMesg, 1);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    osIoMesg.hdr.pri = 0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    osIoMesg.hdr.retQueue = &amp;osMesgQueue;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    osIoMesg.dramAddr = dramAddr;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    osIoMesg.devAddr = devAddr;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    osIoMesg.size = size;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a>(<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>, &amp;osIoMesg, 1);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="osRecvMesg_8c.html#a1c4bb4490523ee41e1b32617502ca4db">osRecvMesg</a>(&amp;osMesgQueue, &amp;osMesg, 1);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">  185</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    s32* rngVal = &amp;<a class="code" href="code__43F0_8c.html#aaf92fb362ff174d1bfc238c2e260a367">gRandSeed</a>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    (*gGameStatusPtr)-&gt;nextRNG = *rngVal = (*rngVal * 0x5D588B65) + 1;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> *rngVal;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment">// Issue with the negation at the beginning</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">  198</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">rand_int</a>(s32 arg0) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    s32 ret;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">  193</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">func_80029934</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    s32 temp_v0 = <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>() &amp; 0x7FFF;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    f64 temp_f2 = temp_v0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">if</span> (temp_v0 &lt; 0) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        temp_f2 += 4294967296.0;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">if</span> (arg0 &lt; 0) {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        arg0 = -arg0;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    ret = 0;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keywordflow">if</span> (arg0 != 0) {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordflow">if</span> (arg0 == 1) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">return</span> (<a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(1000) &lt; 501) ^ 1;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (arg0 != 100) {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(arg0);</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        ret = <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(1009) / 10;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">rand_int</a>, s32 arg0);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
-<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">  222</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">signF</a>(f32 val) {</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    f32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">if</span> (!(val &gt; 0.0f)) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = -1.0f;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">if</span> (!(val &lt; 0.0f)) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = 0.0f;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = 1.0f;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">  237</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">round</a>(f32 arg0) {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (!(arg0 &gt;= 0.0f)) {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="keywordflow">return</span> -(s32)(0.5 - arg0);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">return</span> (s32)(0.5 + arg0);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">  245</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(f32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a>, f32 theta);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">  247</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">get_clamped_angle_diff</a>(f32 a, f32 b) {</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">if</span> (fabsf(b - a) &gt;= 180.0f) {</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">if</span> (b &lt; a) {</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            b += 360.0f;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            b -= 360.0f;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> b - a;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> temp_f2 * 3.0517578125e-05;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">  204</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(s32 arg0) {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    u32 div = -1;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    s32 plusOne = arg0 + 1;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    u32 result;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    div /= plusOne;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">if</span> (div == 0) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        div = 1;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">do</span>  {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        result = <a class="code" href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a>() / div;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    } <span class="keywordflow">while</span> (result &gt;= plusOne);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
+<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">  221</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">rand_int</a>(s32 arg0) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    s32 ret = 0;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    arg0 = abs(arg0);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">if</span> (arg0 != 0) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">switch</span> (arg0) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                ret = <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(1000) &gt; 500;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                ret = <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(arg0);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            <span class="keywordflow">case</span> 100:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                ret = <a class="code" href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a>(1009) / 10;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">  243</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">signF</a>(f32 val) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    f32 <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span> (!(val &gt; 0.0f)) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = -1.0f;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">if</span> (!(val &lt; 0.0f)) {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = 0.0f;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a> = 1.0f;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a>;</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">  258</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(f32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>, f32 startX, f32 startZ, f32 endX, f32 endZ);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#af6417b414891033684a7022238a09174">  260</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#af6417b414891033684a7022238a09174">get_player_normal_yaw</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>(0, 0, (*gGameStatusPtr)-&gt;playerTraceNormal.x, (*gGameStatusPtr)-&gt;playerTraceNormal.z);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">  264</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">get_player_normal_pitch</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    f32 traceNormalX = (*gGameStatusPtr)-&gt;playerTraceNormal.x;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    f32 traceNormalZ = (*gGameStatusPtr)-&gt;playerTraceNormal.z;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    f32 sqrt = <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(traceNormalX) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(traceNormalZ));</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>(0.0f, 0.0f, sqrt, -(*gGameStatusPtr)-&gt;playerTraceNormal.y);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">  272</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a>(f32 ax, f32 ay, f32 bx, f32 by) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    f32 xDiff = bx - ax;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    f32 yDiff = by - ay;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(xDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(yDiff));</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;}</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">  279</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a>(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    f32 xDiff = bx - ax;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    f32 yDiff = by - ay;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    f32 zDiff = bz - az;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(xDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(yDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(zDiff));</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00287"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">  287</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">add_vec2D_polar</a>(f32* x, f32* y, f32 r, f32 theta) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    f32 sinTheta;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    f32 cosTheta;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <a class="code" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a>((theta * 6.28318f) / 360.0f, &amp;sinTheta, &amp;cosTheta);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    *x += r * sinTheta;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    *y -= r * cosTheta;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
-<div class="line"><a name="l00296"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">  296</a></span>&#160;u16 <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(f32 theta) {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    f32 ret = theta;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">if</span> (theta &gt;= 1048576.0f || theta &lt;= -1048576.0f) {</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        ret = theta * 0.0000009536743f;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ret = theta - ((s32) ret) * 1048576.0f;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    }</div>
+<div class="line"><a name="l00258"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">  258</a></span>&#160;s32 <a class="code" href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">round</a>(f32 arg0) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordflow">if</span> (!(arg0 &gt;= 0.0f)) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">return</span> -(s32)(0.5 - arg0);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">return</span> (s32)(0.5 + arg0);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">  266</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a>(f32 theta) {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">if</span> (fabsf(theta) &gt; 3600.0f) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        s32 thetaInt = theta;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span> (thetaInt &gt;= 0) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            thetaInt = -(thetaInt / 360 * 360) + thetaInt;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        }</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            thetaInt = -thetaInt;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            thetaInt = (thetaInt / 360 * 360) - thetaInt;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <span class="keywordflow">return</span> thetaInt;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">if</span> (theta &lt; 0.0f) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            theta += 360.0f;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <span class="keywordflow">if</span> (theta &gt;= 360.0f) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            theta -= 360.0f;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    } <span class="keywordflow">while</span> (!(theta &gt;= 0.0f) || !(theta &lt; 360.0f));</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160; </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">return</span> theta;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">  293</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">get_clamped_angle_diff</a>(f32 a, f32 b) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">if</span> (fabsf(b - a) &gt;= 180.0f) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">if</span> (b &lt; a) {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            b += 360.0f;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            b -= 360.0f;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordflow">return</span> b - a;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> (s32) ret;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;}</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">  307</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a>(f32 rad, f32* outSinTheta, f32* outCosTheta) {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    u16 theta = <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(rad * 10430.378f);</div>
+<div class="line"><a name="l00304"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">  304</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(f32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>, f32 startX, f32 startZ, f32 endX, f32 endZ);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#af6417b414891033684a7022238a09174">  306</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#af6417b414891033684a7022238a09174">get_player_normal_yaw</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>(0, 0, (*gGameStatusPtr)-&gt;playerTraceNormal.x, (*gGameStatusPtr)-&gt;playerTraceNormal.z);</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;}</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    *outSinTheta = <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(theta) * 3.051851e-05;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    *outCosTheta = <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(theta) * 3.051851e-05;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;}</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">  314</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">sin_rad</a>(f32 angle) {</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 10430.378f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">  310</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">get_player_normal_pitch</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    f32 traceNormalX = (*gGameStatusPtr)-&gt;playerTraceNormal.x;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    f32 traceNormalZ = (*gGameStatusPtr)-&gt;playerTraceNormal.z;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    f32 sqrt = <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(traceNormalX) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(traceNormalZ));</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>(0.0f, 0.0f, sqrt, -(*gGameStatusPtr)-&gt;playerTraceNormal.y);</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
-<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">  318</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">cos_rad</a>(f32 angle) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 10430.378f)) * 3.051851e-05;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">  318</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a>(f32 ax, f32 ay, f32 bx, f32 by) {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    f32 xDiff = bx - ax;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    f32 yDiff = by - ay;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">  322</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">sin_cos_deg</a>(f32 rad, f32* outSinTheta, f32* outCosTheta) {</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    u16 theta = <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(rad * 182.04445f);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(xDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(yDiff));</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    *outSinTheta = <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(theta) * 3.051851e-05;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    *outCosTheta = <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(theta) * 3.051851e-05;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00329"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">  329</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">sin_deg</a>(f32 angle) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 182.04445f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">  325</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a>(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    f32 xDiff = bx - ax;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    f32 yDiff = by - ay;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    f32 zDiff = bz - az;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a>(<a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(xDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(yDiff) + <a class="code" href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a>(zDiff));</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;}</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">  333</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">cos_deg</a>(f32 angle) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 182.04445f)) * 3.051851e-05;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;}</div>
+<div class="line"><a name="l00333"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">  333</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">add_vec2D_polar</a>(f32* x, f32* y, f32 r, f32 theta) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    f32 sinTheta;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    f32 cosTheta;</div>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
-<div class="line"><a name="l00337"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">  337</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(f32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">update_lerp</a>, <a class="code" href="enums_8h.html#ac291e6abcbe7c764a678bf9fbdf92ef4">Easing</a> easing, f32 start, f32 end, s32 elapsed, s32 duration);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="comment">//void func_8002A904(u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7);</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">  340</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">func_8002A904</a>, u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a>((theta * 6.28318f) / 360.0f, &amp;sinTheta, &amp;cosTheta);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    *x += r * sinTheta;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    *y -= r * cosTheta;</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;}</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">  342</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">func_8002AAC4</a>);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="comment">// void func_8002AAC4(s16 arg0, s16 arg1, s16 arg2, s16 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7) {</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;<span class="comment">//     s16 phi_t0;</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;<span class="comment">//     s16 phi_t1;</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="comment">//     s16 phi_t2;</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;<span class="comment">//     s16 phi_t3;</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="comment">//     phi_t0 = arg0;</span></div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="comment">//     phi_t2 = arg2;</span></div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="comment">//     if (arg2 &lt; arg0) {</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="comment">//         phi_t0 = arg2;</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment">//         phi_t2 = arg0;</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">//     }</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">  342</a></span>&#160;u16 <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(f32 theta) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    f32 ret = theta;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> (theta &gt;= 1048576.0f || theta &lt;= -1048576.0f) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        ret = theta * 0.0000009536743f;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        ret = theta - ((s32) ret) * 1048576.0f;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">return</span> (s32) ret;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">  353</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a>(f32 rad, f32* outSinTheta, f32* outCosTheta) {</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    u16 theta = <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(rad * 10430.378f);</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="comment">//     phi_t1 = arg1;</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="comment">//     phi_t3 = arg3;</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="comment">//     if (arg3 &lt; arg1) {</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">//         phi_t1 = arg3;</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="comment">//         phi_t3 = arg1;</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="comment">//     }</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="comment">//     func_8002A904(arg4, arg5, arg6, arg7, phi_t0, phi_t1, phi_t2, phi_t3);</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="comment">// }</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">  366</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">func_8002AB5C</a>);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    *outSinTheta = <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(theta) * 3.051851e-05;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    *outCosTheta = <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(theta) * 3.051851e-05;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">  360</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">sin_rad</a>(f32 angle) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 10430.378f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">  364</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">cos_rad</a>(f32 angle) {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 10430.378f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;}</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">  368</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">sin_cos_deg</a>(f32 rad, f32* outSinTheta, f32* outCosTheta) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    u16 theta = <a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(rad * 182.04445f);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    *outSinTheta = <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(theta) * 3.051851e-05;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    *outCosTheta = <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(theta) * 3.051851e-05;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;}</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">  375</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">sin_deg</a>(f32 angle) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="sins_8c.html#a2810bedd9fe712be33a9477918bd47b3">sins</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 182.04445f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;}</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160; </div>
+<div class="line"><a name="l00379"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">  379</a></span>&#160;f32 <a class="code" href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">cos_deg</a>(f32 angle) {</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a>(<a class="code" href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a>(angle * 182.04445f)) * 3.051851e-05;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;}</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">  383</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(f32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">update_lerp</a>, <a class="code" href="enums_8h.html#ac291e6abcbe7c764a678bf9fbdf92ef4">Easing</a> easing, f32 start, f32 end, s32 elapsed, s32 duration);</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="comment">//void func_8002A904(u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7);</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">  386</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">func_8002A904</a>, u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
+<div class="line"><a name="l00388"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">  388</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">func_8002AAC4</a>);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="comment">// void func_8002AAC4(s16 arg0, s16 arg1, s16 arg2, s16 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7) {</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;<span class="comment">//     s16 phi_t0;</span></div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;<span class="comment">//     s16 phi_t1;</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;<span class="comment">//     s16 phi_t2;</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="comment">//     s16 phi_t3;</span></div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="comment">//     phi_t0 = arg0;</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="comment">//     phi_t2 = arg2;</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;<span class="comment">//     if (arg2 &lt; arg0) {</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;<span class="comment">//         phi_t0 = arg2;</span></div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;<span class="comment">//         phi_t2 = arg0;</span></div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;<span class="comment">//     }</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160; </div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;<span class="comment">//     phi_t1 = arg1;</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;<span class="comment">//     phi_t3 = arg3;</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="comment">//     if (arg3 &lt; arg1) {</span></div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;<span class="comment">//         phi_t1 = arg3;</span></div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;<span class="comment">//         phi_t3 = arg1;</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;<span class="comment">//     }</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="comment">//     func_8002A904(arg4, arg5, arg6, arg7, phi_t0, phi_t1, phi_t2, phi_t3);</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="comment">// }</span></div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
+<div class="line"><a name="l00412"></a><span class="lineno"><a class="line" href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">  412</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_43F0&quot;</span>, <a class="code" href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">func_8002AB5C</a>);</div>
 <div class="ttc" id="acode__3d2f0__len__10_8c_html_a52bf05f4bd2791126a68fe73fe78ee5a"><div class="ttname"><a href="code__3d2f0__len__10_8c.html#a52bf05f4bd2791126a68fe73fe78ee5a">sqrtf</a></div><div class="ttdeci">f32 sqrtf(f32 value)</div><div class="ttdef"><b>Definition:</b> <a href="code__3d2f0__len__10_8c_source.html#l00003">code_3d2f0_len_10.c:3</a></div></div>
 <div class="ttc" id="acode__3d300__len__30_8c_html_a570004509536759d4081f1f97e7a9160"><div class="ttname"><a href="code__3d300__len__30_8c.html#a570004509536759d4081f1f97e7a9160">coss</a></div><div class="ttdeci">s16 coss(u16 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__3d300__len__30_8c_source.html#l00003">code_3d300_len_30.c:3</a></div></div>
 <div class="ttc" id="acode__3fa50__len__f60_8c_html_acc9220c00d7b6c8c1f08a1bd288f4390"><div class="ttname"><a href="code__3fa50__len__f60_8c.html#acc9220c00d7b6c8c1f08a1bd288f4390">bcopy</a></div><div class="ttdeci">void bcopy(const void *src, void *dst, int size)</div><div class="ttdef"><b>Definition:</b> <a href="code__3fa50__len__f60_8c_source.html#l00003">code_3fa50_len_f60.c:3</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a00ecd17d3b54f387fc425747ce7fa740"><div class="ttname"><a href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">sin_rad</a></div><div class="ttdeci">f32 sin_rad(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00314">code_43F0.c:314</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a00ecd17d3b54f387fc425747ce7fa740"><div class="ttname"><a href="code__43F0_8c.html#a00ecd17d3b54f387fc425747ce7fa740">sin_rad</a></div><div class="ttdeci">f32 sin_rad(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00360">code_43F0.c:360</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a01378def0f7ed2c5718bf1c3cba25a13"><div class="ttname"><a href="code__43F0_8c.html#a01378def0f7ed2c5718bf1c3cba25a13">D_800743E0</a></div><div class="ttdeci">s8 D_800743E0[]</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00017">code_43F0.c:17</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a136f7711b19ce2f83bd47b7fcb1f37e7"><div class="ttname"><a href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a></div><div class="ttdeci">f32 clamp_angle(f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00245">code_43F0.c:245</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a203bd4f2f9f89740fa39fa435c227c8f"><div class="ttname"><a href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">cos_deg</a></div><div class="ttdeci">f32 cos_deg(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00333">code_43F0.c:333</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a136f7711b19ce2f83bd47b7fcb1f37e7"><div class="ttname"><a href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a></div><div class="ttdeci">f32 clamp_angle(f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00266">code_43F0.c:266</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a203bd4f2f9f89740fa39fa435c227c8f"><div class="ttname"><a href="code__43F0_8c.html#a203bd4f2f9f89740fa39fa435c227c8f">cos_deg</a></div><div class="ttdeci">f32 cos_deg(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00379">code_43F0.c:379</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a22a5abe475969fb23e684d9b51301488"><div class="ttname"><a href="code__43F0_8c.html#a22a5abe475969fb23e684d9b51301488">_heap_create</a></div><div class="ttdeci">HeapNode * _heap_create(s32 *addr, u32 size)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00059">code_43F0.c:59</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a24e160f3d4a1a7e550837b48e81cef7c"><div class="ttname"><a href="code__43F0_8c.html#a24e160f3d4a1a7e550837b48e81cef7c">cosine</a></div><div class="ttdeci">s32 cosine()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00082">code_43F0.c:82</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a27012a7872f94444421428bee608c80a"><div class="ttname"><a href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">sin_deg</a></div><div class="ttdeci">f32 sin_deg(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00329">code_43F0.c:329</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a27012a7872f94444421428bee608c80a"><div class="ttname"><a href="code__43F0_8c.html#a27012a7872f94444421428bee608c80a">sin_deg</a></div><div class="ttdeci">f32 sin_deg(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00375">code_43F0.c:375</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a2bfc8cc900f20adb786828070b2227a8"><div class="ttname"><a href="code__43F0_8c.html#a2bfc8cc900f20adb786828070b2227a8">D_80074580</a></div><div class="ttdeci">Gfx D_80074580[]</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00037">code_43F0.c:37</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a3147ec3fd58f33b85ab0487ee0243e50"><div class="ttname"><a href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a></div><div class="ttdeci">u16 _wrap_trig_lookup_value(f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00296">code_43F0.c:296</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a35ea6bd5b9635321d3db97a84df90dac"><div class="ttname"><a href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a></div><div class="ttdeci">f32 atan2(f32 startX, f32 startZ, f32 endX, f32 endZ)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00258">code_43F0.c:258</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a3c12a279fccdd0d00b935b31d471cf64"><div class="ttname"><a href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">get_clamped_angle_diff</a></div><div class="ttdeci">f32 get_clamped_angle_diff(f32 a, f32 b)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00247">code_43F0.c:247</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a3147ec3fd58f33b85ab0487ee0243e50"><div class="ttname"><a href="code__43F0_8c.html#a3147ec3fd58f33b85ab0487ee0243e50">_wrap_trig_lookup_value</a></div><div class="ttdeci">u16 _wrap_trig_lookup_value(f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00342">code_43F0.c:342</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a35ea6bd5b9635321d3db97a84df90dac"><div class="ttname"><a href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a></div><div class="ttdeci">f32 atan2(f32 startX, f32 startZ, f32 endX, f32 endZ)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00304">code_43F0.c:304</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a3c12a279fccdd0d00b935b31d471cf64"><div class="ttname"><a href="code__43F0_8c.html#a3c12a279fccdd0d00b935b31d471cf64">get_clamped_angle_diff</a></div><div class="ttdeci">f32 get_clamped_angle_diff(f32 a, f32 b)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00293">code_43F0.c:293</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a3d8c50c8de8b09fd664476b54ef941a3"><div class="ttname"><a href="code__43F0_8c.html#a3d8c50c8de8b09fd664476b54ef941a3">length2D</a></div><div class="ttdeci">f32 length2D(f32 x, f32 y)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00055">code_43F0.c:55</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a433fdd12f747a18df35ad6c0c5124ebd"><div class="ttname"><a href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">dma_copy</a></div><div class="ttdeci">s32 dma_copy(s32 romStart, s32 romEnd, void *vramDest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00110">code_43F0.c:110</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a4fc47907b6ea55d45795248a5ed337aa"><div class="ttname"><a href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">round</a></div><div class="ttdeci">s32 round(f32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00237">code_43F0.c:237</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a5000a1bf8a75a2858e3ed00e76a0ca3f"><div class="ttname"><a href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a></div><div class="ttdeci">f32 dist3D(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00279">code_43F0.c:279</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a433fdd12f747a18df35ad6c0c5124ebd"><div class="ttname"><a href="code__43F0_8c.html#a433fdd12f747a18df35ad6c0c5124ebd">dma_copy</a></div><div class="ttdeci">s32 dma_copy(s32 romStart, s32 romEnd, void *vramDest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00135">code_43F0.c:135</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a4fc47907b6ea55d45795248a5ed337aa"><div class="ttname"><a href="code__43F0_8c.html#a4fc47907b6ea55d45795248a5ed337aa">round</a></div><div class="ttdeci">s32 round(f32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00258">code_43F0.c:258</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a5000a1bf8a75a2858e3ed00e76a0ca3f"><div class="ttname"><a href="code__43F0_8c.html#a5000a1bf8a75a2858e3ed00e76a0ca3f">dist3D</a></div><div class="ttdeci">f32 dist3D(f32 ax, f32 ay, f32 az, f32 bx, f32 by, f32 bz)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00325">code_43F0.c:325</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a52d2860e7bcc0ce08445094d219b3bc1"><div class="ttname"><a href="code__43F0_8c.html#a52d2860e7bcc0ce08445094d219b3bc1">cosine</a></div><div class="ttdeci">f32 cosine(s16 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00082">code_43F0.c:82</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a59f6ade27d96a0dc81b7dfcee83eac62"><div class="ttname"><a href="code__43F0_8c.html#a59f6ade27d96a0dc81b7dfcee83eac62">_heap_free</a></div><div class="ttdeci">s32 _heap_free()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00078">code_43F0.c:78</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a5c80338150177bd259518d7b2dd3efab"><div class="ttname"><a href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">signF</a></div><div class="ttdeci">f32 signF(f32 val)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00222">code_43F0.c:222</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a66ed871ab0fc660ec97329e16df63d34"><div class="ttname"><a href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a></div><div class="ttdeci">f32 dist2D(f32 ax, f32 ay, f32 bx, f32 by)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00272">code_43F0.c:272</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a6dcbbeb91a473fe75b1962aabb9b60e7"><div class="ttname"><a href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a></div><div class="ttdeci">s32 func_80029994(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00179">code_43F0.c:179</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a5c80338150177bd259518d7b2dd3efab"><div class="ttname"><a href="code__43F0_8c.html#a5c80338150177bd259518d7b2dd3efab">signF</a></div><div class="ttdeci">f32 signF(f32 val)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00243">code_43F0.c:243</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a66ed871ab0fc660ec97329e16df63d34"><div class="ttname"><a href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a></div><div class="ttdeci">f32 dist2D(f32 ax, f32 ay, f32 bx, f32 by)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00318">code_43F0.c:318</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a6dcbbeb91a473fe75b1962aabb9b60e7"><div class="ttname"><a href="code__43F0_8c.html#a6dcbbeb91a473fe75b1962aabb9b60e7">func_80029994</a></div><div class="ttdeci">s32 func_80029994(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00204">code_43F0.c:204</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a6ead8faa756fca596378eaf1517b57ae"><div class="ttname"><a href="code__43F0_8c.html#a6ead8faa756fca596378eaf1517b57ae">transform_point</a></div><div class="ttdeci">void transform_point(Matrix4f mtx, f32 inX, f32 inY, f32 inZ, f32 inS, f32 *outX, f32 *outY, f32 *outZ, f32 *outS)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00124">code_43F0.c:124</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a6f2b85064583d03071625b48937f067f"><div class="ttname"><a href="code__43F0_8c.html#a6f2b85064583d03071625b48937f067f">ROM_CHUNK_SIZE</a></div><div class="ttdeci">#define ROM_CHUNK_SIZE</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00053">code_43F0.c:53</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a76692ae11abb3cc3f326a41fe43b6339"><div class="ttname"><a href="code__43F0_8c.html#a76692ae11abb3cc3f326a41fe43b6339">transform_point</a></div><div class="ttdeci">s32 transform_point()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00104">code_43F0.c:104</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a76afbe01b16e6d1455d6c3abd3eea229"><div class="ttname"><a href="code__43F0_8c.html#a76afbe01b16e6d1455d6c3abd3eea229">_heap_realloc</a></div><div class="ttdeci">s32 _heap_realloc()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00080">code_43F0.c:80</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a76fb63dac4bb75e6d952792406610a4a"><div class="ttname"><a href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">func_80029934</a></div><div class="ttdeci">f32 func_80029934(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00168">code_43F0.c:168</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a77baee1776490fcd6e2cab778be1c397"><div class="ttname"><a href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a></div><div class="ttdeci">void func_80029860(s32 romStart, s32 vramDest, s32 length)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00142">code_43F0.c:142</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a7c5d808d6346d781d5cd8357c7ee32ca"><div class="ttname"><a href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">sin_cos_deg</a></div><div class="ttdeci">void sin_cos_deg(f32 rad, f32 *outSinTheta, f32 *outCosTheta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00322">code_43F0.c:322</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a7d0fb94b093212aa4b5c5b525ff9c1bf"><div class="ttname"><a href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">copy_matrix</a></div><div class="ttdeci">void copy_matrix(Matrix4f *src, Matrix4f *dest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00106">code_43F0.c:106</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a8c438d05ea257783a891e6bcebd1a73f"><div class="ttname"><a href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">func_8002AAC4</a></div><div class="ttdeci">s32 func_8002AAC4()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00342">code_43F0.c:342</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a8e65df72c8b4e1ab29f09790562aaa20"><div class="ttname"><a href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">func_8002A904</a></div><div class="ttdeci">void func_8002A904(u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00340">code_43F0.c:340</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_a91fb898ed5e6e6c2cabded201245c687"><div class="ttname"><a href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">mem_clear</a></div><div class="ttdeci">void mem_clear(s8 *data, s32 numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00096">code_43F0.c:96</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a76fb63dac4bb75e6d952792406610a4a"><div class="ttname"><a href="code__43F0_8c.html#a76fb63dac4bb75e6d952792406610a4a">func_80029934</a></div><div class="ttdeci">f32 func_80029934(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00193">code_43F0.c:193</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a77baee1776490fcd6e2cab778be1c397"><div class="ttname"><a href="code__43F0_8c.html#a77baee1776490fcd6e2cab778be1c397">func_80029860</a></div><div class="ttdeci">void func_80029860(s32 romStart, s32 vramDest, s32 length)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00167">code_43F0.c:167</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a7c5d808d6346d781d5cd8357c7ee32ca"><div class="ttname"><a href="code__43F0_8c.html#a7c5d808d6346d781d5cd8357c7ee32ca">sin_cos_deg</a></div><div class="ttdeci">void sin_cos_deg(f32 rad, f32 *outSinTheta, f32 *outCosTheta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00368">code_43F0.c:368</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a7d0fb94b093212aa4b5c5b525ff9c1bf"><div class="ttname"><a href="code__43F0_8c.html#a7d0fb94b093212aa4b5c5b525ff9c1bf">copy_matrix</a></div><div class="ttdeci">void copy_matrix(Matrix4f *src, Matrix4f *dest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00131">code_43F0.c:131</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a8c438d05ea257783a891e6bcebd1a73f"><div class="ttname"><a href="code__43F0_8c.html#a8c438d05ea257783a891e6bcebd1a73f">func_8002AAC4</a></div><div class="ttdeci">s32 func_8002AAC4()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00388">code_43F0.c:388</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a8e65df72c8b4e1ab29f09790562aaa20"><div class="ttname"><a href="code__43F0_8c.html#a8e65df72c8b4e1ab29f09790562aaa20">func_8002A904</a></div><div class="ttdeci">void func_8002A904(u8 arg0, u8 arg1, u8 arg2, u8 arg3, u16 arg4, u16 arg5, u16 arg6, u16 arg7)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00386">code_43F0.c:386</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_a91fb898ed5e6e6c2cabded201245c687"><div class="ttname"><a href="code__43F0_8c.html#a91fb898ed5e6e6c2cabded201245c687">mem_clear</a></div><div class="ttdeci">void mem_clear(s8 *data, s32 numBytes)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00116">code_43F0.c:116</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_aa6aeb60bfdcef151872bc1283eb53c0e"><div class="ttname"><a href="code__43F0_8c.html#aa6aeb60bfdcef151872bc1283eb53c0e">_heap_malloc</a></div><div class="ttdeci">s32 _heap_malloc()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00074">code_43F0.c:74</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_aaf92fb362ff174d1bfc238c2e260a367"><div class="ttname"><a href="code__43F0_8c.html#aaf92fb362ff174d1bfc238c2e260a367">gRandSeed</a></div><div class="ttdeci">s32 gRandSeed</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00023">code_43F0.c:23</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_ac0fff1568877a80987a30a713af531ca"><div class="ttname"><a href="code__43F0_8c.html#ac0fff1568877a80987a30a713af531ca">_heap_malloc_tail</a></div><div class="ttdeci">s32 _heap_malloc_tail()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00076">code_43F0.c:76</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ac99c4257c9834ee989d6d4bdf043b306"><div class="ttname"><a href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">get_player_normal_pitch</a></div><div class="ttdeci">f32 get_player_normal_pitch(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00264">code_43F0.c:264</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_acc26f13784159e5e7b8202f63f5f9d8b"><div class="ttname"><a href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">func_800297D4</a></div><div class="ttdeci">s32 func_800297D4(s32 romStart, s32 romEnd, void *vramDest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00127">code_43F0.c:127</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ace660117217bb2f8acd8a6259d526df9"><div class="ttname"><a href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">func_8002AB5C</a></div><div class="ttdeci">s32 func_8002AB5C()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00366">code_43F0.c:366</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ac99c4257c9834ee989d6d4bdf043b306"><div class="ttname"><a href="code__43F0_8c.html#ac99c4257c9834ee989d6d4bdf043b306">get_player_normal_pitch</a></div><div class="ttdeci">f32 get_player_normal_pitch(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00310">code_43F0.c:310</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_acc26f13784159e5e7b8202f63f5f9d8b"><div class="ttname"><a href="code__43F0_8c.html#acc26f13784159e5e7b8202f63f5f9d8b">func_800297D4</a></div><div class="ttdeci">s32 func_800297D4(s32 romStart, s32 romEnd, void *vramDest)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00152">code_43F0.c:152</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ace660117217bb2f8acd8a6259d526df9"><div class="ttname"><a href="code__43F0_8c.html#ace660117217bb2f8acd8a6259d526df9">func_8002AB5C</a></div><div class="ttdeci">s32 func_8002AB5C()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00412">code_43F0.c:412</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_ad1ec065fd549b7a51ca83aa20ebd7a0b"><div class="ttname"><a href="code__43F0_8c.html#ad1ec065fd549b7a51ca83aa20ebd7a0b">D_80074270</a></div><div class="ttdeci">s32 D_80074270</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00003">code_43F0.c:3</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_ad5882b7246eb8034f6e9bcc847ea5ac5"><div class="ttname"><a href="code__43F0_8c.html#ad5882b7246eb8034f6e9bcc847ea5ac5">D_80074414</a></div><div class="ttdeci">f32 D_80074414[]</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00025">code_43F0.c:25</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ad5caa9e71ac50c0efc341875f0edac84"><div class="ttname"><a href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a></div><div class="ttdeci">s32 _advance_rng(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00160">code_43F0.c:160</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ad65cb3a7e8739ee11a3e2356e2b50394"><div class="ttname"><a href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a></div><div class="ttdeci">void sin_cos_rad(f32 rad, f32 *outSinTheta, f32 *outCosTheta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00307">code_43F0.c:307</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ae1c58c51acc6791c31f763581035aa80"><div class="ttname"><a href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">int_to_string</a></div><div class="ttdeci">s32 int_to_string()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00093">code_43F0.c:93</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_ae2eb3d617981fd72545d17ed52a44e69"><div class="ttname"><a href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">add_vec2D_polar</a></div><div class="ttdeci">void add_vec2D_polar(f32 *x, f32 *y, f32 r, f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00287">code_43F0.c:287</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_aedd4043ef004d54b695d2f12d1045d67"><div class="ttname"><a href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">update_lerp</a></div><div class="ttdeci">f32 update_lerp(Easing easing, f32 start, f32 end, s32 elapsed, s32 duration)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00337">code_43F0.c:337</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_af06b03116c81c58b5d3b5a2fbd12b159"><div class="ttname"><a href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">rand_int</a></div><div class="ttdeci">s32 rand_int(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00198">code_43F0.c:198</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ad5caa9e71ac50c0efc341875f0edac84"><div class="ttname"><a href="code__43F0_8c.html#ad5caa9e71ac50c0efc341875f0edac84">_advance_rng</a></div><div class="ttdeci">s32 _advance_rng(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00185">code_43F0.c:185</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ad65cb3a7e8739ee11a3e2356e2b50394"><div class="ttname"><a href="code__43F0_8c.html#ad65cb3a7e8739ee11a3e2356e2b50394">sin_cos_rad</a></div><div class="ttdeci">void sin_cos_rad(f32 rad, f32 *outSinTheta, f32 *outCosTheta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00353">code_43F0.c:353</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ae1c58c51acc6791c31f763581035aa80"><div class="ttname"><a href="code__43F0_8c.html#ae1c58c51acc6791c31f763581035aa80">int_to_string</a></div><div class="ttdeci">s32 int_to_string()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00113">code_43F0.c:113</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_ae2eb3d617981fd72545d17ed52a44e69"><div class="ttname"><a href="code__43F0_8c.html#ae2eb3d617981fd72545d17ed52a44e69">add_vec2D_polar</a></div><div class="ttdeci">void add_vec2D_polar(f32 *x, f32 *y, f32 r, f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00333">code_43F0.c:333</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_aedd4043ef004d54b695d2f12d1045d67"><div class="ttname"><a href="code__43F0_8c.html#aedd4043ef004d54b695d2f12d1045d67">update_lerp</a></div><div class="ttdeci">f32 update_lerp(Easing easing, f32 start, f32 end, s32 elapsed, s32 duration)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00383">code_43F0.c:383</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_af06b03116c81c58b5d3b5a2fbd12b159"><div class="ttname"><a href="code__43F0_8c.html#af06b03116c81c58b5d3b5a2fbd12b159">rand_int</a></div><div class="ttdeci">s32 rand_int(s32 arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00221">code_43F0.c:221</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_af2fa9ff53901fadfe3f559510a4f2ebf"><div class="ttname"><a href="code__43F0_8c.html#af2fa9ff53901fadfe3f559510a4f2ebf">D_80074274</a></div><div class="ttdeci">f32 D_80074274[]</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00005">code_43F0.c:5</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_af6417b414891033684a7022238a09174"><div class="ttname"><a href="code__43F0_8c.html#af6417b414891033684a7022238a09174">get_player_normal_yaw</a></div><div class="ttdeci">f32 get_player_normal_yaw(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00260">code_43F0.c:260</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_afa4214ac2020d8ba42096d1f0b72609c"><div class="ttname"><a href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a></div><div class="ttdeci">s32 sign(s32 val)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00084">code_43F0.c:84</a></div></div>
-<div class="ttc" id="acode__43F0_8c_html_afa9267c744c8fccaca145603bbddfb8c"><div class="ttname"><a href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">cos_rad</a></div><div class="ttdeci">f32 cos_rad(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00318">code_43F0.c:318</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_af6417b414891033684a7022238a09174"><div class="ttname"><a href="code__43F0_8c.html#af6417b414891033684a7022238a09174">get_player_normal_yaw</a></div><div class="ttdeci">f32 get_player_normal_yaw(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00306">code_43F0.c:306</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_afa4214ac2020d8ba42096d1f0b72609c"><div class="ttname"><a href="code__43F0_8c.html#afa4214ac2020d8ba42096d1f0b72609c">sign</a></div><div class="ttdeci">s32 sign(s32 val)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00104">code_43F0.c:104</a></div></div>
+<div class="ttc" id="acode__43F0_8c_html_afa9267c744c8fccaca145603bbddfb8c"><div class="ttname"><a href="code__43F0_8c.html#afa9267c744c8fccaca145603bbddfb8c">cos_rad</a></div><div class="ttdeci">f32 cos_rad(f32 angle)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00364">code_43F0.c:364</a></div></div>
 <div class="ttc" id="acommon__structs_8h_html_a9587453a89fcbd13a2ba23c4b74fc0fd"><div class="ttname"><a href="common__structs_8h.html#a9587453a89fcbd13a2ba23c4b74fc0fd">Matrix4f</a></div><div class="ttdeci">f32 Matrix4f[4][4]</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00064">common_structs.h:64</a></div></div>
 <div class="ttc" id="aenums_8h_html_ac291e6abcbe7c764a678bf9fbdf92ef4"><div class="ttname"><a href="enums_8h.html#ac291e6abcbe7c764a678bf9fbdf92ef4">Easing</a></div><div class="ttdeci">s32 Easing</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00225">enums.h:225</a></div></div>
 <div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
 <div class="ttc" id="amacros_8h_html_a08b2c3c00c27891c0b0179c9d8a1c2b6"><div class="ttname"><a href="macros_8h.html#a08b2c3c00c27891c0b0179c9d8a1c2b6">ALIGN16</a></div><div class="ttdeci">#define ALIGN16(val)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00007">macros.h:7</a></div></div>
-<div class="ttc" id="amacros_8h_html_ac3644f84794a8bfdacf39c4b2c2495fc"><div class="ttname"><a href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a></div><div class="ttdeci">#define SQ(x)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00062">macros.h:62</a></div></div>
+<div class="ttc" id="amacros_8h_html_ac3644f84794a8bfdacf39c4b2c2495fc"><div class="ttname"><a href="macros_8h.html#ac3644f84794a8bfdacf39c4b2c2495fc">SQ</a></div><div class="ttdeci">#define SQ(x)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00067">macros.h:67</a></div></div>
 <div class="ttc" id="anuPiReadRom_8c_html_a651698c2eb97bcc678c8e60558594555"><div class="ttname"><a href="nuPiReadRom_8c.html#a651698c2eb97bcc678c8e60558594555">nuPiReadRom</a></div><div class="ttdeci">void nuPiReadRom(u32 rom_addr, void *buf_ptr, u32 size)</div><div class="ttdef"><b>Definition:</b> <a href="nuPiReadRom_8c_source.html#l00004">nuPiReadRom.c:4</a></div></div>
 <div class="ttc" id="aosCreateMesgQueue_8c_html_a641af84d8459060ddc4e1057d64490c6"><div class="ttname"><a href="osCreateMesgQueue_8c.html#a641af84d8459060ddc4e1057d64490c6">osCreateMesgQueue</a></div><div class="ttdeci">void osCreateMesgQueue(OSMesgQueue *queue, OSMesg *mesg, s32 unk)</div><div class="ttdef"><b>Definition:</b> <a href="osCreateMesgQueue_8c_source.html#l00003">osCreateMesgQueue.c:3</a></div></div>
 <div class="ttc" id="aosEPiStartDma_8c_html_a053ed299c8c0b442297a4f0ad0f24825"><div class="ttname"><a href="osEPiStartDma_8c.html#a053ed299c8c0b442297a4f0ad0f24825">osEPiStartDma</a></div><div class="ttdeci">s32 osEPiStartDma(OSPiHandle *pihandle, OSIoMesg *mb, s32 direction)</div><div class="ttdef"><b>Definition:</b> <a href="osEPiStartDma_8c_source.html#l00005">osEPiStartDma.c:5</a></div></div>
@@ -527,7 +573,7 @@ $(document).ready(function(){initNavTree('code__43F0_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__43F0_8c.html">code_43F0.c</a></li>
-    <li class="footer">Generated on Mon Mar 15 2021 13:31:04 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 19 2021 10:26:10 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
