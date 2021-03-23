@@ -87,7 +87,8 @@ $(document).ready(function(){initNavTree('src_2battle_2battle_8h.html',''); init
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">battle.h File Reference</div>  </div>
 </div><!--header-->
@@ -97,21 +98,23 @@ $(document).ready(function(){initNavTree('src_2battle_2battle_8h.html',''); init
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorPartDesc.html">ActorPartDesc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorDesc.html">ActorDesc</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStage.html">Stage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStageList.html">StageList</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="structStageList.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structFormation.html">Formation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStage.html">Stage</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBattleList.html">BattleList</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="structBattleList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structStageList.html">StageList</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zero-terminated.  <a href="structStageList.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorPartDesc.html">ActorPartDesc</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBattleArea.html">BattleArea</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structActorSounds.html">ActorSounds</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -506,6 +509,8 @@ Macros</h2></td></tr>
 <tr class="separator:a1e34686e48cd61dd22cdf278ffda6f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a648450104b1ee2385991eaf1deaba662"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#a648450104b1ee2385991eaf1deaba662">ACTOR_TYPE_COUNT</a>&#160;&#160;&#160;0xD4</td></tr>
 <tr class="separator:a648450104b1ee2385991eaf1deaba662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa548e76a945677a735ba73a8c67846c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(id)</td></tr>
+<tr class="separator:aa548e76a945677a735ba73a8c67846c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a081ae2f94aae3ca9b730df727fb55ac1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#a081ae2f94aae3ca9b730df727fb55ac1">BATTLE</a>(name,  formation,  stage)&#160;&#160;&#160;{ name, <a class="el" href="macros_8h.html#a4bf0a01781df461ad257e5391ac09ae7">ARRAY_COUNT</a>(formation), formation, stage }</td></tr>
 <tr class="separator:a081ae2f94aae3ca9b730df727fb55ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -513,6 +518,11 @@ Macros</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ab134bcf4ea8e6c29f6aae73998f6e98e"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structDefenseTableEntry.html">DefenseTableEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#ab134bcf4ea8e6c29f6aae73998f6e98e">DefenseTable</a>[]</td></tr>
 <tr class="separator:ab134bcf4ea8e6c29f6aae73998f6e98e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a527e81bc3739c07bee9414038590f728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBattleArea.html">BattleArea</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2battle_2battle_8h.html#a527e81bc3739c07bee9414038590f728">gBattleAreas</a> [0x30]</td></tr>
+<tr class="separator:a527e81bc3739c07bee9414038590f728"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a01a8ad632f5f9a07a514ac3712ef4d7f"></a>
@@ -3603,6 +3613,26 @@ Typedefs</h2></td></tr>
 
 </div>
 </div>
+<a id="aa548e76a945677a735ba73a8c67846c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa548e76a945677a735ba73a8c67846c6">&#9670;&nbsp;</a></span>AREA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AREA</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">id</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00200">200</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+
+</div>
+</div>
 <a id="a081ae2f94aae3ca9b730df727fb55ac1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a081ae2f94aae3ca9b730df727fb55ac1">&#9670;&nbsp;</a></span>BATTLE</h2>
 
@@ -3635,7 +3665,7 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00263">263</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00294">294</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
 
 </div>
 </div>
@@ -3652,7 +3682,34 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00272">272</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="src_2battle_2battle_8h_source.html#l00303">303</a> of file <a class="el" href="src_2battle_2battle_8h_source.html">battle.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a527e81bc3739c07bee9414038590f728"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527e81bc3739c07bee9414038590f728">&#9670;&nbsp;</a></span>gBattleAreas</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structBattleArea.html">BattleArea</a> gBattleAreas[0x30]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="battle_8c_source.html#l00084">84</a> of file <a class="el" href="battle_8c_source.html">battle.c</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__4DF30_8c.html#a1ff2b618d722988c8e2f6c2b8859ccb5">load_battle_section()</a>.</p>
 
 </div>
 </div>
@@ -3662,7 +3719,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_857dd4ac9b413a9fc388f1a6cd09e9a3.html">battle</a></li><li class="navelem"><a class="el" href="src_2battle_2battle_8h.html">battle.h</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 02:26:46 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:30:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

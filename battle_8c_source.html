@@ -92,410 +92,386 @@ $(document).ready(function(){initNavTree('battle_8c_source.html',''); initResiza
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;ld_addrs.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="include_2script__api_2battle_8h.html">battle.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structBattleArea.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structBattleArea.html">BattleArea</a> {</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structBattleArea.html#a711a3b37b0615a7e7b211f9dfad0e78a">    6</a></span>&#160;    <span class="comment">/* 0x00 */</span> <span class="keywordtype">char</span>* <a class="code" href="structBattleArea.html#a711a3b37b0615a7e7b211f9dfad0e78a">name</a>; </div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structBattleArea.html#a13f928c971eb308d29376f118a4a7e39">    7</a></span>&#160;    <span class="comment">/* 0x04 */</span> s32 <a class="code" href="structBattleArea.html#a13f928c971eb308d29376f118a4a7e39">dmaStart</a>;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structBattleArea.html#a0b887de264dd0014af7b7d645a0231fa">    8</a></span>&#160;    <span class="comment">/* 0x08 */</span> s32 <a class="code" href="structBattleArea.html#a0b887de264dd0014af7b7d645a0231fa">dmaEnd</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structBattleArea.html#a6982f973500ee3828b3be9ecde64f144">    9</a></span>&#160;    <span class="comment">/* 0x0C */</span> <span class="keywordtype">void</span>* <a class="code" href="structBattleArea.html#a6982f973500ee3828b3be9ecde64f144">dmaDest</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structBattleArea.html#a6d01b58bc0fd51a4031e6eb77b53fbc3">   10</a></span>&#160;    <span class="comment">/* 0x10 */</span> <a class="code" href="structBattleList.html">BattleList</a>* <a class="code" href="structBattleArea.html#a6d01b58bc0fd51a4031e6eb77b53fbc3">battles</a>;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structBattleArea.html#ae157e4cff969857ae576d7c6199895c6">   11</a></span>&#160;    <span class="comment">/* 0x14 */</span> <a class="code" href="structStageList.html">StageList</a>* <a class="code" href="structBattleArea.html#ae157e4cff969857ae576d7c6199895c6">stages</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structBattleArea.html#a66436f06f7eb5f718b1dc31f1029854b">   12</a></span>&#160;    <span class="comment">/* 0x18 */</span> s32 <a class="code" href="structBattleArea.html#a66436f06f7eb5f718b1dc31f1029854b">unused_18</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="structBattleArea.html#ab4073998c257882439773a5d7e79a183">   13</a></span>&#160;    <span class="comment">/* 0x1C */</span> <span class="keywordtype">void</span>* <a class="code" href="structBattleArea.html#ab4073998c257882439773a5d7e79a183">dmaTable</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <a class="code" href="structBattleArea.html">BattleArea</a>; <span class="comment">// size = 0x20</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">   16</a></span>&#160;<span class="preprocessor">#define AREA(id) \</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">    .dmaStart = &amp;code_##id##_ROM_START, \</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">    .dmaEnd = &amp;code_##id##_ROM_END, \</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    .dmaDest = &amp;code_##id##_VRAM</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="battle_8c.html#acdac617ced9f73e92b104f629f096234">   21</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#acdac617ced9f73e92b104f629f096234">D_80099E40</a>[] = {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">/* 0x75240 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">/* 0x75250 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">/* 0x75260 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* 0x75270 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">/* 0x75280 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">/* 0x75290 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/* 0x752A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/* 0x752B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/* 0x752C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* 0x752D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* 0x752E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/* 0x752F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/* 0x75300 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* 0x75310 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/* 0x75320 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* 0x75330 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">   40</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">D_80099F40</a>[] = {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">/* 0x75340 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">/* 0x75350 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/* 0x75360 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/* 0x75370 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/* 0x75380 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* 0x75390 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* 0x753A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/* 0x753B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">/* 0x753C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/* 0x753D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* 0x753E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* 0x753F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">/* 0x75400 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* 0x75410 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/* 0x75420 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/* 0x75430 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">   59</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">D_8009A040</a>[] = {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/* 0x75440 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">/* 0x75450 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">/* 0x75460 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/* 0x75470 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/* 0x75480 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/* 0x75490 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/* 0x754A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* 0x754B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">/* 0x754C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* 0x754D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">/* 0x754E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/* 0x754F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/* 0x75500 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">/* 0x75510 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">/* 0x75520 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/* 0x75530 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">   78</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">D_8009A140</a>[] = {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">/* 0x75540 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">/* 0x75550 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">/* 0x75560 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">/* 0x75570 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">/* 0x75580 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">/* 0x75590 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">/* 0x755A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">/* 0x755B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">/* 0x755C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">/* 0x755D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">/* 0x755E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">/* 0x755F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">/* 0x75600 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">/* 0x75610 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">/* 0x75620 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">/* 0x75630 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">   97</a></span>&#160;<a class="code" href="structBattleList.html">BattleList</a> <a class="code" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">   98</a></span>&#160;<a class="code" href="structStageList.html">StageList</a> <a class="code" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="battle_8c.html#a527e81bc3739c07bee9414038590f728">  100</a></span>&#160;<a class="code" href="structBattleArea.html">BattleArea</a> <a class="code" href="battle_8c.html#a527e81bc3739c07bee9414038590f728">gBattleAreas</a>[0x30] = {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_1),</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その１&quot;</span>,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        .battles = <a class="code" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a>,</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        .stages = <a class="code" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a>,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    },</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_2),</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その２&quot;</span>,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        .battles = 0x80219840,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        .stages = 0x8021987C,</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    },</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_3),</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その３&quot;</span>,</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        .battles = 0x8021A2AC,</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        .stages = 0x8021A360,</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    },</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_mac),</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＭＡＣ&quot;</span>,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        .battles = 0x80232A5C,</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        .stages = 0x80232AD4,</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    },</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_hos),</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＨＯＳ&quot;</span>,</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        .battles = 0x80225F24,</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        .stages = 0x80225F88,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    },</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_nok),</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＮＯＫ&quot;</span>,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        .battles = 0x80219520,</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        .stages = 0x80219728,</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    },</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_1),</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その１&quot;</span>,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        .battles = 0x80218CB0,</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        .stages = 0x80218EE0,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    },</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_2),</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その２&quot;</span>,</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        .battles = 0x8021A5DC,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        .stages = 0x8021A604,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    },</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_3),</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その３&quot;</span>,</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        .battles = 0x8021823C,</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        .stages = 0x80218264,</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    },</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_iwa),</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＷＡ&quot;</span>,</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        .battles = 0x802185B8,</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        .stages = 0x802186E4,</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    },</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    {</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sbk),</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＢＫ&quot;</span>,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        .battles = 0x8021FE80,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        .stages = 0x8021FFE8,</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    },</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_isk_part_1),</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＳＫ その１&quot;</span>,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        .battles = 0x80224700,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        .stages = 0x802248A4,</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    },</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_isk_part_2),</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＳＫ その２&quot;</span>,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        .battles = 0x80220448,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        .stages = 0x80220470,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    },</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_mim),</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＭＩＭ&quot;</span>,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        .battles = 0x8021EA70,</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        .stages = 0x8021EBEC,</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    },</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_arn),</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＡＲＮ&quot;</span>,</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        .battles = 0x80228110,</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        .stages = 0x80228278,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    },</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_dgb),</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＤＧＢ&quot;</span>,</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        .battles = 0x8021B38C,</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        .stages = 0x8021B418,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    },</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo),</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ&quot;</span>,</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        .battles = 0x80230730,</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        .stages = 0x80230AC8,</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    },</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2),</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２&quot;</span>,</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        .battles = 0x8022FBF4,</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        .stages = 0x8022FC1C,</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    },</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo3),</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ３&quot;</span>,</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        .battles = 0x8022EA2C,</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        .stages = 0x8022EB1C,</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    },</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kgr),</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＧＲ&quot;</span>,</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        .battles = 0x8021D5FC,</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        .stages = 0x8021D624,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    },</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    {</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_jan),</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＪＡＮ&quot;</span>,</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        .battles = 0x80228AF8,</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        .stages = 0x80228C60,</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    },</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_jan2),</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＪＡＮ２&quot;</span>,</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        .battles = 0x8021F6C8,</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        .stages = 0x8021F72C,</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    },</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kzn),</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＺＮ&quot;</span>,</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        .battles = 0x80229E74,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        .stages = 0x8022A02C,</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    },</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    {</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kzn2),</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＺＮ２&quot;</span>,</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        .battles = 0x8022AA08,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        .stages = 0x8022AA44,</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        .dmaTable = 0x8022AA84,</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    },</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    {</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_flo),</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＦＬＯ&quot;</span>,</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        .battles = 0x80234574,</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        .stages = 0x8023486C,</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    },</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_flo2),</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＦＬＯ２&quot;</span>,</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        .battles = 0x802356FC,</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        .stages = 0x80235788,</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    },</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik),</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ&quot;</span>,</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        .battles = 0x802340B4,</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        .stages = 0x802342BC,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    },</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik2),</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ２&quot;</span>,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        .battles = 0x80227A90,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        .stages = 0x80227AE0,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    },</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik3),</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ３&quot;</span>,</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        .battles = 0x802232E8,</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        .stages = 0x8022334C,</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    },</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    {</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sam),</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＡＭ&quot;</span>,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        .battles = 0x80231164,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        .stages = 0x80231290,</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    },</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sam2),</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＡＭ２&quot;</span>,</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        .battles = 0x802234F0,</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        .stages = 0x8022352C,</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    },</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    {</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra),</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ&quot;</span>,</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        .battles = 0x8022F4D4,</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        .stages = 0x8022F614,</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    },</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra2),</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ２&quot;</span>,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        .battles = 0x802215A0,</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        .stages = 0x802215C8,</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    },</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    {</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra3),</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ３&quot;</span>,</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        .battles = 0x80232888,</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        .stages = 0x8023298C,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    },</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    {</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa),</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ&quot;</span>,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        .battles = 0x80231A64,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        .stages = 0x80231ED8,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    },</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa2),</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ２&quot;</span>,</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        .battles = 0x802346A8,</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        .stages = 0x80234720,</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    },</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa3),</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ３&quot;</span>,</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        .battles = 0x8022839C,</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        .stages = 0x802283EC,</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    },</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa4),</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ４&quot;</span>,</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        .battles = 0x80227910,</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        .stages = 0x80227988,</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    },</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    {</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kkj),</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＫＪ&quot;</span>,</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        .battles = 0x802185BC,</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        .stages = 0x802185E4,</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    },</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_dig),</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＤＩＧ&quot;</span>,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        .battles = 0x8022A7C4,</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        .stages = 0x8022A83C,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    },</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    {},</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="battle_8c.html#acdac617ced9f73e92b104f629f096234">    5</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#acdac617ced9f73e92b104f629f096234">D_80099E40</a>[] = {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="comment">/* 0x75240 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="comment">/* 0x75250 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">/* 0x75260 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="comment">/* 0x75270 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">/* 0x75280 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="comment">/* 0x75290 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">/* 0x752A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="comment">/* 0x752B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">/* 0x752C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">/* 0x752D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">/* 0x752E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">/* 0x752F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">/* 0x75300 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">/* 0x75310 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">/* 0x75320 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">/* 0x75330 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">   24</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">D_80099F40</a>[] = {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">/* 0x75340 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">/* 0x75350 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">/* 0x75360 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">/* 0x75370 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/* 0x75380 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">/* 0x75390 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">/* 0x753A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">/* 0x753B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/* 0x753C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">/* 0x753D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">/* 0x753E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">/* 0x753F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/* 0x75400 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">/* 0x75410 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">/* 0x75420 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/* 0x75430 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">   43</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">D_8009A040</a>[] = {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">/* 0x75440 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">/* 0x75450 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">/* 0x75460 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">/* 0x75470 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">/* 0x75480 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">/* 0x75490 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/* 0x754A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/* 0x754B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">/* 0x754C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">/* 0x754D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">/* 0x754E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">/* 0x754F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">/* 0x75500 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/* 0x75510 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/* 0x75520 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">/* 0x75530 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">   62</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">D_8009A140</a>[] = {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">/* 0x75540 */</span> 0x00010202, 0x03030303, 0x04040404, 0x04040404,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">/* 0x75550 */</span> 0x05050505, 0x05050505, 0x05050505, 0x05050505,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/* 0x75560 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">/* 0x75570 */</span> 0x06060606, 0x06060606, 0x06060606, 0x06060606,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/* 0x75580 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">/* 0x75590 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">/* 0x755A0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">/* 0x755B0 */</span> 0x07070707, 0x07070707, 0x07070707, 0x07070707,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/* 0x755C0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">/* 0x755D0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">/* 0x755E0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">/* 0x755F0 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">/* 0x75600 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">/* 0x75610 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">/* 0x75620 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">/* 0x75630 */</span> 0x08080808, 0x08080808, 0x08080808, 0x08080808,</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">   81</a></span>&#160;<a class="code" href="structBattleList.html">BattleList</a> <a class="code" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">   82</a></span>&#160;<a class="code" href="structStageList.html">StageList</a> <a class="code" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="battle_8c.html#a527e81bc3739c07bee9414038590f728">   84</a></span>&#160;<a class="code" href="structBattleArea.html">BattleArea</a> <a class="code" href="battle_8c.html#a527e81bc3739c07bee9414038590f728">gBattleAreas</a>[0x30] = {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_1),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その１&quot;</span>,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        .battles = <a class="code" href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a>,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        .stages = <a class="code" href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a>,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    },</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_2),</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その２&quot;</span>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        .battles = 0x80219840,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        .stages = 0x8021987C,</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    },</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kmr_part_3),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＭＲ その３&quot;</span>,</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        .battles = 0x8021A2AC,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        .stages = 0x8021A360,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    },</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_mac),</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＭＡＣ&quot;</span>,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        .battles = 0x80232A5C,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        .stages = 0x80232AD4,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    },</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_hos),</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＨＯＳ&quot;</span>,</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        .battles = 0x80225F24,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        .stages = 0x80225F88,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    },</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_nok),</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＮＯＫ&quot;</span>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        .battles = 0x80219520,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        .stages = 0x80219728,</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    },</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_1),</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その１&quot;</span>,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        .battles = 0x80218CB0,</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        .stages = 0x80218EE0,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    },</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_2),</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その２&quot;</span>,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        .battles = 0x8021A5DC,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        .stages = 0x8021A604,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    },</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_trd_part_3),</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＲＤ その３&quot;</span>,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        .battles = 0x8021823C,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        .stages = 0x80218264,</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    },</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_iwa),</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＷＡ&quot;</span>,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        .battles = 0x802185B8,</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        .stages = 0x802186E4,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    },</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sbk),</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＢＫ&quot;</span>,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        .battles = 0x8021FE80,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        .stages = 0x8021FFE8,</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    },</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_isk_part_1),</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＳＫ その１&quot;</span>,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        .battles = 0x80224700,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        .stages = 0x802248A4,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    },</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_isk_part_2),</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＩＳＫ その２&quot;</span>,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        .battles = 0x80220448,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        .stages = 0x80220470,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    },</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_mim),</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＭＩＭ&quot;</span>,</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        .battles = 0x8021EA70,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        .stages = 0x8021EBEC,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    },</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_arn),</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＡＲＮ&quot;</span>,</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        .battles = 0x80228110,</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        .stages = 0x80228278,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    },</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_dgb),</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＤＧＢ&quot;</span>,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        .battles = 0x8021B38C,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        .stages = 0x8021B418,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    },</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo),</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ&quot;</span>,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        .battles = 0x80230730,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        .stages = 0x80230AC8,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    },</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2),</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２&quot;</span>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        .battles = 0x8022FBF4,</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        .stages = 0x8022FC1C,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    },</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo3),</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ３&quot;</span>,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        .battles = 0x8022EA2C,</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        .stages = 0x8022EB1C,</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    },</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kgr),</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＧＲ&quot;</span>,</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        .battles = 0x8021D5FC,</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        .stages = 0x8021D624,</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    },</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_jan),</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＪＡＮ&quot;</span>,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        .battles = 0x80228AF8,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        .stages = 0x80228C60,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    },</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_jan2),</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＪＡＮ２&quot;</span>,</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        .battles = 0x8021F6C8,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        .stages = 0x8021F72C,</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    },</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kzn),</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＺＮ&quot;</span>,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        .battles = 0x80229E74,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        .stages = 0x8022A02C,</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    },</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kzn2),</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＺＮ２&quot;</span>,</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        .battles = 0x8022AA08,</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        .stages = 0x8022AA44,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        .dmaTable = 0x8022AA84,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    },</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_flo),</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＦＬＯ&quot;</span>,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        .battles = 0x80234574,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        .stages = 0x8023486C,</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    },</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    {</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_flo2),</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＦＬＯ２&quot;</span>,</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        .battles = 0x802356FC,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        .stages = 0x80235788,</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    },</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik),</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ&quot;</span>,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        .battles = 0x802340B4,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        .stages = 0x802342BC,</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    },</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik2),</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ２&quot;</span>,</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        .battles = 0x80227A90,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        .stages = 0x80227AE0,</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    },</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_tik3),</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＴＩＫ３&quot;</span>,</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        .battles = 0x802232E8,</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        .stages = 0x8022334C,</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    },</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sam),</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＡＭ&quot;</span>,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        .battles = 0x80231164,</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        .stages = 0x80231290,</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    },</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_sam2),</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＳＡＭ２&quot;</span>,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        .battles = 0x802234F0,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        .stages = 0x8022352C,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    },</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra),</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ&quot;</span>,</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        .battles = 0x8022F4D4,</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        .stages = 0x8022F614,</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    },</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra2),</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ２&quot;</span>,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        .battles = 0x802215A0,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        .stages = 0x802215C8,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    },</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_pra3),</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＰＲＡ３&quot;</span>,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        .battles = 0x80232888,</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        .stages = 0x8023298C,</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    },</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa),</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ&quot;</span>,</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        .battles = 0x80231A64,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        .stages = 0x80231ED8,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    },</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa2),</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ２&quot;</span>,</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        .battles = 0x802346A8,</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        .stages = 0x80234720,</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    },</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa3),</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ３&quot;</span>,</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        .battles = 0x8022839C,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        .stages = 0x802283EC,</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    },</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    {</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kpa4),</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＰＡ４&quot;</span>,</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        .battles = 0x80227910,</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        .stages = 0x80227988,</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    },</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_kkj),</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＫＫＪ&quot;</span>,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        .battles = 0x802185BC,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        .stages = 0x802185E4,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    },</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_dig),</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＤＩＧ&quot;</span>,</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        .battles = 0x8022A7C4,</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        .stages = 0x8022A83C,</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    },</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {},</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_1),</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿１&quot;</span>,</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    },</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_2),</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿２&quot;</span>,</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    },</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    {</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_3),</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿３&quot;</span>,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    },</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_4),</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿４&quot;</span>,</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    },</div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    {</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_1),</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿１&quot;</span>,</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_5),</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿５&quot;</span>,</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    },</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    {</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_2),</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿２&quot;</span>,</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <a class="code" href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_6),</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿６&quot;</span>,</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    },</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_3),</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿３&quot;</span>,</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    },</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_4),</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿４&quot;</span>,</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    },</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    {</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_5),</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿５&quot;</span>,</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    },</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <a class="code" href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a>(area_omo2_6),</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        .name = <span class="stringliteral">&quot;エリア ＯＭＯ２＿６&quot;</span>,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    },</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    {},</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;};</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="comment">// possibly a jump table</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno"><a class="line" href="battle_8c.html#a4251c3c290a4445fe612e85191904904">  371</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#a4251c3c290a4445fe612e85191904904">jtbl_8009A578</a>[] = {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    0x80072F38, 0x80072F4C, 0x80072F64, 0x80072F90, 0x80072FA8, 0x00000000,</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;};</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="comment">// possibly a jump table</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno"><a class="line" href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">  376</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">jtbl_8009A590</a>[] = {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    0x8007301C, 0x80073070, 0x80073094, 0x800730CC, 0x800730F8,</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;};</div>
-<div class="ttc" id="abattle_8c_html_a048003601076cf5d23f695eae72acbea"><div class="ttname"><a href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a></div><div class="ttdeci">StageList area_kmr_part_1_stages</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00098">battle.c:98</a></div></div>
-<div class="ttc" id="abattle_8c_html_a4251c3c290a4445fe612e85191904904"><div class="ttname"><a href="battle_8c.html#a4251c3c290a4445fe612e85191904904">jtbl_8009A578</a></div><div class="ttdeci">const s32 jtbl_8009A578[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00371">battle.c:371</a></div></div>
-<div class="ttc" id="abattle_8c_html_a527e81bc3739c07bee9414038590f728"><div class="ttname"><a href="battle_8c.html#a527e81bc3739c07bee9414038590f728">gBattleAreas</a></div><div class="ttdeci">BattleArea gBattleAreas[0x30]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00100">battle.c:100</a></div></div>
-<div class="ttc" id="abattle_8c_html_a57be2e11dae9dfb0077aabeb1fed5968"><div class="ttname"><a href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">D_8009A040</a></div><div class="ttdeci">const s32 D_8009A040[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00059">battle.c:59</a></div></div>
-<div class="ttc" id="abattle_8c_html_aa548e76a945677a735ba73a8c67846c6"><div class="ttname"><a href="battle_8c.html#aa548e76a945677a735ba73a8c67846c6">AREA</a></div><div class="ttdeci">#define AREA(id)</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00016">battle.c:16</a></div></div>
-<div class="ttc" id="abattle_8c_html_ac0981ea4d4b1a604556d4c7c7984344f"><div class="ttname"><a href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a></div><div class="ttdeci">BattleList area_kmr_part_1_battles</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00097">battle.c:97</a></div></div>
-<div class="ttc" id="abattle_8c_html_acdac617ced9f73e92b104f629f096234"><div class="ttname"><a href="battle_8c.html#acdac617ced9f73e92b104f629f096234">D_80099E40</a></div><div class="ttdeci">const s32 D_80099E40[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00021">battle.c:21</a></div></div>
-<div class="ttc" id="abattle_8c_html_acdb131c6e12c6065841c4143dc8b45d0"><div class="ttname"><a href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">jtbl_8009A590</a></div><div class="ttdeci">const s32 jtbl_8009A590[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00376">battle.c:376</a></div></div>
-<div class="ttc" id="abattle_8c_html_ad4514f55a4c5c6afe8c1288cbd29fba9"><div class="ttname"><a href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">D_8009A140</a></div><div class="ttdeci">const s32 D_8009A140[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00078">battle.c:78</a></div></div>
-<div class="ttc" id="abattle_8c_html_af4a221c03cc4f8f0b62b1d1b7cac5a7a"><div class="ttname"><a href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">D_80099F40</a></div><div class="ttdeci">const s32 D_80099F40[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00040">battle.c:40</a></div></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {},</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;};</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="comment">// possibly a jump table</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="battle_8c.html#a4251c3c290a4445fe612e85191904904">  355</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#a4251c3c290a4445fe612e85191904904">jtbl_8009A578</a>[] = {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    0x80072F38, 0x80072F4C, 0x80072F64, 0x80072F90, 0x80072FA8, 0x00000000,</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;};</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;<span class="comment">// possibly a jump table</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">  360</a></span>&#160;<span class="keyword">const</span> s32 <a class="code" href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">jtbl_8009A590</a>[] = {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    0x8007301C, 0x80073070, 0x80073094, 0x800730CC, 0x800730F8,</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;};</div>
+<div class="ttc" id="abattle_8c_html_a048003601076cf5d23f695eae72acbea"><div class="ttname"><a href="battle_8c.html#a048003601076cf5d23f695eae72acbea">area_kmr_part_1_stages</a></div><div class="ttdeci">StageList area_kmr_part_1_stages</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00082">battle.c:82</a></div></div>
+<div class="ttc" id="abattle_8c_html_a4251c3c290a4445fe612e85191904904"><div class="ttname"><a href="battle_8c.html#a4251c3c290a4445fe612e85191904904">jtbl_8009A578</a></div><div class="ttdeci">const s32 jtbl_8009A578[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00355">battle.c:355</a></div></div>
+<div class="ttc" id="abattle_8c_html_a527e81bc3739c07bee9414038590f728"><div class="ttname"><a href="battle_8c.html#a527e81bc3739c07bee9414038590f728">gBattleAreas</a></div><div class="ttdeci">BattleArea gBattleAreas[0x30]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00084">battle.c:84</a></div></div>
+<div class="ttc" id="abattle_8c_html_a57be2e11dae9dfb0077aabeb1fed5968"><div class="ttname"><a href="battle_8c.html#a57be2e11dae9dfb0077aabeb1fed5968">D_8009A040</a></div><div class="ttdeci">const s32 D_8009A040[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00043">battle.c:43</a></div></div>
+<div class="ttc" id="abattle_8c_html_ac0981ea4d4b1a604556d4c7c7984344f"><div class="ttname"><a href="battle_8c.html#ac0981ea4d4b1a604556d4c7c7984344f">area_kmr_part_1_battles</a></div><div class="ttdeci">BattleList area_kmr_part_1_battles</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00081">battle.c:81</a></div></div>
+<div class="ttc" id="abattle_8c_html_acdac617ced9f73e92b104f629f096234"><div class="ttname"><a href="battle_8c.html#acdac617ced9f73e92b104f629f096234">D_80099E40</a></div><div class="ttdeci">const s32 D_80099E40[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00005">battle.c:5</a></div></div>
+<div class="ttc" id="abattle_8c_html_acdb131c6e12c6065841c4143dc8b45d0"><div class="ttname"><a href="battle_8c.html#acdb131c6e12c6065841c4143dc8b45d0">jtbl_8009A590</a></div><div class="ttdeci">const s32 jtbl_8009A590[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00360">battle.c:360</a></div></div>
+<div class="ttc" id="abattle_8c_html_ad4514f55a4c5c6afe8c1288cbd29fba9"><div class="ttname"><a href="battle_8c.html#ad4514f55a4c5c6afe8c1288cbd29fba9">D_8009A140</a></div><div class="ttdeci">const s32 D_8009A140[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00062">battle.c:62</a></div></div>
+<div class="ttc" id="abattle_8c_html_af4a221c03cc4f8f0b62b1d1b7cac5a7a"><div class="ttname"><a href="battle_8c.html#af4a221c03cc4f8f0b62b1d1b7cac5a7a">D_80099F40</a></div><div class="ttdeci">const s32 D_80099F40[]</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00024">battle.c:24</a></div></div>
 <div class="ttc" id="ainclude_2script__api_2battle_8h_html"><div class="ttname"><a href="include_2script__api_2battle_8h.html">battle.h</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
-<div class="ttc" id="astructBattleArea_html"><div class="ttname"><a href="structBattleArea.html">BattleArea</a></div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00005">battle.c:5</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a0b887de264dd0014af7b7d645a0231fa"><div class="ttname"><a href="structBattleArea.html#a0b887de264dd0014af7b7d645a0231fa">BattleArea::dmaEnd</a></div><div class="ttdeci">s32 dmaEnd</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00008">battle.c:8</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a13f928c971eb308d29376f118a4a7e39"><div class="ttname"><a href="structBattleArea.html#a13f928c971eb308d29376f118a4a7e39">BattleArea::dmaStart</a></div><div class="ttdeci">s32 dmaStart</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00007">battle.c:7</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a66436f06f7eb5f718b1dc31f1029854b"><div class="ttname"><a href="structBattleArea.html#a66436f06f7eb5f718b1dc31f1029854b">BattleArea::unused_18</a></div><div class="ttdeci">s32 unused_18</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00012">battle.c:12</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a6982f973500ee3828b3be9ecde64f144"><div class="ttname"><a href="structBattleArea.html#a6982f973500ee3828b3be9ecde64f144">BattleArea::dmaDest</a></div><div class="ttdeci">void * dmaDest</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00009">battle.c:9</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a6d01b58bc0fd51a4031e6eb77b53fbc3"><div class="ttname"><a href="structBattleArea.html#a6d01b58bc0fd51a4031e6eb77b53fbc3">BattleArea::battles</a></div><div class="ttdeci">BattleList * battles</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00010">battle.c:10</a></div></div>
-<div class="ttc" id="astructBattleArea_html_a711a3b37b0615a7e7b211f9dfad0e78a"><div class="ttname"><a href="structBattleArea.html#a711a3b37b0615a7e7b211f9dfad0e78a">BattleArea::name</a></div><div class="ttdeci">char * name</div><div class="ttdoc">JP debug name.</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00006">battle.c:6</a></div></div>
-<div class="ttc" id="astructBattleArea_html_ab4073998c257882439773a5d7e79a183"><div class="ttname"><a href="structBattleArea.html#ab4073998c257882439773a5d7e79a183">BattleArea::dmaTable</a></div><div class="ttdeci">void * dmaTable</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00013">battle.c:13</a></div></div>
-<div class="ttc" id="astructBattleArea_html_ae157e4cff969857ae576d7c6199895c6"><div class="ttname"><a href="structBattleArea.html#ae157e4cff969857ae576d7c6199895c6">BattleArea::stages</a></div><div class="ttdeci">StageList * stages</div><div class="ttdef"><b>Definition:</b> <a href="battle_8c_source.html#l00011">battle.c:11</a></div></div>
-<div class="ttc" id="astructBattleList_html"><div class="ttname"><a href="structBattleList.html">BattleList</a></div><div class="ttdoc">Zero-terminated.</div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00255">battle.h:255</a></div></div>
-<div class="ttc" id="astructStageList_html"><div class="ttname"><a href="structStageList.html">StageList</a></div><div class="ttdoc">Zero-terminated.</div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00239">battle.h:239</a></div></div>
+<div class="ttc" id="asrc_2battle_2battle_8h_html_aa548e76a945677a735ba73a8c67846c6"><div class="ttname"><a href="src_2battle_2battle_8h.html#aa548e76a945677a735ba73a8c67846c6">AREA</a></div><div class="ttdeci">#define AREA(id)</div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00200">battle.h:200</a></div></div>
+<div class="ttc" id="astructBattleArea_html"><div class="ttname"><a href="structBattleArea.html">BattleArea</a></div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00281">battle.h:281</a></div></div>
+<div class="ttc" id="astructBattleList_html"><div class="ttname"><a href="structBattleList.html">BattleList</a></div><div class="ttdoc">Zero-terminated.</div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00267">battle.h:267</a></div></div>
+<div class="ttc" id="astructStageList_html"><div class="ttname"><a href="structStageList.html">StageList</a></div><div class="ttdoc">Zero-terminated.</div><div class="ttdef"><b>Definition:</b> <a href="src_2battle_2battle_8h_source.html#l00276">battle.h:276</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_857dd4ac9b413a9fc388f1a6cd09e9a3.html">battle</a></li><li class="navelem"><a class="el" href="battle_8c.html">battle.c</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 02:26:42 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:30:39 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
