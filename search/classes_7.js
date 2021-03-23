@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gamestatus_17692',['GameStatus',['../structGameStatus.html',1,'']]]
+  ['gamestatus_17691',['GameStatus',['../structGameStatus.html',1,'']]]
 ];
