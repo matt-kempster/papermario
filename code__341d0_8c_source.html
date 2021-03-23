@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('code__341d0_8c_source.html',''); initR
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    curEffectInst = &amp;<a class="code" href="code__341d0_8c.html#af44deebdeecf30dcccba2673e429e115">D_800B4398</a>[0];</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="macros_8h.html#a4bf0a01781df461ad257e5391ac09ae7">ARRAY_COUNT</a>(<a class="code" href="code__341d0_8c.html#af44deebdeecf30dcccba2673e429e115">D_800B4398</a>); i++) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> ((curEffectInst[i] != NULL) &amp;&amp; (curEffectInst[i]-&gt;<a class="code" href="structEffectInstance.html#a1e86ac62fd71b6a561dee4725a37789b">flags</a> &amp; 1) &amp;&amp; (curEffectInst[i]-&gt;flags &amp; 8)) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;isBattle) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a>) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">if</span> (curEffectInst[i]-&gt;flags &amp; 4) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                    curEffectInst[i]-&gt;<a class="code" href="structEffectInstance.html#a98790bf18b25f3b73d69be3494586bd8">effect</a>-&gt;<a class="code" href="structEffect.html#aed359cf63f81578a9929726f781c86d7">renderWorld</a>(curEffectInst[i]);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                }</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('code__341d0_8c_source.html',''); initR
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        effectBp-&gt;<a class="code" href="structEffectBlueprint.html#a48d2b08812497e3d41e7693e76e50156">init</a>(newEffectInst);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;isBattle) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a>) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        newEffectInst-&gt;<a class="code" href="structEffectInstance.html#a1e86ac62fd71b6a561dee4725a37789b">flags</a> |= 4;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> newEffectInst;</div>
@@ -312,6 +312,7 @@ $(document).ready(function(){initNavTree('code__341d0_8c_source.html',''); initR
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    curEffect-&gt;<a class="code" href="structEffect.html#a031f976c9bfbef803334e620d71074b6">flags</a> = <a class="code" href="code__341d0_8c.html#a180570034c03a663cdb2f5a0129c7121">EFFECT_LOADED</a>;</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__341d0_8c_html_a0e517ab783321c775b2e91cd32832664"><div class="ttname"><a href="code__341d0_8c.html#a0e517ab783321c775b2e91cd32832664">func_80058DD0</a></div><div class="ttdeci">s32 func_80058DD0()</div><div class="ttdef"><b>Definition:</b> <a href="code__341d0_8c_source.html#l00015">code_341d0.c:15</a></div></div>
 <div class="ttc" id="acode__341d0_8c_html_a1175a5455c5b88f630a8e3fcc1c13c90"><div class="ttname"><a href="code__341d0_8c.html#a1175a5455c5b88f630a8e3fcc1c13c90">D_80197000</a></div><div class="ttdeci">TlbMappablePage D_80197000</div></div>
 <div class="ttc" id="acode__341d0_8c_html_a180570034c03a663cdb2f5a0129c7121"><div class="ttname"><a href="code__341d0_8c.html#a180570034c03a663cdb2f5a0129c7121">EFFECT_LOADED</a></div><div class="ttdeci">#define EFFECT_LOADED</div><div class="ttdef"><b>Definition:</b> <a href="code__341d0_8c_source.html#l00009">code_341d0.c:9</a></div></div>
@@ -373,13 +374,14 @@ $(document).ready(function(){initNavTree('code__341d0_8c_source.html',''); initR
 <div class="ttc" id="astructEffect_html_a3ee3f5efd7e31bc2133c71890ac72589"><div class="ttname"><a href="structEffect.html#a3ee3f5efd7e31bc2133c71890ac72589">Effect::instanceCounter</a></div><div class="ttdeci">s32 instanceCounter</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00821">common_structs.h:821</a></div></div>
 <div class="ttc" id="astructEffect_html_aa9f6d8a394196b222aa09f2643faa3d7"><div class="ttname"><a href="structEffect.html#aa9f6d8a394196b222aa09f2643faa3d7">Effect::update</a></div><div class="ttdeci">void(* update)(EffectInstance *effectInst)</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00823">common_structs.h:823</a></div></div>
 <div class="ttc" id="astructEffect_html_aed359cf63f81578a9929726f781c86d7"><div class="ttname"><a href="structEffect.html#aed359cf63f81578a9929726f781c86d7">Effect::renderWorld</a></div><div class="ttdeci">void(* renderWorld)(EffectInstance *effectInst)</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00824">common_structs.h:824</a></div></div>
+<div class="ttc" id="astructGameStatus_html_a27139533d7c1cea15e7f9e3f3cd13477"><div class="ttname"><a href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">GameStatus::isBattle</a></div><div class="ttdeci">s8 isBattle</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00950">common_structs.h:950</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__341d0_8c.html">code_341d0.c</a></li>
-    <li class="footer">Generated on Sun Mar 21 2021 12:16:52 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:26:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

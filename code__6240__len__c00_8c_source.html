@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('code__6240__len__c00_8c_source.html','
 <div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="code__6240__len__c00_8c.html#ae738359eaa1fa5470638c3271c693eef">   65</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_6240_len_c00&quot;</span>, <a class="code" href="code__6240__len__c00_8c.html#ae738359eaa1fa5470638c3271c693eef">fio_deserialize_state</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="code__6240__len__c00_8c.html#aefaa17ac7c1c61edfbe98d5cba701d44">   67</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__6240__len__c00_8c.html#aefaa17ac7c1c61edfbe98d5cba701d44">func_8002B608</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    (*gGameStatusPtr)-&gt;entryID = 10;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#aac63f34c996aedd03b3168991cc277c4">entryID</a> = 10;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="code__6240__len__c00_8c.html#a4b19fb7f7f2a3fecff6810b3c8c62e40">fio_serialize_state</a>();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -172,6 +172,7 @@ $(document).ready(function(){initNavTree('code__6240__len__c00_8c_source.html','
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="code__6240__len__c00_8c.html#a5aac7d4cc2674a94a3871f81b830d9f0">   82</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__6240__len__c00_8c.html#a5aac7d4cc2674a94a3871f81b830d9f0">fio_erase_flash</a>(s32 pageNum) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="code__4a360__len__930_8c.html#af5b4a3d169c9d46431ba15357cfae961">osFlashSectorErase</a>(pageNum * 128);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__4a360__len__930_8c_html_a47f429c16be4437e0de84e232e811ad8"><div class="ttname"><a href="code__4a360__len__930_8c.html#a47f429c16be4437e0de84e232e811ad8">osFlashInit</a></div><div class="ttdeci">s32 osFlashInit()</div><div class="ttdef"><b>Definition:</b> <a href="code__4a360__len__930_8c_source.html#l00006">code_4a360_len_930.c:6</a></div></div>
 <div class="ttc" id="acode__4a360__len__930_8c_html_af5b4a3d169c9d46431ba15357cfae961"><div class="ttname"><a href="code__4a360__len__930_8c.html#af5b4a3d169c9d46431ba15357cfae961">osFlashSectorErase</a></div><div class="ttdeci">s32 osFlashSectorErase()</div><div class="ttdef"><b>Definition:</b> <a href="code__4a360__len__930_8c_source.html#l00016">code_4a360_len_930.c:16</a></div></div>
 <div class="ttc" id="acode__6240__len__c00_8c_html_a17e73440bcacbf14bfc0645ecae9e79f"><div class="ttname"><a href="code__6240__len__c00_8c.html#a17e73440bcacbf14bfc0645ecae9e79f">fio_save_game</a></div><div class="ttdeci">s32 fio_save_game()</div><div class="ttdef"><b>Definition:</b> <a href="code__6240__len__c00_8c_source.html#l00061">code_6240_len_c00.c:61</a></div></div>
@@ -197,13 +198,14 @@ $(document).ready(function(){initNavTree('code__6240__len__c00_8c_source.html','
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="asi_8c_html_aa85c340a9f29cd59dba42e2f6afb6623"><div class="ttname"><a href="si_8c.html#aa85c340a9f29cd59dba42e2f6afb6623">get_variable</a></div><div class="ttdeci">s32 get_variable(ScriptInstance *script, Bytecode var)</div><div class="ttdef"><b>Definition:</b> <a href="si_8c_source.html#l01182">si.c:1182</a></div></div>
 <div class="ttc" id="asi_8h_html_a9eed23887ec61cd5e338a30d56ea4469"><div class="ttname"><a href="si_8h.html#a9eed23887ec61cd5e338a30d56ea4469">SI_SAVE_VAR</a></div><div class="ttdeci">#define SI_SAVE_VAR(v)</div><div class="ttdef"><b>Definition:</b> <a href="si_8h_source.html#l00109">si.h:109</a></div></div>
+<div class="ttc" id="astructGameStatus_html_aac63f34c996aedd03b3168991cc277c4"><div class="ttname"><a href="structGameStatus.html#aac63f34c996aedd03b3168991cc277c4">GameStatus::entryID</a></div><div class="ttdeci">s16 entryID</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00976">common_structs.h:976</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__6240__len__c00_8c.html">code_6240_len_c00.c</a></li>
-    <li class="footer">Generated on Sun Mar 21 2021 12:16:53 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:26:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

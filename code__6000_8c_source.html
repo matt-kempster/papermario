@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="code__6000_8c.html#a1cbb60be24fe2518c4e23834d813bd99">   35</a></span>&#160;s32 <a class="code" href="code__6000_8c.html#a1cbb60be24fe2518c4e23834d813bd99">heap_malloc</a>(s32 size) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;isBattle == 0) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a> == 0) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__6000_8c.html#ad14713e16e27fc156332cecb6a9d7f90">general_heap_malloc</a>(size);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#aa6aeb60bfdcef151872bc1283eb53c0e">_heap_malloc</a>(&amp;<a class="code" href="code__6000_8c.html#ab68fbc101edc3b502317fe0e692e75af">D_803DA800</a>, size);</div>
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="code__6000_8c.html#ab03a4326e7257c23cbe5fe3a403ebec8">   43</a></span>&#160;s32 <a class="code" href="code__6000_8c.html#ab03a4326e7257c23cbe5fe3a403ebec8">heap_free</a>(s32 size) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;isBattle != 0) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a> != 0) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a59f6ade27d96a0dc81b7dfcee83eac62">_heap_free</a>(&amp;<a class="code" href="code__6000_8c.html#ab68fbc101edc3b502317fe0e692e75af">D_803DA800</a>, size);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__6000_8c.html#ad580c099478340bd3fecab9a053cf6b4">general_heap_free</a>(size);</div>
@@ -146,7 +146,7 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="code__6000_8c.html#a1283fb7f3435fe77138bdf8f8febdb2c">   58</a></span>&#160;s32 <a class="code" href="code__6000_8c.html#a1283fb7f3435fe77138bdf8f8febdb2c">collision_heap_malloc</a>(s32 size) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (!(*gGameStatusPtr)-&gt;isBattle) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a>) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#aa6aeb60bfdcef151872bc1283eb53c0e">_heap_malloc</a>(&amp;<a class="code" href="code__6000_8c.html#ad24cc5ea8f8d668b304690d137bad1f9">D_80268000</a>, size);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#aa6aeb60bfdcef151872bc1283eb53c0e">_heap_malloc</a>(&amp;<a class="code" href="code__6000_8c.html#ab68fbc101edc3b502317fe0e692e75af">D_803DA800</a>, size);</div>
@@ -154,12 +154,13 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="code__6000_8c.html#ad0b1fa56b1798b04ac716bf522c037f8">   66</a></span>&#160;s32 <a class="code" href="code__6000_8c.html#ad0b1fa56b1798b04ac716bf522c037f8">collision_heap_free</a>(<span class="keywordtype">void</span>* data) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;isBattle) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">isBattle</a>) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a59f6ade27d96a0dc81b7dfcee83eac62">_heap_free</a>(&amp;<a class="code" href="code__6000_8c.html#ab68fbc101edc3b502317fe0e692e75af">D_803DA800</a>, data);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="code__43F0_8c.html#a59f6ade27d96a0dc81b7dfcee83eac62">_heap_free</a>(&amp;<a class="code" href="code__6000_8c.html#ad24cc5ea8f8d668b304690d137bad1f9">D_80268000</a>, data);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a22a5abe475969fb23e684d9b51301488"><div class="ttname"><a href="code__43F0_8c.html#a22a5abe475969fb23e684d9b51301488">_heap_create</a></div><div class="ttdeci">HeapNode * _heap_create(s32 *addr, u32 size)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00059">code_43F0.c:59</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a59f6ade27d96a0dc81b7dfcee83eac62"><div class="ttname"><a href="code__43F0_8c.html#a59f6ade27d96a0dc81b7dfcee83eac62">_heap_free</a></div><div class="ttdeci">s32 _heap_free()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00078">code_43F0.c:78</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_aa6aeb60bfdcef151872bc1283eb53c0e"><div class="ttname"><a href="code__43F0_8c.html#aa6aeb60bfdcef151872bc1283eb53c0e">_heap_malloc</a></div><div class="ttdeci">s32 _heap_malloc()</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00074">code_43F0.c:74</a></div></div>
@@ -179,6 +180,7 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div class="ttc" id="acode__6000_8c_html_aeccdee74a3a0309d5c83ae6e7fc7bed9"><div class="ttname"><a href="code__6000_8c.html#aeccdee74a3a0309d5c83ae6e7fc7bed9">func_8002ACDC</a></div><div class="ttdeci">s32 func_8002ACDC(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__6000_8c_source.html#l00031">code_6000.c:31</a></div></div>
 <div class="ttc" id="acode__6000_8c_html_aecdb2988a9efe96a480a700a0eb620d8"><div class="ttname"><a href="code__6000_8c.html#aecdb2988a9efe96a480a700a0eb620d8">D_802FB800</a></div><div class="ttdeci">s32 D_802FB800</div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
+<div class="ttc" id="astructGameStatus_html_a27139533d7c1cea15e7f9e3f3cd13477"><div class="ttname"><a href="structGameStatus.html#a27139533d7c1cea15e7f9e3f3cd13477">GameStatus::isBattle</a></div><div class="ttdeci">s8 isBattle</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00950">common_structs.h:950</a></div></div>
 <div class="ttc" id="astructHeapNode_html"><div class="ttname"><a href="structHeapNode.html">HeapNode</a></div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00085">common_structs.h:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -186,7 +188,7 @@ $(document).ready(function(){initNavTree('code__6000_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__6000_8c.html">code_6000.c</a></li>
-    <li class="footer">Generated on Sun Mar 21 2021 12:16:53 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:26:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

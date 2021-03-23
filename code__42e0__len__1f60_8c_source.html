@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('code__42e0__len__1f60_8c_source.html',
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="code__42e0__len__1f60_8c.html#a0bac7852fa5dc29e21d32930a4ae4a2b">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__42e0__len__1f60_8c.html#a0bac7852fa5dc29e21d32930a4ae4a2b">start_rumble</a>(s32 freq, s32 frame) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;demoState == 0) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#ab0cb17970f28b631490e9c7b49a34ac6">demoState</a> == 0) {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        u16* sym = &amp;<a class="code" href="code__42e0__len__1f60_8c.html#a6fc0b1c1e0a8cb9c33373d1c4d5771eb">D_80074260</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">if</span> (*sym != 0) {</div>
@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('code__42e0__len__1f60_8c_source.html',
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    s32* sym = &amp;<a class="code" href="code__42e0__len__1f60_8c.html#a5d0c8235bafd54556e155ac2892cec3c">D_80074264</a>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    u16* sym2;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (*sym != (*gGameStatusPtr)-&gt;currentButtons) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        *sym = (*gGameStatusPtr)-&gt;currentButtons;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (*sym != <a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#ae6c7c47900dbb8f47ed8ab19bf28ef1b">currentButtons</a>) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        *sym = <a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#ae6c7c47900dbb8f47ed8ab19bf28ef1b">currentButtons</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="code__42e0__len__1f60_8c.html#aebc526959ed80cf6a756a2e8d3257416">reset_max_rumble_duration</a>();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
@@ -138,6 +138,7 @@ $(document).ready(function(){initNavTree('code__42e0__len__1f60_8c_source.html',
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="code__42e0__len__1f60_8c.html#aebc526959ed80cf6a756a2e8d3257416">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__42e0__len__1f60_8c.html#aebc526959ed80cf6a756a2e8d3257416">reset_max_rumble_duration</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="code__42e0__len__1f60_8c.html#a6fc0b1c1e0a8cb9c33373d1c4d5771eb">D_80074260</a> = 300;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__42e0__len__1f60_8c_html_a0bac7852fa5dc29e21d32930a4ae4a2b"><div class="ttname"><a href="code__42e0__len__1f60_8c.html#a0bac7852fa5dc29e21d32930a4ae4a2b">start_rumble</a></div><div class="ttdeci">void start_rumble(s32 freq, s32 frame)</div><div class="ttdef"><b>Definition:</b> <a href="code__42e0__len__1f60_8c_source.html#l00014">code_42e0_len_1f60.c:14</a></div></div>
 <div class="ttc" id="acode__42e0__len__1f60_8c_html_a5d0c8235bafd54556e155ac2892cec3c"><div class="ttname"><a href="code__42e0__len__1f60_8c.html#a5d0c8235bafd54556e155ac2892cec3c">D_80074264</a></div><div class="ttdeci">s32 D_80074264</div><div class="ttdef"><b>Definition:</b> <a href="code__42e0__len__1f60_8c_source.html#l00007">code_42e0_len_1f60.c:7</a></div></div>
 <div class="ttc" id="acode__42e0__len__1f60_8c_html_a6fc0b1c1e0a8cb9c33373d1c4d5771eb"><div class="ttname"><a href="code__42e0__len__1f60_8c.html#a6fc0b1c1e0a8cb9c33373d1c4d5771eb">D_80074260</a></div><div class="ttdeci">u16 D_80074260</div><div class="ttdef"><b>Definition:</b> <a href="code__42e0__len__1f60_8c_source.html#l00006">code_42e0_len_1f60.c:6</a></div></div>
@@ -148,13 +149,15 @@ $(document).ready(function(){initNavTree('code__42e0__len__1f60_8c_source.html',
 <div class="ttc" id="anuContRmbModeSet_8c_html_a3f6313fd5e7ebd2fae224ad9ead74000"><div class="ttname"><a href="nuContRmbModeSet_8c.html#a3f6313fd5e7ebd2fae224ad9ead74000">nuContRmbModeSet</a></div><div class="ttdeci">s32 nuContRmbModeSet()</div><div class="ttdef"><b>Definition:</b> <a href="nuContRmbModeSet_8c_source.html#l00003">nuContRmbModeSet.c:3</a></div></div>
 <div class="ttc" id="anuContRmbStart_8c_html_a9d56b1c8b64c4d005691f569c5bdd8f0"><div class="ttname"><a href="nuContRmbStart_8c.html#a9d56b1c8b64c4d005691f569c5bdd8f0">nuContRmbStart</a></div><div class="ttdeci">void nuContRmbStart(u32 contNo, u16 freq, u16 frame)</div><div class="ttdef"><b>Definition:</b> <a href="nuContRmbStart_8c_source.html#l00004">nuContRmbStart.c:4</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
+<div class="ttc" id="astructGameStatus_html_ab0cb17970f28b631490e9c7b49a34ac6"><div class="ttname"><a href="structGameStatus.html#ab0cb17970f28b631490e9c7b49a34ac6">GameStatus::demoState</a></div><div class="ttdeci">s8 demoState</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00951">common_structs.h:951</a></div></div>
+<div class="ttc" id="astructGameStatus_html_ae6c7c47900dbb8f47ed8ab19bf28ef1b"><div class="ttname"><a href="structGameStatus.html#ae6c7c47900dbb8f47ed8ab19bf28ef1b">GameStatus::currentButtons</a></div><div class="ttdeci">u32 currentButtons</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00923">common_structs.h:923</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__42e0__len__1f60_8c.html">code_42e0_len_1f60.c</a></li>
-    <li class="footer">Generated on Sun Mar 21 2021 12:16:53 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:26:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

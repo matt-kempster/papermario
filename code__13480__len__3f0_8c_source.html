@@ -91,37 +91,34 @@ $(document).ready(function(){initNavTree('code__13480__len__3f0_8c_source.html',
 <a href="code__13480__len__3f0_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="code__13480__len__3f0_8c.html#ae7abf97ba6bacc2e8369c69b1a3242bc">    3</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__13480__len__3f0_8c.html#ae7abf97ba6bacc2e8369c69b1a3242bc">init_demo_data</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="structGameStatus.html">GameStatus</a>* gameStatus2;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordflow">if</span> ((*gGameStatusPtr)-&gt;demoState == 0) {</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        (*gGameStatusPtr)-&gt;<a class="code" href="structGameStatus.html#a06d19da7782c49f8ba15e81e14117506">nextDemoScene</a> = 0;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        (*gGameStatusPtr)-&gt;demoState = 1;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    gameStatus = *<a class="code" href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    (*gGameStatusPtr)-&gt;<a class="code" href="structGameStatus.html#ae5d73f133235572c0a272af0bab514d2">demoStickX</a> = 0;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    gameStatus2 = *<a class="code" href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    gameStatus-&gt;<a class="code" href="structGameStatus.html#a84a64ac844d9001801405ead853e0fb9">demoButtonInput</a> = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    gameStatus2-&gt;<a class="code" href="structGameStatus.html#a937252d58baa358c70ea1a10d2f266b9">demoStickY</a> = 0;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="audio_8h.html#aa30cc8e059413096b8d1096d5caf80b0">func_80056228</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="code__cd180__len__38f0_8c.html#a6ab7fbd3da07d65e0ed4d4b9dd39d400">set_map_transition_effect</a>(2);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="code__cd180__len__38f0_8c.html#abc145e9cae81ac098ad3bc1f7eecdf37">set_transition_stencil_zoom_0</a>(0, 255.0f);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="code__dba20__len__350_8c.html#a1bcad9872ac8e8b22737597693431201">clear_saved_variables</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="code__e79b0__len__1920_8c.html#a01d2be11a51b61891de93fe0d03ad164">clear_script_list</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">   25</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_13480_len_3f0&quot;</span>, <a class="code" href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">next_demo_scene</a>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">   27</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">func_8003845C</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <a class="code" href="structGameStatus.html">GameStatus</a>** gameStatus = &amp;<a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keywordflow">if</span> ((*gameStatus)-&gt;demoState == 0) {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        (*gameStatus)-&gt;<a class="code" href="structGameStatus.html#a06d19da7782c49f8ba15e81e14117506">nextDemoScene</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        (*gameStatus)-&gt;demoState = 1;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    }</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    (*gameStatus)-&gt;demoButtonInput = 0;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    (*gameStatus)-&gt;demoStickX = 0;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    (*gameStatus)-&gt;demoStickY = 0;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="audio_8h.html#aa30cc8e059413096b8d1096d5caf80b0">func_80056228</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="code__cd180__len__38f0_8c.html#a6ab7fbd3da07d65e0ed4d4b9dd39d400">set_map_transition_effect</a>(2);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="code__cd180__len__38f0_8c.html#abc145e9cae81ac098ad3bc1f7eecdf37">set_transition_stencil_zoom_0</a>(0, 255.0f);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="code__dba20__len__350_8c.html#a1bcad9872ac8e8b22737597693431201">clear_saved_variables</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="code__e79b0__len__1920_8c.html#a01d2be11a51b61891de93fe0d03ad164">clear_script_list</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">   22</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_13480_len_3f0&quot;</span>, <a class="code" href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">next_demo_scene</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">   24</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">func_8003845C</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
 <div class="ttc" id="aaudio_8h_html_aa30cc8e059413096b8d1096d5caf80b0"><div class="ttname"><a href="audio_8h.html#aa30cc8e059413096b8d1096d5caf80b0">func_80056228</a></div><div class="ttdeci">void func_80056228(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__30450_8c_source.html#l00457">code_30450.c:457</a></div></div>
-<div class="ttc" id="acode__13480__len__3f0_8c_html_a2a022b3c5802895ca4d84c9c0b5c3e20"><div class="ttname"><a href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">func_8003845C</a></div><div class="ttdeci">void func_8003845C(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__13480__len__3f0_8c_source.html#l00027">code_13480_len_3f0.c:27</a></div></div>
-<div class="ttc" id="acode__13480__len__3f0_8c_html_a4abf6e3347ebfede78eeff0948e2d7c9"><div class="ttname"><a href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">next_demo_scene</a></div><div class="ttdeci">s32 next_demo_scene()</div><div class="ttdef"><b>Definition:</b> <a href="code__13480__len__3f0_8c_source.html#l00025">code_13480_len_3f0.c:25</a></div></div>
+<div class="ttc" id="acode__13480__len__3f0_8c_html_a2a022b3c5802895ca4d84c9c0b5c3e20"><div class="ttname"><a href="code__13480__len__3f0_8c.html#a2a022b3c5802895ca4d84c9c0b5c3e20">func_8003845C</a></div><div class="ttdeci">void func_8003845C(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__13480__len__3f0_8c_source.html#l00024">code_13480_len_3f0.c:24</a></div></div>
+<div class="ttc" id="acode__13480__len__3f0_8c_html_a4abf6e3347ebfede78eeff0948e2d7c9"><div class="ttname"><a href="code__13480__len__3f0_8c.html#a4abf6e3347ebfede78eeff0948e2d7c9">next_demo_scene</a></div><div class="ttdeci">s32 next_demo_scene()</div><div class="ttdef"><b>Definition:</b> <a href="code__13480__len__3f0_8c_source.html#l00022">code_13480_len_3f0.c:22</a></div></div>
 <div class="ttc" id="acode__13480__len__3f0_8c_html_ae7abf97ba6bacc2e8369c69b1a3242bc"><div class="ttname"><a href="code__13480__len__3f0_8c.html#ae7abf97ba6bacc2e8369c69b1a3242bc">init_demo_data</a></div><div class="ttdeci">void init_demo_data(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__13480__len__3f0_8c_source.html#l00003">code_13480_len_3f0.c:3</a></div></div>
-<div class="ttc" id="acode__1b40__len__20b0_8c_html_ab74ac7c11da73affa58fd0052c3c272c"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#ab74ac7c11da73affa58fd0052c3c272c">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr[1]</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
+<div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__cd180__len__38f0_8c_html_a6ab7fbd3da07d65e0ed4d4b9dd39d400"><div class="ttname"><a href="code__cd180__len__38f0_8c.html#a6ab7fbd3da07d65e0ed4d4b9dd39d400">set_map_transition_effect</a></div><div class="ttdeci">s32 set_map_transition_effect()</div><div class="ttdef"><b>Definition:</b> <a href="code__cd180__len__38f0_8c_source.html#l00030">code_cd180_len_38f0.c:30</a></div></div>
 <div class="ttc" id="acode__cd180__len__38f0_8c_html_abc145e9cae81ac098ad3bc1f7eecdf37"><div class="ttname"><a href="code__cd180__len__38f0_8c.html#abc145e9cae81ac098ad3bc1f7eecdf37">set_transition_stencil_zoom_0</a></div><div class="ttdeci">void set_transition_stencil_zoom_0(s32 arg0, f32 arg1)</div><div class="ttdef"><b>Definition:</b> <a href="code__cd180__len__38f0_8c_source.html#l00005">code_cd180_len_38f0.c:5</a></div></div>
 <div class="ttc" id="acode__dba20__len__350_8c_html_a1bcad9872ac8e8b22737597693431201"><div class="ttname"><a href="code__dba20__len__350_8c.html#a1bcad9872ac8e8b22737597693431201">clear_saved_variables</a></div><div class="ttdeci">void clear_saved_variables(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__dba20__len__350_8c_source.html#l00003">code_dba20_len_350.c:3</a></div></div>
@@ -130,16 +127,13 @@ $(document).ready(function(){initNavTree('code__13480__len__3f0_8c_source.html',
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="astructGameStatus_html"><div class="ttname"><a href="structGameStatus.html">GameStatus</a></div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00922">common_structs.h:922</a></div></div>
 <div class="ttc" id="astructGameStatus_html_a06d19da7782c49f8ba15e81e14117506"><div class="ttname"><a href="structGameStatus.html#a06d19da7782c49f8ba15e81e14117506">GameStatus::nextDemoScene</a></div><div class="ttdeci">u8 nextDemoScene</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00952">common_structs.h:952</a></div></div>
-<div class="ttc" id="astructGameStatus_html_a84a64ac844d9001801405ead853e0fb9"><div class="ttname"><a href="structGameStatus.html#a84a64ac844d9001801405ead853e0fb9">GameStatus::demoButtonInput</a></div><div class="ttdeci">s16 demoButtonInput</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00946">common_structs.h:946</a></div></div>
-<div class="ttc" id="astructGameStatus_html_a937252d58baa358c70ea1a10d2f266b9"><div class="ttname"><a href="structGameStatus.html#a937252d58baa358c70ea1a10d2f266b9">GameStatus::demoStickY</a></div><div class="ttdeci">s8 demoStickY</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00948">common_structs.h:948</a></div></div>
-<div class="ttc" id="astructGameStatus_html_ae5d73f133235572c0a272af0bab514d2"><div class="ttname"><a href="structGameStatus.html#ae5d73f133235572c0a272af0bab514d2">GameStatus::demoStickX</a></div><div class="ttdeci">s8 demoStickX</div><div class="ttdef"><b>Definition:</b> <a href="common__structs_8h_source.html#l00947">common_structs.h:947</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__13480__len__3f0_8c.html">code_13480_len_3f0.c</a></li>
-    <li class="footer">Generated on Sun Mar 21 2021 12:16:52 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Mar 23 2021 02:26:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
