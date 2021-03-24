@@ -92,14 +92,14 @@ $(document).ready(function(){initNavTree('osSetThreadPri_8c_source.html',''); in
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="struct____osThreadTail.html">    5</a></span>&#160; <span class="keyword">struct </span><a class="code" href="struct____osThreadTail.html">__osThreadTail</a> {</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="struct____osThreadTail.html">    5</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct____osThreadTail.html">__osThreadTail</a> {</div>
 <div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="struct____osThreadTail.html#a1dce50ccddfccd2ab527894819c7b42a">    6</a></span>&#160;    OSThread* <a class="code" href="struct____osThreadTail.html#a1dce50ccddfccd2ab527894819c7b42a">next</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct____osThreadTail.html#a9f1bda85addc90a22c413145e1b46afb">    7</a></span>&#160;    OSPri <a class="code" href="struct____osThreadTail.html#a9f1bda85addc90a22c413145e1b46afb">priority</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;};</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">struct </span><a class="code" href="struct____osThreadTail.html">__osThreadTail</a> <a class="code" href="struct____osThreadTail.html">__osThreadTail</a> = {0, -1};</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a95bd5a78cf0d49f922eb22c02533774e">   11</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a95bd5a78cf0d49f922eb22c02533774e">__osRunQueue</a> = (OSThread*)&amp;<a class="code" href="struct____osThreadTail.html">__osThreadTail</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a31b577966e52be770c717b8bf5283124">   12</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a31b577966e52be770c717b8bf5283124">__osActiveQueue</a> = (OSThread*)&amp;<a class="code" href="struct____osThreadTail.html">__osThreadTail</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a95bd5a78cf0d49f922eb22c02533774e">   11</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a95bd5a78cf0d49f922eb22c02533774e">__osRunQueue</a> = (OSThread*) &amp;<a class="code" href="struct____osThreadTail.html">__osThreadTail</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a31b577966e52be770c717b8bf5283124">   12</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a31b577966e52be770c717b8bf5283124">__osActiveQueue</a> = (OSThread*) &amp;<a class="code" href="struct____osThreadTail.html">__osThreadTail</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a4c57f3342a3bc2e836d06b78c85d70f0">   13</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a4c57f3342a3bc2e836d06b78c85d70f0">__osRunningThread</a> = NULL;</div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="osSetThreadPri_8c.html#a8386b3993eefde5c773083a70bc964c1">   14</a></span>&#160;OSThread* <a class="code" href="osSetThreadPri_8c.html#a8386b3993eefde5c773083a70bc964c1">__osFaultedThread</a> = NULL;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
@@ -140,7 +140,7 @@ $(document).ready(function(){initNavTree('osSetThreadPri_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="osSetThreadPri_8c.html">osSetThreadPri.c</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 14:10:58 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 24 2021 08:40:44 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

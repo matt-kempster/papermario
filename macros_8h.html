@@ -165,6 +165,12 @@ Macros</h2></td></tr>
 <tr class="separator:a31e48cf2e5addac9cc82e6258bff5163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2370e24db9fc2b09a21ef4e9508b8c31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a2370e24db9fc2b09a21ef4e9508b8c31">ASCII_TO_U32</a>(a,  b,  c,  d)&#160;&#160;&#160;((u32)((a &lt;&lt; 24) | (b &lt;&lt; 16) | (c &lt;&lt; 8) | (d &lt;&lt; 0)))</td></tr>
 <tr class="separator:a2370e24db9fc2b09a21ef4e9508b8c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33bd933f5d4895b3b6d18c2d5fed91a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#a33bd933f5d4895b3b6d18c2d5fed91a0">CLAMP</a>(x,  min,  max)&#160;&#160;&#160;((x) &lt; (min) ? (min) : (x) &gt; (max) ? (max) : (x))</td></tr>
+<tr class="separator:a33bd933f5d4895b3b6d18c2d5fed91a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09902e07fd99efdb1e0353946b9e00a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ad09902e07fd99efdb1e0353946b9e00a">CLAMP_MAX</a>(x,  max)&#160;&#160;&#160;((x) &gt; (max) ? (max) : (x))</td></tr>
+<tr class="separator:ad09902e07fd99efdb1e0353946b9e00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab25f972219b5812b43c4c2b07017c255"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="macros_8h.html#ab25f972219b5812b43c4c2b07017c255">CLAMP_MIN</a>(x,  min)&#160;&#160;&#160;((x) &lt; (min) ? (min) : (x))</td></tr>
+<tr class="separator:ab25f972219b5812b43c4c2b07017c255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a08b2c3c00c27891c0b0179c9d8a1c2b6"></a>
@@ -872,13 +878,109 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a33bd933f5d4895b3b6d18c2d5fed91a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33bd933f5d4895b3b6d18c2d5fed91a0">&#9670;&nbsp;</a></span>CLAMP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLAMP</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x) &lt; (min) ? (min) : (x) &gt; (max) ? (max) : (x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="macros_8h_source.html#l00077">77</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a id="ad09902e07fd99efdb1e0353946b9e00a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad09902e07fd99efdb1e0353946b9e00a">&#9670;&nbsp;</a></span>CLAMP_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLAMP_MAX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">max&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x) &gt; (max) ? (max) : (x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="macros_8h_source.html#l00078">78</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
+<a id="ab25f972219b5812b43c4c2b07017c255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab25f972219b5812b43c4c2b07017c255">&#9670;&nbsp;</a></span>CLAMP_MIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLAMP_MIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">min&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((x) &lt; (min) ? (min) : (x))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="macros_8h_source.html#l00079">79</a> of file <a class="el" href="macros_8h_source.html">macros.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="macros_8h.html">macros.h</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 14:11:00 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 24 2021 08:40:46 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

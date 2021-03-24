@@ -91,71 +91,71 @@ $(document).ready(function(){initNavTree('UnkTexturePanFunc2_8inc_8c_source.html
 <a href="UnkTexturePanFunc2_8inc_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2map_8h.html">map.h</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="UnkTexturePanFunc2_8inc_8c.html#a5631761f7149ed6bfe5c9581d790b795">    4</a></span>&#160;<a class="code" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a> <a class="code" href="macros_8h.html#a140931a55df25c359c52a4c414eda943">N</a>(<a class="code" href="UnkTexturePanFunc2_8inc_8c.html#a5631761f7149ed6bfe5c9581d790b795">UnkTexturePanFunc2</a>)(<a class="code" href="structScriptInstance.html">ScriptInstance</a>* script, s32 isInitialCall) {</div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="UnkTexturePanFunc2_8inc_8c.html#a5631761f7149ed6bfe5c9581d790b795">    4</a></span>&#160;<a class="code" href="si_8h.html#a353709e4af3228665d8fbc5a4c6e25b4">ApiStatus</a> <a class="code" href="macros_8h.html#a140931a55df25c359c52a4c414eda943">N</a>(<a class="code" href="UnkTexturePanFunc2_8inc_8c.html#a5631761f7149ed6bfe5c9581d790b795">UnkTexturePanFunc2</a>)(<a class="code" href="structScriptInstance.html">ScriptInstance</a>* <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>, s32 isInitialCall) {</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keywordflow">if</span> (isInitialCall) {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        script-&gt;functionTemp[0].s = 0;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        script-&gt;functionTemp[1].s = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        script-&gt;functionTemp[2].s = 0;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        script-&gt;functionTemp[3].s = 0;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[0].s = 0;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[1].s = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[2].s = 0;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[3].s = 0;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[0].s == 0) {</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        script-&gt;varTable[9] += script-&gt;varTable[1];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">if</span> (script-&gt;varTable[9] &lt; 0) {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            script-&gt;varTable[9] += 0x20000;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (script-&gt;varTable[9] &gt; 0x20000) {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            script-&gt;varTable[9] -= 0x20000;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[0].s == 0) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9] += <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[1];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9] &lt; 0) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9] += 0x20000;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9] &gt; 0x20000) {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9] -= 0x20000;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[1].s == 0) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        script-&gt;varTable[10] += script-&gt;varTable[2];</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span> (script-&gt;varTable[10] &lt; 0) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            script-&gt;varTable[10] += 0x20000;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (script-&gt;varTable[10] &gt; 0x20000) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            script-&gt;varTable[10] -= 0x20000;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[1].s == 0) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10] += <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[2];</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10] &lt; 0) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10] += 0x20000;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10] &gt; 0x20000) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10] -= 0x20000;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[2].s == 0) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        script-&gt;varTable[11] += script-&gt;varTable[3];</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (script-&gt;varTable[11] &lt; 0) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            script-&gt;varTable[11] += 0x20000;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (script-&gt;varTable[11] &gt; 0x20000) {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            script-&gt;varTable[11] -= 0x20000;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[2].s == 0) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11] += <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[3];</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11] &lt; 0) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11] += 0x20000;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11] &gt; 0x20000) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11] -= 0x20000;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[3].s == 0) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        script-&gt;varTable[12] += script-&gt;varTable[4];</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (script-&gt;varTable[12] &lt; 0) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            script-&gt;varTable[12] += 0x20000;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (script-&gt;varTable[12] &gt; 0x20000) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            script-&gt;varTable[12] -= 0x20000;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[3].s == 0) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12] += <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[4];</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12] &lt; 0) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12] += 0x20000;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12] &gt; 0x20000) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12] -= 0x20000;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a5ec2a719bc62fcd933d938da82e1965d">set_main_pan_u</a>(script-&gt;varTable[0], script-&gt;varTable[9]);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a0b67c161f0746a07d7202df177a2fb82">set_main_pan_v</a>(script-&gt;varTable[0], script-&gt;varTable[10]);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a762eeaf22374802d813e7d274966d869">set_aux_pan_u</a>(script-&gt;varTable[0], script-&gt;varTable[11]);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a8fee96ae111549c65da1ac6e0ba2047f">set_aux_pan_v</a>(script-&gt;varTable[0], script-&gt;varTable[12]);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a5ec2a719bc62fcd933d938da82e1965d">set_main_pan_u</a>(<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[0], <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[9]);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a0b67c161f0746a07d7202df177a2fb82">set_main_pan_v</a>(<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[0], <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[10]);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a762eeaf22374802d813e7d274966d869">set_aux_pan_u</a>(<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[0], <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[11]);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#a8fee96ae111549c65da1ac6e0ba2047f">set_aux_pan_v</a>(<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[0], <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[12]);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    script-&gt;functionTemp[0].s++;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    script-&gt;functionTemp[1].s++;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    script-&gt;functionTemp[2].s++;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    script-&gt;functionTemp[3].s++;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[0].s++;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[1].s++;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[2].s++;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[3].s++;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[0].s &gt;= script-&gt;varTable[5]) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        script-&gt;functionTemp[0].s = 0;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[0].s &gt;= <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[5]) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[0].s = 0;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[1].s &gt;= script-&gt;varTable[6]) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        script-&gt;functionTemp[1].s = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[1].s &gt;= <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[6]) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[1].s = 0;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[2].s &gt;= script-&gt;varTable[7]) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        script-&gt;functionTemp[2].s = 0;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[2].s &gt;= <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[7]) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[2].s = 0;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (script-&gt;functionTemp[3].s &gt;= script-&gt;varTable[8]) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        script-&gt;functionTemp[3].s = 0;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[3].s &gt;= <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;varTable[8]) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a>-&gt;functionTemp[3].s = 0;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#af10d75be52922f845239b69bae3e4c99">ApiStatus_BLOCK</a>;</div>
@@ -165,6 +165,7 @@ $(document).ready(function(){initNavTree('UnkTexturePanFunc2_8inc_8c_source.html
 <div class="ttc" id="acode__a5dd0__len__114e0_8c_html_a5ec2a719bc62fcd933d938da82e1965d"><div class="ttname"><a href="code__a5dd0__len__114e0_8c.html#a5ec2a719bc62fcd933d938da82e1965d">set_main_pan_u</a></div><div class="ttdeci">s32 set_main_pan_u()</div><div class="ttdef"><b>Definition:</b> <a href="code__a5dd0__len__114e0_8c_source.html#l00284">code_a5dd0_len_114e0.c:284</a></div></div>
 <div class="ttc" id="acode__a5dd0__len__114e0_8c_html_a762eeaf22374802d813e7d274966d869"><div class="ttname"><a href="code__a5dd0__len__114e0_8c.html#a762eeaf22374802d813e7d274966d869">set_aux_pan_u</a></div><div class="ttdeci">s32 set_aux_pan_u()</div><div class="ttdef"><b>Definition:</b> <a href="code__a5dd0__len__114e0_8c_source.html#l00288">code_a5dd0_len_114e0.c:288</a></div></div>
 <div class="ttc" id="acode__a5dd0__len__114e0_8c_html_a8fee96ae111549c65da1ac6e0ba2047f"><div class="ttname"><a href="code__a5dd0__len__114e0_8c.html#a8fee96ae111549c65da1ac6e0ba2047f">set_aux_pan_v</a></div><div class="ttdeci">s32 set_aux_pan_v()</div><div class="ttdef"><b>Definition:</b> <a href="code__a5dd0__len__114e0_8c_source.html#l00290">code_a5dd0_len_114e0.c:290</a></div></div>
+<div class="ttc" id="ainsecticide__herb_8c_html_a14032e40bb84b0351372b102ad35101c"><div class="ttname"><a href="insecticide__herb_8c.html#a14032e40bb84b0351372b102ad35101c">script</a></div><div class="ttdeci">Script script</div><div class="ttdef"><b>Definition:</b> <a href="insecticide__herb_8c_source.html#l00037">insecticide_herb.c:37</a></div></div>
 <div class="ttc" id="amacros_8h_html_a140931a55df25c359c52a4c414eda943"><div class="ttname"><a href="macros_8h.html#a140931a55df25c359c52a4c414eda943">N</a></div><div class="ttdeci">#define N(sym)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00009">macros.h:9</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="ascript__api_2map_8h_html"><div class="ttname"><a href="script__api_2map_8h.html">map.h</a></div></div>
@@ -177,7 +178,7 @@ $(document).ready(function(){initNavTree('UnkTexturePanFunc2_8inc_8c_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_6826d79532171ff2338799cfd298b875.html">world</a></li><li class="navelem"><a class="el" href="dir_7435fceb9dbcf38c7cda431c492ba8a6.html">common</a></li><li class="navelem"><a class="el" href="UnkTexturePanFunc2_8inc_8c.html">UnkTexturePanFunc2.inc.c</a></li>
-    <li class="footer">Generated on Tue Mar 23 2021 14:11:00 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Wed Mar 24 2021 08:40:46 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
