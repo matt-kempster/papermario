@@ -135,47 +135,44 @@ $(document).ready(function(){initNavTree('code__7B440_8c_source.html',''); initR
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    *arg0 = (u16)playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ac84abc7810ce946975a89034ca292a6b">currentButtons</a> | (playerStatus-&gt;<a class="code" href="structPlayerStatus.html#aed081e1622a61c5902d3409d25026448">pressedButtons</a> &lt;&lt; 16);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// Ordering / float / stack stuff</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">input_to_move_vector</a>(f32* angle, f32* magnitude) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="structPlayerStatus.html">PlayerStatus</a>* playerStatus = &amp;<a class="code" href="variables_8h.html#a8aa70d9504c728ab139a8e4d8a283092">gPlayerStatus</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    f32 stickAxisX;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    f32 stickAxisY;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    f32 ang;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    f32 mag;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">input_to_move_vector</a>(f32* angle, f32* magnitude) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structPlayerStatus.html">PlayerStatus</a>* playerStatus = &amp;<a class="code" href="variables_8h.html#a8aa70d9504c728ab139a8e4d8a283092">gPlayerStatus</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="structPlayerStatus.html">PlayerStatus</a>* playerStatus2 = playerStatus;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    f32 stickAxisX;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    f32 stickAxisY;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    f32 ang;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    f32 mag;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    f32 magMax = 70.0f;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    stickAxisX = playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ab3c0259bfeb9fd9a723d22ba9a67568b">stickAxis</a>[0];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    stickAxisY = -playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ab3c0259bfeb9fd9a723d22ba9a67568b">stickAxis</a>[1];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    stickAxisX = playerStatus2-&gt;<a class="code" href="structPlayerStatus.html#ab3c0259bfeb9fd9a723d22ba9a67568b">stickAxis</a>[0];</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    stickAxisY = -playerStatus2-&gt;<a class="code" href="structPlayerStatus.html#ab3c0259bfeb9fd9a723d22ba9a67568b">stickAxis</a>[1];</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    mag = <a class="code" href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a>(0.0f, 0.0f, stickAxisX, stickAxisY);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (mag &gt;= 70.0f) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        mag = 70.0f;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (mag &gt;= magMax) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        mag = magMax;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    ang = <a class="code" href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a>(<a class="code" href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a>(0.0f, 0.0f, stickAxisX, stickAxisY) + <a class="code" href="variables_8h.html#a692a5d29c29cf9d2cc0acaf3491a6b34">gCameras</a>[0].currentYaw);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (mag == 0.0f) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ang = <a class="code" href="variables_8h.html#a8aa70d9504c728ab139a8e4d8a283092">gPlayerStatus</a>.<a class="code" href="structPlayerStatus.html#a357d333aae66e912bed2c41325b4fa55">targetYaw</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        ang = playerStatus2-&gt;<a class="code" href="structPlayerStatus.html#a357d333aae66e912bed2c41325b4fa55">targetYaw</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    *angle = ang;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    *magnitude = mag;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_7B440&quot;</span>, <a class="code" href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">input_to_move_vector</a>);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">   77</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_7B440&quot;</span>, <a class="code" href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">func_800E23FC</a>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">   79</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_7B440&quot;</span>, <a class="code" href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">func_800E24F8</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">   74</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_7B440&quot;</span>, <a class="code" href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">func_800E23FC</a>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">   76</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(s32, <span class="stringliteral">&quot;code_7B440&quot;</span>, <a class="code" href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">func_800E24F8</a>);</div>
 <div class="ttc" id="acode__1b40__len__20b0_8c_html_a4594b7cdbc52c64f5b1c58f51832eb03"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a></div><div class="ttdeci">GameStatus * gGameStatusPtr</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00008">code_1b40_len_20b0.c:8</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a136f7711b19ce2f83bd47b7fcb1f37e7"><div class="ttname"><a href="code__43F0_8c.html#a136f7711b19ce2f83bd47b7fcb1f37e7">clamp_angle</a></div><div class="ttdeci">f32 clamp_angle(f32 theta)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00266">code_43F0.c:266</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a35ea6bd5b9635321d3db97a84df90dac"><div class="ttname"><a href="code__43F0_8c.html#a35ea6bd5b9635321d3db97a84df90dac">atan2</a></div><div class="ttdeci">f32 atan2(f32 startX, f32 startZ, f32 endX, f32 endZ)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00303">code_43F0.c:303</a></div></div>
 <div class="ttc" id="acode__43F0_8c_html_a66ed871ab0fc660ec97329e16df63d34"><div class="ttname"><a href="code__43F0_8c.html#a66ed871ab0fc660ec97329e16df63d34">dist2D</a></div><div class="ttdeci">f32 dist2D(f32 ax, f32 ay, f32 bx, f32 by)</div><div class="ttdef"><b>Definition:</b> <a href="code__43F0_8c_source.html#l00318">code_43F0.c:318</a></div></div>
-<div class="ttc" id="acode__7B440_8c_html_a20e6a1774e16eae827b61dc0b7c40e10"><div class="ttname"><a href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">func_800E24F8</a></div><div class="ttdeci">s32 func_800E24F8()</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00079">code_7B440.c:79</a></div></div>
+<div class="ttc" id="acode__7B440_8c_html_a20e6a1774e16eae827b61dc0b7c40e10"><div class="ttname"><a href="code__7B440_8c.html#a20e6a1774e16eae827b61dc0b7c40e10">func_800E24F8</a></div><div class="ttdeci">s32 func_800E24F8()</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00076">code_7B440.c:76</a></div></div>
 <div class="ttc" id="acode__7B440_8c_html_a5d0fc965fea719ad3ae0e3785ae4896b"><div class="ttname"><a href="code__7B440_8c.html#a5d0fc965fea719ad3ae0e3785ae4896b">func_800E205C</a></div><div class="ttdeci">s32 func_800E205C()</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00040">code_7B440.c:40</a></div></div>
 <div class="ttc" id="acode__7B440_8c_html_a93710156f3957c48f8258c713fd10266"><div class="ttname"><a href="code__7B440_8c.html#a93710156f3957c48f8258c713fd10266">update_player_input</a></div><div class="ttdeci">void update_player_input(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00003">code_7B440.c:3</a></div></div>
-<div class="ttc" id="acode__7B440_8c_html_aa9188dd3ff8b0cf5f7a7df2d17ceddd7"><div class="ttname"><a href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">input_to_move_vector</a></div><div class="ttdeci">void input_to_move_vector(f32 *angle, f32 *magnitude)</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00050">code_7B440.c:50</a></div></div>
-<div class="ttc" id="acode__7B440_8c_html_aae3989787e03fb398d5eb7fc15a9eb86"><div class="ttname"><a href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">func_800E23FC</a></div><div class="ttdeci">s32 func_800E23FC()</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00077">code_7B440.c:77</a></div></div>
+<div class="ttc" id="acode__7B440_8c_html_aa9188dd3ff8b0cf5f7a7df2d17ceddd7"><div class="ttname"><a href="code__7B440_8c.html#aa9188dd3ff8b0cf5f7a7df2d17ceddd7">input_to_move_vector</a></div><div class="ttdeci">void input_to_move_vector(f32 *angle, f32 *magnitude)</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00048">code_7B440.c:48</a></div></div>
+<div class="ttc" id="acode__7B440_8c_html_aae3989787e03fb398d5eb7fc15a9eb86"><div class="ttname"><a href="code__7B440_8c.html#aae3989787e03fb398d5eb7fc15a9eb86">func_800E23FC</a></div><div class="ttdeci">s32 func_800E23FC()</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00074">code_7B440.c:74</a></div></div>
 <div class="ttc" id="acode__7B440_8c_html_add73efbc1e3d8d5d841f41dae50cf014"><div class="ttname"><a href="code__7B440_8c.html#add73efbc1e3d8d5d841f41dae50cf014">func_800E22E4</a></div><div class="ttdeci">void func_800E22E4(s32 *arg0)</div><div class="ttdef"><b>Definition:</b> <a href="code__7B440_8c_source.html#l00042">code_7B440.c:42</a></div></div>
 <div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
@@ -206,7 +203,7 @@ $(document).ready(function(){initNavTree('code__7B440_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__7B440_8c.html">code_7B440.c</a></li>
-    <li class="footer">Generated on Wed Mar 24 2021 17:31:24 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 25 2021 08:57:12 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

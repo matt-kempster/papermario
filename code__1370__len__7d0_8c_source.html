@@ -102,103 +102,101 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">extern</span> s16 <a class="code" href="code__1370__len__7d0_8c.html#a6472aae1689db664d2ea9f711df321eb">D_80073E08</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> s16 <a class="code" href="code__1370__len__7d0_8c.html#a335d6c8c0af539ae0d6d03a329d4116a">D_80073E0A</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> s32* <a class="code" href="code__1370__len__7d0_8c.html#af3583247643554be5a90b1269458cf72">D_8009A680</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifdef NON_MATCHING</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Control flow issue w/ PANIC</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">extern</span> OSViMode <a class="code" href="code__1370__len__7d0_8c.html#a4657e497bb2727e7b937be0b4d383124">_osViModeNtscLan1</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> OSViMode <a class="code" href="code__1370__len__7d0_8c.html#aa3deacc1e741ce676b11f6ba346e653a">_osViModeMPalLan1</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">   18</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    OSViMode* viMode;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (osTvType == OS_TV_NTSC) {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        viMode = &amp;osViModeTable[OS_TV_NTSC];</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (osTvType == OS_TV_MPAL) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        viMode = &amp;osViModeTable[OS_TV_MPAL];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="code__42210__len__50_8c.html#a6bbc9ccb13540fca052eed991070e810">osViSetMode</a>(viMode);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="code__42210__len__50_8c.html#a6bbc9ccb13540fca052eed991070e810">osViSetMode</a>(&amp;<a class="code" href="code__1370__len__7d0_8c.html#a4657e497bb2727e7b937be0b4d383124">_osViModeNtscLan1</a>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="code__42260__len__170_8c.html#a39e386760409e5d69847b2c24bc878c0">osViSetSpecialFeatures</a>(OS_VI_GAMMA_OFF | OS_VI_GAMMA_DITHER_OFF | OS_VI_DIVOT_ON | OS_VI_DITHER_FILTER_ON);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (osTvType == OS_TV_MPAL) {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="code__42210__len__50_8c.html#a6bbc9ccb13540fca052eed991070e810">osViSetMode</a>(&amp;<a class="code" href="code__1370__len__7d0_8c.html#aa3deacc1e741ce676b11f6ba346e653a">_osViModeMPalLan1</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="code__42260__len__170_8c.html#a39e386760409e5d69847b2c24bc878c0">osViSetSpecialFeatures</a>(OS_VI_GAMMA_OFF | OS_VI_GAMMA_DITHER_OFF | OS_VI_DIVOT_ON | OS_VI_DITHER_FILTER_ON);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="code__42260__len__170_8c.html#a39e386760409e5d69847b2c24bc878c0">osViSetSpecialFeatures</a>(OS_VI_GAMMA_OFF | OS_VI_GAMMA_DITHER_OFF | OS_VI_DIVOT_ON | OS_VI_DITHER_FILTER_ON);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="nuGfxDisplayOff_8c.html#abc73c75e7928512dfe09f4ec19b72198">nuGfxDisplayOff</a>();</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="code__7340__len__b00_8c.html#a3af4a6d0ad4c8fd443a5497498978c14">crash_create_monitor</a>();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="code__1060__len__310_8c.html#ab1da4026fbe5d2b2f5bd96d18c48756c">func_80025C60</a>();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="nuGfxInit_8c.html#a9efd533288023742f2849f2d25d22332">nuGfxInitEX2</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#ac6ab6786c9a9ed9043f88c784672e7c7">contBitPattern</a> = <a class="code" href="nuContInit_8c.html#ad4a817dc99a24d236604661f9a28c022">nuContInit</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="code__8560_8c.html#a01135cd2ce5e35cc44ffa6b6310f281b">func_8002D160</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="code__316f30_8c.html#a1357023d4df011d4c1609f4c65d89dc5">func_802B2000</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="code__316f30_8c.html#a3d637d8854654cc3b7b5a2c3ea674c6d">func_802B203C</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="nuGfxFuncSet_8c.html#a6620bc893ef1d52544eb9d27ccc899f0">nuGfxFuncSet</a>(<a class="code" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="nuGfxPreNMIFuncSet_8c.html#ab91b83e63deade284f2ec93974a4a217">nuGfxPreNMIFuncSet</a>(<a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">// Required to match</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        s32* randSeed = &amp;<a class="code" href="code__43F0_8c.html#aaf92fb362ff174d1bfc238c2e260a367">gRandSeed</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        (*randSeed) += osGetCount();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="nuGfxDisplayOn_8c.html#ac1ddbc56698f1d063a1bacd75cdea436">nuGfxDisplayOn</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">while</span> (TRUE) {}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_1370_len_7d0&quot;</span>, <a class="code" href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a>, <span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">   54</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a>(s32 arg0) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    s32* temp_80073E00 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (*temp_80073E00 != 0) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span> (*temp_80073E00 == 1) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="nuGfxTaskAllEndWait_8c.html#a64e2e55e1c9377af76e1e1e35b9185b0">nuGfxTaskAllEndWait</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span> (arg0 == 0) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordtype">void</span>* fb = <a class="code" href="code__41db0__len__40_8c.html#ad43b20ede5c344a7c054b967cf7698af">osViGetCurrentFramebuffer</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                s32* temp_8009A680 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#af3583247643554be5a90b1269458cf72">D_8009A680</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                temp_8009A680[2] = fb;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                temp_8009A680[1] = fb;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                temp_8009A680[0] = fb;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="code__1370__len__7d0_8c.html#a3680a9174975713740e963842c0ec28e">D_80073E04</a> = fb;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="nuGfxSetCfb_8c.html#af36c6b720ed49c897d5babe82c7e7c49">nuGfxSetCfb</a>(temp_8009A680, 3);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="code__42420__len__50_8c.html#aecf72fd7bb55a652749c6589946cb8e0">osViSwapBuffer</a>(*temp_8009A680);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                *temp_80073E00 = 2;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> == 2) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        s16* temp_80073E0A = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a335d6c8c0af539ae0d6d03a329d4116a">D_80073E0A</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="nuGfxDisplayOff_8c.html#abc73c75e7928512dfe09f4ec19b72198">nuGfxDisplayOff</a>();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="code__7340__len__b00_8c.html#a3af4a6d0ad4c8fd443a5497498978c14">crash_create_monitor</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="code__1060__len__310_8c.html#ab1da4026fbe5d2b2f5bd96d18c48756c">func_80025C60</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="nuGfxInit_8c.html#a9efd533288023742f2849f2d25d22332">nuGfxInitEX2</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="code__1b40__len__20b0_8c.html#a4594b7cdbc52c64f5b1c58f51832eb03">gGameStatusPtr</a>-&gt;<a class="code" href="structGameStatus.html#ac6ab6786c9a9ed9043f88c784672e7c7">contBitPattern</a> = <a class="code" href="nuContInit_8c.html#ad4a817dc99a24d236604661f9a28c022">nuContInit</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="code__8560_8c.html#a01135cd2ce5e35cc44ffa6b6310f281b">func_8002D160</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="code__316f30_8c.html#a1357023d4df011d4c1609f4c65d89dc5">func_802B2000</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="code__316f30_8c.html#a3d637d8854654cc3b7b5a2c3ea674c6d">func_802B203C</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="nuGfxFuncSet_8c.html#a6620bc893ef1d52544eb9d27ccc899f0">nuGfxFuncSet</a>(<a class="code" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="nuGfxPreNMIFuncSet_8c.html#ab91b83e63deade284f2ec93974a4a217">nuGfxPreNMIFuncSet</a>(<a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// Required to match</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        s32* randSeed = &amp;<a class="code" href="code__43F0_8c.html#aaf92fb362ff174d1bfc238c2e260a367">gRandSeed</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        (*randSeed) += osGetCount();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="nuGfxDisplayOn_8c.html#ac1ddbc56698f1d063a1bacd75cdea436">nuGfxDisplayOn</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">while</span> (TRUE) {}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a>(s32 arg0) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    s32* temp_80073E00 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (*temp_80073E00 != 0) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span> (*temp_80073E00 == 1) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="nuGfxTaskAllEndWait_8c.html#a64e2e55e1c9377af76e1e1e35b9185b0">nuGfxTaskAllEndWait</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (arg0 == 0) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordtype">void</span>* fb = <a class="code" href="code__41db0__len__40_8c.html#ad43b20ede5c344a7c054b967cf7698af">osViGetCurrentFramebuffer</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                s32* temp_8009A680 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#af3583247643554be5a90b1269458cf72">D_8009A680</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                temp_8009A680[2] = fb;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                temp_8009A680[1] = fb;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                temp_8009A680[0] = fb;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <a class="code" href="code__1370__len__7d0_8c.html#a3680a9174975713740e963842c0ec28e">D_80073E04</a> = fb;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="nuGfxSetCfb_8c.html#af36c6b720ed49c897d5babe82c7e7c49">nuGfxSetCfb</a>(temp_8009A680, 3);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="code__42420__len__50_8c.html#aecf72fd7bb55a652749c6589946cb8e0">osViSwapBuffer</a>(*temp_8009A680);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                *temp_80073E00 = 2;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> == 2) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        s16* temp_80073E0A = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a335d6c8c0af539ae0d6d03a329d4116a">D_80073E0A</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        *temp_80073E0A ^= 1;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (*temp_80073E0A == 0) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            s16* temp_80073E08;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        *temp_80073E0A ^= 1;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (*temp_80073E0A == 0) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            s16* temp_80073E08;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="code__1b40__len__20b0_8c.html#a11c5bb3e8f4c125169b95de57c59d1ea">step_game_loop</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            temp_80073E08 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a6472aae1689db664d2ea9f711df321eb">D_80073E08</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            *temp_80073E08 = 1;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="code__1b40__len__20b0_8c.html#a11c5bb3e8f4c125169b95de57c59d1ea">step_game_loop</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            temp_80073E08 = &amp;<a class="code" href="code__1370__len__7d0_8c.html#a6472aae1689db664d2ea9f711df321eb">D_80073E08</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            *temp_80073E08 = 1;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span> (arg0 &lt; 3) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                *temp_80073E08 = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#a0e5d46ebeea7cc0ded31a13c6c8bfb43">gfx_task_background</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#afed5cec2656bc696e9ec898e8abae0f9">gfx_draw_frame</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">   96</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_1370_len_7d0&quot;</span>, <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">   98</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> = 1;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="code__3B150_8c.html#ae58aa042316230a564730ce000ae5248">nuContRmbForceStop</a>();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span> (arg0 &lt; 3) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                *temp_80073E08 = 0;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#a0e5d46ebeea7cc0ded31a13c6c8bfb43">gfx_task_background</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="code__1b40__len__20b0_8c.html#afed5cec2656bc696e9ec898e8abae0f9">gfx_draw_frame</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">   92</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;code_1370_len_7d0&quot;</span>, <a class="code" href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">   94</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a> = 1;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="code__3B150_8c.html#ae58aa042316230a564730ce000ae5248">nuContRmbForceStop</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="ttc" id="acode__1060__len__310_8c_html_ab1da4026fbe5d2b2f5bd96d18c48756c"><div class="ttname"><a href="code__1060__len__310_8c.html#ab1da4026fbe5d2b2f5bd96d18c48756c">func_80025C60</a></div><div class="ttdeci">void func_80025C60(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1060__len__310_8c_source.html#l00006">code_1060_len_310.c:6</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a335d6c8c0af539ae0d6d03a329d4116a"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a335d6c8c0af539ae0d6d03a329d4116a">D_80073E0A</a></div><div class="ttdeci">s16 D_80073E0A</div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a3680a9174975713740e963842c0ec28e"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a3680a9174975713740e963842c0ec28e">D_80073E04</a></div><div class="ttdeci">s32 D_80073E04</div></div>
-<div class="ttc" id="acode__1370__len__7d0_8c_html_a48072d01934be92f5509035ae7b1803e"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a></div><div class="ttdeci">void gfxPreNMI_Callback(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00098">code_1370_len_7d0.c:98</a></div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_a4657e497bb2727e7b937be0b4d383124"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a4657e497bb2727e7b937be0b4d383124">_osViModeNtscLan1</a></div><div class="ttdeci">OSViMode _osViModeNtscLan1</div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_a48072d01934be92f5509035ae7b1803e"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a48072d01934be92f5509035ae7b1803e">gfxPreNMI_Callback</a></div><div class="ttdeci">void gfxPreNMI_Callback(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00094">code_1370_len_7d0.c:94</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a6472aae1689db664d2ea9f711df321eb"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a6472aae1689db664d2ea9f711df321eb">D_80073E08</a></div><div class="ttdeci">s16 D_80073E08</div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a6cb8bdec608ab33b1ffae0649da63d75"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a6cb8bdec608ab33b1ffae0649da63d75">boot_main</a></div><div class="ttdeci">void boot_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00018">code_1370_len_7d0.c:18</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_a9a0e772a5c85f3862259110352b1f03a"><div class="ttname"><a href="code__1370__len__7d0_8c.html#a9a0e772a5c85f3862259110352b1f03a">D_80073E00</a></div><div class="ttdeci">s32 * D_80073E00</div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_aa1ff0710013aaee9475bf4f71311d52a"><div class="ttname"><a href="code__1370__len__7d0_8c.html#aa1ff0710013aaee9475bf4f71311d52a">D_80074010</a></div><div class="ttdeci">s16 D_80074010</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00004">code_1370_len_7d0.c:4</a></div></div>
-<div class="ttc" id="acode__1370__len__7d0_8c_html_aa2e13af149f10d3cddb1c216a6b762fb"><div class="ttname"><a href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a></div><div class="ttdeci">void gfxRetrace_Callback(s32)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00054">code_1370_len_7d0.c:54</a></div></div>
-<div class="ttc" id="acode__1370__len__7d0_8c_html_abfbc49c5d9da9045ff2072ae71bd048f"><div class="ttname"><a href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a></div><div class="ttdeci">void gfx_task_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00096">code_1370_len_7d0.c:96</a></div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_aa2e13af149f10d3cddb1c216a6b762fb"><div class="ttname"><a href="code__1370__len__7d0_8c.html#aa2e13af149f10d3cddb1c216a6b762fb">gfxRetrace_Callback</a></div><div class="ttdeci">void gfxRetrace_Callback(s32)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00050">code_1370_len_7d0.c:50</a></div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_aa3deacc1e741ce676b11f6ba346e653a"><div class="ttname"><a href="code__1370__len__7d0_8c.html#aa3deacc1e741ce676b11f6ba346e653a">_osViModeMPalLan1</a></div><div class="ttdeci">OSViMode _osViModeMPalLan1</div></div>
+<div class="ttc" id="acode__1370__len__7d0_8c_html_abfbc49c5d9da9045ff2072ae71bd048f"><div class="ttname"><a href="code__1370__len__7d0_8c.html#abfbc49c5d9da9045ff2072ae71bd048f">gfx_task_main</a></div><div class="ttdeci">void gfx_task_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1370__len__7d0_8c_source.html#l00092">code_1370_len_7d0.c:92</a></div></div>
 <div class="ttc" id="acode__1370__len__7d0_8c_html_af3583247643554be5a90b1269458cf72"><div class="ttname"><a href="code__1370__len__7d0_8c.html#af3583247643554be5a90b1269458cf72">D_8009A680</a></div><div class="ttdeci">s32 * D_8009A680</div></div>
 <div class="ttc" id="acode__1b40__len__20b0_8c_html_a0e5d46ebeea7cc0ded31a13c6c8bfb43"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a0e5d46ebeea7cc0ded31a13c6c8bfb43">gfx_task_background</a></div><div class="ttdeci">void gfx_task_background(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00150">code_1b40_len_20b0.c:150</a></div></div>
 <div class="ttc" id="acode__1b40__len__20b0_8c_html_a11c5bb3e8f4c125169b95de57c59d1ea"><div class="ttname"><a href="code__1b40__len__20b0_8c.html#a11c5bb3e8f4c125169b95de57c59d1ea">step_game_loop</a></div><div class="ttdeci">void step_game_loop(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__1b40__len__20b0_8c_source.html#l00045">code_1b40_len_20b0.c:45</a></div></div>
@@ -215,7 +213,7 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div class="ttc" id="acode__7340__len__b00_8c_html_a3af4a6d0ad4c8fd443a5497498978c14"><div class="ttname"><a href="code__7340__len__b00_8c.html#a3af4a6d0ad4c8fd443a5497498978c14">crash_create_monitor</a></div><div class="ttdeci">s32 crash_create_monitor()</div><div class="ttdef"><b>Definition:</b> <a href="code__7340__len__b00_8c_source.html#l00025">code_7340_len_b00.c:25</a></div></div>
 <div class="ttc" id="acode__8560_8c_html_a01135cd2ce5e35cc44ffa6b6310f281b"><div class="ttname"><a href="code__8560_8c.html#a01135cd2ce5e35cc44ffa6b6310f281b">func_8002D160</a></div><div class="ttdeci">s32 func_8002D160()</div><div class="ttdef"><b>Definition:</b> <a href="code__8560_8c_source.html#l00003">code_8560.c:3</a></div></div>
 <div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
-<div class="ttc" id="amacros_8h_html_a786707f6cd5c78e373db58abe42bc7b7"><div class="ttname"><a href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a></div><div class="ttdeci">#define PANIC()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00015">macros.h:15</a></div></div>
+<div class="ttc" id="amacros_8h_html_a786707f6cd5c78e373db58abe42bc7b7"><div class="ttname"><a href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a></div><div class="ttdeci">#define PANIC()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00018">macros.h:18</a></div></div>
 <div class="ttc" id="anuContInit_8c_html_ad4a817dc99a24d236604661f9a28c022"><div class="ttname"><a href="nuContInit_8c.html#ad4a817dc99a24d236604661f9a28c022">nuContInit</a></div><div class="ttdeci">u8 nuContInit(void)</div><div class="ttdef"><b>Definition:</b> <a href="nuContInit_8c_source.html#l00004">nuContInit.c:4</a></div></div>
 <div class="ttc" id="anuGfxDisplayOff_8c_html_abc73c75e7928512dfe09f4ec19b72198"><div class="ttname"><a href="nuGfxDisplayOff_8c.html#abc73c75e7928512dfe09f4ec19b72198">nuGfxDisplayOff</a></div><div class="ttdeci">void nuGfxDisplayOff(void)</div><div class="ttdef"><b>Definition:</b> <a href="nuGfxDisplayOff_8c_source.html#l00004">nuGfxDisplayOff.c:4</a></div></div>
 <div class="ttc" id="anuGfxDisplayOn_8c_html_ac1ddbc56698f1d063a1bacd75cdea436"><div class="ttname"><a href="nuGfxDisplayOn_8c.html#ac1ddbc56698f1d063a1bacd75cdea436">nuGfxDisplayOn</a></div><div class="ttdeci">void nuGfxDisplayOn(void)</div><div class="ttdef"><b>Definition:</b> <a href="nuGfxDisplayOn_8c_source.html#l00004">nuGfxDisplayOn.c:4</a></div></div>
@@ -232,7 +230,7 @@ $(document).ready(function(){initNavTree('code__1370__len__7d0_8c_source.html','
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__1370__len__7d0_8c.html">code_1370_len_7d0.c</a></li>
-    <li class="footer">Generated on Wed Mar 24 2021 17:31:23 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Mar 25 2021 08:57:12 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
