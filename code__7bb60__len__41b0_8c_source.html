@@ -240,7 +240,7 @@ $(document).ready(function(){initNavTree('code__7bb60__len__41b0_8c_source.html'
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        f32 y = (*playerStatus)-&gt;position.y + arg1;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        f32 z = (*playerStatus)-&gt;position.z;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        s32 hitID = <a class="code" href="code__77480_8c.html#ac6ae56091e73e4d48f0755595d8ce8bc">do_lateral_collision</a>(arg0, *playerStatus, &amp;x, &amp;y, &amp;z, 0, angle);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (hitID &gt;= 0) {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            ret = hitID;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
@@ -386,7 +386,7 @@ $(document).ready(function(){initNavTree('code__7bb60__len__41b0_8c_source.html'
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            soundID = soundID2;</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="code__DF950_8c.html#ab21952acbdf68c6dae4011fc119016d9">play_sound_at_player</a>(soundID, 0);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <a class="code" href="code__DF950_8c.html#aee9af596ee2d7af18be0b6a3424604a6">sfx_play_sound_at_player</a>(soundID, 0);</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        *temp_800F7B80 ^= 1;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;}</div>
@@ -502,7 +502,7 @@ $(document).ready(function(){initNavTree('code__7bb60__len__41b0_8c_source.html'
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ac4c55e06cfb722756f94a45564fcdbbf">animFlags</a> &amp;= ~0x10000;</div>
 <div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160; </div>
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">if</span> (unknownStruct[0xC]) {</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="code__DF950_8c.html#a7d6f4b808aa0aaa35fb3f287de2b3b66">stop_sound</a>(unknownStruct[0xC]);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <a class="code" href="code__DF950_8c.html#a2f4538bb46a69eaee0de29446f7dad0a">sfx_stop_sound</a>(unknownStruct[0xC]);</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160; </div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    <span class="keywordflow">if</span> (playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ab709e273ed1ba63998873a3b62d5a872">unk_D8</a>) {</div>
@@ -749,8 +749,8 @@ $(document).ready(function(){initNavTree('code__7bb60__len__41b0_8c_source.html'
 <div class="ttc" id="acode__7bb60__len__41b0_8c_html_af68e371f303678a71bcc4bc78debbee9"><div class="ttname"><a href="code__7bb60__len__41b0_8c.html#af68e371f303678a71bcc4bc78debbee9">check_input_midair_jump</a></div><div class="ttdeci">void check_input_midair_jump(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__7bb60__len__41b0_8c_source.html#l00253">code_7bb60_len_41b0.c:253</a></div></div>
 <div class="ttc" id="acode__7bb60__len__41b0_8c_html_af72cad11902b942665d4d7175f0d0fb7"><div class="ttname"><a href="code__7bb60__len__41b0_8c.html#af72cad11902b942665d4d7175f0d0fb7">func_800E4744</a></div><div class="ttdeci">s32 func_800E4744()</div><div class="ttdef"><b>Definition:</b> <a href="code__7bb60__len__41b0_8c_source.html#l00220">code_7bb60_len_41b0.c:220</a></div></div>
 <div class="ttc" id="acode__7bb60__len__41b0_8c_html_afc7a2ebdd5e3f86ee526a9b4d8fcb1e2"><div class="ttname"><a href="code__7bb60__len__41b0_8c.html#afc7a2ebdd5e3f86ee526a9b4d8fcb1e2">can_player_interact</a></div><div class="ttdeci">s32 can_player_interact()</div><div class="ttdef"><b>Definition:</b> <a href="code__7bb60__len__41b0_8c_source.html#l00310">code_7bb60_len_41b0.c:310</a></div></div>
-<div class="ttc" id="acode__DF950_8c_html_a7d6f4b808aa0aaa35fb3f287de2b3b66"><div class="ttname"><a href="code__DF950_8c.html#a7d6f4b808aa0aaa35fb3f287de2b3b66">stop_sound</a></div><div class="ttdeci">s32 stop_sound()</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00109">code_DF950.c:109</a></div></div>
-<div class="ttc" id="acode__DF950_8c_html_ab21952acbdf68c6dae4011fc119016d9"><div class="ttname"><a href="code__DF950_8c.html#ab21952acbdf68c6dae4011fc119016d9">play_sound_at_player</a></div><div class="ttdeci">void play_sound_at_player(s32 soundID, s32 arg1)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00115">code_DF950.c:115</a></div></div>
+<div class="ttc" id="acode__DF950_8c_html_a2f4538bb46a69eaee0de29446f7dad0a"><div class="ttname"><a href="code__DF950_8c.html#a2f4538bb46a69eaee0de29446f7dad0a">sfx_stop_sound</a></div><div class="ttdeci">s32 sfx_stop_sound()</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00109">code_DF950.c:109</a></div></div>
+<div class="ttc" id="acode__DF950_8c_html_aee9af596ee2d7af18be0b6a3424604a6"><div class="ttname"><a href="code__DF950_8c.html#aee9af596ee2d7af18be0b6a3424604a6">sfx_play_sound_at_player</a></div><div class="ttdeci">void sfx_play_sound_at_player(s32 soundID, s32 arg1)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00115">code_DF950.c:115</a></div></div>
 <div class="ttc" id="aenums_8h_html_a01b9bd913f69ef48d7e7b3f8c2e9ea12"><div class="ttname"><a href="enums_8h.html#a01b9bd913f69ef48d7e7b3f8c2e9ea12">ActionState_HIT_LAVA</a></div><div class="ttdeci">#define ActionState_HIT_LAVA</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l01036">enums.h:1036</a></div></div>
 <div class="ttc" id="aenums_8h_html_a04f1cee08c24cac56a745eb8257c1ebf"><div class="ttname"><a href="enums_8h.html#a04f1cee08c24cac56a745eb8257c1ebf">SoundId_STEP1</a></div><div class="ttdeci">#define SoundId_STEP1</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00254">enums.h:254</a></div></div>
 <div class="ttc" id="aenums_8h_html_a0643fc7daef2e9f881a4fbbe402e9b77"><div class="ttname"><a href="enums_8h.html#a0643fc7daef2e9f881a4fbbe402e9b77">Ability_SLOW_GO</a></div><div class="ttdeci">#define Ability_SLOW_GO</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l00171">enums.h:171</a></div></div>
@@ -858,7 +858,7 @@ $(document).ready(function(){initNavTree('code__7bb60__len__41b0_8c_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__7bb60__len__41b0_8c.html">code_7bb60_len_41b0.c</a></li>
-    <li class="footer">Generated on Thu Mar 25 2021 08:57:12 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 26 2021 14:47:41 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

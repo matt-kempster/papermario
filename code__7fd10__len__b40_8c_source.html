@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('code__7fd10__len__b40_8c_source.html',
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                }</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (temp_8010EBB0-&gt;<a class="code" href="structTemp8010EBB0.html#a2542bf641ef5085116ed4a524ac38641">unk_03</a> == 8) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordflow">if</span> (actionState != <a class="code" href="enums_8h.html#ac8d3ed79d0b303d522549776912d8d33">ActionState_RIDE</a>) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="code__DF950_8c.html#ad960d72e92d1e7df8c6ab129bfc04efe">play_sound</a>(0x21D);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                    <a class="code" href="code__DF950_8c.html#a764903a3414e7eff7ebd2cf1a056b2d9">sfx_play_sound</a>(0x21D);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                    <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                }</div>
@@ -167,14 +167,14 @@ $(document).ready(function(){initNavTree('code__7fd10__len__b40_8c_source.html',
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <a class="code" href="code__80850__len__3060_8c.html#aadd9c844c41e08832e8753e17356dfd0">open_status_menu_long</a>();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="code__C50A0_8c.html#a851c3665c8b1f64b27ee17982451ddb6">is_picking_up_item</a>()) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="code__DF950_8c.html#ad960d72e92d1e7df8c6ab129bfc04efe">play_sound</a>(3);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    <a class="code" href="code__DF950_8c.html#a764903a3414e7eff7ebd2cf1a056b2d9">sfx_play_sound</a>(3);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(playerStatus-&gt;<a class="code" href="structPlayerStatus.html#ac84abc7810ce946975a89034ca292a6b">currentButtons</a> &amp; Z_TRIG + R_TRIG) &amp;&amp; (pressedButtons &amp; 8) &amp;&amp; <a class="code" href="code__80850__len__3060_8c.html#abc5fd5638ee0f02ec65227b0154a8232">func_800E9860</a>()) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="code__80850__len__3060_8c.html#a95a49e78cc383d286b05e9c858300b04">close_status_menu</a>();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="code__C50A0_8c.html#a851c3665c8b1f64b27ee17982451ddb6">is_picking_up_item</a>()) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="code__DF950_8c.html#ad960d72e92d1e7df8c6ab129bfc04efe">play_sound</a>(4);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="code__DF950_8c.html#a764903a3414e7eff7ebd2cf1a056b2d9">sfx_play_sound</a>(4);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('code__7fd10__len__b40_8c_source.html',
 <div class="ttc" id="acode__80850__len__3060_8c_html_aadd9c844c41e08832e8753e17356dfd0"><div class="ttname"><a href="code__80850__len__3060_8c.html#aadd9c844c41e08832e8753e17356dfd0">open_status_menu_long</a></div><div class="ttdeci">void open_status_menu_long(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__80850__len__3060_8c_source.html#l00523">code_80850_len_3060.c:523</a></div></div>
 <div class="ttc" id="acode__80850__len__3060_8c_html_abc5fd5638ee0f02ec65227b0154a8232"><div class="ttname"><a href="code__80850__len__3060_8c.html#abc5fd5638ee0f02ec65227b0154a8232">func_800E9860</a></div><div class="ttdeci">s32 func_800E9860(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__80850__len__3060_8c_source.html#l00583">code_80850_len_3060.c:583</a></div></div>
 <div class="ttc" id="acode__C50A0_8c_html_a851c3665c8b1f64b27ee17982451ddb6"><div class="ttname"><a href="code__C50A0_8c.html#a851c3665c8b1f64b27ee17982451ddb6">is_picking_up_item</a></div><div class="ttdeci">s32 is_picking_up_item(void)</div><div class="ttdef"><b>Definition:</b> <a href="code__C50A0_8c_source.html#l00099">code_C50A0.c:99</a></div></div>
-<div class="ttc" id="acode__DF950_8c_html_ad960d72e92d1e7df8c6ab129bfc04efe"><div class="ttname"><a href="code__DF950_8c.html#ad960d72e92d1e7df8c6ab129bfc04efe">play_sound</a></div><div class="ttdeci">void play_sound(s32 soundID)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00111">code_DF950.c:111</a></div></div>
+<div class="ttc" id="acode__DF950_8c_html_a764903a3414e7eff7ebd2cf1a056b2d9"><div class="ttname"><a href="code__DF950_8c.html#a764903a3414e7eff7ebd2cf1a056b2d9">sfx_play_sound</a></div><div class="ttdeci">void sfx_play_sound(s32 soundID)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00111">code_DF950.c:111</a></div></div>
 <div class="ttc" id="acode__fee30__len__2d60_8c_html_a8a824bce47c7856e8d21eb6d77de8f07"><div class="ttname"><a href="code__fee30__len__2d60_8c.html#a8a824bce47c7856e8d21eb6d77de8f07">func_802DDEE4</a></div><div class="ttdeci">s32 func_802DDEE4()</div><div class="ttdef"><b>Definition:</b> <a href="code__fee30__len__2d60_8c_source.html#l00168">code_fee30_len_2d60.c:168</a></div></div>
 <div class="ttc" id="aenums_8h_html_a37370bad2b690ce291e177ca338a49a8"><div class="ttname"><a href="enums_8h.html#a37370bad2b690ce291e177ca338a49a8">ActionState_WALK</a></div><div class="ttdeci">#define ActionState_WALK</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l01017">enums.h:1017</a></div></div>
 <div class="ttc" id="aenums_8h_html_aa754e0de1cda5b2cb05f57af17f8111d"><div class="ttname"><a href="enums_8h.html#aa754e0de1cda5b2cb05f57af17f8111d">ActionState_IDLE</a></div><div class="ttdeci">#define ActionState_IDLE</div><div class="ttdef"><b>Definition:</b> <a href="enums_8h_source.html#l01016">enums.h:1016</a></div></div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('code__7fd10__len__b40_8c_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__7fd10__len__b40_8c.html">code_7fd10_len_b40.c</a></li>
-    <li class="footer">Generated on Thu Mar 25 2021 08:57:12 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 26 2021 14:47:41 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -496,7 +496,7 @@ $(document).ready(function(){initNavTree('code__ED510_8c_source.html',''); initR
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    f32 n1, n2, n3;</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;    <a class="code" href="code__a5dd0__len__114e0_8c.html#ae0ca935c0dc4be95fbb47414563abdbd">get_model_center_and_size</a>((u16)modelID, &amp;x, &amp;y, &amp;z, &amp;n1, &amp;n2, &amp;n3);</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="code__DF950_8c.html#a3011a1445164d4b0e4076b5d33cba0c1">play_sound_at_position</a>(soundID, var3, x, y, z);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <a class="code" href="code__DF950_8c.html#a7d66fe88b6cccdcb9a0fa3996e3516fd">sfx_play_sound_at_position</a>(soundID, var3, x, y, z);</div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160; </div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
@@ -509,7 +509,7 @@ $(document).ready(function(){initNavTree('code__ED510_8c_source.html',''); initR
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    f32 x, y, z;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160; </div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="code__362a0__len__2f70_8c.html#a9d29539890caee23e7627b863c328da4">get_collider_center</a>(colliderID, &amp;x, &amp;y, &amp;z);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="code__DF950_8c.html#a3011a1445164d4b0e4076b5d33cba0c1">play_sound_at_position</a>(soundID, var3, x, y, z);</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <a class="code" href="code__DF950_8c.html#a7d66fe88b6cccdcb9a0fa3996e3516fd">sfx_play_sound_at_position</a>(soundID, var3, x, y, z);</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160; </div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="si_8h.html#a364a26c9f178aa1d11af5a994e4e289c">ApiStatus_DONE2</a>;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;}</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('code__ED510_8c_source.html',''); initR
 <div class="ttc" id="acode__42a00__len__100_8c_html_a79492645ee78124b76a06f9a395d8014"><div class="ttname"><a href="code__42a00__len__100_8c.html#a79492645ee78124b76a06f9a395d8014">guMtxCatF</a></div><div class="ttdeci">void guMtxCatF(float m[4][4], float n[4][4], float r[4][4])</div><div class="ttdef"><b>Definition:</b> <a href="code__42a00__len__100_8c_source.html#l00003">code_42a00_len_100.c:3</a></div></div>
 <div class="ttc" id="acode__42bc0__len__60_8c_html_a19b9397a765b8eb04c94f9cdd554cdba"><div class="ttname"><a href="code__42bc0__len__60_8c.html#a19b9397a765b8eb04c94f9cdd554cdba">guScaleF</a></div><div class="ttdeci">void guScaleF(float mf[4][4], float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="code__42bc0__len__60_8c_source.html#l00003">code_42bc0_len_60.c:3</a></div></div>
 <div class="ttc" id="acode__42d00__len__60_8c_html_a17a79a0d8f13de89f37418c03db259d9"><div class="ttname"><a href="code__42d00__len__60_8c.html#a17a79a0d8f13de89f37418c03db259d9">guTranslateF</a></div><div class="ttdeci">void guTranslateF(float mf[4][4], float x, float y, float z)</div><div class="ttdef"><b>Definition:</b> <a href="code__42d00__len__60_8c_source.html#l00003">code_42d00_len_60.c:3</a></div></div>
-<div class="ttc" id="acode__DF950_8c_html_a3011a1445164d4b0e4076b5d33cba0c1"><div class="ttname"><a href="code__DF950_8c.html#a3011a1445164d4b0e4076b5d33cba0c1">play_sound_at_position</a></div><div class="ttdeci">s32 play_sound_at_position(s32 soundID, s32 value2, f32 posX, f32 posY, f32 posZ)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00130">code_DF950.c:130</a></div></div>
+<div class="ttc" id="acode__DF950_8c_html_a7d66fe88b6cccdcb9a0fa3996e3516fd"><div class="ttname"><a href="code__DF950_8c.html#a7d66fe88b6cccdcb9a0fa3996e3516fd">sfx_play_sound_at_position</a></div><div class="ttdeci">s32 sfx_play_sound_at_position(s32 soundID, s32 value2, f32 posX, f32 posY, f32 posZ)</div><div class="ttdef"><b>Definition:</b> <a href="code__DF950_8c_source.html#l00130">code_DF950.c:130</a></div></div>
 <div class="ttc" id="acode__ED510_8c_html_a16ccfaea3ccff894373af2edad1eed2c"><div class="ttname"><a href="code__ED510_8c.html#a16ccfaea3ccff894373af2edad1eed2c">GotoMapByID</a></div><div class="ttdeci">ApiStatus GotoMapByID(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ED510_8c_source.html#l00370">code_ED510.c:370</a></div></div>
 <div class="ttc" id="acode__ED510_8c_html_a30c06a4d77cf4d4139f35b63c0ba12f2"><div class="ttname"><a href="code__ED510_8c.html#a30c06a4d77cf4d4139f35b63c0ba12f2">SetRenderMode</a></div><div class="ttdeci">ApiStatus SetRenderMode(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ED510_8c_source.html#l00390">code_ED510.c:390</a></div></div>
 <div class="ttc" id="acode__ED510_8c_html_a31b542cb8f4ef9788fc6bcbb398b2a5c"><div class="ttname"><a href="code__ED510_8c.html#a31b542cb8f4ef9788fc6bcbb398b2a5c">func_802C9428</a></div><div class="ttdeci">ApiStatus func_802C9428(ScriptInstance *script, s32 isInitialCall)</div><div class="ttdef"><b>Definition:</b> <a href="code__ED510_8c_source.html#l00231">code_ED510.c:231</a></div></div>
@@ -613,7 +613,7 @@ $(document).ready(function(){initNavTree('code__ED510_8c_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="code__ED510_8c.html">code_ED510.c</a></li>
-    <li class="footer">Generated on Thu Mar 25 2021 08:57:13 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Mar 26 2021 14:47:41 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
