@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>src/os/osSpTaskYield.c Source File - Paper Mario Documentation</title>
+        <title>src/ultra/sptaskyield.c Source File - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('osSpTaskYield_8c_source.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('sptaskyield_8c_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -85,22 +85,24 @@ $(document).ready(function(){initNavTree('osSpTaskYield_8c_source.html',''); ini
 
 <div class="header">
   <div class="headertitle">
-<div class="title">osSpTaskYield.c</div>  </div>
+<div class="title">sptaskyield.c</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="osSpTaskYield_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__api_2common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="osSpTaskYield_8c.html#a29317e93aa4d07fa5c6e7e3ce718fe81">    3</a></span>&#160;<a class="code" href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a>(<span class="keywordtype">void</span>, <span class="stringliteral">&quot;os/osSpTaskYield&quot;</span>, <a class="code" href="osSpTaskYield_8c.html#a29317e93aa4d07fa5c6e7e3ce718fe81">osSpTaskYield</a>);</div>
-<div class="ttc" id="ainclude__asm_8h_html_ad39045bbe7b04313d415e097b1cbb653"><div class="ttname"><a href="include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653">INCLUDE_ASM</a></div><div class="ttdeci">#define INCLUDE_ASM(TYPE, FOLDER, NAME, ARGS...)</div><div class="ttdef"><b>Definition:</b> <a href="include__asm_8h_source.html#l00009">include_asm.h:9</a></div></div>
-<div class="ttc" id="aosSpTaskYield_8c_html_a29317e93aa4d07fa5c6e7e3ce718fe81"><div class="ttname"><a href="osSpTaskYield_8c.html#a29317e93aa4d07fa5c6e7e3ce718fe81">osSpTaskYield</a></div><div class="ttdeci">void osSpTaskYield()</div><div class="ttdef"><b>Definition:</b> <a href="osSpTaskYield_8c_source.html#l00003">osSpTaskYield.c:3</a></div></div>
-<div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
+<a href="sptaskyield_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;os_internal.h&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;rcp.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="sptaskyield_8c.html#ac8c09ee2c394376309833268ca43db9b">    4</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="sptaskyield_8c.html#ac8c09ee2c394376309833268ca43db9b">osSpTaskYield</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="code__47ae0__len__e0_8c.html#adb8c9b331eeee37f841be8ff6cf2b151">__osSpSetStatus</a>(SP_SET_YIELD);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div>
+<div class="ttc" id="acode__47ae0__len__e0_8c_html_adb8c9b331eeee37f841be8ff6cf2b151"><div class="ttname"><a href="code__47ae0__len__e0_8c.html#adb8c9b331eeee37f841be8ff6cf2b151">__osSpSetStatus</a></div><div class="ttdeci">s32 __osSpSetStatus()</div><div class="ttdef"><b>Definition:</b> <a href="code__47ae0__len__e0_8c_source.html#l00005">code_47ae0_len_e0.c:5</a></div></div>
+<div class="ttc" id="asptaskyield_8c_html_ac8c09ee2c394376309833268ca43db9b"><div class="ttname"><a href="sptaskyield_8c.html#ac8c09ee2c394376309833268ca43db9b">osSpTaskYield</a></div><div class="ttdeci">void osSpTaskYield(void)</div><div class="ttdef"><b>Definition:</b> <a href="sptaskyield_8c_source.html#l00004">sptaskyield.c:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a71443761d886d6152d96ebd3fda63af.html">os</a></li><li class="navelem"><a class="el" href="osSpTaskYield_8c.html">osSpTaskYield.c</a></li>
-    <li class="footer">Generated on Fri Mar 26 2021 14:53:37 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9e8ce2fde5fc8c9b0e7dda5dd5b8efcc.html">ultra</a></li><li class="navelem"><a class="el" href="sptaskyield_8c.html">sptaskyield.c</a></li>
+    <li class="footer">Generated on Sat Mar 27 2021 13:18:18 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

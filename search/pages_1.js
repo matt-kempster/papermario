@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['paper_20mario_35773',['Paper Mario',['../index.html',1,'']]]
+  ['paper_20mario_35945',['Paper Mario',['../index.html',1,'']]]
 ];
