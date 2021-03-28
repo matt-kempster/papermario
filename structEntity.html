@@ -107,8 +107,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:afb9145eaa5a7a3c588a38f0fb6efedb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d47327c14ed785deecff2df7f0ad5c3"><td class="memItemLeft" align="right" valign="top">u8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a8d47327c14ed785deecff2df7f0ad5c3">alpha</a></td></tr>
 <tr class="separator:a8d47327c14ed785deecff2df7f0ad5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99e0b74cce05ef7b1c001f3659879a47"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a99e0b74cce05ef7b1c001f3659879a47">aabb</a> [3]</td></tr>
-<tr class="separator:a99e0b74cce05ef7b1c001f3659879a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea3c41f0354abe35735c4440b24b425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structVec3s.html">Vec3s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a4ea3c41f0354abe35735c4440b24b425">aabb</a></td></tr>
+<tr class="separator:a4ea3c41f0354abe35735c4440b24b425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288f51505e5fb9ddc8be442524481c67"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a288f51505e5fb9ddc8be442524481c67">unk_12</a> [2]</td></tr>
 <tr class="separator:a288f51505e5fb9ddc8be442524481c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b085e903557beac304a83f46c14394f"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a2b085e903557beac304a83f46c14394f">virtualModelIndex</a></td></tr>
@@ -125,8 +125,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:ad694e4a2120636b5fd5fdaab12db4605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e57324a49eeb56a393a2b67393b8008"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a8e57324a49eeb56a393a2b67393b8008">unk_2C</a> [12]</td></tr>
 <tr class="separator:a8e57324a49eeb56a393a2b67393b8008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77cf7b24282f539822eae4c5520acb2"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStaticEntityData.html">StaticEntityData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#ac77cf7b24282f539822eae4c5520acb2">static_data</a></td></tr>
-<tr class="separator:ac77cf7b24282f539822eae4c5520acb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b9716485b10cf2d7e9f0bc78c1bf62"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structStaticEntityData.html">StaticEntityData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#af5b9716485b10cf2d7e9f0bc78c1bf62">staticData</a></td></tr>
+<tr class="separator:af5b9716485b10cf2d7e9f0bc78c1bf62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5b8f44ee195d81ec4e421bdc5174a0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#aee5b8f44ee195d81ec4e421bdc5174a0">unk_3C</a></td></tr>
 <tr class="separator:aee5b8f44ee195d81ec4e421bdc5174a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85c29c74c2a6728d52c9f8184a7e855e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structEntity.html#a85c29c74c2a6728d52c9f8184a7e855e">dataBuf</a></td></tr>
@@ -278,14 +278,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a99e0b74cce05ef7b1c001f3659879a47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99e0b74cce05ef7b1c001f3659879a47">&#9670;&nbsp;</a></span>aabb</h2>
+<a id="a4ea3c41f0354abe35735c4440b24b425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea3c41f0354abe35735c4440b24b425">&#9670;&nbsp;</a></span>aabb</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s16 Entity::aabb[3]</td>
+          <td class="memname"><a class="el" href="structVec3s.html">Vec3s</a> Entity::aabb</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -428,19 +428,21 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ac77cf7b24282f539822eae4c5520acb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac77cf7b24282f539822eae4c5520acb2">&#9670;&nbsp;</a></span>static_data</h2>
+<a id="af5b9716485b10cf2d7e9f0bc78c1bf62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b9716485b10cf2d7e9f0bc78c1bf62">&#9670;&nbsp;</a></span>staticData</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structStaticEntityData.html">StaticEntityData</a>* Entity::static_data</td>
+          <td class="memname">struct <a class="el" href="structStaticEntityData.html">StaticEntityData</a>* Entity::staticData</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00313">313</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__a5dd0__len__114e0_8c.html#ae14889c7c9c8cdd519232bf0bb608a2f">get_entity_type()</a>.</p>
 
 </div>
 </div>
@@ -657,7 +659,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structEntity.html">Entity</a></li>
-    <li class="footer">Generated on Sat Mar 27 2021 17:49:33 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 28 2021 18:32:15 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

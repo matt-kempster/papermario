@@ -129,13 +129,13 @@ $(document).ready(function(){initNavTree('main__1060_8c_source.html',''); initRe
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    s32 end;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    OSPiHandle** handle = &amp;<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0000, &amp;data);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="jp_2os_2osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0000, &amp;data);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (data != <a class="code" href="macros_8h.html#a2370e24db9fc2b09a21ef4e9508b8c31">ASCII_TO_U32</a>(<span class="charliteral">&#39;I&#39;</span>, <span class="charliteral">&#39;S&#39;</span>, <span class="charliteral">&#39;6&#39;</span>, <span class="charliteral">&#39;4&#39;</span>)) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0004, &amp;data);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="jp_2os_2osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0004, &amp;data);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    pos = data;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0014, &amp;data);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="jp_2os_2osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle, 0xB3FF0014, &amp;data);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    start = data;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    end = start + count;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (end &gt;= 0xffe0) {</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('main__1060_8c_source.html',''); initRe
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            s32 shift = ((3 - (start &amp; 3)) * 8);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            OSPiHandle** handle2 = &amp;<a class="code" href="variables_8h.html#ab3bccd9b68667f862d52dfc5dcd87a74">carthandle</a>;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle2, addr, &amp;data);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="jp_2os_2osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a>(*handle2, addr, &amp;data);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="jp_2os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a>(*handle2, addr, (data &amp; ~(0xff &lt;&lt; shift)) | (*str &lt;&lt; shift));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            start++;</div>
@@ -176,8 +176,9 @@ $(document).ready(function(){initNavTree('main__1060_8c_source.html',''); initRe
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="main__1060_8c.html#a0fd80d54a292333b9d1b39585e915751">func_80025CFC</a>(<a class="code" href="main__1060_8c.html#ac734cde7f54cf19b1d84e3d5a4572473">D_80097D10</a>, file, line, arg0);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="ttc" id="ajp_2os_2osEPiReadIo_8c_html_a119297bb57281828cf56c0c02467f9ef"><div class="ttname"><a href="jp_2os_2osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a></div><div class="ttdeci">s32 osEPiReadIo(OSPiHandle *handle, u32 size, u32 *out)</div><div class="ttdef"><b>Definition:</b> <a href="jp_2os_2osEPiReadIo_8c_source.html#l00003">osEPiReadIo.c:3</a></div></div>
 <div class="ttc" id="ajp_2os_2osEPiWriteIo_8c_html_a83116d80985dec6cd811d1167c49969f"><div class="ttname"><a href="jp_2os_2osEPiWriteIo_8c.html#a83116d80985dec6cd811d1167c49969f">osEPiWriteIo</a></div><div class="ttdeci">s32 osEPiWriteIo(OSPiHandle *handle, u32 devAddr, u32 data)</div><div class="ttdef"><b>Definition:</b> <a href="jp_2os_2osEPiWriteIo_8c_source.html#l00003">osEPiWriteIo.c:3</a></div></div>
-<div class="ttc" id="amacros_8h_html_a2370e24db9fc2b09a21ef4e9508b8c31"><div class="ttname"><a href="macros_8h.html#a2370e24db9fc2b09a21ef4e9508b8c31">ASCII_TO_U32</a></div><div class="ttdeci">#define ASCII_TO_U32(a, b, c, d)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00078">macros.h:78</a></div></div>
+<div class="ttc" id="amacros_8h_html_a2370e24db9fc2b09a21ef4e9508b8c31"><div class="ttname"><a href="macros_8h.html#a2370e24db9fc2b09a21ef4e9508b8c31">ASCII_TO_U32</a></div><div class="ttdeci">#define ASCII_TO_U32(a, b, c, d)</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00079">macros.h:79</a></div></div>
 <div class="ttc" id="amacros_8h_html_a786707f6cd5c78e373db58abe42bc7b7"><div class="ttname"><a href="macros_8h.html#a786707f6cd5c78e373db58abe42bc7b7">PANIC</a></div><div class="ttdeci">#define PANIC()</div><div class="ttdef"><b>Definition:</b> <a href="macros_8h_source.html#l00018">macros.h:18</a></div></div>
 <div class="ttc" id="amain__1060_8c_html_a0fd80d54a292333b9d1b39585e915751"><div class="ttname"><a href="main__1060_8c.html#a0fd80d54a292333b9d1b39585e915751">func_80025CFC</a></div><div class="ttdeci">void func_80025CFC(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="main__1060_8c_source.html#l00021">main_1060.c:21</a></div></div>
 <div class="ttc" id="amain__1060_8c_html_a21026b54a555e5269ffd652a426d489a"><div class="ttname"><a href="main__1060_8c.html#a21026b54a555e5269ffd652a426d489a">func_80025D38</a></div><div class="ttdeci">void func_80025D38(const char *fmt,...)</div><div class="ttdef"><b>Definition:</b> <a href="main__1060_8c_source.html#l00028">main_1060.c:28</a></div></div>
@@ -187,7 +188,6 @@ $(document).ready(function(){initNavTree('main__1060_8c_source.html',''); initRe
 <div class="ttc" id="amain__1060_8c_html_ac734cde7f54cf19b1d84e3d5a4572473"><div class="ttname"><a href="main__1060_8c.html#ac734cde7f54cf19b1d84e3d5a4572473">D_80097D10</a></div><div class="ttdeci">const char D_80097D10[]</div></div>
 <div class="ttc" id="amain__1060_8c_html_ae0afc72886f929e2e15c6bbe0be959b8"><div class="ttname"><a href="main__1060_8c.html#ae0afc72886f929e2e15c6bbe0be959b8">func_80025D74</a></div><div class="ttdeci">u32 func_80025D74(void *arg0, const unsigned char *str, s32 count)</div><div class="ttdef"><b>Definition:</b> <a href="main__1060_8c_source.html#l00035">main_1060.c:35</a></div></div>
 <div class="ttc" id="amain__3FE70_8c_html_a8e278f7c5613540060730d44051a8c66"><div class="ttname"><a href="main__3FE70_8c.html#a8e278f7c5613540060730d44051a8c66">_Printf</a></div><div class="ttdeci">s32 _Printf()</div><div class="ttdef"><b>Definition:</b> <a href="main__3FE70_8c_source.html#l00003">main_3FE70.c:3</a></div></div>
-<div class="ttc" id="aosEPiReadIo_8c_html_a119297bb57281828cf56c0c02467f9ef"><div class="ttname"><a href="osEPiReadIo_8c.html#a119297bb57281828cf56c0c02467f9ef">osEPiReadIo</a></div><div class="ttdeci">s32 osEPiReadIo(OSPiHandle *handle, u32 size, u32 *out)</div><div class="ttdef"><b>Definition:</b> <a href="osEPiReadIo_8c_source.html#l00003">osEPiReadIo.c:3</a></div></div>
 <div class="ttc" id="ascript__api_2common_8h_html"><div class="ttname"><a href="script__api_2common_8h.html">common.h</a></div></div>
 <div class="ttc" id="astdarg_8h_html"><div class="ttname"><a href="stdarg_8h.html">stdarg.h</a></div></div>
 <div class="ttc" id="astdarg_8h_html_a4a41ae753ad859126fe15c0e4655f400"><div class="ttname"><a href="stdarg_8h.html#a4a41ae753ad859126fe15c0e4655f400">va_start</a></div><div class="ttdeci">#define va_start(AP, LASTARG)</div><div class="ttdef"><b>Definition:</b> <a href="stdarg_8h_source.html#l00089">stdarg.h:89</a></div></div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('main__1060_8c_source.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b87f56f9a8c509c4542650c251acedde.html">jp</a></li><li class="navelem"><a class="el" href="main__1060_8c.html">main_1060.c</a></li>
-    <li class="footer">Generated on Sat Mar 27 2021 17:49:27 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Sun Mar 28 2021 18:32:09 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
