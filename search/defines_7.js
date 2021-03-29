@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['generous_5fheart_5fdrops_35394',['GENEROUS_HEART_DROPS',['../map_8h.html#a5fe20a6d345e7fcc2dd0aa406ecc59c4',1,'map.h']]],
-  ['generous_5fwhen_5flow_5fflower_5fdrops_35395',['GENEROUS_WHEN_LOW_FLOWER_DROPS',['../map_8h.html#a6a8772393985bcc0c722fb25a0bda179',1,'map.h']]],
-  ['generous_5fwhen_5flow_5fheart_5fdrops_35396',['GENEROUS_WHEN_LOW_HEART_DROPS',['../map_8h.html#a96cb4b72ebea4dc2e973919fa88685a9',1,'map.h']]],
-  ['get_5fmap_5fentry_35397',['GET_MAP_ENTRY',['../macros_8h.html#a2071ae143eac60cdd739b736a7901b31',1,'macros.h']]],
-  ['getgoomba_35398',['GetGoomba',['../kmr__12_8h.html#a1f88d55689d0233d149887819d03d7c8',1,'kmr_12.h']]]
+  ['include_5fasm_36773',['INCLUDE_ASM',['../include__asm_8h.html#ad39045bbe7b04313d415e097b1cbb653',1,'include_asm.h']]],
+  ['item_5fmenu_5fpage_36774',['ITEM_MENU_PAGE',['../macros_8h.html#a87ef92f9d6872f77217d593d5e9e94d2',1,'macros.h']]]
 ];
