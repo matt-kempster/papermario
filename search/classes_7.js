@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['gamemode_18513',['GameMode',['../structGameMode.html',1,'']]],
-  ['gamestatus_18514',['GameStatus',['../structGameStatus.html',1,'']]]
+  ['gamemode_18518',['GameMode',['../structGameMode.html',1,'']]],
+  ['gamestatus_18519',['GameStatus',['../structGameStatus.html',1,'']]]
 ];
