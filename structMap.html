@@ -108,13 +108,21 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a579b4371ce8da1cacdfa19246611d979"><td class="memItemLeft" align="right" valign="top"><a class="el" href="map_8h.html#aac91ebeaafb997cf4cfe0e9372d83ef4">MapInit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html#a579b4371ce8da1cacdfa19246611d979">init</a></td></tr>
 <tr class="memdesc:a579b4371ce8da1cacdfa19246611d979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return TRUE to skip normal asset (shape/hit/bg/tex) loading.  <a href="structMap.html#a579b4371ce8da1cacdfa19246611d979">More...</a><br /></td></tr>
 <tr class="separator:a579b4371ce8da1cacdfa19246611d979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678f2924ae2152b351805355eff6c507"><td class="memItemLeft" align="right" valign="top">s16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html#a678f2924ae2152b351805355eff6c507">unk_1C</a></td></tr>
-<tr class="separator:a678f2924ae2152b351805355eff6c507"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18f4835730df2db0e3b67f23eeba5a2"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html#ad18f4835730df2db0e3b67f23eeba5a2">songVariation</a></td></tr>
-<tr class="memdesc:ad18f4835730df2db0e3b67f23eeba5a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 or 1.  <a href="structMap.html#ad18f4835730df2db0e3b67f23eeba5a2">More...</a><br /></td></tr>
-<tr class="separator:ad18f4835730df2db0e3b67f23eeba5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81120b9643fb0dc0fb06295b7678454a"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html#a81120b9643fb0dc0fb06295b7678454a">flags</a></td></tr>
-<tr class="separator:a81120b9643fb0dc0fb06295b7678454a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d9efeefa177cf8b36b4c767bbdb5b8"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a097983a1453538d12f0f042c86aba409"><td class="memItemLeft" >&#160;&#160;&#160;u32&#160;&#160;&#160;<a class="el" href="structMap.html#a42952e50979a65783b032900767751ee">u32</a></td></tr>
+<tr class="separator:a097983a1453538d12f0f042c86aba409"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52def1f9907ca97910d2e1c6b7905a6"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a452eb114869ca55f0a4474db806b9316"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;char&#160;&#160;&#160;<a class="el" href="structMap.html#abb2d16142cc561513ea0c36ce7fcf770">unk_1C</a> [0x2]</td></tr>
+<tr class="separator:a452eb114869ca55f0a4474db806b9316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24732632870a621f35287b1d13c4c35c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;s8&#160;&#160;&#160;<a class="el" href="structMap.html#ad18f4835730df2db0e3b67f23eeba5a2">songVariation</a></td></tr>
+<tr class="memdesc:a24732632870a621f35287b1d13c4c35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 or 1.  <a href="structMap_1_1_0d5_1_1_0d6.html#a24732632870a621f35287b1d13c4c35c">More...</a><br /></td></tr>
+<tr class="separator:a24732632870a621f35287b1d13c4c35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff5f49862f473b7632e2d57919c926d"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;s8&#160;&#160;&#160;<a class="el" href="structMap.html#a81120b9643fb0dc0fb06295b7678454a">flags</a></td></tr>
+<tr class="separator:adff5f49862f473b7632e2d57919c926d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52def1f9907ca97910d2e1c6b7905a6"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;&#160;&#160;<a class="el" href="structMap.html#a82a1ccd217a18dc72913b6d9cf2525c4">bytes</a></td></tr>
+<tr class="separator:ab52def1f9907ca97910d2e1c6b7905a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23d9efeefa177cf8b36b4c767bbdb5b8"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMap.html#a23d9efeefa177cf8b36b4c767bbdb5b8">unk_1C</a></td></tr>
+<tr class="separator:a23d9efeefa177cf8b36b4c767bbdb5b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -135,6 +143,8 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00038">38</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>.</p>
+
 </div>
 </div>
 <a id="ac5c5e4120085be576ec8b6ce34dabcd6"></a>
@@ -150,6 +160,8 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00039">39</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>.</p>
 
 </div>
 </div>
@@ -167,6 +179,8 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00040">40</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>, and <a class="el" href="code__f270__len__1190_8c.html#a2280cc77cce96dea77678e339eea1f67">state_step_unpause()</a>.</p>
+
 </div>
 </div>
 <a id="a04ecaa27091445914ff901a1c46610b8"></a>
@@ -182,6 +196,8 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00041">41</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>, and <a class="el" href="code__f270__len__1190_8c.html#a2280cc77cce96dea77678e339eea1f67">state_step_unpause()</a>.</p>
 
 </div>
 </div>
@@ -199,6 +215,8 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00042">42</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>, and <a class="el" href="code__f270__len__1190_8c.html#a2280cc77cce96dea77678e339eea1f67">state_step_unpause()</a>.</p>
+
 </div>
 </div>
 <a id="aba239533d85be68e1e6dce38f3fcea27"></a>
@@ -214,6 +232,8 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00043">43</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>, and <a class="el" href="code__f270__len__1190_8c.html#a2280cc77cce96dea77678e339eea1f67">state_step_unpause()</a>.</p>
 
 </div>
 </div>
@@ -233,21 +253,41 @@ Data Fields</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00044">44</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>.</p>
+
 </div>
 </div>
-<a id="a678f2924ae2152b351805355eff6c507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a678f2924ae2152b351805355eff6c507">&#9670;&nbsp;</a></span>unk_1C</h2>
+<a id="a42952e50979a65783b032900767751ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42952e50979a65783b032900767751ee">&#9670;&nbsp;</a></span>u32</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s16 Map::unk_1C</td>
+          <td class="memname">u32 Map::u32</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00045">45</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00046">46</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="abb2d16142cc561513ea0c36ce7fcf770"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb2d16142cc561513ea0c36ce7fcf770">&#9670;&nbsp;</a></span>unk_1C <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char Map::unk_1C[0x2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00048">48</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__e0b30__len__b80_8c.html#a879882f86675882a1504c85be3593926">bgm_get_map_default_variation()</a>, and <a class="el" href="world_8c.html#a8db7367ff2f2ad113220d8fe5da96cc0">load_map_by_IDs()</a>.</p>
 
 </div>
 </div>
@@ -266,9 +306,7 @@ Data Fields</h2></td></tr>
 <p>0 or 1. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="code__e0b30__len__b80_8c.html#a879882f86675882a1504c85be3593926">bgm_get_map_default_variation</a> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00046">46</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="code__e0b30__len__b80_8c.html#a879882f86675882a1504c85be3593926">bgm_get_map_default_variation()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00049">49</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
 
 </div>
 </div>
@@ -284,7 +322,35 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00047">47</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="map_8h_source.html#l00050">50</a> of file <a class="el" href="map_8h_source.html">map.h</a>.</p>
+
+</div>
+</div>
+<a id="a82a1ccd217a18dc72913b6d9cf2525c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82a1ccd217a18dc72913b6d9cf2525c4">&#9670;&nbsp;</a></span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct { ... }  Map::bytes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23d9efeefa177cf8b36b4c767bbdb5b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23d9efeefa177cf8b36b4c767bbdb5b8">&#9670;&nbsp;</a></span> <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">union { ... }  Map::unk_1C</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -297,7 +363,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structMap.html">Map</a></li>
-    <li class="footer">Generated on Tue Mar 30 2021 17:40:43 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Apr 1 2021 18:01:28 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
