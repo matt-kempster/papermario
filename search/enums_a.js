@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['scriptopcode_34919',['ScriptOpcode',['../si_8h.html#abb1eab93e44604a3a4a3861f63c8e261',1,'si.h']]],
-  ['songids_34920',['SongIDs',['../enums_8h.html#a5ffdcb75f679eb8edb64e135122268bf',1,'enums.h']]],
-  ['soundids_34921',['SoundIDs',['../enums_8h.html#ac5d40ac44ef7d8c38c6c72a71348e360',1,'enums.h']]],
-  ['sprites_34922',['Sprites',['../enums_8h.html#a43a1d9bb6b7a9c2b888825997e1658e8',1,'enums.h']]],
-  ['statuses_34923',['Statuses',['../enums_8h.html#ac22d623e3c3ba76d4bf042c972203ebd',1,'enums.h']]],
-  ['statusflags_34924',['StatusFlags',['../enums_8h.html#ac07b406ff87cafb1d2cd8356995f5f81',1,'enums.h']]],
-  ['storyprogress_34925',['StoryProgress',['../enums_8h.html#a261f0abb6d865db187811daee6829cfc',1,'enums.h']]]
+  ['scriptopcode_34680',['ScriptOpcode',['../si_8h.html#abb1eab93e44604a3a4a3861f63c8e261',1,'si.h']]],
+  ['songids_34681',['SongIDs',['../enums_8h.html#a5ffdcb75f679eb8edb64e135122268bf',1,'enums.h']]],
+  ['soundids_34682',['SoundIDs',['../enums_8h.html#ac5d40ac44ef7d8c38c6c72a71348e360',1,'enums.h']]],
+  ['statuses_34683',['Statuses',['../enums_8h.html#ac22d623e3c3ba76d4bf042c972203ebd',1,'enums.h']]],
+  ['statusflags_34684',['StatusFlags',['../enums_8h.html#ac07b406ff87cafb1d2cd8356995f5f81',1,'enums.h']]],
+  ['storyprogress_34685',['StoryProgress',['../enums_8h.html#a261f0abb6d865db187811daee6829cfc',1,'enums.h']]]
 ];

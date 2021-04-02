@@ -4,7 +4,7 @@
         <meta charset='utf-8'>
         <meta name='generator' content='Doxygen 1.9.1'>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <title>NpcBlurData Struct Reference - Paper Mario Documentation</title>
+        <title>BlurBuffer Struct Reference - Paper Mario Documentation</title>
         <link href="tabs.css" rel="stylesheet" type="text/css"/>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search','.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('structNpcBlurData.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('structBlurBuffer.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,107 +87,96 @@ $(document).ready(function(){initNavTree('structNpcBlurData.html',''); initResiz
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">NpcBlurData Struct Reference</div>  </div>
+<div class="title">BlurBuffer Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Ring buffer of an NPC's position over the past 20 frames.  
+ <a href="structBlurBuffer.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a676a1175ca272f52e4e8af84119dc42e"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#a676a1175ca272f52e4e8af84119dc42e">unk_00</a></td></tr>
-<tr class="separator:a676a1175ca272f52e4e8af84119dc42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f969421dd42dcd00bbf17ce0fff0e52"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#a5f969421dd42dcd00bbf17ce0fff0e52">unk_01</a></td></tr>
-<tr class="separator:a5f969421dd42dcd00bbf17ce0fff0e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d365eb693aec1aeed676071b26e8bcc"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#a8d365eb693aec1aeed676071b26e8bcc">unk_02</a> [2]</td></tr>
-<tr class="separator:a8d365eb693aec1aeed676071b26e8bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdf2e7e66587cd8b04185bf752536d7a"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#abdf2e7e66587cd8b04185bf752536d7a">xpos</a> [20]</td></tr>
-<tr class="separator:abdf2e7e66587cd8b04185bf752536d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d9a882c15da88c97bcbbbbbdbbb280"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#a12d9a882c15da88c97bcbbbbbdbbb280">ypos</a> [20]</td></tr>
-<tr class="separator:a12d9a882c15da88c97bcbbbbbdbbb280"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09a1e1fbee0c9d04a7250c04ec2d02d0"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structNpcBlurData.html#a09a1e1fbee0c9d04a7250c04ec2d02d0">zpos</a> [20]</td></tr>
-<tr class="separator:a09a1e1fbee0c9d04a7250c04ec2d02d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2ba113a61f7c984b80d5bff67a9ae13"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#ac2ba113a61f7c984b80d5bff67a9ae13">unk_00</a></td></tr>
+<tr class="separator:ac2ba113a61f7c984b80d5bff67a9ae13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac05d27582ebf877e6abf4aca308b11ba"><td class="memItemLeft" align="right" valign="top">s8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#ac05d27582ebf877e6abf4aca308b11ba">index</a></td></tr>
+<tr class="memdesc:ac05d27582ebf877e6abf4aca308b11ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current blur ring buffer index.  <a href="structBlurBuffer.html#ac05d27582ebf877e6abf4aca308b11ba">More...</a><br /></td></tr>
+<tr class="separator:ac05d27582ebf877e6abf4aca308b11ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6ca4500346e815853d7e21db9aa462"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#a4d6ca4500346e815853d7e21db9aa462">unk_02</a> [2]</td></tr>
+<tr class="separator:a4d6ca4500346e815853d7e21db9aa462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae326436681d6c18ec86055ec41c51b85"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#ae326436681d6c18ec86055ec41c51b85">x</a> [20]</td></tr>
+<tr class="separator:ae326436681d6c18ec86055ec41c51b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff4aaff16802e6810eceff1258d2f717"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#aff4aaff16802e6810eceff1258d2f717">y</a> [20]</td></tr>
+<tr class="separator:aff4aaff16802e6810eceff1258d2f717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb953057a8588ac099b2a2e3b4a68fa7"><td class="memItemLeft" align="right" valign="top">f32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBlurBuffer.html#acb953057a8588ac099b2a2e3b4a68fa7">z</a> [20]</td></tr>
+<tr class="separator:acb953057a8588ac099b2a2e3b4a68fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00093">93</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
-</div><h2 class="groupheader">Field Documentation</h2>
-<a id="a676a1175ca272f52e4e8af84119dc42e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a676a1175ca272f52e4e8af84119dc42e">&#9670;&nbsp;</a></span>unk_00</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">s8 NpcBlurData::unk_00</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<div class="textblock"><p>Ring buffer of an NPC's position over the past 20 frames. </p>
 
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00094">94</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>.</p>
-
-</div>
-</div>
-<a id="a5f969421dd42dcd00bbf17ce0fff0e52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f969421dd42dcd00bbf17ce0fff0e52">&#9670;&nbsp;</a></span>unk_01</h2>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="ac2ba113a61f7c984b80d5bff67a9ae13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2ba113a61f7c984b80d5bff67a9ae13">&#9670;&nbsp;</a></span>unk_00</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">s8 NpcBlurData::unk_01</td>
+          <td class="memname">s8 BlurBuffer::unk_00</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00095">95</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>, and <a class="el" href="code__13870__len__6980_8c.html#acdd73a04b7d4e1cd1bb810ca13037f87">update_npc_blur()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>.</p>
 
 </div>
 </div>
-<a id="a8d365eb693aec1aeed676071b26e8bcc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d365eb693aec1aeed676071b26e8bcc">&#9670;&nbsp;</a></span>unk_02</h2>
+<a id="ac05d27582ebf877e6abf4aca308b11ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05d27582ebf877e6abf4aca308b11ba">&#9670;&nbsp;</a></span>index</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char NpcBlurData::unk_02[2]</td>
+          <td class="memname">s8 BlurBuffer::index</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Current blur ring buffer index. </p>
+
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00096">96</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>, and <a class="el" href="code__13870__len__6980_8c.html#acdd73a04b7d4e1cd1bb810ca13037f87">update_npc_blur()</a>.</p>
 
 </div>
 </div>
-<a id="abdf2e7e66587cd8b04185bf752536d7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf2e7e66587cd8b04185bf752536d7a">&#9670;&nbsp;</a></span>xpos</h2>
+<a id="a4d6ca4500346e815853d7e21db9aa462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6ca4500346e815853d7e21db9aa462">&#9670;&nbsp;</a></span>unk_02</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 NpcBlurData::xpos[20]</td>
+          <td class="memname">char BlurBuffer::unk_02[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00097">97</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>, and <a class="el" href="code__13870__len__6980_8c.html#acdd73a04b7d4e1cd1bb810ca13037f87">update_npc_blur()</a>.</p>
-
 </div>
 </div>
-<a id="a12d9a882c15da88c97bcbbbbbdbbb280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12d9a882c15da88c97bcbbbbbdbbb280">&#9670;&nbsp;</a></span>ypos</h2>
+<a id="ae326436681d6c18ec86055ec41c51b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae326436681d6c18ec86055ec41c51b85">&#9670;&nbsp;</a></span>x</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 NpcBlurData::ypos[20]</td>
+          <td class="memname">f32 BlurBuffer::x[20]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -198,19 +187,37 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a09a1e1fbee0c9d04a7250c04ec2d02d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09a1e1fbee0c9d04a7250c04ec2d02d0">&#9670;&nbsp;</a></span>zpos</h2>
+<a id="aff4aaff16802e6810eceff1258d2f717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff4aaff16802e6810eceff1258d2f717">&#9670;&nbsp;</a></span>y</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">f32 NpcBlurData::zpos[20]</td>
+          <td class="memname">f32 BlurBuffer::y[20]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00099">99</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>, and <a class="el" href="code__13870__len__6980_8c.html#acdd73a04b7d4e1cd1bb810ca13037f87">update_npc_blur()</a>.</p>
+
+</div>
+</div>
+<a id="acb953057a8588ac099b2a2e3b4a68fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb953057a8588ac099b2a2e3b4a68fa7">&#9670;&nbsp;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">f32 BlurBuffer::z[20]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="common__structs_8h_source.html#l00100">100</a> of file <a class="el" href="common__structs_8h_source.html">common_structs.h</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="code__13870__len__6980_8c.html#a5908c83ba5991fdc27c9ab87f6129f1f">enable_npc_blur()</a>, and <a class="el" href="code__13870__len__6980_8c.html#acdd73a04b7d4e1cd1bb810ca13037f87">update_npc_blur()</a>.</p>
 
@@ -224,8 +231,8 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="structNpcBlurData.html">NpcBlurData</a></li>
-    <li class="footer">Generated on Fri Apr 2 2021 05:51:11 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="navelem"><a class="el" href="structBlurBuffer.html">BlurBuffer</a></li>
+    <li class="footer">Generated on Fri Apr 2 2021 07:44:30 for Paper Mario by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
