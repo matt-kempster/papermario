@@ -3,6 +3,12 @@
 #include "battle/battle.h"
 #include "message_ids.h"
 
+enum {
+    MOVE_POWER_PLUS = 0x3B,
+};
+
+extern StaticMove D_8008F060[185];
+
 s32 D_80280FC0[] = {
     0x000A005A, 0x00000032, 0x0003000B, 0x00000032, 0x0001002D, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000032, 0x00010031, 0x00000032, 0x00010031, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000032, 0x00010032, 0x00000032, 0x00010032, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000032, 0x0003000A, 0x00000032, 0x0003000A, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000050, 0x0003000A, 0x00000014, 0x0003000B, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000,
 };
@@ -1118,7 +1124,29 @@ INCLUDE_ASM(s32, "190B20", func_802636E4);
 
 INCLUDE_ASM(s32, "190B20", func_80263914);
 
-INCLUDE_ASM(s32, "190B20", count_power_plus);
+s32 count_power_plus(s32 damageType) {
+    PlayerData* playerData = &gPlayerData;
+
+    if (gGameStatusPtr->peachFlags & 1) {
+        return 0;
+    } else {
+        s32 i;
+        s32 count = 0;
+
+        for (i = 0; i < ARRAY_COUNT(playerData->equippedBadges); i++) {
+            u8 move = gItemTable[playerData->equippedBadges[i]].moveID;
+
+            if (D_8008F060[move].battleSubmenu == 7
+                && move == MOVE_POWER_PLUS
+                && ((gBattleStatus.flags1 & 0x10) || (damageType & DAMAGE_TYPE_JUMP))
+            ) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
 
 INCLUDE_ASM(s32, "190B20", deduct_current_move_fp);
 
