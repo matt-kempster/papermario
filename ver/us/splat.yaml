@@ -1015,7 +1015,7 @@ segments:
     - [0x1AF230, c]
     - [0x1AF2D0, .data, 16c8e0]
     - [0x1AF8A0, .data, 190B20]
-    - [0x1B21E0, data, 1AF2D0] # begins with image?
+    - [0x1B21E0, c, battle/1AF2D0]
     - [0x1CB240, .rodata, 16c8e0]
     - [0x1CB368, .rodata, 16F740]
     - [0x1CB4E0, .rodata, 1776B0]
