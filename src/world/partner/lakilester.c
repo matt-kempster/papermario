@@ -24,8 +24,6 @@ f32 get_player_normal_pitch(void);
 void partner_kill_ability_script(void);
 f64 fabs(f64 val);
 
-extern f64 D_802BFEF8;
-
 void func_802BD100_320C50(void) {
     PlayerStatus* playerStatus = &gPlayerStatus;
     Npc* lakilester = get_npc_unsafe(NPC_PARTNER);
@@ -97,7 +95,7 @@ ApiStatus func_802BD2D4_320E24(Evt* script, s32 isInitialCall) {
     playerData->unk_2F4[8]++;
     lakilester->flags |= NPC_FLAG_DIRTY_SHADOW;
     entity = D_8010C954;
-    
+
     if (entity == NULL) {
         partner_flying_update_player_tracking(lakilester);
         partner_flying_update_motion(lakilester);
@@ -136,7 +134,7 @@ ApiStatus func_802BD2D4_320E24(Evt* script, s32 isInitialCall) {
 
             lakilester->pos.y += tempY;
             lakilester->renderYaw = clamp_angle(360.0f - D_802BFE7C_3239CC->unk_10);
-            D_802BFE7C_3239CC->unk_14 += D_802BFEF0;
+            D_802BFE7C_3239CC->unk_14 += 0.8;
 
             if (D_802BFE7C_3239CC->unk_14 > 40.0f) {
                 D_802BFE7C_3239CC->unk_14 = 40.0f;
@@ -184,14 +182,14 @@ void func_802BD6BC_32120C(f32* arg0, f32* arg1) {
     f32 atan = atan2(0.0f, 0.0f, temp_f24, temp_f22);
     f32 temp = clamp_angle(atan + gCameras->currentYaw);
     f32 phi_f20 = 0.0f;
-    
+
     if (dist2D(0.0f, 0.0f, temp_f24, temp_f22) >= 1.0) {
         phi_f20 = 3.0f;
         if (SQ(temp_f24) + SQ(temp_f26) > 3025.0f) {
             phi_f20 = 6.0f;
         }
     }
-    
+
     *arg0 = temp;
     *arg1 = phi_f20;
 }
@@ -250,9 +248,9 @@ s32 func_802BD99C_3214EC(Npc* partner, f32 yOffset, f32 zOffset) {
     f32 hitRx, hitRz;
     f32 hitDirX, hitDirZ;
     f32 temp_f4;
-    
+
     D_802BFF24 = 0;
-    
+
     if (player_raycast_below_cam_relative(&gPlayerStatus, &outX, &outY, &outZ, &outLength, &hitRx, &hitRz,
                                           &hitDirX, &hitDirZ) >= 0) {
         temp_f4 = outY - partner->moveToPos.y;
@@ -380,7 +378,7 @@ void func_802BDDD8_321928(Npc* npc) {
             } else {
                 phi_a3 = update_lerp(0, 100.0f, 0.0f, D_802BFF20 - 60, 60);
                 sfx_play_sound_with_params(SOUND_UNKNOWN_295, 0, 0x40, phi_a3);
-                
+
             }
         }
     }
@@ -404,7 +402,7 @@ void func_802BDDD8_321928(Npc* npc) {
 
         if (npc_test_move_complex_with_slipping(npc->unk_80, &x, &y, &z, npc->moveSpeed, npc->yaw,
             npc->collisionHeight, npc->collisionRadius) != 0) {
-                
+
             if (D_802BFF10) {
                 collisionStatus->pushingAgainstWall = D_8010C97A;
             }
@@ -428,7 +426,7 @@ void func_802BDDD8_321928(Npc* npc) {
             npc->pos.x += (x - npc->pos.x) / 5.0f;
             npc->pos.z += (z - npc->pos.z) / 5.0f;
         }
-        
+
         sp28 = clamp_angle(npc->yaw + 30.0f);
         x = npc->pos.x;
         y = npc->moveToPos.y;
@@ -447,7 +445,7 @@ void func_802BDDD8_321928(Npc* npc) {
         x = npc->pos.x;
         y = npc->moveToPos.y;
         z = npc->pos.z;
-        
+
         if (npc_test_move_taller_with_slipping(npc->unk_80, &x, &y, &z, 4.0f, sp28, npc->collisionHeight,
             npc->collisionRadius) != 0) {
 
@@ -494,7 +492,7 @@ void func_802BDDD8_321928(Npc* npc) {
         playerStatus->lastGoodPosition.y = npc->pos.y;
         playerStatus->lastGoodPosition.z = npc->pos.z;
         collisionStatus->currentFloor = raycastBelowResult;
-        
+
         npc->unk_84 = raycastBelowResult;
         npc->moveToPos.y = y;
         npc->moveToPos.x = x;
@@ -516,7 +514,7 @@ void func_802BDDD8_321928(Npc* npc) {
     collisionStatus->currentFloor = -1;
     playerStatus->decorationList = playerStatus->decorationList + 1;
     npc->unk_84 = -1;
-    npc->jumpScale += D_802BFEF8;
+    npc->jumpScale += 1.8;
 
     if (npc->jumpScale > 12.0f) {
         npc->jumpScale = 12.0f;
@@ -531,15 +529,16 @@ s32 func_802BE6A0_3221F0(f32* arg0) {
     f32 hitDirX, hitDirZ;
     f32 hitRx, hitRz;
     f32 sp28, sp2C;
-    
+
     *arg0 = gPlayerStatus.position.y + colliderHeight;
     sp28 = gPlayerStatus.position.x;
     sp2C = gPlayerStatus.position.z;
-    
+
     player_raycast_below_cam_relative(&gPlayerStatus, &sp28, arg0, &sp2C, &colliderHeight, &hitRx, &hitRz,
                                       &hitDirX, &hitDirZ);
 }
 
+ApiStatus func_802BE724_322274(Evt* script, s32 isInitialCall);
 INCLUDE_ASM(s32, "world/partner/lakilester", func_802BE724_322274);
 
 ApiStatus func_802BF4F0_323040(Evt* script, s32 isInitialCall) {
@@ -709,7 +708,7 @@ void func_802BFAA8_3235F8(Npc* npc) {
 void func_802BFB44_323694(f32 arg0) {
     Camera* currentCamera = &gCameras[gCurrentCameraID];
     PlayerStatus* playerStatus = &gPlayerStatus;
-    
+
     add_vec2D_polar(&playerStatus->position.x, &playerStatus->position.z, arg0, currentCamera->currentYaw);
 }
 
@@ -721,7 +720,7 @@ s32 func_802BFBA0_3236F0(Evt* script, s32 isInitialCall) {
     f32* temp_s0_2;
     s32 temp_v0_2;
     s32 tempVar;
-    
+
     if (isInitialCall) {
         script->functionTemp[0] = 0;
     }
@@ -774,7 +773,7 @@ s32 func_802BFBA0_3236F0(Evt* script, s32 isInitialCall) {
             D_802BFF18 = 0;
             script->functionTemp[0] = 1;
             break;
-            
+
         case 1:
             npc_move_heading(npc, npc->moveSpeed, npc->yaw);
             playerStatus->position.x = npc->pos.x;
@@ -783,7 +782,7 @@ s32 func_802BFBA0_3236F0(Evt* script, s32 isInitialCall) {
             playerStatus->targetYaw = npc->yaw;
             func_802BFB44_323694(2.0f);
             script->functionTemp[1] -= 1;
-            
+
             if (script->functionTemp[1] == 0) {
                 if (script->varTable[12] != 0) {
                     partnerActionStatus->actionState.b[1] = tempVar;
@@ -810,8 +809,6 @@ EvtSource D_802BFE60_3239B0 = {
 
 unkPartnerStruct* D_802BFE7C_3239CC = &D_802BFF30;
 
-ApiStatus func_802BE724_322274(Evt* script, s32 isInitialCall);
-
 EvtSource D_802BFE7C_3239D0 = {
     EVT_CALL(func_802BD2D4_320E24)
     EVT_RETURN
@@ -835,7 +832,3 @@ EvtSource D_802BFED0_323A40 = {
     EVT_RETURN
     EVT_END
 };
-
-//rodata
-//f64 D_802BFEF0_323A40 = 0.8;
-//f64 D_802BFEF8_323A48 = 1.8;

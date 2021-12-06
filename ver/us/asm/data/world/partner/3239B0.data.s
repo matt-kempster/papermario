@@ -19,15 +19,3 @@ dlabel bullshit_802BFEE8
 
 dlabel D_802BFEEC
 .word 0x00000000
-
-dlabel bullshit_802BFEF0
-.byte 0x3F, 0xE9, 0x99, 0x99
-
-dlabel bullshit_802BFEF4
-.word 0x9999999A
-
-dlabel D_802BFEF8
-.byte 0x3F, 0xFC, 0xCC, 0xCC
-
-dlabel D_802BFEFC
-.word 0xCCCCCCCD
